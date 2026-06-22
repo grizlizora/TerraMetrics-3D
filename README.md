@@ -4,7 +4,7 @@
 
 ▶️ **[Watch Full App Presentation Video](https://github.com/grizlizora/TerraMetrics-3D/blob/main/TerraMetrics-3D_Full_App_Presentation.mp4)**
 
-<video src="TerraMetrics-3D_Preview.mp4" controls autoplay loop muted playsinline width="100%"></video>
+<video src="TerraMetrics-3D_Full_App_Presentation.mp4" controls autoplay loop muted playsinline width="100%"></video>
 
 **TerraMetrics 3D** is not just an interactive data dashboard—it is a masterclass in **advanced WebGL architecture**, **frontend performance optimization**, and **real-time astronomical physics**. 
 
