@@ -2,7 +2,9 @@
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-success) ![Tech: Vanilla JS](https://img.shields.io/badge/Tech-Vanilla%20JS-F7DF1E) ![Tech: WebGL / Three.js](https://img.shields.io/badge/Tech-Three.js-black) ![Tech: MapLibre GL](https://img.shields.io/badge/Tech-MapLibre%20GL-4264fb) ![Architecture: CustomLayerInterface](https://img.shields.io/badge/Architecture-CustomLayerInterface-ff69b4)
 
-<video src="https://github.com/grizlizora/TerraMetrics-3D/raw/main/TerraMetrics-3D_Full_App_Presentation.mp4" autoplay loop muted playsinline width="100%"></video>
+▶️ **[Watch Full App Presentation Video](https://github.com/grizlizora/TerraMetrics-3D/blob/main/TerraMetrics-3D_Full_App_Presentation.mp4)**
+
+<video src="TerraMetrics-3D_Full_App_Presentation.mp4" controls autoplay loop muted playsinline width="100%"></video>
 
 **TerraMetrics 3D** is not just an interactive data dashboard—it is a masterclass in **advanced WebGL architecture**, **frontend performance optimization**, and **real-time astronomical physics**. 
 
