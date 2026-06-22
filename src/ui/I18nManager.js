@@ -134,6 +134,7 @@ export default class I18nManager {
     if (btn) {
       btn.textContent = this.currentLanguage === 'uk' ? '🇬🇧 EN' : '🇺🇦 UK';
       btn.addEventListener('click', () => {
+        if (this.audioManager) this.audioManager.playLanguageChange();
         this.setLanguage(this.currentLanguage === 'uk' ? 'en' : 'uk');
         btn.textContent = this.currentLanguage === 'uk' ? '🇬🇧 EN' : '🇺🇦 UK';
       });

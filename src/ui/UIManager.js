@@ -1,8 +1,9 @@
 export class UIManager {
-  constructor(dataLoader, mapEngine, i18n) {
+  constructor(dataLoader, mapEngine, i18n, audioManager) {
     this.dataLoader = dataLoader;
     this.mapEngine = mapEngine;
     this.i18n = i18n;
+    this.audioManager = audioManager;
 
     // UI Elements
     this.searchInput = document.getElementById('search-input');
@@ -45,6 +46,7 @@ export class UIManager {
       };
 
       catSociety.addEventListener('click', () => {
+        if (this.audioManager) this.audioManager.playCategorySelect();
         resetGlobalCats();
         catSociety.classList.add('active');
         if(subSociety) subSociety.style.display = 'flex';
@@ -52,6 +54,7 @@ export class UIManager {
       });
 
       catState.addEventListener('click', () => {
+        if (this.audioManager) this.audioManager.playCategorySelect();
         resetGlobalCats();
         catState.classList.add('active');
         if(subState) subState.style.display = 'flex';
@@ -59,6 +62,7 @@ export class UIManager {
       });
 
       catNature.addEventListener('click', () => {
+        if (this.audioManager) this.audioManager.playCategorySelect();
         resetGlobalCats();
         catNature.classList.add('active');
         if(subNature) subNature.style.display = 'flex';
@@ -75,6 +79,7 @@ export class UIManager {
 
       submodeBtns.forEach(btn => {
         btn.addEventListener('click', () => {
+          if (this.audioManager) this.audioManager.playCategorySelect();
           resetSubmodes();
           btn.classList.add('active');
           const modeId = btn.id.replace('mode-', ''); // e.g., 'religion', 'economy'
@@ -127,6 +132,7 @@ export class UIManager {
       };
 
       spaceNone.addEventListener('click', () => {
+        if (this.audioManager && !spaceNone.classList.contains('active')) this.audioManager.playSpaceMode();
         resetSpaceButtons();
         spaceNone.classList.add('active');
         if (this.mapEngine.spaceEngine) {
@@ -142,6 +148,7 @@ export class UIManager {
       });
 
       spaceBasic.addEventListener('click', () => {
+        if (this.audioManager && !spaceBasic.classList.contains('active')) this.audioManager.playSpaceMode();
         resetSpaceButtons();
         spaceBasic.classList.add('active');
         if (this.mapEngine.spaceEngine) {
@@ -158,6 +165,7 @@ export class UIManager {
       });
 
       spaceAdvanced.addEventListener('click', () => {
+        if (this.audioManager && !spaceAdvanced.classList.contains('active')) this.audioManager.playSpaceMode();
         resetSpaceButtons();
         spaceAdvanced.classList.add('active');
         if (this.mapEngine.spaceEngine) {
@@ -183,6 +191,7 @@ export class UIManager {
     const spaceLabels = document.getElementById('btn-space-labels');
     if (spaceLabels) {
       spaceLabels.addEventListener('click', () => {
+        if (this.audioManager) this.audioManager.playSpaceMode();
         const isActive = spaceLabels.classList.contains('active');
         if (isActive) {
           spaceLabels.classList.remove('active');
@@ -204,6 +213,7 @@ export class UIManager {
     const deepSpaceBtn = document.getElementById('btn-deep-space');
     if (deepSpaceBtn) {
       deepSpaceBtn.addEventListener('click', () => {
+        if (this.audioManager) this.audioManager.playSpaceMode();
         const isActive = deepSpaceBtn.classList.contains('active');
         if (isActive) {
           deepSpaceBtn.classList.remove('active');
@@ -225,6 +235,7 @@ export class UIManager {
     const spaceSwitcher = document.getElementById('space-switcher');
     
     this.btn3d.addEventListener('click', () => {
+      if (this.audioManager && !this.btn3d.classList.contains('active')) this.audioManager.playTo3D();
       this.btn3d.classList.add('active');
       this.btn2d.classList.remove('active');
       this.mapEngine.setProjection('globe');
@@ -237,6 +248,7 @@ export class UIManager {
     });
 
     this.btn2d.addEventListener('click', () => {
+      if (this.audioManager && !this.btn2d.classList.contains('active')) this.audioManager.playTo2D();
       this.btn2d.classList.add('active');
       this.btn3d.classList.remove('active');
       this.mapEngine.setProjection('mercator');
@@ -252,6 +264,10 @@ export class UIManager {
       this.btnTheme.addEventListener('click', () => {
         const currentTheme = document.documentElement.getAttribute('data-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        if (this.audioManager) {
+          if (newTheme === 'dark') this.audioManager.playThemeDark();
+          else this.audioManager.playThemeLight();
+        }
         document.documentElement.setAttribute('data-theme', newTheme);
         this.btnTheme.textContent = newTheme === 'dark' ? '☀️' : '🌙';
         
@@ -264,12 +280,14 @@ export class UIManager {
 
     // Close Stats Panel
     this.panelCloseBtn.addEventListener('click', () => {
+      if (this.audioManager) this.audioManager.playClosePanel();
       this.statsPanel.classList.add('hidden');
       this.mapEngine.clearSelection();
     });
 
     // Search Tabs
     this.tabCountries.addEventListener('click', () => {
+      if (this.audioManager) this.audioManager.playSearchTab();
       this.searchMode = 'countries';
       this.tabCountries.classList.add('active');
       this.tabContinents.classList.remove('active');
@@ -278,6 +296,7 @@ export class UIManager {
     });
     
     this.tabContinents.addEventListener('click', () => {
+      if (this.audioManager) this.audioManager.playSearchTab();
       this.searchMode = 'continents';
       this.tabContinents.classList.add('active');
       this.tabCountries.classList.remove('active');
@@ -287,6 +306,7 @@ export class UIManager {
 
     // Search Input
     this.searchInput.addEventListener('input', (e) => {
+      if (this.audioManager) this.audioManager.playTyping();
       const query = e.target.value;
       if (query.trim().length === 0) {
         this.searchResults.classList.add('hidden');
@@ -374,6 +394,7 @@ export class UIManager {
   }
 
   showCountryStats(isoA3, fallbackName = '') {
+    if (this.audioManager && this.currentActiveItem !== isoA3) this.audioManager.playCountrySelect();
     const stats = this.dataLoader.getCountryStats(isoA3);
     if (!stats) return;
     
@@ -705,6 +726,7 @@ export class UIManager {
   }
 
   showContinentStats(continentId) {
+    if (this.audioManager && this.currentActiveItem !== continentId) this.audioManager.playContinentSelect();
     const stats = this.dataLoader.getContinentStats(continentId);
     if (!stats) return;
     
@@ -1000,7 +1022,7 @@ export class UIManager {
       document.getElementById('cont-dominant-religion').innerHTML = `<span style="opacity: 0.2;">...</span>`;
       document.getElementById('cont-dominant-religion').style.color = 'var(--text-color)';
       document.getElementById('cont-dominant-percentage').textContent = '';
-      document.querySelector('#continent-view .stats-list h3').textContent = isUk ? 'Середня Погода (Топ-10 країн)' : 'Average Weather (Top 10)';
+      document.querySelector('#continent-view .stats-list h3').textContent = isUk ? 'Погода' : 'Weather';
 
       const list = document.getElementById('cont-religion-list');
       list.innerHTML = `

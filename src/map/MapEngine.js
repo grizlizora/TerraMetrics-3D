@@ -67,7 +67,7 @@ export class MapEngine {
       container: this.containerId,
       style: style,
       center: [20, 20], // Centered roughly on Africa/Europe
-      zoom: 1.5,
+      zoom: this.getOptimalZoom(),
       pitch: 22, // Глибокий 3D-кут для вираженого ефекту об'ємної планети
       maxPitch: 65, // Запобігає застряганню камери та "косому" руху біля самої поверхні
       maxZoom: 18,  // Золота середина для глобуса: дуже глибокий зум, але без зламів математики
@@ -89,6 +89,7 @@ export class MapEngine {
         // SpaceBridge вбудовує його прямо в WebGL-контекст MapLibre.
         this.spaceEngine = new SpaceEngine(null);
         this.spaceEngine.map = this.map;
+        this.spaceEngine.audioManager = this.audioManager;
         this.spaceBridge = new SpaceBridge(this.spaceEngine);
         
         // Додаємо космічний шар як ПЕРШУ верству (перед супутниковими тайлами).
@@ -178,7 +179,14 @@ export class MapEngine {
           'layout': {
             'text-field': ['get', 'name_uk'], // Default to Ukrainian
             'text-font': ['Open Sans Regular', 'Arial Unicode MS Regular'],
-            'text-size': 10,
+            'text-size': [
+              'interpolate',
+              ['linear'],
+              ['zoom'],
+              0, 12,
+              3, 18,
+              6, 28
+            ],
             'text-anchor': 'center'
           },
           'paint': {
@@ -354,6 +362,10 @@ export class MapEngine {
         if (this.spaceEngine) {
           this.spaceEngine.setActive(type === 'globe');
         }
+        if (this.audioManager) this.audioManager.startFlySound();
+        this.map.once('moveend', () => {
+          if (this.audioManager) this.audioManager.stopFlySound();
+        });
         
         // 4. Починаємо політ назад
         this.map.flyTo({ center: currentCenter, zoom: 1.5, duration: 1500 });
@@ -532,6 +544,11 @@ export class MapEngine {
     if (targetCam) {
       const finalZoom = isContinent ? Math.min(targetCam.zoom || 2, 4.5) : Math.min(targetCam.zoom || 4, 5.5);
       
+      if (this.audioManager) this.audioManager.startFlySound();
+      this.map.once('moveend', () => {
+        if (this.audioManager) this.audioManager.stopFlySound();
+      });
+      
       this.map.flyTo({
         center: targetCam.center,
         zoom: finalZoom,
@@ -588,9 +605,14 @@ export class MapEngine {
     const engName = enToUk[continentName] || continentName;
     
     if (engName === 'World') {
+      if (this.audioManager) this.audioManager.startFlySound();
+      this.map.once('moveend', () => {
+        if (this.audioManager) this.audioManager.stopFlySound();
+      });
+
       this.map.flyTo({
         center: [0, 20],
-        zoom: 1.5,
+        zoom: this.getOptimalZoom(),
         essential: true,
         duration: 2500,
         speed: 0.8,
@@ -619,5 +641,17 @@ export class MapEngine {
           );
       }
       this.selectedCountryId = null;
+  }
+
+  // Обчислює ідеальний масштаб Землі залежно від роздільної здатності вікна (допомагає для 1080p, 4K та мобільних)
+  getOptimalZoom() {
+    const minDimension = Math.min(window.innerWidth, window.innerHeight);
+    // Для екрану висотою ~720px ідеальний зум був 1.5. 
+    // Оскільки MapLibre працює за експоненційною шкалою (база 2), використовуємо логарифм.
+    let optimal = 1.5 + Math.log2(minDimension / 720);
+    // Обмежуємо мінімальний та максимальний зум для безпеки
+    if (optimal < 0.5) optimal = 0.5;
+    if (optimal > 3.0) optimal = 3.0;
+    return optimal;
   }
 }

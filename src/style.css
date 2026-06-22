@@ -1,6 +1,6 @@
 html {
-  /* Scale based heavily on height (vh) to prevent scrolling on short screens */
-  font-size: clamp(10px, 1.5vh + 0.5vw, 16px);
+  /* Mathematically scales to exactly 16px at 720p, and 24px at 1080p for perfect proportions */
+  font-size: clamp(12px, 1.2vh + 0.6vw, 26px);
 }
 :root, [data-theme="light"] {
   /* Spacing System */
@@ -687,7 +687,8 @@ body {
 .global-nav {
   position: absolute;
   left: var(--spacing-outer);
-  top: 50%;
+  /* Зсуваємо візуальний центр трохи нижче (58% замість 50%), щоб панель була ідеально посередині МІЖ верхніми кнопками та низом екрану */
+  top: 58%;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;

@@ -1,6 +1,7 @@
 import { DataLoader } from './data/DataLoader.js';
 import { MapEngine } from './map/MapEngine.js';
 import { UIManager } from './ui/UIManager.js';
+import { AudioManager } from './audio/AudioManager.js';
 import I18nManager from './ui/I18nManager.js';
 import { initClimateModal } from './ui/ClimateModal.js';
 import { ExternalAPI } from './api/ExternalAPI.js';
@@ -31,7 +32,9 @@ async function bootstrap() {
     }
 
     const mapEngine = new MapEngine('map');
-    const uiManager = new UIManager(dataLoader, mapEngine, i18n);
+    const audioManager = new AudioManager();
+    const uiManager = new UIManager(dataLoader, mapEngine, i18n, audioManager);
+    i18n.audioManager = audioManager;
     
     // Link map events to UI updates
     mapEngine.onCountrySelect = (isoA3, name) => uiManager.showCountryStats(isoA3, name);
@@ -43,6 +46,7 @@ async function bootstrap() {
     // Initialize External API for 3rd-party tools
     const externalApi = new ExternalAPI(mapEngine, dataLoader, uiManager);
     
+    mapEngine.audioManager = audioManager;
     await mapEngine.init(dataLoader);
     
     // Listen to language changes to update map

@@ -795,14 +795,19 @@ export class SpaceEngine {
         }
       `,
       transparent: true,
+      transparent: true,
       blending: THREE.AdditiveBlending,
       depthWrite: false
     });
-    const sunGlow = new THREE.Sprite(glowMaterial);
-    sunGlow.scale.set(sunRadius * 4, sunRadius * 4, 1);
-    this.sunMesh.add(sunGlow);
     
-    // Зовнішнє м'яке сяйво (замінює UnrealBloomPass — Bloom-подібне розсіювання без GPU-витрат)
+    // Використовуємо PlaneGeometry замість Sprite, щоб уникнути багів з кастомним ShaderMaterial
+    const planeGeom = new THREE.PlaneGeometry(1, 1);
+    
+    this.sunGlow = new THREE.Mesh(planeGeom, glowMaterial);
+    this.sunGlow.scale.set(sunRadius * 4, sunRadius * 4, 1);
+    this.scene.add(this.sunGlow);
+    
+    // Зовнішнє м'яке сяйво
     const outerGlowMaterial = new THREE.ShaderMaterial({
       uniforms: {
         color: { value: new THREE.Color(1.0, 0.85, 0.5) }
@@ -830,15 +835,16 @@ export class SpaceEngine {
       blending: THREE.AdditiveBlending,
       depthWrite: false
     });
-    const outerGlow = new THREE.Sprite(outerGlowMaterial);
-    outerGlow.scale.set(sunRadius * 12, sunRadius * 12, 1);
-    this.sunMesh.add(outerGlow);
+    
+    this.outerGlow = new THREE.Mesh(planeGeom, outerGlowMaterial);
+    this.outerGlow.scale.set(sunRadius * 12, sunRadius * 12, 1);
+    this.scene.add(this.outerGlow);
     
     // Позначка Сонця
     this.createMarker(this.sunMesh, "Sun", "#ffcc00");
     
     // Повертаємо сонячні спалахи з правильним радіусом
-    this.createSolarFlares(sunRadius);
+    // this.createSolarFlares(sunRadius); // Вимкнено, оскільки створює баг "риски"
 
     this.scene.add(this.sunMesh);
     this.sunMesh.scale.set(1, 1, 1);
@@ -957,10 +963,12 @@ export class SpaceEngine {
     
     const material = new THREE.MeshStandardMaterial({
       map: texture,
-      bumpMap: texture, // Використовуємо дифузну карту як карту висот
+      bumpMap: texture, 
       bumpScale: 0.05,
       roughness: 1.0,
-      metalness: 0.0
+      metalness: 0.0,
+      emissive: new THREE.Color(0x223344), // Слабка підсвітка темної сторони, щоб Місяць не зникав у космосі
+      emissiveIntensity: 0.4
     });
 
     this.moonMesh = new THREE.Mesh(geometry, material);
@@ -971,11 +979,13 @@ export class SpaceEngine {
       color: 0xffffff,
       transparent: true,
       blending: THREE.AdditiveBlending,
-      depthWrite: false
+      depthWrite: false,
+      opacity: 0.8
     });
     
     const moonGlow = new THREE.Sprite(glowMaterial);
-    moonGlow.scale.set(210, 210, 1);
+    // Збільшуємо світіння Місяця так, щоб воно було значно більшим за саму сферу (радіус 819)
+    moonGlow.scale.set(3500, 3500, 1);
     this.moonMesh.add(moonGlow);
 
     this.planetaryBodies.push({ 
@@ -1384,6 +1394,11 @@ export class SpaceEngine {
     if (this.saturnMoons) this.saturnMoons.forEach(m => { m.mesh.visible = showAdvanced; });
     if (this.plutoMoons) this.plutoMoons.forEach(m => { m.mesh.visible = showAdvanced; });
 
+    // Оновлюємо фізику ПЕРЕД першим рендером, щоб планети не "моргнули" на координатах (0,0,0)
+    if (this.isActive && showAdvanced) {
+      this._runPhysicsFrame(performance.now(), 0);
+    }
+
     if (this.isActive && this.renderer) {
       this.renderer.render(this.scene, this.camera);
     }
@@ -1428,6 +1443,18 @@ export class SpaceEngine {
       this.sunLight.position.copy(sunPos);
       this.sunMesh.rotation.y += ((dt / 1000) / (648 * 3600)) * Math.PI * 2 * this.timeScale;
       
+      // Оновлюємо свічення Сонця (billboarding)
+      if (this.sunGlow) {
+        this.sunGlow.position.copy(sunPos);
+        this.sunGlow.quaternion.copy(this.camera.quaternion);
+        this.sunGlow.visible = this.sunMesh.visible;
+      }
+      if (this.outerGlow) {
+        this.outerGlow.position.copy(sunPos);
+        this.outerGlow.quaternion.copy(this.camera.quaternion);
+        this.outerGlow.visible = this.sunMesh.visible;
+      }
+
       if (this.globalSunPosition) {
         this.globalSunPosition.copy(sunPos);
       }
@@ -1798,11 +1825,22 @@ export class SpaceEngine {
           hoverRadius = Math.max(150, screenRadius); // Мінімум 150px
         }
         const isDS = parentMesh.userData && parentMesh.userData.isDeepSpace;
+        let isCurrentlyHovered = false;
         if ((this.labelsVisible || isDS) && !isOccluded) {
           // Якщо кнопка "Позначки" увімкнена або це Deep Space об'єкт, дозволяємо hover-логіку
           if (dist < hoverRadius) {
             targetOpacity = (name === 'Sun') ? 1.0 : 0.9;
+            isCurrentlyHovered = true;
           }
+        }
+        
+        // Звук при наведенні / відведенні
+        if (isCurrentlyHovered && !labelSprite.userData.isHovered) {
+          labelSprite.userData.isHovered = true;
+          if (this.audioManager) this.audioManager.playHoverIn();
+        } else if (!isCurrentlyHovered && labelSprite.userData.isHovered) {
+          labelSprite.userData.isHovered = false;
+          if (this.audioManager) this.audioManager.playHoverOut();
         }
 
         // Спрайт цілевказівника завжди видимий (якщо не перекритий), але його вигляд (з ореолом чи без) залежить від кнопки
