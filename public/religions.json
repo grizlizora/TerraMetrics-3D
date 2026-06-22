@@ -1,0 +1,6700 @@
+{
+  "countries": {
+    "IDN": {
+      "country_en": "Indonesia",
+      "country_uk": "Індонезія",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 26.3,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 26.3
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 22.9
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 21.1
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 15.1
+        },
+        {
+          "name": "Християнство",
+          "percentage": 6.7
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 4.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.1
+        }
+      ],
+      "population": 267663435
+    },
+    "MYS": {
+      "country_en": "Malaysia",
+      "country_uk": "Малайзія",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 25.4,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 25.4
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 25.3
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 18.9
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 14.5
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.5
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5.4
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.1
+        }
+      ],
+      "population": 31528585
+    },
+    "CHL": {
+      "country_en": "Chile",
+      "country_uk": "Чилі",
+      "continent": "South America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 85.2,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 85.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 9.5
+        },
+        {
+          "name": "Інші",
+          "percentage": 5.3
+        }
+      ],
+      "population": 18729160
+    },
+    "BOL": {
+      "country_en": "Bolivia",
+      "country_uk": "Болівія",
+      "continent": "South America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 85.9,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 85.9
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 9.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 4.5
+        }
+      ],
+      "population": 11353142
+    },
+    "PER": {
+      "country_en": "Peru",
+      "country_uk": "Перу",
+      "continent": "South America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 85.9,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 85.9
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 9.3
+        },
+        {
+          "name": "Інші",
+          "percentage": 4.8
+        }
+      ],
+      "population": 31989256
+    },
+    "ARG": {
+      "country_en": "Argentina",
+      "country_uk": "Аргентина",
+      "continent": "South America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 83.1,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 83.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 11.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 5.8
+        }
+      ],
+      "population": 44494502
+    },
+    "CYP": {
+      "country_en": "Cyprus",
+      "country_uk": "Кіпр",
+      "continent": "Asia",
+      "dominant_religion": "Індуїзм",
+      "dominant_percentage": 27.8,
+      "stats": [
+        {
+          "name": "Індуїзм",
+          "percentage": 27.8
+        },
+        {
+          "name": "Іслам",
+          "percentage": 24.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 18.7
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 13.7
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.3
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.3
+        }
+      ],
+      "population": 1189265
+    },
+    "IND": {
+      "country_en": "India",
+      "country_uk": "Індія",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 25.3,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 25.3
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 24.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.1
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 15
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.3
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5.4
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.9
+        }
+      ],
+      "population": 1352617328
+    },
+    "CHN": {
+      "country_en": "China",
+      "country_uk": "Китай",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 25.6,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 25.6
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 25.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.7
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 15.1
+        },
+        {
+          "name": "Християнство",
+          "percentage": 6.2
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 4.4
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.7
+        }
+      ],
+      "population": 1392730000
+    },
+    "ISR": {
+      "country_en": "Israel",
+      "country_uk": "Ізраїль",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 26.9,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 26.9
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 24.6
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 18.5
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 15
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.9
+        }
+      ],
+      "population": 8882800
+    },
+    "PSE": {
+      "country_en": "Palestine",
+      "country_uk": "Палестина",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 24.6,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 24.6
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 23.9
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 21.6
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 14.9
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.4
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 4.5
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.2
+        }
+      ],
+      "population": 4569087
+    },
+    "LBN": {
+      "country_en": "Lebanon",
+      "country_uk": "Ліван",
+      "continent": "Asia",
+      "dominant_religion": "Індуїзм",
+      "dominant_percentage": 26.4,
+      "stats": [
+        {
+          "name": "Індуїзм",
+          "percentage": 26.4
+        },
+        {
+          "name": "Іслам",
+          "percentage": 23.5
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 14.8
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.7
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 4.7
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.9
+        }
+      ],
+      "population": 6848925
+    },
+    "ETH": {
+      "country_en": "Ethiopia",
+      "country_uk": "Ефіопія",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 54.5,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 54.5
+        },
+        {
+          "name": "Іслам",
+          "percentage": 36.1
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.4
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 109224559
+    },
+    "SSD": {
+      "country_en": "South Sudan",
+      "country_uk": "Південний Судан",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 48.7,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 48.7
+        },
+        {
+          "name": "Іслам",
+          "percentage": 42
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.3
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 10975920
+    },
+    "SOM": {
+      "country_en": "Somalia",
+      "country_uk": "Сомалі",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 50.8,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 50.8
+        },
+        {
+          "name": "Іслам",
+          "percentage": 39.4
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 0.9
+        }
+      ],
+      "population": 15008154
+    },
+    "KEN": {
+      "country_en": "Kenya",
+      "country_uk": "Кенія",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 49.3,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 49.3
+        },
+        {
+          "name": "Іслам",
+          "percentage": 41.1
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.5
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 51393010
+    },
+    "MWI": {
+      "country_en": "Malawi",
+      "country_uk": "Малаві",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 53.1,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 53.1
+        },
+        {
+          "name": "Іслам",
+          "percentage": 37.6
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.4
+        },
+        {
+          "name": "Інші",
+          "percentage": 0.9
+        }
+      ],
+      "population": 18143315
+    },
+    "TZA": {
+      "country_en": "United Republic of Tanzania",
+      "country_uk": "Об'єднана Республіка Танзанія",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 47.7,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 47.7
+        },
+        {
+          "name": "Іслам",
+          "percentage": 42.2
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.2
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 56318348
+    },
+    "SYR": {
+      "country_en": "Syria",
+      "country_uk": "Сирія",
+      "continent": "Asia",
+      "dominant_religion": "Індуїзм",
+      "dominant_percentage": 25.9,
+      "stats": [
+        {
+          "name": "Індуїзм",
+          "percentage": 25.9
+        },
+        {
+          "name": "Іслам",
+          "percentage": 24.9
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.5
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 13.9
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.3
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 4.4
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.1
+        }
+      ],
+      "population": 16906283
+    },
+    "SUR": {
+      "country_en": "Suriname",
+      "country_uk": "Сурінам",
+      "continent": "South America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 85.8,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 85.8
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 9.2
+        },
+        {
+          "name": "Інші",
+          "percentage": 5
+        }
+      ],
+      "population": 575991
+    },
+    "GUY": {
+      "country_en": "Guyana",
+      "country_uk": "Гайана",
+      "continent": "South America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 83.7,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 83.7
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 10.4
+        },
+        {
+          "name": "Інші",
+          "percentage": 5.9
+        }
+      ],
+      "population": 779004
+    },
+    "KOR": {
+      "country_en": "South Korea",
+      "country_uk": "Південна Корея",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 26,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 26
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 23.9
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.8
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 14.7
+        },
+        {
+          "name": "Християнство",
+          "percentage": 6.8
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.9
+        }
+      ],
+      "population": 51606633
+    },
+    "PRK": {
+      "country_en": "North Korea",
+      "country_uk": "Північна Корея",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 25.3,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 25.3
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 24.4
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 19.6
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 16
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.3
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 4.4
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.1
+        }
+      ],
+      "population": 25549819
+    },
+    "MAR": {
+      "country_en": "Morocco",
+      "country_uk": "Марокко",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 48.7,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 48.7
+        },
+        {
+          "name": "Іслам",
+          "percentage": 39.7
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 10.5
+        },
+        {
+          "name": "Інші",
+          "percentage": 1.1
+        }
+      ],
+      "population": 36029138
+    },
+    "ESH": {
+      "country_en": "Western Sahara",
+      "country_uk": "Західна Сахара",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 68.7,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 68.7
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 21.1
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.3
+        }
+      ],
+      "population": 1000000
+    },
+    "CRI": {
+      "country_en": "Costa Rica",
+      "country_uk": "Коста Ріка",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 73.1,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 73.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 16.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 10.3
+        }
+      ],
+      "population": 4999441
+    },
+    "NIC": {
+      "country_en": "Nicaragua",
+      "country_uk": "Нікарагуа",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 76.1,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 76.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 14.7
+        },
+        {
+          "name": "Інші",
+          "percentage": 9.2
+        }
+      ],
+      "population": 6465513
+    },
+    "COG": {
+      "country_en": "Republic of the Congo",
+      "country_uk": "Республіка Конго",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 49.3,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 49.3
+        },
+        {
+          "name": "Іслам",
+          "percentage": 40.9
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 5244363
+    },
+    "COD": {
+      "country_en": "Democratic Republic of the Congo",
+      "country_uk": "Демократична Республіка Конго",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 49.9,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 49.9
+        },
+        {
+          "name": "Іслам",
+          "percentage": 39.8
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.3
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 84068091
+    },
+    "BTN": {
+      "country_en": "Bhutan",
+      "country_uk": "Бутан",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 25.7,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 25.7
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 23.5
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 19.4
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 16
+        },
+        {
+          "name": "Християнство",
+          "percentage": 6.9
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5.4
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.1
+        }
+      ],
+      "population": 754394
+    },
+    "UKR": {
+      "country_en": "Ukraine",
+      "country_uk": "Україна",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 69.4,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 69.4
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 19.5
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7.7
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.3
+        }
+      ],
+      "population": 44622516
+    },
+    "BLR": {
+      "country_en": "Belarus",
+      "country_uk": "Білорусь",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 70.7,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 70.7
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 19.6
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.7
+        },
+        {
+          "name": "Інші",
+          "percentage": 3
+        }
+      ],
+      "population": 9483499
+    },
+    "NAM": {
+      "country_en": "Namibia",
+      "country_uk": "Намібія",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 46.9,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 46.9
+        },
+        {
+          "name": "Іслам",
+          "percentage": 41.9
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 10.3
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 2448255
+    },
+    "ZAF": {
+      "country_en": "South Africa",
+      "country_uk": "Південна Африка",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 47.9,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 47.9
+        },
+        {
+          "name": "Іслам",
+          "percentage": 42
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 57779622
+    },
+    "MAF": {
+      "country_en": "Saint Martin",
+      "country_uk": "Святий Мартін",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 75.5,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 75.5
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 14.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 10
+        }
+      ],
+      "population": 37264
+    },
+    "SXM": {
+      "country_en": "Sint Maarten",
+      "country_uk": "Сінт-Мартен",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 68.5,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 68.5
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 21.5
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7
+        },
+        {
+          "name": "Інші",
+          "percentage": 3
+        }
+      ],
+      "population": 40654
+    },
+    "OMN": {
+      "country_en": "Oman",
+      "country_uk": "Оман",
+      "continent": "Asia",
+      "dominant_religion": "Індуїзм",
+      "dominant_percentage": 26.8,
+      "stats": [
+        {
+          "name": "Індуїзм",
+          "percentage": 26.8
+        },
+        {
+          "name": "Іслам",
+          "percentage": 24.9
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 18.1
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 14.9
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.3
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 4.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.2
+        }
+      ],
+      "population": 4829483
+    },
+    "UZB": {
+      "country_en": "Uzbekistan",
+      "country_uk": "Узбекистан",
+      "continent": "Asia",
+      "dominant_religion": "Індуїзм",
+      "dominant_percentage": 24.2,
+      "stats": [
+        {
+          "name": "Індуїзм",
+          "percentage": 24.2
+        },
+        {
+          "name": "Іслам",
+          "percentage": 23
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 21
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 16.3
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.3
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5.3
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.8
+        }
+      ],
+      "population": 32955400
+    },
+    "KAZ": {
+      "country_en": "Kazakhstan",
+      "country_uk": "Казахстан",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 26.2,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 26.2
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 23.8
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 18.6
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 16.4
+        },
+        {
+          "name": "Християнство",
+          "percentage": 6.9
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5.3
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.8
+        }
+      ],
+      "population": 18272430
+    },
+    "TJK": {
+      "country_en": "Tajikistan",
+      "country_uk": "Таджикистан",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 24.9,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 24.9
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 24.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 19
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 16.2
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.3
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5.5
+        },
+        {
+          "name": "Інші",
+          "percentage": 3
+        }
+      ],
+      "population": 9100837
+    },
+    "LTU": {
+      "country_en": "Lithuania",
+      "country_uk": "Литва",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 69.8,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 69.8
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 19.5
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7.7
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.1
+        }
+      ],
+      "population": 2801543
+    },
+    "BRA": {
+      "country_en": "Brazil",
+      "country_uk": "Бразилія",
+      "continent": "South America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 85.2,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 85.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 10
+        },
+        {
+          "name": "Інші",
+          "percentage": 4.8
+        }
+      ],
+      "population": 209469333
+    },
+    "URY": {
+      "country_en": "Uruguay",
+      "country_uk": "Уругвай",
+      "continent": "South America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 85.2,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 85.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 9.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 4.9
+        }
+      ],
+      "population": 3449299
+    },
+    "MNG": {
+      "country_en": "Mongolia",
+      "country_uk": "Монголія",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 25.6,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 25.6
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 24.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.7
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 14.4
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.3
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 4.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 3
+        }
+      ],
+      "population": 3170208
+    },
+    "RUS": {
+      "country_en": "Russia",
+      "country_uk": "Росія",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 69.1,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 69.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 21
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.7
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.2
+        }
+      ],
+      "population": 144478050
+    },
+    "CZE": {
+      "country_en": "Czechia",
+      "country_uk": "Чехія",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 71.2,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 71.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 19.4
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.5
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.9
+        }
+      ],
+      "population": 10629928
+    },
+    "DEU": {
+      "country_en": "Germany",
+      "country_uk": "Німеччина",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 72.2,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 72.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 18.4
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.4
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.1
+        }
+      ],
+      "population": 82905782
+    },
+    "EST": {
+      "country_en": "Estonia",
+      "country_uk": "Естонія",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 71.1,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 71.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 18.6
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7.3
+        },
+        {
+          "name": "Інші",
+          "percentage": 3
+        }
+      ],
+      "population": 1321977
+    },
+    "LVA": {
+      "country_en": "Latvia",
+      "country_uk": "Латвія",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 66.8,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 66.8
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 22.7
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7.5
+        },
+        {
+          "name": "Інші",
+          "percentage": 3
+        }
+      ],
+      "population": 1927174
+    },
+    "SWE": {
+      "country_en": "Sweden",
+      "country_uk": "Швеція",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 69.7,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 69.7
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.6
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.1
+        }
+      ],
+      "population": 10175214
+    },
+    "FIN": {
+      "country_en": "Finland",
+      "country_uk": "Фінляндія",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 72,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 72
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 18.4
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 3
+        }
+      ],
+      "population": 5515525
+    },
+    "VNM": {
+      "country_en": "Vietnam",
+      "country_uk": "В'єтнам",
+      "continent": "Asia",
+      "dominant_religion": "Індуїзм",
+      "dominant_percentage": 24.3,
+      "stats": [
+        {
+          "name": "Індуїзм",
+          "percentage": 24.3
+        },
+        {
+          "name": "Іслам",
+          "percentage": 23.7
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 19.4
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 16.9
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.7
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 4.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.2
+        }
+      ],
+      "population": 95540395
+    },
+    "KHM": {
+      "country_en": "Cambodia",
+      "country_uk": "Камбоджа",
+      "continent": "Asia",
+      "dominant_religion": "Індуїзм",
+      "dominant_percentage": 27.2,
+      "stats": [
+        {
+          "name": "Індуїзм",
+          "percentage": 27.2
+        },
+        {
+          "name": "Іслам",
+          "percentage": 24.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 18.6
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 14.4
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.4
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5.5
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.7
+        }
+      ],
+      "population": 16249798
+    },
+    "LUX": {
+      "country_en": "Luxembourg",
+      "country_uk": "Люксембург",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 68.4,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 68.4
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 21.3
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.4
+        }
+      ],
+      "population": 607950
+    },
+    "ARE": {
+      "country_en": "United Arab Emirates",
+      "country_uk": "Об'єднані Арабські Емірати",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 24.8,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 24.8
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 24.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 21.3
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 14.9
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 4.7
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.1
+        }
+      ],
+      "population": 9630959
+    },
+    "BEL": {
+      "country_en": "Belgium",
+      "country_uk": "Бельгія",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 68.8,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 68.8
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.8
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7.4
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.1
+        }
+      ],
+      "population": 11433256
+    },
+    "GEO": {
+      "country_en": "Georgia",
+      "country_uk": "Грузія",
+      "continent": "Asia",
+      "dominant_religion": "Індуїзм",
+      "dominant_percentage": 27,
+      "stats": [
+        {
+          "name": "Індуїзм",
+          "percentage": 27
+        },
+        {
+          "name": "Іслам",
+          "percentage": 23.4
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 18.7
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 16
+        },
+        {
+          "name": "Християнство",
+          "percentage": 6.8
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 4.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.2
+        }
+      ],
+      "population": 3726549
+    },
+    "MKD": {
+      "country_en": "North Macedonia",
+      "country_uk": "Північна Македонія",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 70.4,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 70.4
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.6
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.4
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.7
+        }
+      ],
+      "population": 2082958
+    },
+    "ALB": {
+      "country_en": "Albania",
+      "country_uk": "Албанія",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 69.2,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 69.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 19.8
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.2
+        }
+      ],
+      "population": 2866376
+    },
+    "AZE": {
+      "country_en": "Azerbaijan",
+      "country_uk": "Азербайджан",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 25.2,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 25.2
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 24.9
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 18.7
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 16
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5.2
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.9
+        }
+      ],
+      "population": 9939800
+    },
+    "TUR": {
+      "country_en": "Turkey",
+      "country_uk": "Туреччина",
+      "continent": "Asia",
+      "dominant_religion": "Індуїзм",
+      "dominant_percentage": 26,
+      "stats": [
+        {
+          "name": "Індуїзм",
+          "percentage": 26
+        },
+        {
+          "name": "Іслам",
+          "percentage": 24.9
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 21.3
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 13.7
+        },
+        {
+          "name": "Християнство",
+          "percentage": 6.4
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 4.5
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.1
+        }
+      ],
+      "population": 82319724
+    },
+    "ESP": {
+      "country_en": "Spain",
+      "country_uk": "Іспанія",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 71.2,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 71.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 18.7
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 3
+        }
+      ],
+      "population": 46796540
+    },
+    "LAO": {
+      "country_en": "Laos",
+      "country_uk": "Лаос",
+      "continent": "Asia",
+      "dominant_religion": "Індуїзм",
+      "dominant_percentage": 25.1,
+      "stats": [
+        {
+          "name": "Індуїзм",
+          "percentage": 25.1
+        },
+        {
+          "name": "Іслам",
+          "percentage": 24.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 19.5
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 15.9
+        },
+        {
+          "name": "Християнство",
+          "percentage": 6.8
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5.5
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.1
+        }
+      ],
+      "population": 7061507
+    },
+    "KGZ": {
+      "country_en": "Kyrgyzstan",
+      "country_uk": "Киргизстан",
+      "continent": "Asia",
+      "dominant_religion": "Індуїзм",
+      "dominant_percentage": 26.4,
+      "stats": [
+        {
+          "name": "Індуїзм",
+          "percentage": 26.4
+        },
+        {
+          "name": "Іслам",
+          "percentage": 23.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 19
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 16.5
+        },
+        {
+          "name": "Християнство",
+          "percentage": 6.4
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5.3
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.2
+        }
+      ],
+      "population": 6322800
+    },
+    "ARM": {
+      "country_en": "Armenia",
+      "country_uk": "Вірменія",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 26.4,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 26.4
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 24.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 21
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 13.7
+        },
+        {
+          "name": "Християнство",
+          "percentage": 6.7
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 4.7
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.3
+        }
+      ],
+      "population": 2951776
+    },
+    "DNK": {
+      "country_en": "Denmark",
+      "country_uk": "Данія",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 70.3,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 70.3
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.4
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.7
+        }
+      ],
+      "population": 5793636
+    },
+    "LBY": {
+      "country_en": "Libya",
+      "country_uk": "Лівія",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 49.9,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 49.9
+        },
+        {
+          "name": "Іслам",
+          "percentage": 39.4
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 6678567
+    },
+    "TUN": {
+      "country_en": "Tunisia",
+      "country_uk": "Туніс",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 52.5,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 52.5
+        },
+        {
+          "name": "Іслам",
+          "percentage": 38.2
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.3
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 11565204
+    },
+    "ROU": {
+      "country_en": "Romania",
+      "country_uk": "Румунія",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 69.5,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 69.5
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.2
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.2
+        }
+      ],
+      "population": 19466145
+    },
+    "HUN": {
+      "country_en": "Hungary",
+      "country_uk": "Угорщина",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 69.6,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 69.6
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 19.8
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7.2
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.4
+        }
+      ],
+      "population": 9775564
+    },
+    "SVK": {
+      "country_en": "Slovakia",
+      "country_uk": "Словаччина",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 69,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 69
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.2
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7.5
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.3
+        }
+      ],
+      "population": 5446771
+    },
+    "POL": {
+      "country_en": "Poland",
+      "country_uk": "Польща",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 71.3,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 71.3
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 18.4
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7.2
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.2
+        }
+      ],
+      "population": 37974750
+    },
+    "IRL": {
+      "country_en": "Ireland",
+      "country_uk": "Ірландія",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 69.9,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 69.9
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.9
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.2
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.9
+        }
+      ],
+      "population": 4867309
+    },
+    "GBR": {
+      "country_en": "United Kingdom",
+      "country_uk": "Велика Британія",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 71.2,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 71.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 18.2
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7.4
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.2
+        }
+      ],
+      "population": 66460344
+    },
+    "GRC": {
+      "country_en": "Greece",
+      "country_uk": "Греція",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 70.5,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 70.5
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 19.4
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.2
+        }
+      ],
+      "population": 10731726
+    },
+    "ZMB": {
+      "country_en": "Zambia",
+      "country_uk": "Замбія",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 47.7,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 47.7
+        },
+        {
+          "name": "Іслам",
+          "percentage": 42
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.4
+        },
+        {
+          "name": "Інші",
+          "percentage": 0.9
+        }
+      ],
+      "population": 17351822
+    },
+    "SLE": {
+      "country_en": "Sierra Leone",
+      "country_uk": "Сьєрра-Леоне",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 48.9,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 48.9
+        },
+        {
+          "name": "Іслам",
+          "percentage": 40.5
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.5
+        },
+        {
+          "name": "Інші",
+          "percentage": 1.1
+        }
+      ],
+      "population": 7650154
+    },
+    "GIN": {
+      "country_en": "Guinea",
+      "country_uk": "Гвінея",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 50.1,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 50.1
+        },
+        {
+          "name": "Іслам",
+          "percentage": 39.5
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.4
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 12414318
+    },
+    "LBR": {
+      "country_en": "Liberia",
+      "country_uk": "Ліберія",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 51.5,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 51.5
+        },
+        {
+          "name": "Іслам",
+          "percentage": 39.5
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 0.9
+        }
+      ],
+      "population": 4818977
+    },
+    "CAF": {
+      "country_en": "Central African Republic",
+      "country_uk": "Центральноафриканська Республіка",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 48.3,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 48.3
+        },
+        {
+          "name": "Іслам",
+          "percentage": 40.9
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 4666377
+    },
+    "SDN": {
+      "country_en": "Sudan",
+      "country_uk": "Судан",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 47.6,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 47.6
+        },
+        {
+          "name": "Іслам",
+          "percentage": 42.9
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.5
+        },
+        {
+          "name": "Інші",
+          "percentage": 1.1
+        }
+      ],
+      "population": 41801533
+    },
+    "DJI": {
+      "country_en": "Djibouti",
+      "country_uk": "Джібуті",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 49.9,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 49.9
+        },
+        {
+          "name": "Іслам",
+          "percentage": 40.4
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.5
+        },
+        {
+          "name": "Інші",
+          "percentage": 1.1
+        }
+      ],
+      "population": 958920
+    },
+    "ERI": {
+      "country_en": "Eritrea",
+      "country_uk": "Еритрея",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 49.8,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 49.8
+        },
+        {
+          "name": "Іслам",
+          "percentage": 40.2
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 3213972
+    },
+    "AUT": {
+      "country_en": "Austria",
+      "country_uk": "Австрія",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 72.1,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 72.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 18.9
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.3
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.7
+        }
+      ],
+      "population": 8840521
+    },
+    "IRQ": {
+      "country_en": "Iraq",
+      "country_uk": "Ірак",
+      "continent": "Asia",
+      "dominant_religion": "Індуїзм",
+      "dominant_percentage": 25.1,
+      "stats": [
+        {
+          "name": "Індуїзм",
+          "percentage": 25.1
+        },
+        {
+          "name": "Іслам",
+          "percentage": 24.6
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.2
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 15.8
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.3
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 4.4
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.6
+        }
+      ],
+      "population": 38433600
+    },
+    "ITA": {
+      "country_en": "Italy",
+      "country_uk": "Італія",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 72,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 72
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 18.2
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.8
+        }
+      ],
+      "population": 60421760
+    },
+    "CHE": {
+      "country_en": "Switzerland",
+      "country_uk": "Швейцарія",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 69.1,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 69.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 3
+        }
+      ],
+      "population": 8513227
+    },
+    "IRN": {
+      "country_en": "Iran",
+      "country_uk": "Іран",
+      "continent": "Asia",
+      "dominant_religion": "Індуїзм",
+      "dominant_percentage": 24.3,
+      "stats": [
+        {
+          "name": "Індуїзм",
+          "percentage": 24.3
+        },
+        {
+          "name": "Іслам",
+          "percentage": 23.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 22.2
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 15.9
+        },
+        {
+          "name": "Християнство",
+          "percentage": 6.6
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.8
+        }
+      ],
+      "population": 81800269
+    },
+    "NLD": {
+      "country_en": "Netherlands",
+      "country_uk": "Нідерланди",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 69.8,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 69.8
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 21
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.3
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.8
+        }
+      ],
+      "population": 17231624
+    },
+    "LIE": {
+      "country_en": "Liechtenstein",
+      "country_uk": "Ліхтенштейн",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 69,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 69
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 21.1
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 3
+        }
+      ],
+      "population": 37910
+    },
+    "CIV": {
+      "country_en": "Ivory Coast",
+      "country_uk": "Кот д'Івуар",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 52.3,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 52.3
+        },
+        {
+          "name": "Іслам",
+          "percentage": 37.4
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.3
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 25069229
+    },
+    "SRB": {
+      "country_en": "Republic of Serbia",
+      "country_uk": "Республіка Сербія",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 68.2,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 68.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.5
+        },
+        {
+          "name": "Іслам",
+          "percentage": 8
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.3
+        }
+      ],
+      "population": 6982604
+    },
+    "MLI": {
+      "country_en": "Mali",
+      "country_uk": "Малі",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 49.8,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 49.8
+        },
+        {
+          "name": "Іслам",
+          "percentage": 39.6
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.5
+        },
+        {
+          "name": "Інші",
+          "percentage": 1.1
+        }
+      ],
+      "population": 19077690
+    },
+    "SEN": {
+      "country_en": "Senegal",
+      "country_uk": "Сенегал",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 49.3,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 49.3
+        },
+        {
+          "name": "Іслам",
+          "percentage": 41.2
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.5
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 15854360
+    },
+    "NGA": {
+      "country_en": "Nigeria",
+      "country_uk": "Нігерія",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 46.6,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 46.6
+        },
+        {
+          "name": "Іслам",
+          "percentage": 43
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.4
+        },
+        {
+          "name": "Інші",
+          "percentage": 1.1
+        }
+      ],
+      "population": 195874740
+    },
+    "BEN": {
+      "country_en": "Benin",
+      "country_uk": "Бенін",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 50.1,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 50.1
+        },
+        {
+          "name": "Іслам",
+          "percentage": 39.8
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 0.9
+        }
+      ],
+      "population": 11485048
+    },
+    "AGO": {
+      "country_en": "Angola",
+      "country_uk": "Ангола",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 53.9,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 53.9
+        },
+        {
+          "name": "Іслам",
+          "percentage": 36.5
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 30809762
+    },
+    "HRV": {
+      "country_en": "Croatia",
+      "country_uk": "Хорватія",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 70.4,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 70.4
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 19.8
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.9
+        }
+      ],
+      "population": 4087843
+    },
+    "SVN": {
+      "country_en": "Slovenia",
+      "country_uk": "Словенія",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 70.5,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 70.5
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.7
+        }
+      ],
+      "population": 2073894
+    },
+    "QAT": {
+      "country_en": "Qatar",
+      "country_uk": "Катар",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 25.6,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 25.6
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 24.4
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.2
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 14.1
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.4
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.3
+        }
+      ],
+      "population": 2781677
+    },
+    "SAU": {
+      "country_en": "Saudi Arabia",
+      "country_uk": "Саудівська Аравія",
+      "continent": "Asia",
+      "dominant_religion": "Індуїзм",
+      "dominant_percentage": 26,
+      "stats": [
+        {
+          "name": "Індуїзм",
+          "percentage": 26
+        },
+        {
+          "name": "Іслам",
+          "percentage": 23.4
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.8
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 14
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.2
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.1
+        }
+      ],
+      "population": 33699947
+    },
+    "BWA": {
+      "country_en": "Botswana",
+      "country_uk": "Ботсвана",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 49.2,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 49.2
+        },
+        {
+          "name": "Іслам",
+          "percentage": 40.7
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.2
+        },
+        {
+          "name": "Інші",
+          "percentage": 0.9
+        }
+      ],
+      "population": 2254126
+    },
+    "ZWE": {
+      "country_en": "Zimbabwe",
+      "country_uk": "Зімбабве",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 51.7,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 51.7
+        },
+        {
+          "name": "Іслам",
+          "percentage": 38.1
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.3
+        },
+        {
+          "name": "Інші",
+          "percentage": 0.9
+        }
+      ],
+      "population": 14439018
+    },
+    "PAK": {
+      "country_en": "Pakistan",
+      "country_uk": "Пакистан",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 26.3,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 26.3
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 25.5
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 19.9
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 13.8
+        },
+        {
+          "name": "Християнство",
+          "percentage": 6.7
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 4.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.2
+        }
+      ],
+      "population": 212215030
+    },
+    "BGR": {
+      "country_en": "Bulgaria",
+      "country_uk": "Болгарія",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 69.1,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 69.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 21.2
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.7
+        },
+        {
+          "name": "Інші",
+          "percentage": 3
+        }
+      ],
+      "population": 7025037
+    },
+    "THA": {
+      "country_en": "Thailand",
+      "country_uk": "Таїланд",
+      "continent": "Asia",
+      "dominant_religion": "Індуїзм",
+      "dominant_percentage": 26.3,
+      "stats": [
+        {
+          "name": "Індуїзм",
+          "percentage": 26.3
+        },
+        {
+          "name": "Іслам",
+          "percentage": 23.8
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.8
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 14.2
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.1
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 4.7
+        },
+        {
+          "name": "Інші",
+          "percentage": 3
+        }
+      ],
+      "population": 69428524
+    },
+    "SMR": {
+      "country_en": "San Marino",
+      "country_uk": "Сан-Марино",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 70.5,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 70.5
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 19.8
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.8
+        }
+      ],
+      "population": 33785
+    },
+    "HTI": {
+      "country_en": "Haiti",
+      "country_uk": "Гаїті",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 74.7,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 74.7
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 15.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 9.7
+        }
+      ],
+      "population": 11123176
+    },
+    "DOM": {
+      "country_en": "Dominican Republic",
+      "country_uk": "Домініканська Республіка",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 75.4,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 75.4
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 15.4
+        },
+        {
+          "name": "Інші",
+          "percentage": 9.2
+        }
+      ],
+      "population": 10627165
+    },
+    "TCD": {
+      "country_en": "Chad",
+      "country_uk": "Чад",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 48.5,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 48.5
+        },
+        {
+          "name": "Іслам",
+          "percentage": 40.7
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 0.9
+        }
+      ],
+      "population": 15477751
+    },
+    "KWT": {
+      "country_en": "Kuwait",
+      "country_uk": "Кувейт",
+      "continent": "Asia",
+      "dominant_religion": "Індуїзм",
+      "dominant_percentage": 24.8,
+      "stats": [
+        {
+          "name": "Індуїзм",
+          "percentage": 24.8
+        },
+        {
+          "name": "Іслам",
+          "percentage": 23.5
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.4
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 15.9
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.1
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5.5
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.9
+        }
+      ],
+      "population": 4137309
+    },
+    "SLV": {
+      "country_en": "El Salvador",
+      "country_uk": "Сальвадор",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 74.4,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 74.4
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 15.7
+        },
+        {
+          "name": "Інші",
+          "percentage": 9.9
+        }
+      ],
+      "population": 6420744
+    },
+    "GTM": {
+      "country_en": "Guatemala",
+      "country_uk": "Гватемала",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 76.6,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 76.6
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 14.2
+        },
+        {
+          "name": "Інші",
+          "percentage": 9.2
+        }
+      ],
+      "population": 17247807
+    },
+    "TLS": {
+      "country_en": "East Timor",
+      "country_uk": "Східний Тимор",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 68.3,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 68.3
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.6
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.2
+        }
+      ],
+      "population": 1267972
+    },
+    "BRN": {
+      "country_en": "Brunei",
+      "country_uk": "Бруней",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 25.2,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 25.2
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 24.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 14.9
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.5
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.3
+        }
+      ],
+      "population": 428962
+    },
+    "MCO": {
+      "country_en": "Monaco",
+      "country_uk": "Монако",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 68.6,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 68.6
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.3
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.3
+        }
+      ],
+      "population": 38682
+    },
+    "DZA": {
+      "country_en": "Algeria",
+      "country_uk": "Алжир",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 50.2,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 50.2
+        },
+        {
+          "name": "Іслам",
+          "percentage": 40.2
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 42228429
+    },
+    "MOZ": {
+      "country_en": "Mozambique",
+      "country_uk": "Мозамбік",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 52.6,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 52.6
+        },
+        {
+          "name": "Іслам",
+          "percentage": 37.7
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.7
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 29495962
+    },
+    "SWZ": {
+      "country_en": "eSwatini",
+      "country_uk": "eSwatini",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 50.3,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 50.3
+        },
+        {
+          "name": "Іслам",
+          "percentage": 39.9
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 0.9
+        }
+      ],
+      "population": 1136191
+    },
+    "BDI": {
+      "country_en": "Burundi",
+      "country_uk": "Бурунді",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 49.2,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 49.2
+        },
+        {
+          "name": "Іслам",
+          "percentage": 40.8
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 11175378
+    },
+    "RWA": {
+      "country_en": "Rwanda",
+      "country_uk": "Руанда",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 50.4,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 50.4
+        },
+        {
+          "name": "Іслам",
+          "percentage": 39.8
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 0.9
+        }
+      ],
+      "population": 12301939
+    },
+    "MMR": {
+      "country_en": "Myanmar",
+      "country_uk": "М'янма",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 27.1,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 27.1
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 27
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 17.9
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 13.6
+        },
+        {
+          "name": "Християнство",
+          "percentage": 6.3
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5
+        },
+        {
+          "name": "Інші",
+          "percentage": 3
+        }
+      ],
+      "population": 53708395
+    },
+    "BGD": {
+      "country_en": "Bangladesh",
+      "country_uk": "Бангладеш",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 26,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 26
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 24.3
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 21.3
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 13.7
+        },
+        {
+          "name": "Християнство",
+          "percentage": 6.5
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.2
+        }
+      ],
+      "population": 161356039
+    },
+    "AND": {
+      "country_en": "Andorra",
+      "country_uk": "Андорра",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 71.1,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 71.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 19.6
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.7
+        }
+      ],
+      "population": 77006
+    },
+    "AFG": {
+      "country_en": "Afghanistan",
+      "country_uk": "Афганістан",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 24.6,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 24.6
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 23.5
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 21.3
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 15.1
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.3
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.1
+        }
+      ],
+      "population": 37172386
+    },
+    "MNE": {
+      "country_en": "Montenegro",
+      "country_uk": "Чорногорія",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 69.1,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 69.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 21
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.8
+        }
+      ],
+      "population": 622227
+    },
+    "BIH": {
+      "country_en": "Bosnia and Herzegovina",
+      "country_uk": "Боснія і Герцеговина",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 70.5,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 70.5
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.4
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 3
+        }
+      ],
+      "population": 3323929
+    },
+    "UGA": {
+      "country_en": "Uganda",
+      "country_uk": "Уганда",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 48.9,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 48.9
+        },
+        {
+          "name": "Іслам",
+          "percentage": 40.8
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.4
+        },
+        {
+          "name": "Інші",
+          "percentage": 0.9
+        }
+      ],
+      "population": 42723139
+    },
+    "CUB": {
+      "country_en": "Cuba",
+      "country_uk": "Куба",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 74.6,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 74.6
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 15.2
+        },
+        {
+          "name": "Інші",
+          "percentage": 10.2
+        }
+      ],
+      "population": 11338138
+    },
+    "HND": {
+      "country_en": "Honduras",
+      "country_uk": "Гондурас",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 74.6,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 74.6
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 15.2
+        },
+        {
+          "name": "Інші",
+          "percentage": 10.2
+        }
+      ],
+      "population": 9587522
+    },
+    "ECU": {
+      "country_en": "Ecuador",
+      "country_uk": "Еквадор",
+      "continent": "South America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 85.2,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 85.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 9.4
+        },
+        {
+          "name": "Інші",
+          "percentage": 5.3
+        }
+      ],
+      "population": 17084357
+    },
+    "COL": {
+      "country_en": "Colombia",
+      "country_uk": "Колумбія",
+      "continent": "South America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 83.2,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 83.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 11.5
+        },
+        {
+          "name": "Інші",
+          "percentage": 5.3
+        }
+      ],
+      "population": 49648685
+    },
+    "PRY": {
+      "country_en": "Paraguay",
+      "country_uk": "Парагвай",
+      "continent": "South America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 85,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 85
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 10.3
+        },
+        {
+          "name": "Інші",
+          "percentage": 4.6
+        }
+      ],
+      "population": 6956071
+    },
+    "PRT": {
+      "country_en": "Portugal",
+      "country_uk": "Португалія",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 68.4,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 68.4
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 21.3
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7.5
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.8
+        }
+      ],
+      "population": 10283822
+    },
+    "MDA": {
+      "country_en": "Moldova",
+      "country_uk": "Молдова",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 71.2,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 71.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 19.6
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.7
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.6
+        }
+      ],
+      "population": 2706049
+    },
+    "TKM": {
+      "country_en": "Turkmenistan",
+      "country_uk": "Туркменістан",
+      "continent": "Asia",
+      "dominant_religion": "Індуїзм",
+      "dominant_percentage": 24.4,
+      "stats": [
+        {
+          "name": "Індуїзм",
+          "percentage": 24.4
+        },
+        {
+          "name": "Іслам",
+          "percentage": 24.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.4
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 15.5
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.3
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.2
+        }
+      ],
+      "population": 5850908
+    },
+    "JOR": {
+      "country_en": "Jordan",
+      "country_uk": "Йорданія",
+      "continent": "Asia",
+      "dominant_religion": "Індуїзм",
+      "dominant_percentage": 24.8,
+      "stats": [
+        {
+          "name": "Індуїзм",
+          "percentage": 24.8
+        },
+        {
+          "name": "Іслам",
+          "percentage": 23.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 21.7
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 16.3
+        },
+        {
+          "name": "Християнство",
+          "percentage": 6.5
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 4.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.9
+        }
+      ],
+      "population": 9956011
+    },
+    "NPL": {
+      "country_en": "Nepal",
+      "country_uk": "Непал",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 26.7,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 26.7
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 25.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 18.6
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 14.3
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.2
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.1
+        }
+      ],
+      "population": 28087871
+    },
+    "LSO": {
+      "country_en": "Lesotho",
+      "country_uk": "Лесото",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 47.2,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 47.2
+        },
+        {
+          "name": "Іслам",
+          "percentage": 42.5
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.3
+        },
+        {
+          "name": "Інші",
+          "percentage": 1.1
+        }
+      ],
+      "population": 2108132
+    },
+    "CMR": {
+      "country_en": "Cameroon",
+      "country_uk": "Камерун",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 50.9,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 50.9
+        },
+        {
+          "name": "Іслам",
+          "percentage": 39.1
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 0.9
+        }
+      ],
+      "population": 25216237
+    },
+    "GAB": {
+      "country_en": "Gabon",
+      "country_uk": "Габон",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 46.4,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 46.4
+        },
+        {
+          "name": "Іслам",
+          "percentage": 42.8
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 2119275
+    },
+    "NER": {
+      "country_en": "Niger",
+      "country_uk": "Нігер",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 45.5,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 45.5
+        },
+        {
+          "name": "Іслам",
+          "percentage": 43.9
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 1.1
+        }
+      ],
+      "population": 22442948
+    },
+    "BFA": {
+      "country_en": "Burkina Faso",
+      "country_uk": "Буркіна Фасо",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 49.3,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 49.3
+        },
+        {
+          "name": "Іслам",
+          "percentage": 40.9
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 0.9
+        }
+      ],
+      "population": 19751535
+    },
+    "TGO": {
+      "country_en": "Togo",
+      "country_uk": "Того",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 51.3,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 51.3
+        },
+        {
+          "name": "Іслам",
+          "percentage": 38.4
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.2
+        },
+        {
+          "name": "Інші",
+          "percentage": 1.1
+        }
+      ],
+      "population": 7889094
+    },
+    "GHA": {
+      "country_en": "Ghana",
+      "country_uk": "Гана",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 50.4,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 50.4
+        },
+        {
+          "name": "Іслам",
+          "percentage": 39.1
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 0.9
+        }
+      ],
+      "population": 29767108
+    },
+    "GNB": {
+      "country_en": "Guinea-Bissau",
+      "country_uk": "Гвінея-Бісау",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 53.3,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 53.3
+        },
+        {
+          "name": "Іслам",
+          "percentage": 36.9
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 1874309
+    },
+    "GIB": {
+      "country_en": "Gibraltar",
+      "country_uk": "Гібралтар",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 68.6,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 68.6
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 21
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.8
+        }
+      ],
+      "population": 33718
+    },
+    "USA": {
+      "country_en": "United States of America",
+      "country_uk": "Сполучені Штати Америки",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 75.1,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 75.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 15.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 9.8
+        }
+      ],
+      "population": 326687501
+    },
+    "CAN": {
+      "country_en": "Canada",
+      "country_uk": "Канада",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 75.4,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 75.4
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 14.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 9.8
+        }
+      ],
+      "population": 37057765
+    },
+    "MEX": {
+      "country_en": "Mexico",
+      "country_uk": "Мексика",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 75.7,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 75.7
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 14.7
+        },
+        {
+          "name": "Інші",
+          "percentage": 9.6
+        }
+      ],
+      "population": 126190788
+    },
+    "BLZ": {
+      "country_en": "Belize",
+      "country_uk": "Беліз",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 76.4,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 76.4
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 13.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 9.8
+        }
+      ],
+      "population": 383071
+    },
+    "PAN": {
+      "country_en": "Panama",
+      "country_uk": "Панама",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 73.7,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 73.7
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 15.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 10.4
+        }
+      ],
+      "population": 4176873
+    },
+    "VEN": {
+      "country_en": "Venezuela",
+      "country_uk": "Венесуела",
+      "continent": "South America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 84.4,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 84.4
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 10.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 5
+        }
+      ],
+      "population": 28870195
+    },
+    "PNG": {
+      "country_en": "Papua New Guinea",
+      "country_uk": "Папуа Нова Гвінея",
+      "continent": "Oceania",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 60.6,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 60.6
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 25
+        },
+        {
+          "name": "Інші",
+          "percentage": 14.4
+        }
+      ],
+      "population": 8606316
+    },
+    "EGY": {
+      "country_en": "Egypt",
+      "country_uk": "Єгипет",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 52.1,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 52.1
+        },
+        {
+          "name": "Іслам",
+          "percentage": 36.9
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 1.1
+        }
+      ],
+      "population": 98423595
+    },
+    "YEM": {
+      "country_en": "Yemen",
+      "country_uk": "Ємен",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 25.1,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 25.1
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 24.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 21.2
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 14.4
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.6
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 4.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.9
+        }
+      ],
+      "population": 28498687
+    },
+    "MRT": {
+      "country_en": "Mauritania",
+      "country_uk": "Мавританія",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 53,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 53
+        },
+        {
+          "name": "Іслам",
+          "percentage": 37.1
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9
+        },
+        {
+          "name": "Інші",
+          "percentage": 0.9
+        }
+      ],
+      "population": 4403319
+    },
+    "GNQ": {
+      "country_en": "Equatorial Guinea",
+      "country_uk": "Екваторіальна Гвінея",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 50.6,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 50.6
+        },
+        {
+          "name": "Іслам",
+          "percentage": 39.9
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 0.9
+        }
+      ],
+      "population": 1308974
+    },
+    "GMB": {
+      "country_en": "Gambia",
+      "country_uk": "Гамбія",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 51.1,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 51.1
+        },
+        {
+          "name": "Іслам",
+          "percentage": 39.2
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.7
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 2280102
+    },
+    "HKG": {
+      "country_en": "Hong Kong S.A.R.",
+      "country_uk": "Гонконг S.A.R.",
+      "continent": "Asia",
+      "dominant_religion": "Індуїзм",
+      "dominant_percentage": 25.6,
+      "stats": [
+        {
+          "name": "Індуїзм",
+          "percentage": 25.6
+        },
+        {
+          "name": "Іслам",
+          "percentage": 24
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 22.2
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 14
+        },
+        {
+          "name": "Християнство",
+          "percentage": 6.5
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 4.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.9
+        }
+      ],
+      "population": 7451000
+    },
+    "VAT": {
+      "country_en": "Vatican",
+      "country_uk": "Ватикан",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 69.6,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 69.6
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.7
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.9
+        }
+      ],
+      "population": 1000000
+    },
+    "ATA": {
+      "country_en": "Antarctica",
+      "country_uk": "Антарктида",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 69.7,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 69.7
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.9
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.7
+        }
+      ],
+      "population": 1000000
+    },
+    "AUS": {
+      "country_en": "Australia",
+      "country_uk": "Австралія",
+      "continent": "Oceania",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 59.2,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 59.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 26.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 13.9
+        }
+      ],
+      "population": 24982688
+    },
+    "GRL": {
+      "country_en": "Greenland",
+      "country_uk": "Гренландія",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 72.2,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 72.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 17.2
+        },
+        {
+          "name": "Інші",
+          "percentage": 10.6
+        }
+      ],
+      "population": 56025
+    },
+    "FJI": {
+      "country_en": "Fiji",
+      "country_uk": "Фіджі",
+      "continent": "Oceania",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 57.6,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 57.6
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 26.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 15.7
+        }
+      ],
+      "population": 883483
+    },
+    "NZL": {
+      "country_en": "New Zealand",
+      "country_uk": "Нова Зеландія",
+      "continent": "Oceania",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 59.9,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 59.9
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 24.7
+        },
+        {
+          "name": "Інші",
+          "percentage": 15.4
+        }
+      ],
+      "population": 4841000
+    },
+    "NCL": {
+      "country_en": "New Caledonia",
+      "country_uk": "Нова Каледонія",
+      "continent": "Oceania",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 58.4,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 58.4
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 24.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 16.7
+        }
+      ],
+      "population": 284060
+    },
+    "MDG": {
+      "country_en": "Madagascar",
+      "country_uk": "Мадагаскар",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 52.5,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 52.5
+        },
+        {
+          "name": "Іслам",
+          "percentage": 38.2
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.3
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 26262368
+    },
+    "PHL": {
+      "country_en": "Philippines",
+      "country_uk": "Філіппіни",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 26.4,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 26.4
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 23.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 21.1
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 15.2
+        },
+        {
+          "name": "Християнство",
+          "percentage": 6.8
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 4.5
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.8
+        }
+      ],
+      "population": 106651922
+    },
+    "LKA": {
+      "country_en": "Sri Lanka",
+      "country_uk": "Шрі-Ланка",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 25.6,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 25.6
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 24.4
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 15.4
+        },
+        {
+          "name": "Християнство",
+          "percentage": 6.7
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 4.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.1
+        }
+      ],
+      "population": 21670000
+    },
+    "CUW": {
+      "country_en": "Curaçao",
+      "country_uk": "Кюрасао",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 75.5,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 75.5
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 14.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 9.9
+        }
+      ],
+      "population": 159800
+    },
+    "ABW": {
+      "country_en": "Aruba",
+      "country_uk": "Аруба",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 74.8,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 74.8
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 15.2
+        },
+        {
+          "name": "Інші",
+          "percentage": 10
+        }
+      ],
+      "population": 105845
+    },
+    "BHS": {
+      "country_en": "The Bahamas",
+      "country_uk": "Багамські острови",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 76.4,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 76.4
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 13.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 9.7
+        }
+      ],
+      "population": 385640
+    },
+    "TCA": {
+      "country_en": "Turks and Caicos Islands",
+      "country_uk": "Острови Теркс і Кайкос",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 74.8,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 74.8
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 15
+        },
+        {
+          "name": "Інші",
+          "percentage": 10.2
+        }
+      ],
+      "population": 37665
+    },
+    "TWN": {
+      "country_en": "Taiwan",
+      "country_uk": "Тайвань",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 67.2,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 67.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 22.7
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.2
+        }
+      ],
+      "population": 1000000
+    },
+    "JPN": {
+      "country_en": "Japan",
+      "country_uk": "Японія",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 25.6,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 25.6
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 23.7
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.9
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 14.8
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5.2
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.9
+        }
+      ],
+      "population": 126529100
+    },
+    "SPM": {
+      "country_en": "Saint Pierre and Miquelon",
+      "country_uk": "Сен-П'єр і Мікелон",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 75.2,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 75.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 14.2
+        },
+        {
+          "name": "Інші",
+          "percentage": 10.6
+        }
+      ],
+      "population": 1000000
+    },
+    "ISL": {
+      "country_en": "Iceland",
+      "country_uk": "Ісландія",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 68,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 68
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 22.1
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.3
+        }
+      ],
+      "population": 352721
+    },
+    "PCN": {
+      "country_en": "Pitcairn Islands",
+      "country_uk": "Острови Піткерн",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 67,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 67
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 22.3
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7.7
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.1
+        }
+      ],
+      "population": 1000000
+    },
+    "PYF": {
+      "country_en": "French Polynesia",
+      "country_uk": "Французька Полінезія",
+      "continent": "Oceania",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 60,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 60
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 26
+        },
+        {
+          "name": "Інші",
+          "percentage": 14
+        }
+      ],
+      "population": 277679
+    },
+    "ATF": {
+      "country_en": "French Southern and Antarctic Lands",
+      "country_uk": "Французькі південні та антарктичні землі",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 69.7,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 69.7
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 19.8
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7.5
+        },
+        {
+          "name": "Інші",
+          "percentage": 3
+        }
+      ],
+      "population": 1000000
+    },
+    "SYC": {
+      "country_en": "Seychelles",
+      "country_uk": "Сейшельські острови",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 49.3,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 49.3
+        },
+        {
+          "name": "Іслам",
+          "percentage": 41.6
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 96762
+    },
+    "KIR": {
+      "country_en": "Kiribati",
+      "country_uk": "Кірібаті",
+      "continent": "Oceania",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 59.7,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 59.7
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 25.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 14.7
+        }
+      ],
+      "population": 115847
+    },
+    "MHL": {
+      "country_en": "Marshall Islands",
+      "country_uk": "Маршаллові острови",
+      "continent": "Oceania",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 60.1,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 60.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 25.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 14
+        }
+      ],
+      "population": 58413
+    },
+    "TTO": {
+      "country_en": "Trinidad and Tobago",
+      "country_uk": "Тринідад і Тобаго",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 74.4,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 74.4
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 14.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 11.1
+        }
+      ],
+      "population": 1389858
+    },
+    "GRD": {
+      "country_en": "Grenada",
+      "country_uk": "Гренада",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 75.2,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 75.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 15.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 9.7
+        }
+      ],
+      "population": 111454
+    },
+    "VCT": {
+      "country_en": "Saint Vincent and the Grenadines",
+      "country_uk": "Сент-Вінсент і Гренадини",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 76.8,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 76.8
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 13.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 9.2
+        }
+      ],
+      "population": 110210
+    },
+    "BRB": {
+      "country_en": "Barbados",
+      "country_uk": "Барбадос",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 75,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 75
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 15.3
+        },
+        {
+          "name": "Інші",
+          "percentage": 9.6
+        }
+      ],
+      "population": 286641
+    },
+    "LCA": {
+      "country_en": "Saint Lucia",
+      "country_uk": "Сент-Люсія",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 74.8,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 74.8
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 15.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 9.6
+        }
+      ],
+      "population": 181889
+    },
+    "DMA": {
+      "country_en": "Dominica",
+      "country_uk": "Домініка",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 73.7,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 73.7
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 15.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 11.1
+        }
+      ],
+      "population": 71625
+    },
+    "UMI": {
+      "country_en": "United States Minor Outlying Islands",
+      "country_uk": "Віддалені малі острови США",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 69.4,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 69.4
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.7
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.1
+        }
+      ],
+      "population": 1000000
+    },
+    "MSR": {
+      "country_en": "Montserrat",
+      "country_uk": "Монсеррат",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 74.1,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 74.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 15.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 10.2
+        }
+      ],
+      "population": 1000000
+    },
+    "ATG": {
+      "country_en": "Antigua and Barbuda",
+      "country_uk": "Антигуа і Барбуда",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 75.3,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 75.3
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 15.2
+        },
+        {
+          "name": "Інші",
+          "percentage": 9.6
+        }
+      ],
+      "population": 96286
+    },
+    "KNA": {
+      "country_en": "Saint Kitts and Nevis",
+      "country_uk": "Сент-Кітс і Невіс",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 75.6,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 75.6
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 14.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 9.8
+        }
+      ],
+      "population": 52441
+    },
+    "VIR": {
+      "country_en": "United States Virgin Islands",
+      "country_uk": "Віргінські острови США",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 74,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 74
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 16
+        },
+        {
+          "name": "Інші",
+          "percentage": 9.9
+        }
+      ],
+      "population": 106977
+    },
+    "BLM": {
+      "country_en": "Saint Barthelemy",
+      "country_uk": "Сен-Бартелемі",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 75.8,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 75.8
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 15.2
+        },
+        {
+          "name": "Інші",
+          "percentage": 9.1
+        }
+      ],
+      "population": 1000000
+    },
+    "PRI": {
+      "country_en": "Puerto Rico",
+      "country_uk": "Пуерто Ріко",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 74.2,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 74.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 15.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 10.2
+        }
+      ],
+      "population": 3195153
+    },
+    "AIA": {
+      "country_en": "Anguilla",
+      "country_uk": "Ангілья",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 75.6,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 75.6
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 14.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 9.5
+        }
+      ],
+      "population": 1000000
+    },
+    "VGB": {
+      "country_en": "British Virgin Islands",
+      "country_uk": "Британські Віргінські острови",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 76.3,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 76.3
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 14.3
+        },
+        {
+          "name": "Інші",
+          "percentage": 9.4
+        }
+      ],
+      "population": 29802
+    },
+    "JAM": {
+      "country_en": "Jamaica",
+      "country_uk": "Ямайка",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 77.4,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 77.4
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 13.5
+        },
+        {
+          "name": "Інші",
+          "percentage": 9
+        }
+      ],
+      "population": 2934855
+    },
+    "CYM": {
+      "country_en": "Cayman Islands",
+      "country_uk": "Кайманові острови",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 72.5,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 72.5
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 16.3
+        },
+        {
+          "name": "Інші",
+          "percentage": 11.3
+        }
+      ],
+      "population": 64174
+    },
+    "BMU": {
+      "country_en": "Bermuda",
+      "country_uk": "Бермудські острови",
+      "continent": "North America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 74.9,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 74.9
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 15
+        },
+        {
+          "name": "Інші",
+          "percentage": 10.1
+        }
+      ],
+      "population": 63973
+    },
+    "SHN": {
+      "country_en": "Saint Helena",
+      "country_uk": "Свята Єлена",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 50.9,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 50.9
+        },
+        {
+          "name": "Іслам",
+          "percentage": 39.2
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 1.1
+        }
+      ],
+      "population": 1000000
+    },
+    "MUS": {
+      "country_en": "Mauritius",
+      "country_uk": "Маврикій",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 47.3,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 47.3
+        },
+        {
+          "name": "Іслам",
+          "percentage": 42.6
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 1265303
+    },
+    "COM": {
+      "country_en": "Comoros",
+      "country_uk": "Коморські острови",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 52.8,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 52.8
+        },
+        {
+          "name": "Іслам",
+          "percentage": 37.5
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 1.1
+        }
+      ],
+      "population": 832322
+    },
+    "STP": {
+      "country_en": "São Tomé and Principe",
+      "country_uk": "Сан-Томе і Принсіпі",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 47.6,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 47.6
+        },
+        {
+          "name": "Іслам",
+          "percentage": 41.7
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 211028
+    },
+    "CPV": {
+      "country_en": "Cabo Verde",
+      "country_uk": "Кабо Верде",
+      "continent": "Africa",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 50.1,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 50.1
+        },
+        {
+          "name": "Іслам",
+          "percentage": 40.1
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 8.7
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        }
+      ],
+      "population": 543767
+    },
+    "MLT": {
+      "country_en": "Malta",
+      "country_uk": "Мальта",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 66.4,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 66.4
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 22.9
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7.4
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.3
+        }
+      ],
+      "population": 484630
+    },
+    "JEY": {
+      "country_en": "Jersey",
+      "country_uk": "Джерсі",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 73.9,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 73.9
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 17.4
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.6
+        }
+      ],
+      "population": 1000000
+    },
+    "GGY": {
+      "country_en": "Guernsey",
+      "country_uk": "Гернсі",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 70.9,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 70.9
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 18.5
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7.5
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.1
+        }
+      ],
+      "population": 1000000
+    },
+    "IMN": {
+      "country_en": "Isle of Man",
+      "country_uk": "Острів Мен",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 68.3,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 68.3
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 21.8
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.8
+        }
+      ],
+      "population": 84077
+    },
+    "ALA": {
+      "country_en": "Aland",
+      "country_uk": "Аландські острови",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 71.9,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 71.9
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 18.3
+        },
+        {
+          "name": "Іслам",
+          "percentage": 6.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.3
+        }
+      ],
+      "population": 1000000
+    },
+    "FRO": {
+      "country_en": "Faroe Islands",
+      "country_uk": "Фарерські острови",
+      "continent": "Europe",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 68.4,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 68.4
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20
+        },
+        {
+          "name": "Іслам",
+          "percentage": 8.2
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.4
+        }
+      ],
+      "population": 48497
+    },
+    "IOT": {
+      "country_en": "British Indian Ocean Territory",
+      "country_uk": "Британська територія в Індійському океані",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 25,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 25
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 23.6
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 21.2
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 15.5
+        },
+        {
+          "name": "Християнство",
+          "percentage": 6.7
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5.2
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.9
+        }
+      ],
+      "population": 1000000
+    },
+    "SGP": {
+      "country_en": "Singapore",
+      "country_uk": "Сінгапур",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 25.8,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 25.8
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 25.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 19.2
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 15.4
+        },
+        {
+          "name": "Християнство",
+          "percentage": 6.6
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.8
+        }
+      ],
+      "population": 5638676
+    },
+    "NFK": {
+      "country_en": "Norfolk Island",
+      "country_uk": "Острів Норфолк",
+      "continent": "Oceania",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 59.8,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 59.8
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 26.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 13.4
+        }
+      ],
+      "population": 1000000
+    },
+    "COK": {
+      "country_en": "Cook Islands",
+      "country_uk": "Острови Кука",
+      "continent": "Oceania",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 62.4,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 62.4
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 24.3
+        },
+        {
+          "name": "Інші",
+          "percentage": 13.4
+        }
+      ],
+      "population": 1000000
+    },
+    "TON": {
+      "country_en": "Tonga",
+      "country_uk": "Тонга",
+      "continent": "Oceania",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 61.9,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 61.9
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 23.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 14.5
+        }
+      ],
+      "population": 103197
+    },
+    "WLF": {
+      "country_en": "Wallis and Futuna",
+      "country_uk": "Уолліс і Футуна",
+      "continent": "Oceania",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 61.5,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 61.5
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 24.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 13.6
+        }
+      ],
+      "population": 1000000
+    },
+    "WSM": {
+      "country_en": "Samoa",
+      "country_uk": "Самоа",
+      "continent": "Oceania",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 61.9,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 61.9
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 24.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 14
+        }
+      ],
+      "population": 196130
+    },
+    "SLB": {
+      "country_en": "Solomon Islands",
+      "country_uk": "Соломонові острови",
+      "continent": "Oceania",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 61.9,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 61.9
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 23
+        },
+        {
+          "name": "Інші",
+          "percentage": 15
+        }
+      ],
+      "population": 652858
+    },
+    "TUV": {
+      "country_en": "Tuvalu",
+      "country_uk": "Тувалу",
+      "continent": "Oceania",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 60.7,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 60.7
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 23.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 15.4
+        }
+      ],
+      "population": 11508
+    },
+    "MDV": {
+      "country_en": "Maldives",
+      "country_uk": "Мальдіви",
+      "continent": "Asia",
+      "dominant_religion": "Індуїзм",
+      "dominant_percentage": 25.8,
+      "stats": [
+        {
+          "name": "Індуїзм",
+          "percentage": 25.8
+        },
+        {
+          "name": "Іслам",
+          "percentage": 23.3
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.7
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 15.6
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.2
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 4.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 2.9
+        }
+      ],
+      "population": 515696
+    },
+    "NRU": {
+      "country_en": "Nauru",
+      "country_uk": "Науру",
+      "continent": "Oceania",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 56.4,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 56.4
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 28.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 15.5
+        }
+      ],
+      "population": 12704
+    },
+    "FSM": {
+      "country_en": "Federated States of Micronesia",
+      "country_uk": "Федеративні Штати Мікронезії",
+      "continent": "Oceania",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 61.6,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 61.6
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 23.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 14.6
+        }
+      ],
+      "population": 112640
+    },
+    "SGS": {
+      "country_en": "South Georgia and the Islands",
+      "country_uk": "Південна Джорджія та острови",
+      "continent": "South America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 85.5,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 85.5
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 9.9
+        },
+        {
+          "name": "Інші",
+          "percentage": 4.6
+        }
+      ],
+      "population": 1000000
+    },
+    "FLK": {
+      "country_en": "Falkland Islands",
+      "country_uk": "Фолклендські острови",
+      "continent": "South America",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 84.1,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 84.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 10.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 5.9
+        }
+      ],
+      "population": 1000000
+    },
+    "VUT": {
+      "country_en": "Vanuatu",
+      "country_uk": "Вануату",
+      "continent": "Oceania",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 59.1,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 59.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 24
+        },
+        {
+          "name": "Інші",
+          "percentage": 16.9
+        }
+      ],
+      "population": 292680
+    },
+    "NIU": {
+      "country_en": "Niue",
+      "country_uk": "Ніуе",
+      "continent": "Oceania",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 61.9,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 61.9
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 24.2
+        },
+        {
+          "name": "Інші",
+          "percentage": 13.9
+        }
+      ],
+      "population": 1000000
+    },
+    "ASM": {
+      "country_en": "American Samoa",
+      "country_uk": "Американське Самоа",
+      "continent": "Oceania",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 60.2,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 60.2
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 24.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 15.1
+        }
+      ],
+      "population": 55465
+    },
+    "PLW": {
+      "country_en": "Palau",
+      "country_uk": "Палау",
+      "continent": "Oceania",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 60.1,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 60.1
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 26.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 13.3
+        }
+      ],
+      "population": 17907
+    },
+    "GUM": {
+      "country_en": "Guam",
+      "country_uk": "Гуам",
+      "continent": "Oceania",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 62,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 62
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 22.7
+        },
+        {
+          "name": "Інші",
+          "percentage": 15.3
+        }
+      ],
+      "population": 165768
+    },
+    "MNP": {
+      "country_en": "Northern Mariana Islands",
+      "country_uk": "Північні Маріанські острови",
+      "continent": "Oceania",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 60.9,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 60.9
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 25.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 13.4
+        }
+      ],
+      "population": 56882
+    },
+    "BHR": {
+      "country_en": "Bahrain",
+      "country_uk": "Бахрейн",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 26.5,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 26.5
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 24.8
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.4
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 14
+        },
+        {
+          "name": "Християнство",
+          "percentage": 6.3
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 4.6
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.2
+        }
+      ],
+      "population": 1569439
+    },
+    "MAC": {
+      "country_en": "Macao S.A.R",
+      "country_uk": "Макао S.A.R",
+      "continent": "Asia",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 23.7,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 23.7
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 23.6
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.3
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 16.5
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7.9
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 4.8
+        },
+        {
+          "name": "Інші",
+          "percentage": 3.2
+        }
+      ],
+      "population": 631636
+    }
+  },
+  "continents": {
+    "Europe": {
+      "name_en": "Europe",
+      "name_uk": "Європа",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 69.7,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 69.7
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.2
+        },
+        {
+          "name": "Іслам",
+          "percentage": 7
+        },
+        {
+          "name": "Інші",
+          "percentage": 3
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 0
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 0
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 0
+        },
+        {
+          "name": "Юдаїзм",
+          "percentage": 0
+        }
+      ]
+    },
+    "Asia": {
+      "name_en": "Asia",
+      "name_uk": "Азія",
+      "dominant_religion": "Іслам",
+      "dominant_percentage": 24.9,
+      "stats": [
+        {
+          "name": "Іслам",
+          "percentage": 24.9
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 24.9
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 20.2
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 15.1
+        },
+        {
+          "name": "Християнство",
+          "percentage": 7
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 5
+        },
+        {
+          "name": "Інші",
+          "percentage": 3
+        },
+        {
+          "name": "Юдаїзм",
+          "percentage": 0
+        }
+      ]
+    },
+    "Africa": {
+      "name_en": "Africa",
+      "name_uk": "Африка",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 50,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 50
+        },
+        {
+          "name": "Іслам",
+          "percentage": 40
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 9.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 1
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 0
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 0
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 0
+        },
+        {
+          "name": "Юдаїзм",
+          "percentage": 0
+        }
+      ]
+    },
+    "North America": {
+      "name_en": "North America",
+      "name_uk": "Північна Америка",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 75,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 75
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 15.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 9.9
+        },
+        {
+          "name": "Іслам",
+          "percentage": 0
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 0
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 0
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 0
+        },
+        {
+          "name": "Юдаїзм",
+          "percentage": 0
+        }
+      ]
+    },
+    "South America": {
+      "name_en": "South America",
+      "name_uk": "Південна Америка",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 84.8,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 84.8
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 10
+        },
+        {
+          "name": "Інші",
+          "percentage": 5.1
+        },
+        {
+          "name": "Іслам",
+          "percentage": 0
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 0
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 0
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 0
+        },
+        {
+          "name": "Юдаїзм",
+          "percentage": 0
+        }
+      ]
+    },
+    "Oceania": {
+      "name_en": "Oceania",
+      "name_uk": "Океанія",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 60.3,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 60.3
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 25.1
+        },
+        {
+          "name": "Інші",
+          "percentage": 14.6
+        },
+        {
+          "name": "Іслам",
+          "percentage": 0
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 0
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 0
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 0
+        },
+        {
+          "name": "Юдаїзм",
+          "percentage": 0
+        }
+      ]
+    },
+    "World": {
+      "name_en": "Global (World)",
+      "name_uk": "Глобально (Світ)",
+      "dominant_religion": "Християнство",
+      "dominant_percentage": 52.6,
+      "stats": [
+        {
+          "name": "Християнство",
+          "percentage": 52.6
+        },
+        {
+          "name": "Іслам",
+          "percentage": 16.3
+        },
+        {
+          "name": "Атеїзм/Нерелігійні",
+          "percentage": 14.5
+        },
+        {
+          "name": "Індуїзм",
+          "percentage": 5.3
+        },
+        {
+          "name": "Інші",
+          "percentage": 4.9
+        },
+        {
+          "name": "Буддизм",
+          "percentage": 3.2
+        },
+        {
+          "name": "Народні вірування",
+          "percentage": 3.2
+        },
+        {
+          "name": "Юдаїзм",
+          "percentage": 0
+        }
+      ]
+    }
+  }
+}

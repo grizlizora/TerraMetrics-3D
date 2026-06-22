@@ -1,0 +1,1179 @@
+{
+  "countries": {
+    "IDN": {
+      "avg_temperature": -4,
+      "clean_energy_percent": 93,
+      "highest_point_m": 2757
+    },
+    "MYS": {
+      "avg_temperature": 4,
+      "clean_energy_percent": 38,
+      "highest_point_m": 5908
+    },
+    "CHL": {
+      "avg_temperature": 19,
+      "clean_energy_percent": 73,
+      "highest_point_m": 7284
+    },
+    "BOL": {
+      "avg_temperature": 4,
+      "clean_energy_percent": 34,
+      "highest_point_m": 4753
+    },
+    "PER": {
+      "avg_temperature": -9,
+      "clean_energy_percent": 31,
+      "highest_point_m": 4155
+    },
+    "ARG": {
+      "avg_temperature": -9,
+      "clean_energy_percent": 50,
+      "highest_point_m": 7612
+    },
+    "CYP": {
+      "avg_temperature": 26,
+      "clean_energy_percent": 90,
+      "highest_point_m": 4063
+    },
+    "IND": {
+      "avg_temperature": 19,
+      "clean_energy_percent": 94,
+      "highest_point_m": 1547
+    },
+    "CHN": {
+      "avg_temperature": -11,
+      "clean_energy_percent": 73,
+      "highest_point_m": 3895
+    },
+    "ISR": {
+      "avg_temperature": 25,
+      "clean_energy_percent": 89,
+      "highest_point_m": 3844
+    },
+    "PSE": {
+      "avg_temperature": 16,
+      "clean_energy_percent": 0,
+      "highest_point_m": 4477
+    },
+    "LBN": {
+      "avg_temperature": -8,
+      "clean_energy_percent": 9,
+      "highest_point_m": 2469
+    },
+    "ETH": {
+      "avg_temperature": 21,
+      "clean_energy_percent": 30,
+      "highest_point_m": 633
+    },
+    "SSD": {
+      "avg_temperature": -10,
+      "clean_energy_percent": 35,
+      "highest_point_m": 1719
+    },
+    "SOM": {
+      "avg_temperature": 5,
+      "clean_energy_percent": 48,
+      "highest_point_m": 7189
+    },
+    "KEN": {
+      "avg_temperature": -8,
+      "clean_energy_percent": 51,
+      "highest_point_m": 6018
+    },
+    "MWI": {
+      "avg_temperature": 27,
+      "clean_energy_percent": 81,
+      "highest_point_m": 1874
+    },
+    "TZA": {
+      "avg_temperature": -1,
+      "clean_energy_percent": 9,
+      "highest_point_m": 3109
+    },
+    "SYR": {
+      "avg_temperature": 28,
+      "clean_energy_percent": 90,
+      "highest_point_m": 3127
+    },
+    "SUR": {
+      "avg_temperature": 23,
+      "clean_energy_percent": 63,
+      "highest_point_m": 2775
+    },
+    "GUY": {
+      "avg_temperature": -11,
+      "clean_energy_percent": 47,
+      "highest_point_m": 3195
+    },
+    "KOR": {
+      "avg_temperature": -11,
+      "clean_energy_percent": 1,
+      "highest_point_m": 1773
+    },
+    "PRK": {
+      "avg_temperature": -13,
+      "clean_energy_percent": 29,
+      "highest_point_m": 640
+    },
+    "MAR": {
+      "avg_temperature": -10,
+      "clean_energy_percent": 79,
+      "highest_point_m": 5508
+    },
+    "ESH": {
+      "avg_temperature": 7,
+      "clean_energy_percent": 66,
+      "highest_point_m": 3925
+    },
+    "CRI": {
+      "avg_temperature": 1,
+      "clean_energy_percent": 70,
+      "highest_point_m": 1405
+    },
+    "NIC": {
+      "avg_temperature": 25,
+      "clean_energy_percent": 25,
+      "highest_point_m": 2805
+    },
+    "COG": {
+      "avg_temperature": -11,
+      "clean_energy_percent": 0,
+      "highest_point_m": 7964
+    },
+    "COD": {
+      "avg_temperature": -5,
+      "clean_energy_percent": 60,
+      "highest_point_m": 1461
+    },
+    "BTN": {
+      "avg_temperature": 13,
+      "clean_energy_percent": 45,
+      "highest_point_m": 8243
+    },
+    "UKR": {
+      "avg_temperature": 21,
+      "clean_energy_percent": 74,
+      "highest_point_m": 1598
+    },
+    "BLR": {
+      "avg_temperature": 1,
+      "clean_energy_percent": 96,
+      "highest_point_m": 3877
+    },
+    "NAM": {
+      "avg_temperature": 8,
+      "clean_energy_percent": 50,
+      "highest_point_m": 2783
+    },
+    "ZAF": {
+      "avg_temperature": -13,
+      "clean_energy_percent": 91,
+      "highest_point_m": 2975
+    },
+    "MAF": {
+      "avg_temperature": 19,
+      "clean_energy_percent": 19,
+      "highest_point_m": 2887
+    },
+    "SXM": {
+      "avg_temperature": -9,
+      "clean_energy_percent": 23,
+      "highest_point_m": 5973
+    },
+    "OMN": {
+      "avg_temperature": -1,
+      "clean_energy_percent": 36,
+      "highest_point_m": 4507
+    },
+    "UZB": {
+      "avg_temperature": 29,
+      "clean_energy_percent": 23,
+      "highest_point_m": 7961
+    },
+    "KAZ": {
+      "avg_temperature": -15,
+      "clean_energy_percent": 42,
+      "highest_point_m": 2818
+    },
+    "TJK": {
+      "avg_temperature": -6,
+      "clean_energy_percent": 56,
+      "highest_point_m": 2491
+    },
+    "LTU": {
+      "avg_temperature": -8,
+      "clean_energy_percent": 18,
+      "highest_point_m": 5045
+    },
+    "BRA": {
+      "avg_temperature": -7,
+      "clean_energy_percent": 54,
+      "highest_point_m": 3140
+    },
+    "URY": {
+      "avg_temperature": 18,
+      "clean_energy_percent": 45,
+      "highest_point_m": 3569
+    },
+    "MNG": {
+      "avg_temperature": 28,
+      "clean_energy_percent": 74,
+      "highest_point_m": 2366
+    },
+    "RUS": {
+      "avg_temperature": 3,
+      "clean_energy_percent": 56,
+      "highest_point_m": 8112
+    },
+    "CZE": {
+      "avg_temperature": 1,
+      "clean_energy_percent": 21,
+      "highest_point_m": 7235
+    },
+    "DEU": {
+      "avg_temperature": 10,
+      "clean_energy_percent": 26,
+      "highest_point_m": 4874
+    },
+    "EST": {
+      "avg_temperature": -11,
+      "clean_energy_percent": 72,
+      "highest_point_m": 2334
+    },
+    "LVA": {
+      "avg_temperature": -15,
+      "clean_energy_percent": 37,
+      "highest_point_m": 3082
+    },
+    "SWE": {
+      "avg_temperature": -15,
+      "clean_energy_percent": 7,
+      "highest_point_m": 8039
+    },
+    "FIN": {
+      "avg_temperature": 27,
+      "clean_energy_percent": 91,
+      "highest_point_m": 3665
+    },
+    "VNM": {
+      "avg_temperature": -3,
+      "clean_energy_percent": 83,
+      "highest_point_m": 4380
+    },
+    "KHM": {
+      "avg_temperature": -6,
+      "clean_energy_percent": 8,
+      "highest_point_m": 4840
+    },
+    "LUX": {
+      "avg_temperature": 13,
+      "clean_energy_percent": 82,
+      "highest_point_m": 6162
+    },
+    "ARE": {
+      "avg_temperature": 13,
+      "clean_energy_percent": 51,
+      "highest_point_m": 6287
+    },
+    "BEL": {
+      "avg_temperature": 23,
+      "clean_energy_percent": 7,
+      "highest_point_m": 6033
+    },
+    "GEO": {
+      "avg_temperature": -5,
+      "clean_energy_percent": 97,
+      "highest_point_m": 7177
+    },
+    "MKD": {
+      "avg_temperature": -15,
+      "clean_energy_percent": 71,
+      "highest_point_m": 8065
+    },
+    "ALB": {
+      "avg_temperature": -15,
+      "clean_energy_percent": 34,
+      "highest_point_m": 6506
+    },
+    "AZE": {
+      "avg_temperature": 2,
+      "clean_energy_percent": 68,
+      "highest_point_m": 2804
+    },
+    "TUR": {
+      "avg_temperature": 24,
+      "clean_energy_percent": 37,
+      "highest_point_m": 5052
+    },
+    "ESP": {
+      "avg_temperature": -3,
+      "clean_energy_percent": 45,
+      "highest_point_m": 2816
+    },
+    "LAO": {
+      "avg_temperature": 1,
+      "clean_energy_percent": 56,
+      "highest_point_m": 1048
+    },
+    "KGZ": {
+      "avg_temperature": 29,
+      "clean_energy_percent": 30,
+      "highest_point_m": 3759
+    },
+    "ARM": {
+      "avg_temperature": -3,
+      "clean_energy_percent": 13,
+      "highest_point_m": 6328
+    },
+    "DNK": {
+      "avg_temperature": 20,
+      "clean_energy_percent": 80,
+      "highest_point_m": 3595
+    },
+    "LBY": {
+      "avg_temperature": -2,
+      "clean_energy_percent": 38,
+      "highest_point_m": 1694
+    },
+    "TUN": {
+      "avg_temperature": -3,
+      "clean_energy_percent": 2,
+      "highest_point_m": 7013
+    },
+    "ROU": {
+      "avg_temperature": 0,
+      "clean_energy_percent": 70,
+      "highest_point_m": 6974
+    },
+    "HUN": {
+      "avg_temperature": 13,
+      "clean_energy_percent": 52,
+      "highest_point_m": 532
+    },
+    "SVK": {
+      "avg_temperature": 7,
+      "clean_energy_percent": 9,
+      "highest_point_m": 6751
+    },
+    "POL": {
+      "avg_temperature": 24,
+      "clean_energy_percent": 3,
+      "highest_point_m": 2925
+    },
+    "IRL": {
+      "avg_temperature": -12,
+      "clean_energy_percent": 44,
+      "highest_point_m": 6302
+    },
+    "GBR": {
+      "avg_temperature": -8,
+      "clean_energy_percent": 25,
+      "highest_point_m": 4847
+    },
+    "GRC": {
+      "avg_temperature": 23,
+      "clean_energy_percent": 56,
+      "highest_point_m": 5975
+    },
+    "ZMB": {
+      "avg_temperature": -7,
+      "clean_energy_percent": 53,
+      "highest_point_m": 657
+    },
+    "SLE": {
+      "avg_temperature": -15,
+      "clean_energy_percent": 12,
+      "highest_point_m": 3461
+    },
+    "GIN": {
+      "avg_temperature": 10,
+      "clean_energy_percent": 66,
+      "highest_point_m": 4607
+    },
+    "LBR": {
+      "avg_temperature": -1,
+      "clean_energy_percent": 52,
+      "highest_point_m": 7480
+    },
+    "CAF": {
+      "avg_temperature": 11,
+      "clean_energy_percent": 25,
+      "highest_point_m": 6899
+    },
+    "SDN": {
+      "avg_temperature": 26,
+      "clean_energy_percent": 27,
+      "highest_point_m": 7900
+    },
+    "DJI": {
+      "avg_temperature": 26,
+      "clean_energy_percent": 71,
+      "highest_point_m": 2759
+    },
+    "ERI": {
+      "avg_temperature": 12,
+      "clean_energy_percent": 73,
+      "highest_point_m": 5900
+    },
+    "AUT": {
+      "avg_temperature": 9,
+      "clean_energy_percent": 87,
+      "highest_point_m": 4542
+    },
+    "IRQ": {
+      "avg_temperature": -5,
+      "clean_energy_percent": 99,
+      "highest_point_m": 4367
+    },
+    "ITA": {
+      "avg_temperature": 17,
+      "clean_energy_percent": 73,
+      "highest_point_m": 4227
+    },
+    "CHE": {
+      "avg_temperature": -11,
+      "clean_energy_percent": 8,
+      "highest_point_m": 1724
+    },
+    "IRN": {
+      "avg_temperature": 2,
+      "clean_energy_percent": 83,
+      "highest_point_m": 8480
+    },
+    "NLD": {
+      "avg_temperature": 24,
+      "clean_energy_percent": 49,
+      "highest_point_m": 7117
+    },
+    "LIE": {
+      "avg_temperature": 7,
+      "clean_energy_percent": 81,
+      "highest_point_m": 960
+    },
+    "CIV": {
+      "avg_temperature": 13,
+      "clean_energy_percent": 97,
+      "highest_point_m": 7734
+    },
+    "SRB": {
+      "avg_temperature": 4,
+      "clean_energy_percent": 26,
+      "highest_point_m": 5215
+    },
+    "MLI": {
+      "avg_temperature": 20,
+      "clean_energy_percent": 90,
+      "highest_point_m": 1030
+    },
+    "SEN": {
+      "avg_temperature": 27,
+      "clean_energy_percent": 28,
+      "highest_point_m": 5442
+    },
+    "NGA": {
+      "avg_temperature": -1,
+      "clean_energy_percent": 61,
+      "highest_point_m": 4441
+    },
+    "BEN": {
+      "avg_temperature": 7,
+      "clean_energy_percent": 96,
+      "highest_point_m": 1964
+    },
+    "AGO": {
+      "avg_temperature": 15,
+      "clean_energy_percent": 77,
+      "highest_point_m": 2303
+    },
+    "HRV": {
+      "avg_temperature": -8,
+      "clean_energy_percent": 71,
+      "highest_point_m": 3351
+    },
+    "SVN": {
+      "avg_temperature": -5,
+      "clean_energy_percent": 64,
+      "highest_point_m": 8053
+    },
+    "QAT": {
+      "avg_temperature": -9,
+      "clean_energy_percent": 54,
+      "highest_point_m": 3951
+    },
+    "SAU": {
+      "avg_temperature": 15,
+      "clean_energy_percent": 37,
+      "highest_point_m": 5367
+    },
+    "BWA": {
+      "avg_temperature": -1,
+      "clean_energy_percent": 64,
+      "highest_point_m": 4873
+    },
+    "ZWE": {
+      "avg_temperature": -3,
+      "clean_energy_percent": 1,
+      "highest_point_m": 7886
+    },
+    "PAK": {
+      "avg_temperature": 13,
+      "clean_energy_percent": 48,
+      "highest_point_m": 1157
+    },
+    "BGR": {
+      "avg_temperature": -7,
+      "clean_energy_percent": 33,
+      "highest_point_m": 2261
+    },
+    "THA": {
+      "avg_temperature": -11,
+      "clean_energy_percent": 13,
+      "highest_point_m": 7757
+    },
+    "SMR": {
+      "avg_temperature": -12,
+      "clean_energy_percent": 82,
+      "highest_point_m": 6339
+    },
+    "HTI": {
+      "avg_temperature": -8,
+      "clean_energy_percent": 77,
+      "highest_point_m": 6300
+    },
+    "DOM": {
+      "avg_temperature": -7,
+      "clean_energy_percent": 84,
+      "highest_point_m": 4894
+    },
+    "TCD": {
+      "avg_temperature": 15,
+      "clean_energy_percent": 20,
+      "highest_point_m": 2188
+    },
+    "KWT": {
+      "avg_temperature": 7,
+      "clean_energy_percent": 2,
+      "highest_point_m": 3634
+    },
+    "SLV": {
+      "avg_temperature": 20,
+      "clean_energy_percent": 68,
+      "highest_point_m": 7373
+    },
+    "GTM": {
+      "avg_temperature": 16,
+      "clean_energy_percent": 91,
+      "highest_point_m": 1017
+    },
+    "TLS": {
+      "avg_temperature": -14,
+      "clean_energy_percent": 62,
+      "highest_point_m": 4278
+    },
+    "BRN": {
+      "avg_temperature": 2,
+      "clean_energy_percent": 62,
+      "highest_point_m": 7977
+    },
+    "MCO": {
+      "avg_temperature": 20,
+      "clean_energy_percent": 51,
+      "highest_point_m": 1815
+    },
+    "DZA": {
+      "avg_temperature": -1,
+      "clean_energy_percent": 15,
+      "highest_point_m": 521
+    },
+    "MOZ": {
+      "avg_temperature": -1,
+      "clean_energy_percent": 46,
+      "highest_point_m": 6248
+    },
+    "SWZ": {
+      "avg_temperature": 4,
+      "clean_energy_percent": 69,
+      "highest_point_m": 2384
+    },
+    "BDI": {
+      "avg_temperature": 19,
+      "clean_energy_percent": 18,
+      "highest_point_m": 2011
+    },
+    "RWA": {
+      "avg_temperature": -1,
+      "clean_energy_percent": 44,
+      "highest_point_m": 8088
+    },
+    "MMR": {
+      "avg_temperature": -3,
+      "clean_energy_percent": 8,
+      "highest_point_m": 4496
+    },
+    "BGD": {
+      "avg_temperature": -8,
+      "clean_energy_percent": 68,
+      "highest_point_m": 6033
+    },
+    "AND": {
+      "avg_temperature": 1,
+      "clean_energy_percent": 21,
+      "highest_point_m": 549
+    },
+    "AFG": {
+      "avg_temperature": -5,
+      "clean_energy_percent": 96,
+      "highest_point_m": 3273
+    },
+    "MNE": {
+      "avg_temperature": 14,
+      "clean_energy_percent": 97,
+      "highest_point_m": 8434
+    },
+    "BIH": {
+      "avg_temperature": 15,
+      "clean_energy_percent": 63,
+      "highest_point_m": 3263
+    },
+    "UGA": {
+      "avg_temperature": 18,
+      "clean_energy_percent": 80,
+      "highest_point_m": 7663
+    },
+    "CUB": {
+      "avg_temperature": -11,
+      "clean_energy_percent": 70,
+      "highest_point_m": 6741
+    },
+    "HND": {
+      "avg_temperature": -4,
+      "clean_energy_percent": 56,
+      "highest_point_m": 5765
+    },
+    "ECU": {
+      "avg_temperature": -11,
+      "clean_energy_percent": 39,
+      "highest_point_m": 4671
+    },
+    "COL": {
+      "avg_temperature": -1,
+      "clean_energy_percent": 90,
+      "highest_point_m": 8186
+    },
+    "PRY": {
+      "avg_temperature": -2,
+      "clean_energy_percent": 20,
+      "highest_point_m": 2469
+    },
+    "PRT": {
+      "avg_temperature": 6,
+      "clean_energy_percent": 12,
+      "highest_point_m": 712
+    },
+    "MDA": {
+      "avg_temperature": 26,
+      "clean_energy_percent": 32,
+      "highest_point_m": 2192
+    },
+    "TKM": {
+      "avg_temperature": -7,
+      "clean_energy_percent": 71,
+      "highest_point_m": 2171
+    },
+    "JOR": {
+      "avg_temperature": -3,
+      "clean_energy_percent": 55,
+      "highest_point_m": 3245
+    },
+    "NPL": {
+      "avg_temperature": -14,
+      "clean_energy_percent": 37,
+      "highest_point_m": 3849
+    },
+    "LSO": {
+      "avg_temperature": 27,
+      "clean_energy_percent": 88,
+      "highest_point_m": 5468
+    },
+    "CMR": {
+      "avg_temperature": -11,
+      "clean_energy_percent": 69,
+      "highest_point_m": 7117
+    },
+    "GAB": {
+      "avg_temperature": 4,
+      "clean_energy_percent": 61,
+      "highest_point_m": 8090
+    },
+    "NER": {
+      "avg_temperature": -13,
+      "clean_energy_percent": 49,
+      "highest_point_m": 1724
+    },
+    "BFA": {
+      "avg_temperature": 21,
+      "clean_energy_percent": 19,
+      "highest_point_m": 2004
+    },
+    "TGO": {
+      "avg_temperature": -13,
+      "clean_energy_percent": 38,
+      "highest_point_m": 1997
+    },
+    "GHA": {
+      "avg_temperature": 9,
+      "clean_energy_percent": 26,
+      "highest_point_m": 4531
+    },
+    "GNB": {
+      "avg_temperature": 21,
+      "clean_energy_percent": 95,
+      "highest_point_m": 4630
+    },
+    "GIB": {
+      "avg_temperature": 7,
+      "clean_energy_percent": 15,
+      "highest_point_m": 5322
+    },
+    "USA": {
+      "avg_temperature": -3,
+      "clean_energy_percent": 77,
+      "highest_point_m": 7256
+    },
+    "CAN": {
+      "avg_temperature": -15,
+      "clean_energy_percent": 9,
+      "highest_point_m": 4559
+    },
+    "MEX": {
+      "avg_temperature": 9,
+      "clean_energy_percent": 36,
+      "highest_point_m": 7946
+    },
+    "BLZ": {
+      "avg_temperature": 1,
+      "clean_energy_percent": 73,
+      "highest_point_m": 3200
+    },
+    "PAN": {
+      "avg_temperature": 11,
+      "clean_energy_percent": 74,
+      "highest_point_m": 2319
+    },
+    "VEN": {
+      "avg_temperature": -10,
+      "clean_energy_percent": 0,
+      "highest_point_m": 5099
+    },
+    "PNG": {
+      "avg_temperature": -5,
+      "clean_energy_percent": 47,
+      "highest_point_m": 2208
+    },
+    "EGY": {
+      "avg_temperature": 15,
+      "clean_energy_percent": 33,
+      "highest_point_m": 6518
+    },
+    "YEM": {
+      "avg_temperature": 15,
+      "clean_energy_percent": 4,
+      "highest_point_m": 4368
+    },
+    "MRT": {
+      "avg_temperature": -14,
+      "clean_energy_percent": 87,
+      "highest_point_m": 826
+    },
+    "GNQ": {
+      "avg_temperature": 21,
+      "clean_energy_percent": 27,
+      "highest_point_m": 2796
+    },
+    "GMB": {
+      "avg_temperature": -11,
+      "clean_energy_percent": 90,
+      "highest_point_m": 3834
+    },
+    "HKG": {
+      "avg_temperature": -12,
+      "clean_energy_percent": 39,
+      "highest_point_m": 2638
+    },
+    "VAT": {
+      "avg_temperature": 10,
+      "clean_energy_percent": 96,
+      "highest_point_m": 8389
+    },
+    "AUS": {
+      "avg_temperature": 28,
+      "clean_energy_percent": 19,
+      "highest_point_m": 1036
+    },
+    "GRL": {
+      "avg_temperature": 19,
+      "clean_energy_percent": 2,
+      "highest_point_m": 2793
+    },
+    "FJI": {
+      "avg_temperature": -15,
+      "clean_energy_percent": 90,
+      "highest_point_m": 1730
+    },
+    "NZL": {
+      "avg_temperature": 26,
+      "clean_energy_percent": 62,
+      "highest_point_m": 1507
+    },
+    "NCL": {
+      "avg_temperature": 5,
+      "clean_energy_percent": 90,
+      "highest_point_m": 4732
+    },
+    "MDG": {
+      "avg_temperature": 28,
+      "clean_energy_percent": 2,
+      "highest_point_m": 8154
+    },
+    "PHL": {
+      "avg_temperature": -10,
+      "clean_energy_percent": 59,
+      "highest_point_m": 4247
+    },
+    "LKA": {
+      "avg_temperature": 1,
+      "clean_energy_percent": 94,
+      "highest_point_m": 1251
+    },
+    "CUW": {
+      "avg_temperature": 8,
+      "clean_energy_percent": 0,
+      "highest_point_m": 7909
+    },
+    "ABW": {
+      "avg_temperature": 19,
+      "clean_energy_percent": 76,
+      "highest_point_m": 5475
+    },
+    "BHS": {
+      "avg_temperature": 2,
+      "clean_energy_percent": 36,
+      "highest_point_m": 5101
+    },
+    "TCA": {
+      "avg_temperature": 12,
+      "clean_energy_percent": 25,
+      "highest_point_m": 1408
+    },
+    "TWN": {
+      "avg_temperature": 26,
+      "clean_energy_percent": 20,
+      "highest_point_m": 665
+    },
+    "JPN": {
+      "avg_temperature": 23,
+      "clean_energy_percent": 31,
+      "highest_point_m": 4963
+    },
+    "SPM": {
+      "avg_temperature": 28,
+      "clean_energy_percent": 63,
+      "highest_point_m": 5706
+    },
+    "ISL": {
+      "avg_temperature": -8,
+      "clean_energy_percent": 24,
+      "highest_point_m": 1045
+    },
+    "PCN": {
+      "avg_temperature": 20,
+      "clean_energy_percent": 47,
+      "highest_point_m": 6793
+    },
+    "PYF": {
+      "avg_temperature": 10,
+      "clean_energy_percent": 21,
+      "highest_point_m": 3966
+    },
+    "ATF": {
+      "avg_temperature": 17,
+      "clean_energy_percent": 3,
+      "highest_point_m": 2610
+    },
+    "SYC": {
+      "avg_temperature": 13,
+      "clean_energy_percent": 47,
+      "highest_point_m": 4897
+    },
+    "KIR": {
+      "avg_temperature": -4,
+      "clean_energy_percent": 28,
+      "highest_point_m": 2885
+    },
+    "MHL": {
+      "avg_temperature": 25,
+      "clean_energy_percent": 63,
+      "highest_point_m": 7262
+    },
+    "TTO": {
+      "avg_temperature": 15,
+      "clean_energy_percent": 85,
+      "highest_point_m": 1295
+    },
+    "GRD": {
+      "avg_temperature": 22,
+      "clean_energy_percent": 27,
+      "highest_point_m": 2540
+    },
+    "VCT": {
+      "avg_temperature": -5,
+      "clean_energy_percent": 58,
+      "highest_point_m": 1978
+    },
+    "BRB": {
+      "avg_temperature": 11,
+      "clean_energy_percent": 85,
+      "highest_point_m": 3142
+    },
+    "LCA": {
+      "avg_temperature": -14,
+      "clean_energy_percent": 15,
+      "highest_point_m": 3902
+    },
+    "DMA": {
+      "avg_temperature": 0,
+      "clean_energy_percent": 17,
+      "highest_point_m": 7629
+    },
+    "UMI": {
+      "avg_temperature": -10,
+      "clean_energy_percent": 52,
+      "highest_point_m": 5693
+    },
+    "MSR": {
+      "avg_temperature": -8,
+      "clean_energy_percent": 20,
+      "highest_point_m": 2026
+    },
+    "ATG": {
+      "avg_temperature": -12,
+      "clean_energy_percent": 18,
+      "highest_point_m": 5688
+    },
+    "KNA": {
+      "avg_temperature": 3,
+      "clean_energy_percent": 74,
+      "highest_point_m": 6558
+    },
+    "VIR": {
+      "avg_temperature": -7,
+      "clean_energy_percent": 36,
+      "highest_point_m": 7725
+    },
+    "BLM": {
+      "avg_temperature": 11,
+      "clean_energy_percent": 57,
+      "highest_point_m": 4278
+    },
+    "PRI": {
+      "avg_temperature": -4,
+      "clean_energy_percent": 99,
+      "highest_point_m": 4682
+    },
+    "AIA": {
+      "avg_temperature": -10,
+      "clean_energy_percent": 4,
+      "highest_point_m": 4176
+    },
+    "VGB": {
+      "avg_temperature": 5,
+      "clean_energy_percent": 9,
+      "highest_point_m": 4696
+    },
+    "JAM": {
+      "avg_temperature": -15,
+      "clean_energy_percent": 59,
+      "highest_point_m": 5957
+    },
+    "CYM": {
+      "avg_temperature": 9,
+      "clean_energy_percent": 23,
+      "highest_point_m": 5581
+    },
+    "BMU": {
+      "avg_temperature": -9,
+      "clean_energy_percent": 24,
+      "highest_point_m": 3572
+    },
+    "HMD": {
+      "avg_temperature": 9,
+      "clean_energy_percent": 9,
+      "highest_point_m": 3545
+    },
+    "SHN": {
+      "avg_temperature": 29,
+      "clean_energy_percent": 60,
+      "highest_point_m": 4226
+    },
+    "MUS": {
+      "avg_temperature": 22,
+      "clean_energy_percent": 40,
+      "highest_point_m": 7728
+    },
+    "COM": {
+      "avg_temperature": -3,
+      "clean_energy_percent": 99,
+      "highest_point_m": 5408
+    },
+    "STP": {
+      "avg_temperature": 28,
+      "clean_energy_percent": 80,
+      "highest_point_m": 5647
+    },
+    "CPV": {
+      "avg_temperature": 29,
+      "clean_energy_percent": 62,
+      "highest_point_m": 7653
+    },
+    "MLT": {
+      "avg_temperature": -11,
+      "clean_energy_percent": 82,
+      "highest_point_m": 6812
+    },
+    "JEY": {
+      "avg_temperature": 12,
+      "clean_energy_percent": 24,
+      "highest_point_m": 4291
+    },
+    "GGY": {
+      "avg_temperature": 1,
+      "clean_energy_percent": 38,
+      "highest_point_m": 4900
+    },
+    "IMN": {
+      "avg_temperature": -14,
+      "clean_energy_percent": 86,
+      "highest_point_m": 7009
+    },
+    "ALA": {
+      "avg_temperature": -5,
+      "clean_energy_percent": 43,
+      "highest_point_m": 7913
+    },
+    "FRO": {
+      "avg_temperature": 7,
+      "clean_energy_percent": 26,
+      "highest_point_m": 3879
+    },
+    "IOT": {
+      "avg_temperature": 20,
+      "clean_energy_percent": 98,
+      "highest_point_m": 600
+    },
+    "SGP": {
+      "avg_temperature": 3,
+      "clean_energy_percent": 9,
+      "highest_point_m": 4600
+    },
+    "NFK": {
+      "avg_temperature": -12,
+      "clean_energy_percent": 5,
+      "highest_point_m": 4778
+    },
+    "COK": {
+      "avg_temperature": 13,
+      "clean_energy_percent": 68,
+      "highest_point_m": 3810
+    },
+    "TON": {
+      "avg_temperature": 13,
+      "clean_energy_percent": 36,
+      "highest_point_m": 2454
+    },
+    "WLF": {
+      "avg_temperature": -14,
+      "clean_energy_percent": 69,
+      "highest_point_m": 2488
+    },
+    "WSM": {
+      "avg_temperature": -15,
+      "clean_energy_percent": 45,
+      "highest_point_m": 7532
+    },
+    "SLB": {
+      "avg_temperature": 12,
+      "clean_energy_percent": 97,
+      "highest_point_m": 2353
+    },
+    "TUV": {
+      "avg_temperature": 10,
+      "clean_energy_percent": 19,
+      "highest_point_m": 5496
+    },
+    "MDV": {
+      "avg_temperature": -1,
+      "clean_energy_percent": 63,
+      "highest_point_m": 2209
+    },
+    "NRU": {
+      "avg_temperature": 10,
+      "clean_energy_percent": 76,
+      "highest_point_m": 5676
+    },
+    "FSM": {
+      "avg_temperature": -5,
+      "clean_energy_percent": 82,
+      "highest_point_m": 4149
+    },
+    "SGS": {
+      "avg_temperature": 15,
+      "clean_energy_percent": 32,
+      "highest_point_m": 8272
+    },
+    "FLK": {
+      "avg_temperature": -15,
+      "clean_energy_percent": 40,
+      "highest_point_m": 6273
+    },
+    "VUT": {
+      "avg_temperature": -11,
+      "clean_energy_percent": 55,
+      "highest_point_m": 3575
+    },
+    "NIU": {
+      "avg_temperature": 16,
+      "clean_energy_percent": 2,
+      "highest_point_m": 4664
+    },
+    "ASM": {
+      "avg_temperature": -11,
+      "clean_energy_percent": 93,
+      "highest_point_m": 8458
+    },
+    "PLW": {
+      "avg_temperature": 24,
+      "clean_energy_percent": 71,
+      "highest_point_m": 2573
+    },
+    "GUM": {
+      "avg_temperature": 28,
+      "clean_energy_percent": 95,
+      "highest_point_m": 2162
+    },
+    "MNP": {
+      "avg_temperature": 20,
+      "clean_energy_percent": 41,
+      "highest_point_m": 3610
+    },
+    "BHR": {
+      "avg_temperature": -2,
+      "clean_energy_percent": 84,
+      "highest_point_m": 5076
+    },
+    "MAC": {
+      "avg_temperature": 17,
+      "clean_energy_percent": 62,
+      "highest_point_m": 5876
+    }
+  }
+}

@@ -1,0 +1,775 @@
+html {
+  /* Scale based heavily on height (vh) to prevent scrolling on short screens */
+  font-size: clamp(10px, 1.5vh + 0.5vw, 16px);
+}
+:root, [data-theme="light"] {
+  /* Spacing System */
+  --spacing-outer: 1.5rem;
+  
+  /* Light Theme */
+  --bg-color: #f0f4f8;
+  --text-color: #1c1c1e;
+  --text-secondary: #8e8e93;
+  --accent-color: #007aff;
+  
+  /* Apple Glassmorphism (Light) */
+  --glass-bg: rgba(255, 255, 255, 0.5);
+  --glass-border: rgba(255, 255, 255, 0.6);
+  --glass-input-bg: rgba(0, 0, 0, 0.05);
+  --glass-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.1);
+  --glass-inner-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8);
+  
+  --card-bg: rgba(255, 255, 255, 0.6);
+  --accent-text: #ffffff;
+  --font-family: 'Inter', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg-color: #000000;
+    --text-color: #f5f5f7;
+    --text-secondary: #98989d;
+    --accent-color: #0a84ff;
+    
+    /* Apple Glassmorphism (Dark) */
+    --glass-bg: rgba(30, 30, 30, 0.4);
+    --glass-border: rgba(255, 255, 255, 0.15);
+    --glass-input-bg: rgba(255, 255, 255, 0.1);
+    --glass-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.4);
+    --glass-inner-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --accent-text: #ffffff;
+  }
+}
+
+[data-theme="dark"] {
+  --bg-color: #000000;
+  --text-color: #f5f5f7;
+  --text-secondary: #98989d;
+  --accent-color: #0a84ff;
+  
+  --glass-bg: rgba(30, 30, 30, 0.4);
+  --glass-border: rgba(255, 255, 255, 0.15);
+  --glass-input-bg: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.4);
+  --glass-inner-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --accent-text: #ffffff;
+}
+
+.hidden {
+  display: none !important;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Map Container */
+#map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: transparent;
+}
+
+/* UI Layer */
+.ui-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.glass-panel {
+  pointer-events: auto;
+  background: var(--glass-bg);
+  backdrop-filter: blur(0.5rem) saturate(180%);
+  -webkit-backdrop-filter: blur(0.5rem) saturate(180%);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow), var(--glass-inner-shadow);
+  border-radius: 1rem;
+  transition: background 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Top Bar (Absolute Positioning for perfect centering) */
+.top-bar {
+  position: absolute;
+  top: var(--spacing-outer);
+  left: 0;
+  right: 0;
+  height: 0; /* Щоб не блокувати кліки по карті під ним */
+  z-index: 10;
+}
+
+.top-bar-left {
+  position: absolute;
+  left: var(--spacing-outer);
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-start;
+  pointer-events: auto;
+}
+
+.top-bar-center {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  pointer-events: auto;
+}
+
+.top-bar-right {
+  position: absolute;
+  right: var(--spacing-outer);
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  pointer-events: auto;
+}
+
+.logo {
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+  padding: 0.75rem 1.5rem;
+  justify-self: start;
+}
+
+.logo:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+.logo h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-color);
+  letter-spacing: -0.5px;
+}
+
+.search-container {
+  width: 100%;
+  min-width: 18.75rem;
+  max-width: 25rem;
+  position: relative;
+  justify-self: center;
+  padding: 1rem;
+}
+
+
+
+.search-tabs {
+  display: flex;
+  margin-bottom: 0.75rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 0.75rem;
+  padding: 0.25rem;
+}
+
+#search-input {
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  border-radius: 1.25rem;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-input-bg);
+  color: var(--text-color);
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s;
+}
+
+#search-input:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(0, 122, 255, 0.2);
+}
+
+.search-results {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  right: 0;
+  background: var(--glass-bg);
+  backdrop-filter: blur(0.3rem);
+  -webkit-backdrop-filter: blur(0.3rem);
+  border: 1px solid var(--glass-border);
+  border-radius: 0.75rem;
+  max-height: 18.75rem;
+  overflow-y: auto;
+  z-index: 100;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.search-item {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid var(--glass-border);
+  transition: background 0.2s, color 0.2s;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.search-item:last-child {
+  border-bottom: none;
+}
+
+.search-item:hover {
+  background: var(--accent-color);
+  color: white;
+}
+
+.view-switcher {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  padding: 0.25rem;
+  border-radius: 6.25rem;
+  backdrop-filter: blur(0.5rem) saturate(180%);
+  -webkit-backdrop-filter: blur(0.5rem) saturate(180%);
+  box-shadow: var(--glass-shadow), var(--glass-inner-shadow);
+  justify-self: end;
+}
+
+.pill-panel {
+  border-radius: 6.25rem;
+  padding: 0.5rem 0.75rem;
+}
+
+/* ===== UNIFIED BUTTON SYSTEM ===== */
+/* All interactive pill-buttons: view-switcher, mode-switcher, space-switcher share one token */
+.view-switcher button,
+.mode-switcher button,
+.space-switcher button,
+.submode-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  padding: 0.5rem 0.875rem;
+  border-radius: 6.25rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.01em;
+  transition: background 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+              color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+              box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+              transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1); /* Додана плавна мікро-анімація */
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.view-switcher button:hover,
+.mode-switcher button:hover,
+.space-switcher button:hover,
+.submode-btn:hover {
+  background: var(--glass-input-bg);
+  color: var(--text-color);
+  transform: translateY(-1px) scale(1.02); /* Збільшення при наведенні */
+}
+
+.view-switcher button.active,
+.mode-switcher button.active,
+.space-switcher button.active,
+.submode-btn.active {
+  background: var(--accent-color);
+  color: #fff;
+  box-shadow: 0 4px 0.875rem rgba(0, 122, 255, 0.45);
+  transform: translateY(0) scale(1.05); /* Активна кнопка злегка виділяється */
+}
+
+.space-switcher button {
+  padding: 0.3125rem 0.6875rem;
+  font-size: 0.82rem;
+}
+
+.divider {
+  width: 1px;
+  height: 1.5rem;
+  background: var(--glass-border);
+  margin: 0 0.25rem;
+}
+
+.icon-btn {
+  font-size: 1.2rem;
+  padding: 0.5rem !important;
+  width: 2.25rem;
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Stats Panel */
+.stats-panel {
+  position: absolute;
+  right: var(--spacing-outer);
+  top: calc(var(--spacing-outer) + 3.75rem + 1rem); /* Align perfectly below top bar */
+  width: 21.25rem;
+  max-height: calc(100vh - (var(--spacing-outer) * 2 + 3.75rem + 1rem));
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 5;
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); /* Пружинна "spring" анімація відкриття */
+  /* Glass properties already inherited from .glass-panel class, but we can override if needed */
+  background: var(--glass-bg);
+  backdrop-filter: blur(0.5rem) saturate(180%);
+  -webkit-backdrop-filter: blur(0.5rem) saturate(180%);
+  border: 1px solid var(--glass-border);
+  border-radius: 1.5rem;
+  box-shadow: var(--glass-shadow), var(--glass-inner-shadow);
+}
+
+.stats-header {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.stats-content {
+  padding: 1.5rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.stats-content::-webkit-scrollbar {
+  width: 0.875rem;
+}
+.stats-content::-webkit-scrollbar-track {
+  margin: 1.5rem 0;
+  background: transparent;
+}
+.stats-content::-webkit-scrollbar-thumb {
+  background-color: var(--glass-border);
+  border-radius: 0.625rem;
+  border: 0.25rem solid transparent;
+  background-clip: padding-box;
+}
+
+.stats-panel.hidden {
+  transform: translateX(4rem) scale(0.92); /* Більш глибокий відхід для плавного повернення */
+  opacity: 0;
+  pointer-events: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--glass-input-bg);
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  border: 1px solid var(--glass-border);
+  will-change: transform;
+}
+
+.close-btn:hover {
+  color: var(--text-color);
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: white;
+  transform: scale(1.1) rotate(90deg); /* Крута мікро-анімація закриття */
+}
+
+.stats-panel h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3125rem;
+  color: var(--text-color);
+}
+
+.continent-badge {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  background: var(--glass-input-bg);
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: var(--accent-color);
+  border: 1px solid var(--glass-border);
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.dominant-card {
+  position: relative;
+  background: var(--card-bg);
+  border: 1px solid var(--glass-border);
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.dominant-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 0.25rem;
+  background: var(--accent-color);
+  opacity: 0.8;
+}
+
+.dominant-card h3 {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.dominant-card .value {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--accent-color);
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.5px;
+}
+
+.dominant-card .percentage {
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+.stats-list h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 2px solid var(--glass-border);
+}
+
+.stats-list ul {
+  list-style: none;
+}
+
+.stats-list li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.stat-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.stat-bar-container {
+  width: 100%;
+  height: 0.5rem;
+  background: var(--glass-input-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.stat-bar {
+  height: 100%;
+  background: var(--accent-color);
+  border-radius: 0.25rem;
+  transition: width 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Custom Colors for top religions */
+.stat-Християнство { background: #3498db; }
+.stat-Іслам { background: #2ecc71; }
+.stat-Індуїзм { background: #f39c12; }
+.stat-Буддизм { background: #e74c3c; }
+.stat-Атеїзм { background: #95a5a6; }
+
+/* Instruction */
+.instruction {
+  position: absolute;
+  bottom: var(--spacing-outer);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.75rem 1.5rem;
+  border-radius: 6.25rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-color);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--glass-border); }
+  70% { box-shadow: 0 0 0 0.625rem rgba(255,255,255,0); }
+  100% { box-shadow: 0 0 0 0 rgba(255,255,255,0); }
+}
+
+.maplibregl-ctrl-bottom-left {
+  display: none !important;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 48rem) {
+  .stats-panel {
+    top: auto;
+    bottom: 1.25rem;
+    right: 50%;
+    transform: translateX(50%);
+    width: 90%;
+    max-height: 40vh;
+    overflow-y: auto;
+  }
+  
+  .stats-panel.hidden {
+    transform: translate(50%, 150%);
+  }
+
+  .top-bar {
+    flex-direction: column;
+    gap: 0.9375rem;
+    margin: 0.625rem;
+  }
+
+  .search-container {
+    width: 100%;
+  }
+}
+
+/* Tabs & Lang Switcher */
+.search-tabs {
+  display: flex;
+  margin-bottom: 0.75rem;
+  background: var(--glass-input-bg);
+  border-radius: 0.75rem;
+  padding: 0.25rem;
+  border: 1px solid var(--glass-border);
+}
+
+.search-tab {
+  flex: 1;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+}
+
+.search-tab.active {
+  background: var(--accent-color);
+  color: var(--accent-text);
+  box-shadow: 0 2px 0.25rem rgba(0,0,0,0.1);
+}
+
+.lang-btn {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-input-bg);
+  color: var(--text-color);
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s;
+  margin-left: 0.5rem;
+}
+
+.lang-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Starfield Light Theme Adaptation */
+[data-theme="light"] #space-switcher {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) #space-switcher {
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+}
+
+
+/* Global Category Switcher */
+#global-category-switcher {
+  background: rgba(15, 15, 20, 0.7);
+  backdrop-filter: blur(0.2rem);
+  -webkit-backdrop-filter: blur(0.2rem);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+}
+
+.global-cat-btn {
+  background: transparent;
+  color: #a0a0a0;
+  border: 1px solid transparent;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  font-size: 0.9375rem;
+  will-change: transform;
+  font-weight: 500;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.global-cat-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  transform: translateX(4px); /* Зсув кнопки вправо при наведенні */
+}
+
+.global-cat-btn.active {
+  background: rgba(0, 122, 255, 0.15);
+  color: #fff;
+  border-color: rgba(0, 122, 255, 0.5);
+  box-shadow: 0 0.25rem 0.9375rem rgba(0, 122, 255, 0.2);
+}
+
+/* ===== GLOBAL CATEGORIES NAV ===== */
+.global-nav {
+  position: absolute;
+  left: var(--spacing-outer);
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  padding: 0.625rem 0.5rem;
+  border-radius: 1.5rem;
+  z-index: 10;
+  /* Inherit glass-panel styles */
+}
+
+.category-btn {
+  background: transparent;
+  border: 1.5px solid transparent;
+  color: var(--text-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3125rem;
+  padding: 0.5rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  transition: background 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+              color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+              border-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+              box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+              transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  width: 4.25rem;
+  height: 4.25rem;
+  min-height: unset;
+  will-change: transform;
+}
+
+.category-btn:hover {
+  background: var(--glass-input-bg);
+  color: var(--text-color);
+  border-color: var(--glass-border);
+  transform: translateX(3px) scale(1.05); /* Легкий виступ вбік і збільшення */
+}
+
+.category-btn.active {
+  background: var(--accent-color);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 0.4rem 1rem rgba(0, 122, 255, 0.45);
+  transform: translateX(5px) scale(1.08); /* Ще більший виступ для активного стану */
+}
+
+.category-btn .cat-icon {
+  font-size: 1.375rem;
+  filter: grayscale(0.6);
+  opacity: 0.75;
+  transition: filter 0.22s ease, opacity 0.22s ease, transform 0.22s ease;
+  line-height: 1;
+}
+
+.category-btn:hover .cat-icon,
+.category-btn.active .cat-icon {
+  filter: grayscale(0);
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+.category-btn .cat-text {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+/* Divider between category groups in mode-switcher */
+.submode-group {
+  gap: 0.25rem;
+  padding: 0.3125rem !important;
+}
+
+.submode-group .submode-btn {
+  flex: auto;
+  padding: 0.375rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 6.25rem;
+  text-align: center;
+}

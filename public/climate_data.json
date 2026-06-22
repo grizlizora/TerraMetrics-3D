@@ -1,0 +1,1519 @@
+{
+  "_meta": {
+    "source": "World Bank API (Ecology)",
+    "year": 2021,
+    "generated": "2026-06-19T22:03:24.216Z"
+  },
+  "countries": {
+    "AFE": {
+      "temperature": 24,
+      "temperatureChange": 1,
+      "forest": 30
+    },
+    "AFW": {
+      "temperature": 7,
+      "temperatureChange": 0.8,
+      "forest": 19.7
+    },
+    "ARB": {
+      "temperature": -1,
+      "temperatureChange": 2.2,
+      "forest": 2.8
+    },
+    "CSS": {
+      "temperature": 18,
+      "temperatureChange": 2.4,
+      "forest": 89.7
+    },
+    "CEB": {
+      "temperature": 22,
+      "temperatureChange": 1.2,
+      "forest": 34.6
+    },
+    "EAR": {
+      "temperature": 2,
+      "temperatureChange": 0.8,
+      "forest": 22.7
+    },
+    "EAS": {
+      "temperature": 4,
+      "temperatureChange": 1.8,
+      "forest": 27.2
+    },
+    "EAP": {
+      "temperature": -1,
+      "temperatureChange": 2.4,
+      "forest": 30.5
+    },
+    "TEA": {
+      "temperature": 4,
+      "temperatureChange": 1.2,
+      "forest": 30.4
+    },
+    "EMU": {
+      "temperature": 17,
+      "temperatureChange": 1.3,
+      "forest": 38.6
+    },
+    "ECS": {
+      "temperature": 5,
+      "temperatureChange": 0.8,
+      "forest": 38.5
+    },
+    "ECA": {
+      "temperature": 22,
+      "temperatureChange": 1.8,
+      "forest": 11.2
+    },
+    "TEC": {
+      "temperature": 7,
+      "temperatureChange": 2,
+      "forest": 39.3
+    },
+    "EUU": {
+      "temperature": 26,
+      "temperatureChange": 2.4,
+      "forest": 39.9
+    },
+    "FCS": {
+      "temperature": 7,
+      "temperatureChange": 1.3,
+      "forest": 22.9
+    },
+    "HPC": {
+      "temperature": 5,
+      "temperatureChange": 2.3,
+      "forest": 26.9
+    },
+    "IBD": {
+      "temperature": 27,
+      "temperatureChange": 1.7,
+      "forest": 33.8
+    },
+    "IBT": {
+      "temperature": 8,
+      "temperatureChange": 0.5,
+      "forest": 31.7
+    },
+    "IDB": {
+      "temperature": 28,
+      "temperatureChange": 1.9,
+      "forest": 30.6
+    },
+    "IDX": {
+      "temperature": 14,
+      "temperatureChange": 2.1,
+      "forest": 24.8
+    },
+    "IDA": {
+      "temperature": 27,
+      "temperatureChange": 1.5,
+      "forest": 25.9
+    },
+    "LTE": {
+      "temperature": 15,
+      "temperatureChange": 2.1,
+      "forest": 39.5
+    },
+    "LCN": {
+      "temperature": 7,
+      "temperatureChange": 1.1,
+      "forest": 46.4
+    },
+    "LAC": {
+      "temperature": 29,
+      "temperatureChange": 2.3,
+      "forest": 46.7
+    },
+    "TLA": {
+      "temperature": 10,
+      "temperatureChange": 1.1,
+      "forest": 46.5
+    },
+    "LDC": {
+      "temperature": -2,
+      "temperatureChange": 1.6,
+      "forest": 26
+    },
+    "LMY": {
+      "temperature": 28,
+      "temperatureChange": 2.5,
+      "forest": 27.8
+    },
+    "MEA": {
+      "temperature": -3,
+      "temperatureChange": 1.2,
+      "forest": 2.2
+    },
+    "MNA": {
+      "temperature": 6,
+      "temperatureChange": 1.7,
+      "forest": 2.6
+    },
+    "TMN": {
+      "temperature": 26,
+      "temperatureChange": 1.7,
+      "forest": 2.6
+    },
+    "MIC": {
+      "temperature": 2,
+      "temperatureChange": 2.1,
+      "forest": 29.3
+    },
+    "NAC": {
+      "temperature": -4,
+      "temperatureChange": 2.1,
+      "forest": 36.6
+    },
+    "OED": {
+      "temperature": 2,
+      "temperatureChange": 1.9,
+      "forest": 32.9
+    },
+    "OSS": {
+      "temperature": -3,
+      "temperatureChange": 2.4,
+      "forest": 29.9
+    },
+    "PSS": {
+      "temperature": -2,
+      "temperatureChange": 1.9,
+      "forest": 68.6
+    },
+    "PST": {
+      "temperature": -3,
+      "temperatureChange": 1.8,
+      "forest": 32.3
+    },
+    "PRE": {
+      "temperature": 17,
+      "temperatureChange": 1.7,
+      "forest": 25.6
+    },
+    "SST": {
+      "temperature": 1,
+      "temperatureChange": 1.7,
+      "forest": 65.6
+    },
+    "SAS": {
+      "temperature": 16,
+      "temperatureChange": 0.7,
+      "forest": 25.4
+    },
+    "TSA": {
+      "temperature": 17,
+      "temperatureChange": 1.9,
+      "forest": 25.4
+    },
+    "SSF": {
+      "temperature": 22,
+      "temperatureChange": 2.5,
+      "forest": 26.1
+    },
+    "SSA": {
+      "temperature": 18,
+      "temperatureChange": 1.8,
+      "forest": 26.6
+    },
+    "TSS": {
+      "temperature": 0,
+      "temperatureChange": 2.1,
+      "forest": 26.1
+    },
+    "WLD": {
+      "temperature": 17,
+      "temperatureChange": 0.9,
+      "forest": 31.2
+    },
+    "AFG": {
+      "temperature": 27,
+      "temperatureChange": 2.4,
+      "forest": 1.9,
+      "renewable": 20
+    },
+    "ALB": {
+      "temperature": 29,
+      "temperatureChange": 2.2,
+      "forest": 28.8,
+      "renewable": 41.9
+    },
+    "DZA": {
+      "temperature": 9,
+      "temperatureChange": 2.1,
+      "forest": 0.8,
+      "renewable": 0.1
+    },
+    "ASM": {
+      "temperature": 11,
+      "temperatureChange": 1.7,
+      "forest": 85.5,
+      "renewable": 0.4
+    },
+    "AND": {
+      "temperature": -3,
+      "temperatureChange": 1.4,
+      "forest": 34,
+      "renewable": 18.4
+    },
+    "AGO": {
+      "temperature": 2,
+      "temperatureChange": 1.5,
+      "forest": 53,
+      "renewable": 52.9
+    },
+    "ATG": {
+      "temperature": 6,
+      "temperatureChange": 1.6,
+      "forest": 18.3,
+      "renewable": 0.9
+    },
+    "ARG": {
+      "temperature": 3,
+      "temperatureChange": 0.8,
+      "forest": 10.4,
+      "renewable": 9.2
+    },
+    "ARM": {
+      "temperature": 10,
+      "temperatureChange": 0.6,
+      "forest": 11.6,
+      "renewable": 9.1
+    },
+    "ABW": {
+      "temperature": 3,
+      "temperatureChange": 1.8,
+      "forest": 2.3,
+      "renewable": 8.8
+    },
+    "AUS": {
+      "temperature": 19,
+      "temperatureChange": 0.6,
+      "forest": 17.4,
+      "renewable": 12.3
+    },
+    "AUT": {
+      "temperature": 20,
+      "temperatureChange": 2.1,
+      "forest": 47.2,
+      "renewable": 36
+    },
+    "AZE": {
+      "temperature": 9,
+      "temperatureChange": 0.6,
+      "forest": 13.8,
+      "renewable": 1.3
+    },
+    "BHS": {
+      "temperature": 6,
+      "temperatureChange": 1.1,
+      "forest": 50.9,
+      "renewable": 1.1
+    },
+    "BHR": {
+      "temperature": 6,
+      "temperatureChange": 2,
+      "forest": 0.9,
+      "renewable": 0
+    },
+    "BGD": {
+      "temperature": 26,
+      "temperatureChange": 0.8,
+      "forest": 14.5,
+      "renewable": 25
+    },
+    "BRB": {
+      "temperature": -1,
+      "temperatureChange": 1.7,
+      "forest": 14.7,
+      "renewable": 5.5
+    },
+    "BLR": {
+      "temperature": 10,
+      "temperatureChange": 2.2,
+      "forest": 43.3,
+      "renewable": 8.2
+    },
+    "BEL": {
+      "temperature": -4,
+      "temperatureChange": 1,
+      "forest": 22.6,
+      "renewable": 11.7
+    },
+    "BLZ": {
+      "temperature": 18,
+      "temperatureChange": 1.3,
+      "forest": 55.5,
+      "renewable": 26.6
+    },
+    "BEN": {
+      "temperature": -2,
+      "temperatureChange": 2.4,
+      "forest": 27.4,
+      "renewable": 54.5
+    },
+    "BMU": {
+      "temperature": 15,
+      "temperatureChange": 1.8,
+      "forest": 18.5,
+      "renewable": 0.9
+    },
+    "BTN": {
+      "temperature": 14,
+      "temperatureChange": 1.8,
+      "forest": 71.5,
+      "renewable": 81.8
+    },
+    "BOL": {
+      "temperature": 6,
+      "temperatureChange": 1.6,
+      "forest": 46.7,
+      "renewable": 12.8
+    },
+    "BIH": {
+      "temperature": -3,
+      "temperatureChange": 1.1,
+      "forest": 42.7,
+      "renewable": 36.6
+    },
+    "BWA": {
+      "temperature": 5,
+      "temperatureChange": 1.5,
+      "forest": 26.7,
+      "renewable": 27.4
+    },
+    "BRA": {
+      "temperature": -1,
+      "temperatureChange": 0.9,
+      "forest": 59.3,
+      "renewable": 46.5
+    },
+    "VGB": {
+      "temperature": 10,
+      "temperatureChange": 1.3,
+      "forest": 24.1,
+      "renewable": 1.3
+    },
+    "BRN": {
+      "temperature": 12,
+      "temperatureChange": 1,
+      "forest": 72.1,
+      "renewable": 0
+    },
+    "BGR": {
+      "temperature": 5,
+      "temperatureChange": 2.5,
+      "forest": 36,
+      "renewable": 20.4
+    },
+    "BFA": {
+      "temperature": 21,
+      "temperatureChange": 2.3,
+      "forest": 22.5,
+      "renewable": 71.2
+    },
+    "BDI": {
+      "temperature": 28,
+      "temperatureChange": 1.2,
+      "forest": 10.9,
+      "renewable": 83.1
+    },
+    "CPV": {
+      "temperature": 19,
+      "temperatureChange": 1.4,
+      "forest": 11.4,
+      "renewable": 22.6
+    },
+    "KHM": {
+      "temperature": 9,
+      "temperatureChange": 2.2,
+      "forest": 44.8,
+      "renewable": 52.4
+    },
+    "CMR": {
+      "temperature": 12,
+      "temperatureChange": 1,
+      "forest": 42.9,
+      "renewable": 79.2
+    },
+    "CAN": {
+      "temperature": -4,
+      "temperatureChange": 2.5,
+      "forest": 39.5,
+      "renewable": 23.8
+    },
+    "CYM": {
+      "temperature": 20,
+      "temperatureChange": 1.8,
+      "forest": 52.8,
+      "renewable": 0
+    },
+    "CAF": {
+      "temperature": 23,
+      "temperatureChange": 1.4,
+      "forest": 35.8,
+      "renewable": 90.9
+    },
+    "TCD": {
+      "temperature": 4,
+      "temperatureChange": 1.4,
+      "forest": 3.3,
+      "renewable": 69.9
+    },
+    "CHI": {
+      "temperature": -2,
+      "temperatureChange": 2,
+      "forest": 5.2
+    },
+    "CHL": {
+      "temperature": 0,
+      "temperatureChange": 2.2,
+      "forest": 24.7,
+      "renewable": 24.2
+    },
+    "CHN": {
+      "temperature": 3,
+      "temperatureChange": 2,
+      "forest": 23.6,
+      "renewable": 15.2
+    },
+    "COL": {
+      "temperature": 8,
+      "temperatureChange": 1.9,
+      "forest": 53.1,
+      "renewable": 29.7
+    },
+    "COM": {
+      "temperature": 9,
+      "temperatureChange": 0.8,
+      "forest": 17.5,
+      "renewable": 41.2
+    },
+    "COD": {
+      "temperature": -1,
+      "temperatureChange": 1.7,
+      "forest": 55.2,
+      "renewable": 96.3
+    },
+    "COG": {
+      "temperature": 2,
+      "temperatureChange": 1.9,
+      "forest": 64.2,
+      "renewable": 71.4
+    },
+    "CRI": {
+      "temperature": 9,
+      "temperatureChange": 2,
+      "forest": 59.8,
+      "renewable": 34.2
+    },
+    "CIV": {
+      "temperature": 13,
+      "temperatureChange": 0.9,
+      "forest": 8.6,
+      "renewable": 58.2
+    },
+    "HRV": {
+      "temperature": 26,
+      "temperatureChange": 2,
+      "forest": 34.7,
+      "renewable": 34.1
+    },
+    "CUB": {
+      "temperature": 3,
+      "temperatureChange": 1.1,
+      "forest": 31.2,
+      "renewable": 20.9
+    },
+    "CUW": {
+      "temperature": 25,
+      "temperatureChange": 1.7,
+      "forest": 0.2,
+      "renewable": 2.8
+    },
+    "CYP": {
+      "temperature": 22,
+      "temperatureChange": 2,
+      "forest": 18.7,
+      "renewable": 15.6
+    },
+    "CZE": {
+      "temperature": 11,
+      "temperatureChange": 0.7,
+      "forest": 34.7,
+      "renewable": 17.2
+    },
+    "DNK": {
+      "temperature": 8,
+      "temperatureChange": 1.5,
+      "forest": 15.7,
+      "renewable": 39.5
+    },
+    "DJI": {
+      "temperature": 0,
+      "temperatureChange": 0.6,
+      "forest": 0.3,
+      "renewable": 26.6
+    },
+    "DMA": {
+      "temperature": -4,
+      "temperatureChange": 2.5,
+      "forest": 63.8,
+      "renewable": 8.8
+    },
+    "DOM": {
+      "temperature": 10,
+      "temperatureChange": 0.9,
+      "forest": 44.7,
+      "renewable": 14.8
+    },
+    "ECU": {
+      "temperature": 7,
+      "temperatureChange": 1.4,
+      "forest": 50.1,
+      "renewable": 18.9
+    },
+    "EGY": {
+      "temperature": 15,
+      "temperatureChange": 1,
+      "forest": 0,
+      "renewable": 6.1
+    },
+    "SLV": {
+      "temperature": -3,
+      "temperatureChange": 2.5,
+      "forest": 28,
+      "renewable": 21.9
+    },
+    "GNQ": {
+      "temperature": 16,
+      "temperatureChange": 0.9,
+      "forest": 87,
+      "renewable": 5.2
+    },
+    "ERI": {
+      "temperature": 10,
+      "temperatureChange": 1.5,
+      "forest": 8.7,
+      "renewable": 80.7
+    },
+    "EST": {
+      "temperature": 22,
+      "temperatureChange": 1.2,
+      "forest": 57,
+      "renewable": 38
+    },
+    "SWZ": {
+      "temperature": 10,
+      "temperatureChange": 2,
+      "forest": 29,
+      "renewable": 65.4
+    },
+    "ETH": {
+      "temperature": 11,
+      "temperatureChange": 0.9,
+      "forest": 15.1,
+      "renewable": 90.6
+    },
+    "FRO": {
+      "temperature": 18,
+      "temperatureChange": 1.7,
+      "forest": 0.1,
+      "renewable": 5.1
+    },
+    "FJI": {
+      "temperature": 2,
+      "temperatureChange": 0.8,
+      "forest": 62.8,
+      "renewable": 29.7
+    },
+    "FIN": {
+      "temperature": 8,
+      "temperatureChange": 1.6,
+      "forest": 73.7,
+      "renewable": 50.2
+    },
+    "FRA": {
+      "temperature": 2,
+      "temperatureChange": 0.9,
+      "forest": 32.2,
+      "renewable": 16.2
+    },
+    "PYF": {
+      "temperature": 25,
+      "temperatureChange": 2.2,
+      "forest": 43.1,
+      "renewable": 7.4
+    },
+    "GAB": {
+      "temperature": 22,
+      "temperatureChange": 2.5,
+      "forest": 91.3,
+      "renewable": 91.3
+    },
+    "GMB": {
+      "temperature": -1,
+      "temperatureChange": 0.6,
+      "forest": 23.4,
+      "renewable": 48.6
+    },
+    "GEO": {
+      "temperature": 5,
+      "temperatureChange": 0.6,
+      "forest": 40.6,
+      "renewable": 25.2
+    },
+    "DEU": {
+      "temperature": 8,
+      "temperatureChange": 0.7,
+      "forest": 32.7,
+      "renewable": 17.6
+    },
+    "GHA": {
+      "temperature": 29,
+      "temperatureChange": 1.8,
+      "forest": 35.1,
+      "renewable": 39
+    },
+    "GIB": {
+      "temperature": -4,
+      "temperatureChange": 0.6,
+      "forest": 0,
+      "renewable": 0
+    },
+    "GRC": {
+      "temperature": 6,
+      "temperatureChange": 1.1,
+      "forest": 30.3,
+      "renewable": 21.5
+    },
+    "GRL": {
+      "temperature": 15,
+      "temperatureChange": 0.8,
+      "forest": 0,
+      "renewable": 11.6
+    },
+    "GRD": {
+      "temperature": 6,
+      "temperatureChange": 0.6,
+      "forest": 52.1,
+      "renewable": 10.2
+    },
+    "GUM": {
+      "temperature": 18,
+      "temperatureChange": 1.1,
+      "forest": 51.9,
+      "renewable": 4.5
+    },
+    "GTM": {
+      "temperature": 18,
+      "temperatureChange": 0.6,
+      "forest": 32.8,
+      "renewable": 62.1
+    },
+    "GIN": {
+      "temperature": 9,
+      "temperatureChange": 1.1,
+      "forest": 25,
+      "renewable": 66.8
+    },
+    "GNB": {
+      "temperature": 0,
+      "temperatureChange": 1,
+      "forest": 70.1,
+      "renewable": 87.4
+    },
+    "GUY": {
+      "temperature": -3,
+      "temperatureChange": 2.2,
+      "forest": 87.2,
+      "renewable": 13.2
+    },
+    "HTI": {
+      "temperature": 15,
+      "temperatureChange": 1.7,
+      "forest": 12.5,
+      "renewable": 76.7
+    },
+    "HND": {
+      "temperature": 5,
+      "temperatureChange": 1,
+      "forest": 56.6,
+      "renewable": 45.9
+    },
+    "HUN": {
+      "temperature": 21,
+      "temperatureChange": 0.7,
+      "forest": 22.5,
+      "renewable": 15.3
+    },
+    "ISL": {
+      "temperature": 17,
+      "temperatureChange": 0.6,
+      "forest": 0.5,
+      "renewable": 82.4
+    },
+    "IND": {
+      "temperature": 6,
+      "temperatureChange": 1.6,
+      "forest": 24.4,
+      "renewable": 34.9
+    },
+    "IDN": {
+      "temperature": 5,
+      "temperatureChange": 1.4,
+      "forest": 48.4,
+      "renewable": 20.2
+    },
+    "IRN": {
+      "temperature": 19,
+      "temperatureChange": 2,
+      "forest": 6.6,
+      "renewable": 0.9
+    },
+    "IRQ": {
+      "temperature": 23,
+      "temperatureChange": 2.2,
+      "forest": 1.9,
+      "renewable": 1.1
+    },
+    "IRL": {
+      "temperature": 17,
+      "temperatureChange": 1.1,
+      "forest": 11.4,
+      "renewable": 12.7
+    },
+    "IMN": {
+      "temperature": 15,
+      "temperatureChange": 1.3,
+      "forest": 6.1,
+      "renewable": 3.2
+    },
+    "ISR": {
+      "temperature": 25,
+      "temperatureChange": 1.9,
+      "forest": 6.5,
+      "renewable": 6.2
+    },
+    "ITA": {
+      "temperature": 8,
+      "temperatureChange": 1.1,
+      "forest": 32.5,
+      "renewable": 17.5
+    },
+    "JAM": {
+      "temperature": 1,
+      "temperatureChange": 0.5,
+      "forest": 55.5,
+      "renewable": 10.5
+    },
+    "JPN": {
+      "temperature": 18,
+      "temperatureChange": 2.1,
+      "forest": 68.4,
+      "renewable": 8.8
+    },
+    "JOR": {
+      "temperature": 22,
+      "temperatureChange": 1,
+      "forest": 1.1,
+      "renewable": 11.5
+    },
+    "KAZ": {
+      "temperature": 16,
+      "temperatureChange": 2.3,
+      "forest": 1.3,
+      "renewable": 2
+    },
+    "KEN": {
+      "temperature": 8,
+      "temperatureChange": 1.8,
+      "forest": 6.2,
+      "renewable": 67.7
+    },
+    "KIR": {
+      "temperature": 16,
+      "temperatureChange": 2.4,
+      "forest": 1.5,
+      "renewable": 42.2
+    },
+    "PRK": {
+      "temperature": 23,
+      "temperatureChange": 2,
+      "forest": 49.9,
+      "renewable": 14.7
+    },
+    "KOR": {
+      "temperature": 22,
+      "temperatureChange": 1.7,
+      "forest": 64.3,
+      "renewable": 3.6
+    },
+    "KWT": {
+      "temperature": -3,
+      "temperatureChange": 1.5,
+      "forest": 0.4,
+      "renewable": 0.1
+    },
+    "KGZ": {
+      "temperature": 21,
+      "temperatureChange": 1.2,
+      "forest": 7,
+      "renewable": 27.6
+    },
+    "LAO": {
+      "temperature": 7,
+      "temperatureChange": 2.3,
+      "forest": 71.8,
+      "renewable": 51.5
+    },
+    "LVA": {
+      "temperature": 13,
+      "temperatureChange": 0.9,
+      "forest": 54.9,
+      "renewable": 44
+    },
+    "LBN": {
+      "temperature": 6,
+      "temperatureChange": 2.3,
+      "forest": 14.1,
+      "renewable": 6.8
+    },
+    "LSO": {
+      "temperature": 25,
+      "temperatureChange": 2.4,
+      "forest": 1.1,
+      "renewable": 33.6
+    },
+    "LBR": {
+      "temperature": 10,
+      "temperatureChange": 1.3,
+      "forest": 78.8,
+      "renewable": 93.2
+    },
+    "LBY": {
+      "temperature": 17,
+      "temperatureChange": 2.4,
+      "forest": 0.1,
+      "renewable": 3.1
+    },
+    "LIE": {
+      "temperature": 4,
+      "temperatureChange": 1.9,
+      "forest": 41.9,
+      "renewable": 53.6
+    },
+    "LTU": {
+      "temperature": -4,
+      "temperatureChange": 2.1,
+      "forest": 35.2,
+      "renewable": 33.2
+    },
+    "LUX": {
+      "temperature": 1,
+      "temperatureChange": 1.7,
+      "forest": 34.5,
+      "renewable": 20.5
+    },
+    "MDG": {
+      "temperature": 2,
+      "temperatureChange": 0.9,
+      "forest": 21.3,
+      "renewable": 83.6
+    },
+    "MWI": {
+      "temperature": 23,
+      "temperatureChange": 1.3,
+      "forest": 23.3,
+      "renewable": 71.1
+    },
+    "MYS": {
+      "temperature": 0,
+      "temperatureChange": 0.7,
+      "forest": 58,
+      "renewable": 7.5
+    },
+    "MDV": {
+      "temperature": 18,
+      "temperatureChange": 1.8,
+      "forest": 2.7,
+      "renewable": 1.4
+    },
+    "MLI": {
+      "temperature": 13,
+      "temperatureChange": 2.4,
+      "forest": 10.9,
+      "renewable": 71.2
+    },
+    "MLT": {
+      "temperature": 22,
+      "temperatureChange": 1.8,
+      "forest": 1.4,
+      "renewable": 8.6
+    },
+    "MHL": {
+      "temperature": 11,
+      "temperatureChange": 1.8,
+      "forest": 52.2,
+      "renewable": 12.1
+    },
+    "MRT": {
+      "temperature": 30,
+      "temperatureChange": 1.6,
+      "forest": 0.3,
+      "renewable": 22.1
+    },
+    "MUS": {
+      "temperature": -3,
+      "temperatureChange": 2.1,
+      "forest": 19.4,
+      "renewable": 8.6
+    },
+    "MEX": {
+      "temperature": 20,
+      "temperatureChange": 1.7,
+      "forest": 33.7,
+      "renewable": 13
+    },
+    "FSM": {
+      "temperature": 16,
+      "temperatureChange": 0.5,
+      "forest": 92.1,
+      "renewable": 2.1
+    },
+    "MDA": {
+      "temperature": -3,
+      "temperatureChange": 1.4,
+      "forest": 11.8,
+      "renewable": 21.4
+    },
+    "MCO": {
+      "temperature": 8,
+      "temperatureChange": 0.7,
+      "forest": 0
+    },
+    "MNG": {
+      "temperature": 12,
+      "temperatureChange": 0.8,
+      "forest": 9.1,
+      "renewable": 3
+    },
+    "MNE": {
+      "temperature": 9,
+      "temperatureChange": 2.4,
+      "forest": 61.5,
+      "renewable": 39.6
+    },
+    "MAR": {
+      "temperature": 11,
+      "temperatureChange": 0.7,
+      "forest": 12.9,
+      "renewable": 10.9
+    },
+    "MOZ": {
+      "temperature": -4,
+      "temperatureChange": 0.8,
+      "forest": 46.4,
+      "renewable": 76.9
+    },
+    "MMR": {
+      "temperature": 22,
+      "temperatureChange": 1.7,
+      "forest": 43.3,
+      "renewable": 62.9
+    },
+    "NAM": {
+      "temperature": 6,
+      "temperatureChange": 2.3,
+      "forest": 8,
+      "renewable": 30
+    },
+    "NRU": {
+      "temperature": -5,
+      "temperatureChange": 1.8,
+      "forest": 0,
+      "renewable": 1.6
+    },
+    "NPL": {
+      "temperature": 19,
+      "temperatureChange": 2.1,
+      "forest": 41.6,
+      "renewable": 73.7
+    },
+    "NLD": {
+      "temperature": 8,
+      "temperatureChange": 2.1,
+      "forest": 11,
+      "renewable": 12.2
+    },
+    "NCL": {
+      "temperature": 7,
+      "temperatureChange": 1.5,
+      "forest": 45.8,
+      "renewable": 8.3
+    },
+    "NZL": {
+      "temperature": 31,
+      "temperatureChange": 0.8,
+      "forest": 37.6,
+      "renewable": 28.9
+    },
+    "NIC": {
+      "temperature": 3,
+      "temperatureChange": 1.3,
+      "forest": 27.5,
+      "renewable": 50.4
+    },
+    "NER": {
+      "temperature": 15,
+      "temperatureChange": 2,
+      "forest": 0.8,
+      "renewable": 79.6
+    },
+    "NGA": {
+      "temperature": 0,
+      "temperatureChange": 1.8,
+      "forest": 23.6,
+      "renewable": 80.3
+    },
+    "MKD": {
+      "temperature": 6,
+      "temperatureChange": 1.7,
+      "forest": 39.7,
+      "renewable": 19.5
+    },
+    "MNP": {
+      "temperature": 22,
+      "temperatureChange": 1.7,
+      "forest": 53,
+      "renewable": 0.5
+    },
+    "NOR": {
+      "temperature": 26,
+      "temperatureChange": 2.1,
+      "forest": 33.5,
+      "renewable": 61.4
+    },
+    "OMN": {
+      "temperature": 20,
+      "temperatureChange": 1.8,
+      "forest": 0,
+      "renewable": 0.1
+    },
+    "PAK": {
+      "temperature": 6,
+      "temperatureChange": 0.7,
+      "forest": 4.8,
+      "renewable": 41.6
+    },
+    "PLW": {
+      "temperature": 30,
+      "temperatureChange": 1,
+      "forest": 90.2,
+      "renewable": 0.9
+    },
+    "PAN": {
+      "temperature": 9,
+      "temperatureChange": 1.8,
+      "forest": 56.7,
+      "renewable": 28
+    },
+    "PNG": {
+      "temperature": 15,
+      "temperatureChange": 2,
+      "forest": 79.1,
+      "renewable": 54.5
+    },
+    "PRY": {
+      "temperature": 3,
+      "temperatureChange": 2,
+      "forest": 39.8,
+      "renewable": 58.8
+    },
+    "PER": {
+      "temperature": 17,
+      "temperatureChange": 2.3,
+      "forest": 56.4,
+      "renewable": 30.6
+    },
+    "PHL": {
+      "temperature": 14,
+      "temperatureChange": 2.1,
+      "forest": 24.2,
+      "renewable": 28
+    },
+    "POL": {
+      "temperature": 22,
+      "temperatureChange": 1.3,
+      "forest": 31,
+      "renewable": 15.2
+    },
+    "PRT": {
+      "temperature": -4,
+      "temperatureChange": 1.4,
+      "forest": 36.2,
+      "renewable": 32.3
+    },
+    "PRI": {
+      "temperature": 22,
+      "temperatureChange": 2,
+      "forest": 56,
+      "renewable": 2.6
+    },
+    "QAT": {
+      "temperature": 15,
+      "temperatureChange": 2,
+      "forest": 0,
+      "renewable": 0
+    },
+    "ROU": {
+      "temperature": -4,
+      "temperatureChange": 2.4,
+      "forest": 30.1,
+      "renewable": 23.6
+    },
+    "RUS": {
+      "temperature": 0,
+      "temperatureChange": 0.9,
+      "forest": 49.8,
+      "renewable": 3.5
+    },
+    "RWA": {
+      "temperature": 20,
+      "temperatureChange": 2.3,
+      "forest": 11.2,
+      "renewable": 79.4
+    },
+    "WSM": {
+      "temperature": -1,
+      "temperatureChange": 0.9,
+      "forest": 58,
+      "renewable": 36
+    },
+    "SMR": {
+      "temperature": 28,
+      "temperatureChange": 2.2,
+      "forest": 16.7
+    },
+    "STP": {
+      "temperature": -3,
+      "temperatureChange": 1.7,
+      "forest": 53.4,
+      "renewable": 40.8
+    },
+    "SAU": {
+      "temperature": 19,
+      "temperatureChange": 2.4,
+      "forest": 0.5,
+      "renewable": 0.1
+    },
+    "SEN": {
+      "temperature": 16,
+      "temperatureChange": 0.6,
+      "forest": 41.7,
+      "renewable": 35.4
+    },
+    "SRB": {
+      "temperature": 18,
+      "temperatureChange": 2.4,
+      "forest": 32.4,
+      "renewable": 27.2
+    },
+    "SYC": {
+      "temperature": 24,
+      "temperatureChange": 2.4,
+      "forest": 73.3,
+      "renewable": 1.7
+    },
+    "SLE": {
+      "temperature": 14,
+      "temperatureChange": 0.7,
+      "forest": 34.8,
+      "renewable": 71.1
+    },
+    "SGP": {
+      "temperature": 20,
+      "temperatureChange": 2.4,
+      "forest": 21.4,
+      "renewable": 1.1
+    },
+    "SXM": {
+      "temperature": 0,
+      "temperatureChange": 1.1,
+      "forest": 10.9,
+      "renewable": 0
+    },
+    "SVK": {
+      "temperature": 29,
+      "temperatureChange": 0.5,
+      "forest": 40.1,
+      "renewable": 17.9
+    },
+    "SVN": {
+      "temperature": -1,
+      "temperatureChange": 1.5,
+      "forest": 61.4,
+      "renewable": 23.4
+    },
+    "SLB": {
+      "temperature": 11,
+      "temperatureChange": 0.7,
+      "forest": 90.1,
+      "renewable": 49.1
+    },
+    "SOM": {
+      "temperature": 25,
+      "temperatureChange": 1,
+      "forest": 9.4,
+      "renewable": 95.4
+    },
+    "ZAF": {
+      "temperature": 11,
+      "temperatureChange": 0.6,
+      "forest": 14,
+      "renewable": 9.7
+    },
+    "SSD": {
+      "temperature": 19,
+      "temperatureChange": 1.9,
+      "forest": 11.3,
+      "renewable": 32.4
+    },
+    "ESP": {
+      "temperature": 18,
+      "temperatureChange": 1.4,
+      "forest": 37.2,
+      "renewable": 19
+    },
+    "LKA": {
+      "temperature": 1,
+      "temperatureChange": 2.5,
+      "forest": 34.1,
+      "renewable": 48.8
+    },
+    "KNA": {
+      "temperature": 3,
+      "temperatureChange": 1.2,
+      "forest": 42.3,
+      "renewable": 1.6
+    },
+    "LCA": {
+      "temperature": 29,
+      "temperatureChange": 1.1,
+      "forest": 34,
+      "renewable": 9.7
+    },
+    "MAF": {
+      "temperature": -3,
+      "temperatureChange": 1.2,
+      "forest": 24.8
+    },
+    "VCT": {
+      "temperature": 23,
+      "temperatureChange": 1.9,
+      "forest": 73.2,
+      "renewable": 5
+    },
+    "SDN": {
+      "temperature": 15,
+      "temperatureChange": 1.9,
+      "forest": 9.7,
+      "renewable": 61
+    },
+    "SUR": {
+      "temperature": 0,
+      "temperatureChange": 2.3,
+      "forest": 94.6,
+      "renewable": 14.5
+    },
+    "SWE": {
+      "temperature": 26,
+      "temperatureChange": 1.7,
+      "forest": 68.7,
+      "renewable": 57.9
+    },
+    "CHE": {
+      "temperature": 30,
+      "temperatureChange": 0.9,
+      "forest": 32.2,
+      "renewable": 27.7
+    },
+    "SYR": {
+      "temperature": 6,
+      "temperatureChange": 0.6,
+      "forest": 2.8,
+      "renewable": 1.1
+    },
+    "TJK": {
+      "temperature": 18,
+      "temperatureChange": 0.6,
+      "forest": 3.1,
+      "renewable": 34.9
+    },
+    "TZA": {
+      "temperature": 25,
+      "temperatureChange": 0.7,
+      "forest": 51.1,
+      "renewable": 78.3
+    },
+    "THA": {
+      "temperature": 8,
+      "temperatureChange": 1.2,
+      "forest": 38.8,
+      "renewable": 19
+    },
+    "TLS": {
+      "temperature": 30,
+      "temperatureChange": 1.3,
+      "forest": 61.8,
+      "renewable": 12.1
+    },
+    "TGO": {
+      "temperature": 21,
+      "temperatureChange": 2.5,
+      "forest": 22.2,
+      "renewable": 75.1
+    },
+    "TON": {
+      "temperature": 27,
+      "temperatureChange": 2.1,
+      "forest": 12.4,
+      "renewable": 1.8
+    },
+    "TTO": {
+      "temperature": -2,
+      "temperatureChange": 0.7,
+      "forest": 44.4,
+      "renewable": 0.5
+    },
+    "TUN": {
+      "temperature": -3,
+      "temperatureChange": 1.2,
+      "forest": 4.5,
+      "renewable": 11.6
+    },
+    "TUR": {
+      "temperature": 3,
+      "temperatureChange": 1.1,
+      "forest": 29.1,
+      "renewable": 12
+    },
+    "TKM": {
+      "temperature": 23,
+      "temperatureChange": 1.8,
+      "forest": 8.8,
+      "renewable": 0.1
+    },
+    "TCA": {
+      "temperature": 2,
+      "temperatureChange": 1.4,
+      "forest": 11.1,
+      "renewable": 0.8
+    },
+    "TUV": {
+      "temperature": 7,
+      "temperatureChange": 1.1,
+      "forest": 33.3,
+      "renewable": 5
+    },
+    "UGA": {
+      "temperature": 7,
+      "temperatureChange": 2.2,
+      "forest": 11.5,
+      "renewable": 91
+    },
+    "UKR": {
+      "temperature": 28,
+      "temperatureChange": 1.5,
+      "forest": 16.7,
+      "renewable": 8.9
+    },
+    "ARE": {
+      "temperature": 2,
+      "temperatureChange": 2.5,
+      "forest": 4.5,
+      "renewable": 1
+    },
+    "GBR": {
+      "temperature": 6,
+      "temperatureChange": 2.1,
+      "forest": 13.2,
+      "renewable": 12.2
+    },
+    "USA": {
+      "temperature": 20,
+      "temperatureChange": 1,
+      "forest": 33.9,
+      "renewable": 10.9
+    },
+    "URY": {
+      "temperature": 7,
+      "temperatureChange": 1.5,
+      "forest": 11.7,
+      "renewable": 57.8
+    },
+    "UZB": {
+      "temperature": 26,
+      "temperatureChange": 0.9,
+      "forest": 8.4,
+      "renewable": 1
+    },
+    "VUT": {
+      "temperature": 7,
+      "temperatureChange": 0.9,
+      "forest": 36.3,
+      "renewable": 24.6
+    },
+    "VEN": {
+      "temperature": 20,
+      "temperatureChange": 1.3,
+      "forest": 52.3,
+      "renewable": 33.7
+    },
+    "VNM": {
+      "temperature": 28,
+      "temperatureChange": 1.8,
+      "forest": 47,
+      "renewable": 24.2
+    },
+    "VIR": {
+      "temperature": 27,
+      "temperatureChange": 2.3,
+      "forest": 57.3,
+      "renewable": 5.9
+    },
+    "PSE": {
+      "temperature": 18,
+      "temperatureChange": 0.6,
+      "forest": 1.7,
+      "renewable": 15.4
+    },
+    "YEM": {
+      "temperature": 22,
+      "temperatureChange": 2.3,
+      "forest": 1,
+      "renewable": 3.7
+    },
+    "ZMB": {
+      "temperature": 19,
+      "temperatureChange": 1.4,
+      "forest": 60,
+      "renewable": 83
+    },
+    "ZWE": {
+      "temperature": -2,
+      "temperatureChange": 1.7,
+      "forest": 45,
+      "renewable": 82.4
+    },
+    "HKG": {
+      "temperature": 4,
+      "temperatureChange": 2,
+      "renewable": 0.4
+    },
+    "MAC": {
+      "temperature": 30,
+      "temperatureChange": 1.3,
+      "renewable": 13.6
+    }
+  }
+}

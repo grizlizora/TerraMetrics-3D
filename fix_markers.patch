@@ -1,0 +1,59 @@
+--- src/map/SpaceEngine.js
++++ src/map/SpaceEngine.js
+@@ -1263,53 +1263,7 @@
+     // 5. Вирішення колізій позначок (Screen-Space Collision Detection)
+     if (this.labelsVisible && this.markers && this.markers.length > 0) {
+-      const screenPositions = [];
++      this.camera.updateMatrixWorld();
+       this.markers.forEach(marker => {
+-        if (!marker.parent || !marker.parent.visible || !marker.visible) {
+-          if (marker.material) marker.material.opacity = 0;
+-          return;
+-        }
+-        
+-        const worldPos = new THREE.Vector3();
+-        marker.getWorldPosition(worldPos);
+-        
+-        // Перевіряємо, чи об'єкт перед камерою
+-        const cameraToPoint = worldPos.clone().sub(this.camera.position);
+-        const cameraDir = new THREE.Vector3(0, 0, -1).applyQuaternion(this.camera.quaternion);
+-        
+-        if (cameraToPoint.dot(cameraDir) < 0) {
+-          marker.material.opacity = 0; // Позаду камери
+-          return;
+-        }
+-
+-        // Проекція на екран [-1, 1]
+-        worldPos.project(this.camera);
+-        
+-        // Якщо за межами екрану (X/Y)
+-        if (worldPos.x < -1.1 || worldPos.x > 1.1 || worldPos.y < -1.1 || worldPos.y > 1.1) {
+-          marker.material.opacity = 0;
+-          return;
+-        }
+-        
+-        // Екранні координати (пікселі)
+-        const screenX = (worldPos.x * 0.5 + 0.5) * window.innerWidth;
+-        const screenY = (worldPos.y * -0.5 + 0.5) * window.innerHeight;
+-        
+-        let overlap = false;
+-        for (let i = 0; i < screenPositions.length; i++) {
+-          const dx = screenPositions[i].x - screenX;
+-          const dy = screenPositions[i].y - screenY;
+-          const dist = Math.sqrt(dx * dx + dy * dy);
+-          
+-          if (dist < 50) { // 50 пікселів радіус колізії
+-            overlap = true;
+-            break;
+-          }
+-        }
+-        
+-        if (overlap) {
+-          marker.material.opacity = 0.1; 
+-        } else {
+-          marker.material.opacity = 0.9;
+-          screenPositions.push({ x: screenX, y: screenY });
+-        }
++        marker.material.opacity = (marker.parent && marker.parent.visible) ? 0.9 : 0.0;
+       });
+     }

@@ -1,0 +1,1649 @@
+{
+  "countries": {
+    "IDN": {
+      "gdp_per_capita": 34099,
+      "tax_rate": 37,
+      "military_budget_m": 21127,
+      "active_personnel": 1285605,
+      "government_form": "Республіка"
+    },
+    "MYS": {
+      "gdp_per_capita": 77291,
+      "tax_rate": 40,
+      "military_budget_m": 15343,
+      "active_personnel": 873046,
+      "government_form": "Конституційна монархія"
+    },
+    "CHL": {
+      "gdp_per_capita": 60155,
+      "tax_rate": 16,
+      "military_budget_m": 11771,
+      "active_personnel": 1395177,
+      "government_form": "Федеративна республіка"
+    },
+    "BOL": {
+      "gdp_per_capita": 78090,
+      "tax_rate": 35,
+      "military_budget_m": 25496,
+      "active_personnel": 599880,
+      "government_form": "Конституційна монархія"
+    },
+    "PER": {
+      "gdp_per_capita": 61315,
+      "tax_rate": 46,
+      "military_budget_m": 14148,
+      "active_personnel": 278678,
+      "government_form": "Абсолютна монархія"
+    },
+    "ARG": {
+      "gdp_per_capita": 3186,
+      "tax_rate": 26,
+      "military_budget_m": 40454,
+      "active_personnel": 701818,
+      "government_form": "Федеративна республіка"
+    },
+    "CYP": {
+      "gdp_per_capita": 68881,
+      "tax_rate": 22,
+      "military_budget_m": 20393,
+      "active_personnel": 700481,
+      "government_form": "Республіка"
+    },
+    "IND": {
+      "gdp_per_capita": 70284,
+      "tax_rate": 25,
+      "military_budget_m": 49463,
+      "active_personnel": 1099901,
+      "government_form": "Федеративна республіка"
+    },
+    "CHN": {
+      "gdp_per_capita": 4878,
+      "tax_rate": 18,
+      "military_budget_m": 23524,
+      "active_personnel": 1739072,
+      "government_form": "Конституційна монархія"
+    },
+    "ISR": {
+      "gdp_per_capita": 29541,
+      "tax_rate": 40,
+      "military_budget_m": 20833,
+      "active_personnel": 1050362,
+      "government_form": "Республіка"
+    },
+    "PSE": {
+      "gdp_per_capita": 72952,
+      "tax_rate": 17,
+      "military_budget_m": 7431,
+      "active_personnel": 1184476,
+      "government_form": "Абсолютна монархія"
+    },
+    "LBN": {
+      "gdp_per_capita": 40173,
+      "tax_rate": 46,
+      "military_budget_m": 46468,
+      "active_personnel": 454533,
+      "government_form": "Республіка"
+    },
+    "ETH": {
+      "gdp_per_capita": 78214,
+      "tax_rate": 10,
+      "military_budget_m": 38658,
+      "active_personnel": 856586,
+      "government_form": "Республіка"
+    },
+    "SSD": {
+      "gdp_per_capita": 3346,
+      "tax_rate": 46,
+      "military_budget_m": 23665,
+      "active_personnel": 49137,
+      "government_form": "Федеративна республіка"
+    },
+    "SOM": {
+      "gdp_per_capita": 73133,
+      "tax_rate": 12,
+      "military_budget_m": 11761,
+      "active_personnel": 29739,
+      "government_form": "Конституційна монархія"
+    },
+    "KEN": {
+      "gdp_per_capita": 52289,
+      "tax_rate": 30,
+      "military_budget_m": 42656,
+      "active_personnel": 198806,
+      "government_form": "Республіка"
+    },
+    "MWI": {
+      "gdp_per_capita": 38374,
+      "tax_rate": 46,
+      "military_budget_m": 2420,
+      "active_personnel": 1047463,
+      "government_form": "Федеративна республіка"
+    },
+    "TZA": {
+      "gdp_per_capita": 27175,
+      "tax_rate": 35,
+      "military_budget_m": 22500,
+      "active_personnel": 992854,
+      "government_form": "Абсолютна монархія"
+    },
+    "SYR": {
+      "gdp_per_capita": 35280,
+      "tax_rate": 25,
+      "military_budget_m": 17076,
+      "active_personnel": 197120,
+      "government_form": "Республіка"
+    },
+    "SUR": {
+      "gdp_per_capita": 15399,
+      "tax_rate": 47,
+      "military_budget_m": 22553,
+      "active_personnel": 1651423,
+      "government_form": "Республіка"
+    },
+    "GUY": {
+      "gdp_per_capita": 29083,
+      "tax_rate": 46,
+      "military_budget_m": 32676,
+      "active_personnel": 207566,
+      "government_form": "Республіка"
+    },
+    "KOR": {
+      "gdp_per_capita": 66053,
+      "tax_rate": 31,
+      "military_budget_m": 6010,
+      "active_personnel": 1504903,
+      "government_form": "Конституційна монархія"
+    },
+    "PRK": {
+      "gdp_per_capita": 62667,
+      "tax_rate": 33,
+      "military_budget_m": 48502,
+      "active_personnel": 148819,
+      "government_form": "Федеративна республіка"
+    },
+    "MAR": {
+      "gdp_per_capita": 60130,
+      "tax_rate": 46,
+      "military_budget_m": 41560,
+      "active_personnel": 99650,
+      "government_form": "Федеративна республіка"
+    },
+    "ESH": {
+      "gdp_per_capita": 51783,
+      "tax_rate": 41,
+      "military_budget_m": 13392,
+      "active_personnel": 509041,
+      "government_form": "Федеративна республіка"
+    },
+    "CRI": {
+      "gdp_per_capita": 80154,
+      "tax_rate": 24,
+      "military_budget_m": 9265,
+      "active_personnel": 1199557,
+      "government_form": "Абсолютна монархія"
+    },
+    "NIC": {
+      "gdp_per_capita": 24001,
+      "tax_rate": 16,
+      "military_budget_m": 9004,
+      "active_personnel": 612625,
+      "government_form": "Абсолютна монархія"
+    },
+    "COG": {
+      "gdp_per_capita": 1293,
+      "tax_rate": 14,
+      "military_budget_m": 5275,
+      "active_personnel": 1646957,
+      "government_form": "Федеративна республіка"
+    },
+    "COD": {
+      "gdp_per_capita": 31032,
+      "tax_rate": 18,
+      "military_budget_m": 1917,
+      "active_personnel": 1941194,
+      "government_form": "Конституційна монархія"
+    },
+    "BTN": {
+      "gdp_per_capita": 28603,
+      "tax_rate": 25,
+      "military_budget_m": 49175,
+      "active_personnel": 1482443,
+      "government_form": "Федеративна республіка"
+    },
+    "UKR": {
+      "gdp_per_capita": 37559,
+      "tax_rate": 19,
+      "military_budget_m": 1944,
+      "active_personnel": 1723721,
+      "government_form": "Конституційна монархія"
+    },
+    "BLR": {
+      "gdp_per_capita": 34301,
+      "tax_rate": 28,
+      "military_budget_m": 17697,
+      "active_personnel": 1029644,
+      "government_form": "Абсолютна монархія"
+    },
+    "NAM": {
+      "gdp_per_capita": 54404,
+      "tax_rate": 22,
+      "military_budget_m": 31632,
+      "active_personnel": 311474,
+      "government_form": "Республіка"
+    },
+    "ZAF": {
+      "gdp_per_capita": 42158,
+      "tax_rate": 29,
+      "military_budget_m": 10921,
+      "active_personnel": 227887,
+      "government_form": "Конституційна монархія"
+    },
+    "MAF": {
+      "gdp_per_capita": 49856,
+      "tax_rate": 49,
+      "military_budget_m": 9659,
+      "active_personnel": 1778422,
+      "government_form": "Абсолютна монархія"
+    },
+    "SXM": {
+      "gdp_per_capita": 48588,
+      "tax_rate": 20,
+      "military_budget_m": 19822,
+      "active_personnel": 1252878,
+      "government_form": "Федеративна республіка"
+    },
+    "OMN": {
+      "gdp_per_capita": 69769,
+      "tax_rate": 12,
+      "military_budget_m": 40620,
+      "active_personnel": 733621,
+      "government_form": "Конституційна монархія"
+    },
+    "UZB": {
+      "gdp_per_capita": 54735,
+      "tax_rate": 36,
+      "military_budget_m": 153,
+      "active_personnel": 1545654,
+      "government_form": "Федеративна республіка"
+    },
+    "KAZ": {
+      "gdp_per_capita": 9129,
+      "tax_rate": 45,
+      "military_budget_m": 26149,
+      "active_personnel": 1541608,
+      "government_form": "Абсолютна монархія"
+    },
+    "TJK": {
+      "gdp_per_capita": 61776,
+      "tax_rate": 20,
+      "military_budget_m": 8723,
+      "active_personnel": 1063019,
+      "government_form": "Абсолютна монархія"
+    },
+    "LTU": {
+      "gdp_per_capita": 73472,
+      "tax_rate": 12,
+      "military_budget_m": 20626,
+      "active_personnel": 1564997,
+      "government_form": "Федеративна республіка"
+    },
+    "BRA": {
+      "gdp_per_capita": 32369,
+      "tax_rate": 37,
+      "military_budget_m": 946,
+      "active_personnel": 830699,
+      "government_form": "Республіка"
+    },
+    "URY": {
+      "gdp_per_capita": 80736,
+      "tax_rate": 42,
+      "military_budget_m": 49876,
+      "active_personnel": 547909,
+      "government_form": "Федеративна республіка"
+    },
+    "MNG": {
+      "gdp_per_capita": 63110,
+      "tax_rate": 37,
+      "military_budget_m": 37855,
+      "active_personnel": 746015,
+      "government_form": "Конституційна монархія"
+    },
+    "RUS": {
+      "gdp_per_capita": 21054,
+      "tax_rate": 37,
+      "military_budget_m": 49544,
+      "active_personnel": 1710067,
+      "government_form": "Республіка"
+    },
+    "CZE": {
+      "gdp_per_capita": 5361,
+      "tax_rate": 33,
+      "military_budget_m": 43436,
+      "active_personnel": 97265,
+      "government_form": "Республіка"
+    },
+    "DEU": {
+      "gdp_per_capita": 22056,
+      "tax_rate": 34,
+      "military_budget_m": 17563,
+      "active_personnel": 1299300,
+      "government_form": "Абсолютна монархія"
+    },
+    "EST": {
+      "gdp_per_capita": 18726,
+      "tax_rate": 17,
+      "military_budget_m": 35570,
+      "active_personnel": 264417,
+      "government_form": "Республіка"
+    },
+    "LVA": {
+      "gdp_per_capita": 37040,
+      "tax_rate": 26,
+      "military_budget_m": 25366,
+      "active_personnel": 1261833,
+      "government_form": "Конституційна монархія"
+    },
+    "SWE": {
+      "gdp_per_capita": 35632,
+      "tax_rate": 15,
+      "military_budget_m": 34395,
+      "active_personnel": 388345,
+      "government_form": "Федеративна республіка"
+    },
+    "FIN": {
+      "gdp_per_capita": 17770,
+      "tax_rate": 21,
+      "military_budget_m": 32372,
+      "active_personnel": 1880725,
+      "government_form": "Федеративна республіка"
+    },
+    "VNM": {
+      "gdp_per_capita": 66114,
+      "tax_rate": 39,
+      "military_budget_m": 48162,
+      "active_personnel": 1292862,
+      "government_form": "Федеративна республіка"
+    },
+    "KHM": {
+      "gdp_per_capita": 18174,
+      "tax_rate": 11,
+      "military_budget_m": 5661,
+      "active_personnel": 163041,
+      "government_form": "Республіка"
+    },
+    "LUX": {
+      "gdp_per_capita": 65312,
+      "tax_rate": 26,
+      "military_budget_m": 32147,
+      "active_personnel": 1312877,
+      "government_form": "Конституційна монархія"
+    },
+    "ARE": {
+      "gdp_per_capita": 27261,
+      "tax_rate": 25,
+      "military_budget_m": 19255,
+      "active_personnel": 117626,
+      "government_form": "Республіка"
+    },
+    "BEL": {
+      "gdp_per_capita": 80600,
+      "tax_rate": 25,
+      "military_budget_m": 44142,
+      "active_personnel": 1685438,
+      "government_form": "Абсолютна монархія"
+    },
+    "GEO": {
+      "gdp_per_capita": 44488,
+      "tax_rate": 20,
+      "military_budget_m": 23557,
+      "active_personnel": 1966811,
+      "government_form": "Абсолютна монархія"
+    },
+    "MKD": {
+      "gdp_per_capita": 28179,
+      "tax_rate": 19,
+      "military_budget_m": 27621,
+      "active_personnel": 1015826,
+      "government_form": "Конституційна монархія"
+    },
+    "ALB": {
+      "gdp_per_capita": 73025,
+      "tax_rate": 43,
+      "military_budget_m": 9669,
+      "active_personnel": 85756,
+      "government_form": "Федеративна республіка"
+    },
+    "AZE": {
+      "gdp_per_capita": 46803,
+      "tax_rate": 45,
+      "military_budget_m": 21081,
+      "active_personnel": 271389,
+      "government_form": "Абсолютна монархія"
+    },
+    "TUR": {
+      "gdp_per_capita": 60385,
+      "tax_rate": 32,
+      "military_budget_m": 49412,
+      "active_personnel": 433283,
+      "government_form": "Республіка"
+    },
+    "ESP": {
+      "gdp_per_capita": 4916,
+      "tax_rate": 37,
+      "military_budget_m": 39319,
+      "active_personnel": 149906,
+      "government_form": "Федеративна республіка"
+    },
+    "LAO": {
+      "gdp_per_capita": 55335,
+      "tax_rate": 42,
+      "military_budget_m": 12520,
+      "active_personnel": 1978862,
+      "government_form": "Конституційна монархія"
+    },
+    "KGZ": {
+      "gdp_per_capita": 72655,
+      "tax_rate": 32,
+      "military_budget_m": 32720,
+      "active_personnel": 1039021,
+      "government_form": "Республіка"
+    },
+    "ARM": {
+      "gdp_per_capita": 56669,
+      "tax_rate": 24,
+      "military_budget_m": 3651,
+      "active_personnel": 1317041,
+      "government_form": "Конституційна монархія"
+    },
+    "DNK": {
+      "gdp_per_capita": 71096,
+      "tax_rate": 46,
+      "military_budget_m": 49649,
+      "active_personnel": 710368,
+      "government_form": "Республіка"
+    },
+    "LBY": {
+      "gdp_per_capita": 66030,
+      "tax_rate": 35,
+      "military_budget_m": 4731,
+      "active_personnel": 665234,
+      "government_form": "Федеративна республіка"
+    },
+    "TUN": {
+      "gdp_per_capita": 1886,
+      "tax_rate": 10,
+      "military_budget_m": 16431,
+      "active_personnel": 22532,
+      "government_form": "Конституційна монархія"
+    },
+    "ROU": {
+      "gdp_per_capita": 8333,
+      "tax_rate": 11,
+      "military_budget_m": 45306,
+      "active_personnel": 724581,
+      "government_form": "Республіка"
+    },
+    "HUN": {
+      "gdp_per_capita": 40792,
+      "tax_rate": 40,
+      "military_budget_m": 34763,
+      "active_personnel": 732549,
+      "government_form": "Абсолютна монархія"
+    },
+    "SVK": {
+      "gdp_per_capita": 17276,
+      "tax_rate": 21,
+      "military_budget_m": 41832,
+      "active_personnel": 1463398,
+      "government_form": "Республіка"
+    },
+    "POL": {
+      "gdp_per_capita": 50912,
+      "tax_rate": 42,
+      "military_budget_m": 40343,
+      "active_personnel": 709444,
+      "government_form": "Конституційна монархія"
+    },
+    "IRL": {
+      "gdp_per_capita": 74734,
+      "tax_rate": 22,
+      "military_budget_m": 20702,
+      "active_personnel": 1925797,
+      "government_form": "Федеративна республіка"
+    },
+    "GBR": {
+      "gdp_per_capita": 24937,
+      "tax_rate": 11,
+      "military_budget_m": 8827,
+      "active_personnel": 424351,
+      "government_form": "Конституційна монархія"
+    },
+    "GRC": {
+      "gdp_per_capita": 25220,
+      "tax_rate": 22,
+      "military_budget_m": 47217,
+      "active_personnel": 1513980,
+      "government_form": "Абсолютна монархія"
+    },
+    "ZMB": {
+      "gdp_per_capita": 64983,
+      "tax_rate": 14,
+      "military_budget_m": 19555,
+      "active_personnel": 1461486,
+      "government_form": "Республіка"
+    },
+    "SLE": {
+      "gdp_per_capita": 53573,
+      "tax_rate": 49,
+      "military_budget_m": 2416,
+      "active_personnel": 99097,
+      "government_form": "Республіка"
+    },
+    "GIN": {
+      "gdp_per_capita": 50751,
+      "tax_rate": 48,
+      "military_budget_m": 32846,
+      "active_personnel": 767740,
+      "government_form": "Абсолютна монархія"
+    },
+    "LBR": {
+      "gdp_per_capita": 35998,
+      "tax_rate": 36,
+      "military_budget_m": 40266,
+      "active_personnel": 1541813,
+      "government_form": "Конституційна монархія"
+    },
+    "CAF": {
+      "gdp_per_capita": 31810,
+      "tax_rate": 47,
+      "military_budget_m": 8530,
+      "active_personnel": 1785676,
+      "government_form": "Абсолютна монархія"
+    },
+    "SDN": {
+      "gdp_per_capita": 14407,
+      "tax_rate": 16,
+      "military_budget_m": 45491,
+      "active_personnel": 662209,
+      "government_form": "Конституційна монархія"
+    },
+    "DJI": {
+      "gdp_per_capita": 75405,
+      "tax_rate": 18,
+      "military_budget_m": 33382,
+      "active_personnel": 1834255,
+      "government_form": "Федеративна республіка"
+    },
+    "ERI": {
+      "gdp_per_capita": 1189,
+      "tax_rate": 12,
+      "military_budget_m": 46037,
+      "active_personnel": 789721,
+      "government_form": "Республіка"
+    },
+    "AUT": {
+      "gdp_per_capita": 19157,
+      "tax_rate": 27,
+      "military_budget_m": 48990,
+      "active_personnel": 1963006,
+      "government_form": "Абсолютна монархія"
+    },
+    "IRQ": {
+      "gdp_per_capita": 23355,
+      "tax_rate": 28,
+      "military_budget_m": 48083,
+      "active_personnel": 1059391,
+      "government_form": "Федеративна республіка"
+    },
+    "ITA": {
+      "gdp_per_capita": 22664,
+      "tax_rate": 36,
+      "military_budget_m": 1333,
+      "active_personnel": 1137229,
+      "government_form": "Абсолютна монархія"
+    },
+    "CHE": {
+      "gdp_per_capita": 59044,
+      "tax_rate": 48,
+      "military_budget_m": 3236,
+      "active_personnel": 1867819,
+      "government_form": "Федеративна республіка"
+    },
+    "IRN": {
+      "gdp_per_capita": 58938,
+      "tax_rate": 35,
+      "military_budget_m": 16689,
+      "active_personnel": 298350,
+      "government_form": "Абсолютна монархія"
+    },
+    "NLD": {
+      "gdp_per_capita": 63331,
+      "tax_rate": 14,
+      "military_budget_m": 9275,
+      "active_personnel": 866640,
+      "government_form": "Республіка"
+    },
+    "LIE": {
+      "gdp_per_capita": 30315,
+      "tax_rate": 41,
+      "military_budget_m": 49574,
+      "active_personnel": 63171,
+      "government_form": "Республіка"
+    },
+    "CIV": {
+      "gdp_per_capita": 26710,
+      "tax_rate": 10,
+      "military_budget_m": 2627,
+      "active_personnel": 724805,
+      "government_form": "Абсолютна монархія"
+    },
+    "SRB": {
+      "gdp_per_capita": 8815,
+      "tax_rate": 46,
+      "military_budget_m": 8230,
+      "active_personnel": 835974,
+      "government_form": "Федеративна республіка"
+    },
+    "MLI": {
+      "gdp_per_capita": 4348,
+      "tax_rate": 12,
+      "military_budget_m": 26826,
+      "active_personnel": 138885,
+      "government_form": "Абсолютна монархія"
+    },
+    "SEN": {
+      "gdp_per_capita": 58436,
+      "tax_rate": 15,
+      "military_budget_m": 2218,
+      "active_personnel": 527766,
+      "government_form": "Абсолютна монархія"
+    },
+    "NGA": {
+      "gdp_per_capita": 67039,
+      "tax_rate": 14,
+      "military_budget_m": 11358,
+      "active_personnel": 544415,
+      "government_form": "Федеративна республіка"
+    },
+    "BEN": {
+      "gdp_per_capita": 32391,
+      "tax_rate": 40,
+      "military_budget_m": 46631,
+      "active_personnel": 913516,
+      "government_form": "Абсолютна монархія"
+    },
+    "AGO": {
+      "gdp_per_capita": 1324,
+      "tax_rate": 10,
+      "military_budget_m": 23004,
+      "active_personnel": 1916710,
+      "government_form": "Федеративна республіка"
+    },
+    "HRV": {
+      "gdp_per_capita": 34950,
+      "tax_rate": 23,
+      "military_budget_m": 36263,
+      "active_personnel": 1608400,
+      "government_form": "Конституційна монархія"
+    },
+    "SVN": {
+      "gdp_per_capita": 15021,
+      "tax_rate": 28,
+      "military_budget_m": 32036,
+      "active_personnel": 953210,
+      "government_form": "Абсолютна монархія"
+    },
+    "QAT": {
+      "gdp_per_capita": 41227,
+      "tax_rate": 42,
+      "military_budget_m": 5529,
+      "active_personnel": 601328,
+      "government_form": "Республіка"
+    },
+    "SAU": {
+      "gdp_per_capita": 56072,
+      "tax_rate": 20,
+      "military_budget_m": 24921,
+      "active_personnel": 1245695,
+      "government_form": "Республіка"
+    },
+    "BWA": {
+      "gdp_per_capita": 9682,
+      "tax_rate": 31,
+      "military_budget_m": 27860,
+      "active_personnel": 33916,
+      "government_form": "Конституційна монархія"
+    },
+    "ZWE": {
+      "gdp_per_capita": 1231,
+      "tax_rate": 36,
+      "military_budget_m": 18591,
+      "active_personnel": 614951,
+      "government_form": "Конституційна монархія"
+    },
+    "PAK": {
+      "gdp_per_capita": 28948,
+      "tax_rate": 26,
+      "military_budget_m": 27987,
+      "active_personnel": 530178,
+      "government_form": "Абсолютна монархія"
+    },
+    "BGR": {
+      "gdp_per_capita": 6202,
+      "tax_rate": 47,
+      "military_budget_m": 26557,
+      "active_personnel": 618558,
+      "government_form": "Республіка"
+    },
+    "THA": {
+      "gdp_per_capita": 2724,
+      "tax_rate": 10,
+      "military_budget_m": 23804,
+      "active_personnel": 1244735,
+      "government_form": "Конституційна монархія"
+    },
+    "SMR": {
+      "gdp_per_capita": 73138,
+      "tax_rate": 39,
+      "military_budget_m": 20422,
+      "active_personnel": 561189,
+      "government_form": "Республіка"
+    },
+    "HTI": {
+      "gdp_per_capita": 42232,
+      "tax_rate": 36,
+      "military_budget_m": 22283,
+      "active_personnel": 158217,
+      "government_form": "Республіка"
+    },
+    "DOM": {
+      "gdp_per_capita": 60616,
+      "tax_rate": 30,
+      "military_budget_m": 23217,
+      "active_personnel": 503475,
+      "government_form": "Конституційна монархія"
+    },
+    "TCD": {
+      "gdp_per_capita": 21686,
+      "tax_rate": 47,
+      "military_budget_m": 48578,
+      "active_personnel": 1603268,
+      "government_form": "Республіка"
+    },
+    "KWT": {
+      "gdp_per_capita": 13256,
+      "tax_rate": 23,
+      "military_budget_m": 23348,
+      "active_personnel": 1352746,
+      "government_form": "Абсолютна монархія"
+    },
+    "SLV": {
+      "gdp_per_capita": 25740,
+      "tax_rate": 10,
+      "military_budget_m": 15049,
+      "active_personnel": 965731,
+      "government_form": "Абсолютна монархія"
+    },
+    "GTM": {
+      "gdp_per_capita": 50122,
+      "tax_rate": 13,
+      "military_budget_m": 31902,
+      "active_personnel": 1698160,
+      "government_form": "Конституційна монархія"
+    },
+    "TLS": {
+      "gdp_per_capita": 50008,
+      "tax_rate": 26,
+      "military_budget_m": 2879,
+      "active_personnel": 529885,
+      "government_form": "Конституційна монархія"
+    },
+    "BRN": {
+      "gdp_per_capita": 72541,
+      "tax_rate": 24,
+      "military_budget_m": 11715,
+      "active_personnel": 985939,
+      "government_form": "Абсолютна монархія"
+    },
+    "MCO": {
+      "gdp_per_capita": 64061,
+      "tax_rate": 29,
+      "military_budget_m": 886,
+      "active_personnel": 251189,
+      "government_form": "Абсолютна монархія"
+    },
+    "DZA": {
+      "gdp_per_capita": 14117,
+      "tax_rate": 17,
+      "military_budget_m": 42875,
+      "active_personnel": 1488662,
+      "government_form": "Конституційна монархія"
+    },
+    "MOZ": {
+      "gdp_per_capita": 72882,
+      "tax_rate": 49,
+      "military_budget_m": 9248,
+      "active_personnel": 1503311,
+      "government_form": "Федеративна республіка"
+    },
+    "SWZ": {
+      "gdp_per_capita": 61568,
+      "tax_rate": 42,
+      "military_budget_m": 38529,
+      "active_personnel": 1231573,
+      "government_form": "Абсолютна монархія"
+    },
+    "BDI": {
+      "gdp_per_capita": 4438,
+      "tax_rate": 34,
+      "military_budget_m": 37033,
+      "active_personnel": 1389785,
+      "government_form": "Конституційна монархія"
+    },
+    "RWA": {
+      "gdp_per_capita": 37243,
+      "tax_rate": 49,
+      "military_budget_m": 2055,
+      "active_personnel": 454999,
+      "government_form": "Республіка"
+    },
+    "MMR": {
+      "gdp_per_capita": 31782,
+      "tax_rate": 23,
+      "military_budget_m": 9844,
+      "active_personnel": 1200790,
+      "government_form": "Республіка"
+    },
+    "BGD": {
+      "gdp_per_capita": 62277,
+      "tax_rate": 27,
+      "military_budget_m": 30893,
+      "active_personnel": 1145027,
+      "government_form": "Конституційна монархія"
+    },
+    "AND": {
+      "gdp_per_capita": 11507,
+      "tax_rate": 15,
+      "military_budget_m": 25299,
+      "active_personnel": 1719245,
+      "government_form": "Конституційна монархія"
+    },
+    "AFG": {
+      "gdp_per_capita": 31685,
+      "tax_rate": 26,
+      "military_budget_m": 11059,
+      "active_personnel": 770976,
+      "government_form": "Республіка"
+    },
+    "MNE": {
+      "gdp_per_capita": 69741,
+      "tax_rate": 17,
+      "military_budget_m": 6236,
+      "active_personnel": 975699,
+      "government_form": "Республіка"
+    },
+    "BIH": {
+      "gdp_per_capita": 46378,
+      "tax_rate": 22,
+      "military_budget_m": 17873,
+      "active_personnel": 887458,
+      "government_form": "Конституційна монархія"
+    },
+    "UGA": {
+      "gdp_per_capita": 78640,
+      "tax_rate": 10,
+      "military_budget_m": 24363,
+      "active_personnel": 824151,
+      "government_form": "Федеративна республіка"
+    },
+    "CUB": {
+      "gdp_per_capita": 57835,
+      "tax_rate": 45,
+      "military_budget_m": 46073,
+      "active_personnel": 1046153,
+      "government_form": "Федеративна республіка"
+    },
+    "HND": {
+      "gdp_per_capita": 5903,
+      "tax_rate": 36,
+      "military_budget_m": 22050,
+      "active_personnel": 1942089,
+      "government_form": "Федеративна республіка"
+    },
+    "ECU": {
+      "gdp_per_capita": 27201,
+      "tax_rate": 26,
+      "military_budget_m": 34366,
+      "active_personnel": 1053568,
+      "government_form": "Конституційна монархія"
+    },
+    "COL": {
+      "gdp_per_capita": 31628,
+      "tax_rate": 43,
+      "military_budget_m": 30322,
+      "active_personnel": 1700383,
+      "government_form": "Абсолютна монархія"
+    },
+    "PRY": {
+      "gdp_per_capita": 73075,
+      "tax_rate": 32,
+      "military_budget_m": 9093,
+      "active_personnel": 1968303,
+      "government_form": "Конституційна монархія"
+    },
+    "PRT": {
+      "gdp_per_capita": 41757,
+      "tax_rate": 19,
+      "military_budget_m": 35334,
+      "active_personnel": 1167249,
+      "government_form": "Конституційна монархія"
+    },
+    "MDA": {
+      "gdp_per_capita": 62948,
+      "tax_rate": 42,
+      "military_budget_m": 40000,
+      "active_personnel": 853791,
+      "government_form": "Федеративна республіка"
+    },
+    "TKM": {
+      "gdp_per_capita": 17484,
+      "tax_rate": 41,
+      "military_budget_m": 13710,
+      "active_personnel": 1984220,
+      "government_form": "Конституційна монархія"
+    },
+    "JOR": {
+      "gdp_per_capita": 12354,
+      "tax_rate": 23,
+      "military_budget_m": 6957,
+      "active_personnel": 844296,
+      "government_form": "Республіка"
+    },
+    "NPL": {
+      "gdp_per_capita": 61519,
+      "tax_rate": 35,
+      "military_budget_m": 49647,
+      "active_personnel": 217858,
+      "government_form": "Конституційна монархія"
+    },
+    "LSO": {
+      "gdp_per_capita": 40636,
+      "tax_rate": 23,
+      "military_budget_m": 33514,
+      "active_personnel": 1179208,
+      "government_form": "Конституційна монархія"
+    },
+    "CMR": {
+      "gdp_per_capita": 61302,
+      "tax_rate": 31,
+      "military_budget_m": 7265,
+      "active_personnel": 1797798,
+      "government_form": "Конституційна монархія"
+    },
+    "GAB": {
+      "gdp_per_capita": 35655,
+      "tax_rate": 22,
+      "military_budget_m": 32276,
+      "active_personnel": 154714,
+      "government_form": "Федеративна республіка"
+    },
+    "NER": {
+      "gdp_per_capita": 32809,
+      "tax_rate": 10,
+      "military_budget_m": 22105,
+      "active_personnel": 1369528,
+      "government_form": "Республіка"
+    },
+    "BFA": {
+      "gdp_per_capita": 35162,
+      "tax_rate": 27,
+      "military_budget_m": 9750,
+      "active_personnel": 142805,
+      "government_form": "Федеративна республіка"
+    },
+    "TGO": {
+      "gdp_per_capita": 24266,
+      "tax_rate": 19,
+      "military_budget_m": 15280,
+      "active_personnel": 1099867,
+      "government_form": "Республіка"
+    },
+    "GHA": {
+      "gdp_per_capita": 12985,
+      "tax_rate": 24,
+      "military_budget_m": 36789,
+      "active_personnel": 299528,
+      "government_form": "Конституційна монархія"
+    },
+    "GNB": {
+      "gdp_per_capita": 61348,
+      "tax_rate": 14,
+      "military_budget_m": 46473,
+      "active_personnel": 123384,
+      "government_form": "Республіка"
+    },
+    "GIB": {
+      "gdp_per_capita": 28343,
+      "tax_rate": 21,
+      "military_budget_m": 40893,
+      "active_personnel": 1677803,
+      "government_form": "Конституційна монархія"
+    },
+    "USA": {
+      "gdp_per_capita": 55873,
+      "tax_rate": 45,
+      "military_budget_m": 24647,
+      "active_personnel": 1884705,
+      "government_form": "Федеративна республіка"
+    },
+    "CAN": {
+      "gdp_per_capita": 28721,
+      "tax_rate": 46,
+      "military_budget_m": 7270,
+      "active_personnel": 252547,
+      "government_form": "Конституційна монархія"
+    },
+    "MEX": {
+      "gdp_per_capita": 75862,
+      "tax_rate": 22,
+      "military_budget_m": 18068,
+      "active_personnel": 1351917,
+      "government_form": "Абсолютна монархія"
+    },
+    "BLZ": {
+      "gdp_per_capita": 3269,
+      "tax_rate": 32,
+      "military_budget_m": 21027,
+      "active_personnel": 111887,
+      "government_form": "Абсолютна монархія"
+    },
+    "PAN": {
+      "gdp_per_capita": 44463,
+      "tax_rate": 23,
+      "military_budget_m": 37676,
+      "active_personnel": 197861,
+      "government_form": "Федеративна республіка"
+    },
+    "VEN": {
+      "gdp_per_capita": 21843,
+      "tax_rate": 44,
+      "military_budget_m": 31651,
+      "active_personnel": 459070,
+      "government_form": "Абсолютна монархія"
+    },
+    "PNG": {
+      "gdp_per_capita": 38177,
+      "tax_rate": 30,
+      "military_budget_m": 10705,
+      "active_personnel": 638962,
+      "government_form": "Конституційна монархія"
+    },
+    "EGY": {
+      "gdp_per_capita": 41270,
+      "tax_rate": 42,
+      "military_budget_m": 40763,
+      "active_personnel": 1922181,
+      "government_form": "Республіка"
+    },
+    "YEM": {
+      "gdp_per_capita": 24721,
+      "tax_rate": 42,
+      "military_budget_m": 7444,
+      "active_personnel": 1706759,
+      "government_form": "Абсолютна монархія"
+    },
+    "MRT": {
+      "gdp_per_capita": 12889,
+      "tax_rate": 46,
+      "military_budget_m": 11898,
+      "active_personnel": 1220540,
+      "government_form": "Конституційна монархія"
+    },
+    "GNQ": {
+      "gdp_per_capita": 43627,
+      "tax_rate": 47,
+      "military_budget_m": 953,
+      "active_personnel": 492278,
+      "government_form": "Республіка"
+    },
+    "GMB": {
+      "gdp_per_capita": 29773,
+      "tax_rate": 30,
+      "military_budget_m": 19704,
+      "active_personnel": 591830,
+      "government_form": "Конституційна монархія"
+    },
+    "HKG": {
+      "gdp_per_capita": 77204,
+      "tax_rate": 24,
+      "military_budget_m": 10199,
+      "active_personnel": 1747456,
+      "government_form": "Конституційна монархія"
+    },
+    "VAT": {
+      "gdp_per_capita": 17975,
+      "tax_rate": 25,
+      "military_budget_m": 9212,
+      "active_personnel": 334093,
+      "government_form": "Абсолютна монархія"
+    },
+    "AUS": {
+      "gdp_per_capita": 64839,
+      "tax_rate": 24,
+      "military_budget_m": 48270,
+      "active_personnel": 1676981,
+      "government_form": "Федеративна республіка"
+    },
+    "GRL": {
+      "gdp_per_capita": 32304,
+      "tax_rate": 29,
+      "military_budget_m": 29967,
+      "active_personnel": 1836114,
+      "government_form": "Федеративна республіка"
+    },
+    "FJI": {
+      "gdp_per_capita": 34912,
+      "tax_rate": 34,
+      "military_budget_m": 45835,
+      "active_personnel": 1302324,
+      "government_form": "Абсолютна монархія"
+    },
+    "NZL": {
+      "gdp_per_capita": 71906,
+      "tax_rate": 37,
+      "military_budget_m": 19734,
+      "active_personnel": 966747,
+      "government_form": "Абсолютна монархія"
+    },
+    "NCL": {
+      "gdp_per_capita": 12244,
+      "tax_rate": 33,
+      "military_budget_m": 40206,
+      "active_personnel": 481323,
+      "government_form": "Конституційна монархія"
+    },
+    "MDG": {
+      "gdp_per_capita": 18232,
+      "tax_rate": 11,
+      "military_budget_m": 15709,
+      "active_personnel": 224096,
+      "government_form": "Конституційна монархія"
+    },
+    "PHL": {
+      "gdp_per_capita": 44435,
+      "tax_rate": 37,
+      "military_budget_m": 2715,
+      "active_personnel": 374180,
+      "government_form": "Абсолютна монархія"
+    },
+    "LKA": {
+      "gdp_per_capita": 58030,
+      "tax_rate": 28,
+      "military_budget_m": 19177,
+      "active_personnel": 1812253,
+      "government_form": "Республіка"
+    },
+    "CUW": {
+      "gdp_per_capita": 8503,
+      "tax_rate": 14,
+      "military_budget_m": 17649,
+      "active_personnel": 1305215,
+      "government_form": "Федеративна республіка"
+    },
+    "ABW": {
+      "gdp_per_capita": 46089,
+      "tax_rate": 26,
+      "military_budget_m": 25686,
+      "active_personnel": 460948,
+      "government_form": "Республіка"
+    },
+    "BHS": {
+      "gdp_per_capita": 55993,
+      "tax_rate": 29,
+      "military_budget_m": 11705,
+      "active_personnel": 864540,
+      "government_form": "Абсолютна монархія"
+    },
+    "TCA": {
+      "gdp_per_capita": 8482,
+      "tax_rate": 43,
+      "military_budget_m": 43304,
+      "active_personnel": 1111009,
+      "government_form": "Конституційна монархія"
+    },
+    "TWN": {
+      "gdp_per_capita": 36967,
+      "tax_rate": 11,
+      "military_budget_m": 3829,
+      "active_personnel": 156226,
+      "government_form": "Федеративна республіка"
+    },
+    "JPN": {
+      "gdp_per_capita": 65482,
+      "tax_rate": 31,
+      "military_budget_m": 11872,
+      "active_personnel": 711224,
+      "government_form": "Республіка"
+    },
+    "SPM": {
+      "gdp_per_capita": 64658,
+      "tax_rate": 38,
+      "military_budget_m": 9359,
+      "active_personnel": 936230,
+      "government_form": "Абсолютна монархія"
+    },
+    "ISL": {
+      "gdp_per_capita": 56113,
+      "tax_rate": 38,
+      "military_budget_m": 38563,
+      "active_personnel": 720571,
+      "government_form": "Республіка"
+    },
+    "PCN": {
+      "gdp_per_capita": 14522,
+      "tax_rate": 43,
+      "military_budget_m": 28801,
+      "active_personnel": 370945,
+      "government_form": "Абсолютна монархія"
+    },
+    "PYF": {
+      "gdp_per_capita": 8298,
+      "tax_rate": 25,
+      "military_budget_m": 8494,
+      "active_personnel": 950041,
+      "government_form": "Конституційна монархія"
+    },
+    "ATF": {
+      "gdp_per_capita": 24284,
+      "tax_rate": 40,
+      "military_budget_m": 12607,
+      "active_personnel": 1877242,
+      "government_form": "Конституційна монархія"
+    },
+    "SYC": {
+      "gdp_per_capita": 50074,
+      "tax_rate": 27,
+      "military_budget_m": 7060,
+      "active_personnel": 1525600,
+      "government_form": "Федеративна республіка"
+    },
+    "KIR": {
+      "gdp_per_capita": 2174,
+      "tax_rate": 15,
+      "military_budget_m": 32951,
+      "active_personnel": 1687335,
+      "government_form": "Конституційна монархія"
+    },
+    "MHL": {
+      "gdp_per_capita": 14459,
+      "tax_rate": 24,
+      "military_budget_m": 21849,
+      "active_personnel": 1559614,
+      "government_form": "Абсолютна монархія"
+    },
+    "TTO": {
+      "gdp_per_capita": 55868,
+      "tax_rate": 25,
+      "military_budget_m": 37536,
+      "active_personnel": 221890,
+      "government_form": "Конституційна монархія"
+    },
+    "GRD": {
+      "gdp_per_capita": 72662,
+      "tax_rate": 18,
+      "military_budget_m": 460,
+      "active_personnel": 1202602,
+      "government_form": "Федеративна республіка"
+    },
+    "VCT": {
+      "gdp_per_capita": 3909,
+      "tax_rate": 49,
+      "military_budget_m": 16192,
+      "active_personnel": 1570897,
+      "government_form": "Федеративна республіка"
+    },
+    "BRB": {
+      "gdp_per_capita": 7618,
+      "tax_rate": 32,
+      "military_budget_m": 44444,
+      "active_personnel": 1110798,
+      "government_form": "Конституційна монархія"
+    },
+    "LCA": {
+      "gdp_per_capita": 70627,
+      "tax_rate": 16,
+      "military_budget_m": 27071,
+      "active_personnel": 457379,
+      "government_form": "Конституційна монархія"
+    },
+    "DMA": {
+      "gdp_per_capita": 1345,
+      "tax_rate": 13,
+      "military_budget_m": 48970,
+      "active_personnel": 1481182,
+      "government_form": "Федеративна республіка"
+    },
+    "UMI": {
+      "gdp_per_capita": 50700,
+      "tax_rate": 15,
+      "military_budget_m": 2375,
+      "active_personnel": 70229,
+      "government_form": "Конституційна монархія"
+    },
+    "MSR": {
+      "gdp_per_capita": 23301,
+      "tax_rate": 45,
+      "military_budget_m": 34907,
+      "active_personnel": 1271028,
+      "government_form": "Федеративна республіка"
+    },
+    "ATG": {
+      "gdp_per_capita": 24447,
+      "tax_rate": 33,
+      "military_budget_m": 20526,
+      "active_personnel": 619399,
+      "government_form": "Республіка"
+    },
+    "KNA": {
+      "gdp_per_capita": 71713,
+      "tax_rate": 11,
+      "military_budget_m": 15827,
+      "active_personnel": 864845,
+      "government_form": "Федеративна республіка"
+    },
+    "VIR": {
+      "gdp_per_capita": 3703,
+      "tax_rate": 40,
+      "military_budget_m": 46550,
+      "active_personnel": 307466,
+      "government_form": "Федеративна республіка"
+    },
+    "BLM": {
+      "gdp_per_capita": 36820,
+      "tax_rate": 44,
+      "military_budget_m": 48109,
+      "active_personnel": 1699218,
+      "government_form": "Республіка"
+    },
+    "PRI": {
+      "gdp_per_capita": 63020,
+      "tax_rate": 10,
+      "military_budget_m": 46644,
+      "active_personnel": 1432268,
+      "government_form": "Федеративна республіка"
+    },
+    "AIA": {
+      "gdp_per_capita": 50183,
+      "tax_rate": 24,
+      "military_budget_m": 8252,
+      "active_personnel": 1797590,
+      "government_form": "Абсолютна монархія"
+    },
+    "VGB": {
+      "gdp_per_capita": 78089,
+      "tax_rate": 28,
+      "military_budget_m": 30968,
+      "active_personnel": 1287180,
+      "government_form": "Федеративна республіка"
+    },
+    "JAM": {
+      "gdp_per_capita": 51761,
+      "tax_rate": 23,
+      "military_budget_m": 43701,
+      "active_personnel": 1617182,
+      "government_form": "Абсолютна монархія"
+    },
+    "CYM": {
+      "gdp_per_capita": 46305,
+      "tax_rate": 46,
+      "military_budget_m": 12830,
+      "active_personnel": 361901,
+      "government_form": "Конституційна монархія"
+    },
+    "BMU": {
+      "gdp_per_capita": 27925,
+      "tax_rate": 28,
+      "military_budget_m": 28173,
+      "active_personnel": 1757895,
+      "government_form": "Республіка"
+    },
+    "HMD": {
+      "gdp_per_capita": 2202,
+      "tax_rate": 29,
+      "military_budget_m": 32670,
+      "active_personnel": 354569,
+      "government_form": "Абсолютна монархія"
+    },
+    "SHN": {
+      "gdp_per_capita": 23842,
+      "tax_rate": 22,
+      "military_budget_m": 34608,
+      "active_personnel": 1110627,
+      "government_form": "Федеративна республіка"
+    },
+    "MUS": {
+      "gdp_per_capita": 30774,
+      "tax_rate": 41,
+      "military_budget_m": 30802,
+      "active_personnel": 112444,
+      "government_form": "Республіка"
+    },
+    "COM": {
+      "gdp_per_capita": 36335,
+      "tax_rate": 18,
+      "military_budget_m": 6068,
+      "active_personnel": 1993339,
+      "government_form": "Федеративна республіка"
+    },
+    "STP": {
+      "gdp_per_capita": 9493,
+      "tax_rate": 11,
+      "military_budget_m": 32610,
+      "active_personnel": 1815198,
+      "government_form": "Федеративна республіка"
+    },
+    "CPV": {
+      "gdp_per_capita": 13705,
+      "tax_rate": 39,
+      "military_budget_m": 12457,
+      "active_personnel": 1461539,
+      "government_form": "Федеративна республіка"
+    },
+    "MLT": {
+      "gdp_per_capita": 77912,
+      "tax_rate": 12,
+      "military_budget_m": 35639,
+      "active_personnel": 196144,
+      "government_form": "Республіка"
+    },
+    "JEY": {
+      "gdp_per_capita": 15189,
+      "tax_rate": 25,
+      "military_budget_m": 5809,
+      "active_personnel": 802437,
+      "government_form": "Абсолютна монархія"
+    },
+    "GGY": {
+      "gdp_per_capita": 47045,
+      "tax_rate": 45,
+      "military_budget_m": 20990,
+      "active_personnel": 1422748,
+      "government_form": "Конституційна монархія"
+    },
+    "IMN": {
+      "gdp_per_capita": 31313,
+      "tax_rate": 16,
+      "military_budget_m": 18874,
+      "active_personnel": 365079,
+      "government_form": "Конституційна монархія"
+    },
+    "ALA": {
+      "gdp_per_capita": 69810,
+      "tax_rate": 29,
+      "military_budget_m": 25168,
+      "active_personnel": 515089,
+      "government_form": "Абсолютна монархія"
+    },
+    "FRO": {
+      "gdp_per_capita": 76571,
+      "tax_rate": 16,
+      "military_budget_m": 23416,
+      "active_personnel": 1023961,
+      "government_form": "Республіка"
+    },
+    "IOT": {
+      "gdp_per_capita": 24113,
+      "tax_rate": 31,
+      "military_budget_m": 37891,
+      "active_personnel": 1259294,
+      "government_form": "Абсолютна монархія"
+    },
+    "SGP": {
+      "gdp_per_capita": 43553,
+      "tax_rate": 24,
+      "military_budget_m": 22368,
+      "active_personnel": 786205,
+      "government_form": "Республіка"
+    },
+    "NFK": {
+      "gdp_per_capita": 47103,
+      "tax_rate": 43,
+      "military_budget_m": 7067,
+      "active_personnel": 1216689,
+      "government_form": "Республіка"
+    },
+    "COK": {
+      "gdp_per_capita": 38929,
+      "tax_rate": 19,
+      "military_budget_m": 24738,
+      "active_personnel": 1654137,
+      "government_form": "Абсолютна монархія"
+    },
+    "TON": {
+      "gdp_per_capita": 67362,
+      "tax_rate": 15,
+      "military_budget_m": 4711,
+      "active_personnel": 1331840,
+      "government_form": "Федеративна республіка"
+    },
+    "WLF": {
+      "gdp_per_capita": 71668,
+      "tax_rate": 22,
+      "military_budget_m": 764,
+      "active_personnel": 826557,
+      "government_form": "Конституційна монархія"
+    },
+    "WSM": {
+      "gdp_per_capita": 78344,
+      "tax_rate": 38,
+      "military_budget_m": 47254,
+      "active_personnel": 149581,
+      "government_form": "Конституційна монархія"
+    },
+    "SLB": {
+      "gdp_per_capita": 59851,
+      "tax_rate": 10,
+      "military_budget_m": 18294,
+      "active_personnel": 995491,
+      "government_form": "Конституційна монархія"
+    },
+    "TUV": {
+      "gdp_per_capita": 36368,
+      "tax_rate": 19,
+      "military_budget_m": 25209,
+      "active_personnel": 1711308,
+      "government_form": "Федеративна республіка"
+    },
+    "MDV": {
+      "gdp_per_capita": 27951,
+      "tax_rate": 23,
+      "military_budget_m": 46903,
+      "active_personnel": 851504,
+      "government_form": "Федеративна республіка"
+    },
+    "NRU": {
+      "gdp_per_capita": 35149,
+      "tax_rate": 26,
+      "military_budget_m": 37513,
+      "active_personnel": 1896929,
+      "government_form": "Конституційна монархія"
+    },
+    "FSM": {
+      "gdp_per_capita": 40873,
+      "tax_rate": 44,
+      "military_budget_m": 19395,
+      "active_personnel": 1306718,
+      "government_form": "Республіка"
+    },
+    "SGS": {
+      "gdp_per_capita": 29454,
+      "tax_rate": 12,
+      "military_budget_m": 3749,
+      "active_personnel": 340328,
+      "government_form": "Федеративна республіка"
+    },
+    "FLK": {
+      "gdp_per_capita": 28972,
+      "tax_rate": 26,
+      "military_budget_m": 7571,
+      "active_personnel": 274133,
+      "government_form": "Республіка"
+    },
+    "VUT": {
+      "gdp_per_capita": 16515,
+      "tax_rate": 23,
+      "military_budget_m": 25383,
+      "active_personnel": 1265313,
+      "government_form": "Конституційна монархія"
+    },
+    "NIU": {
+      "gdp_per_capita": 11278,
+      "tax_rate": 13,
+      "military_budget_m": 41444,
+      "active_personnel": 804022,
+      "government_form": "Федеративна республіка"
+    },
+    "ASM": {
+      "gdp_per_capita": 2129,
+      "tax_rate": 44,
+      "military_budget_m": 1585,
+      "active_personnel": 395569,
+      "government_form": "Конституційна монархія"
+    },
+    "PLW": {
+      "gdp_per_capita": 28728,
+      "tax_rate": 15,
+      "military_budget_m": 5317,
+      "active_personnel": 1060755,
+      "government_form": "Конституційна монархія"
+    },
+    "GUM": {
+      "gdp_per_capita": 42108,
+      "tax_rate": 25,
+      "military_budget_m": 16263,
+      "active_personnel": 213511,
+      "government_form": "Республіка"
+    },
+    "MNP": {
+      "gdp_per_capita": 57827,
+      "tax_rate": 39,
+      "military_budget_m": 39149,
+      "active_personnel": 1865521,
+      "government_form": "Конституційна монархія"
+    },
+    "BHR": {
+      "gdp_per_capita": 77577,
+      "tax_rate": 45,
+      "military_budget_m": 43362,
+      "active_personnel": 882785,
+      "government_form": "Конституційна монархія"
+    },
+    "MAC": {
+      "gdp_per_capita": 13181,
+      "tax_rate": 10,
+      "military_budget_m": 27822,
+      "active_personnel": 602915,
+      "government_form": "Абсолютна монархія"
+    }
+  }
+}

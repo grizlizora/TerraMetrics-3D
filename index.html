@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="TerraMetrics 3D - Interactive Global Analytics Dashboard for Expats. View real-time climate, taxes, safety, and economic data on a beautiful 3D WebGL globe." />
+    <meta name="keywords" content="Interactive 3D Globe, Expat Relocation Data, Global Analytics, Climate API, Taxes, Safety Index, WebGL, Mapbox" />
+    <title>TerraMetrics 3D</title>
+    <!-- MapLibre CSS -->
+    <link href="https://unpkg.com/maplibre-gl@5.0.0/dist/maplibre-gl.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./src/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Map Container (Three.js тепер рендерить прямо всередині цього canvas через SpaceBridge) -->
+      <div id="map" style="opacity: 0; transition: opacity 0.8s ease-in-out;"></div>
+
+    <!-- UI Overlay -->
+    <div id="ui-layer" class="ui-layer">
+      <!-- Top Bar: Absolute Positioning Groups -->
+      <header class="top-bar">
+        <!-- Left Group -->
+        <div class="top-bar-left">
+          <div class="logo glass-panel">
+            <h1 data-i18n="title">🌍 Світ</h1>
+          </div>
+          
+          <div id="space-switcher" class="space-switcher glass-panel" style="display: flex; flex-direction: column; gap: 0.5rem; transition: opacity 0.3s; border-radius: 1.25rem; padding: 0.5rem 0.75rem;">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 0.25rem;">
+              <button id="btn-space-none" class="active" data-i18n="space_none" data-api-id="space-none" data-api-action="Вимкнути 3D космос">🌑 Вимкнено</button>
+              <button id="btn-space-basic" data-i18n="space_basic" data-api-id="space-basic" data-api-action="Увімкнути базовий космос (лише зорі)">✨ Зорі</button>
+              <button id="btn-space-advanced" data-i18n="space_advanced" data-api-id="space-advanced" data-api-action="Увімкнути детальний космос (Сонце, Місяць, планети)">🪐 Система</button>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 0.25rem;">
+              <div id="labels-container" style="display: flex; align-items: center; opacity: 0.4; pointer-events: none;">
+                <button id="btn-space-labels" class="active" data-i18n="space_labels" data-api-id="space-labels" data-api-action="Перемкнути позначки космічних об'єктів">🏷️ Позначки</button>
+              </div>
+              <div id="deep-space-container" style="display: flex; align-items: center;">
+                <button id="btn-deep-space" data-i18n="space_deep" data-api-id="deep-space" data-api-action="Перемкнути відображення далекого космосу">🔭 Далекий космос</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Center Group -->
+        <div class="top-bar-center">
+          <div class="search-container glass-panel">
+            <div class="search-tabs">
+              <button id="tab-countries" class="search-tab active" data-i18n="tab_countries" data-api-id="tab-countries" data-api-action="Пошук по країнам">🇺🇳 Країни</button>
+              <button id="tab-continents" class="search-tab" data-i18n="tab_continents" data-api-id="tab-continents" data-api-action="Пошук по континентам">🌍 Континенти</button>
+            </div>
+            <input type="text" id="search-input" data-i18n-placeholder="search_placeholder" placeholder="Пошук..." autocomplete="off">
+            <div id="search-results" class="search-results hidden"></div>
+          </div>
+        </div>
+        
+        <!-- Right Group -->
+        <div class="top-bar-right">
+          <div class="view-switcher glass-panel pill-panel" style="flex-wrap: wrap; justify-content: flex-end;">
+            <button id="btn-3d" class="active" data-i18n="btn_3d" data-api-id="view-3d" data-api-action="Перемкнути на 3D Глобус">3D Глобус</button>
+            <button id="btn-2d" data-i18n="btn_2d" data-api-id="view-2d" data-api-action="Перемкнути на 2D Мапу">2D Мапа</button>
+            <div class="divider"></div>
+            <button id="btn-theme" class="icon-btn" title="Змінити тему" data-api-id="toggle-theme" data-api-action="Змінити тему оформлення">🌓</button>
+            <button id="lang-toggle" class="lang-btn" data-api-id="toggle-lang" data-api-action="Змінити мову">🇬🇧 EN</button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Left Global Categories Menu -->
+      <nav id="global-categories-menu" class="glass-panel global-nav">
+        <button id="cat-society" class="category-btn active" data-i18n="cat_society" title="Суспільство" data-api-id="cat-society" data-api-action="Відкрити категорію Суспільство">
+          <span class="cat-icon">👨‍👩‍👧‍👦</span>
+          <span class="cat-text" data-i18n="cat_society_short">Суспільство</span>
+        </button>
+        <button id="cat-state" class="category-btn" data-i18n="cat_state" title="Держава" data-api-id="cat-state" data-api-action="Відкрити категорію Держава">
+          <span class="cat-icon">🏛️</span>
+          <span class="cat-text" data-i18n="cat_state_short">Держава</span>
+        </button>
+        <button id="cat-nature" class="category-btn" data-i18n="cat_nature" title="Природа" data-api-id="cat-nature" data-api-action="Відкрити категорію Природа">
+          <span class="cat-icon">🌍</span>
+          <span class="cat-text" data-i18n="cat_nature_short">Природа</span>
+        </button>
+      </nav>
+
+      <!-- Side Panel: Stats -->
+      <aside id="stats-panel" class="glass-panel stats-panel hidden">
+        <div class="stats-header" style="position: relative; padding: 0.75rem 1rem 0 1rem;">
+          <!-- Close Button absolutely positioned at the top right -->
+          <div id="panel-close" class="close-btn" style="position: absolute; top: 0.75rem; right: 0.75rem; z-index: 10;" data-api-id="close-stats" data-api-action="Закрити панель статистики">&times;</div>
+          
+          <!-- Dynamic Mode Switcher Container - pushed down to avoid close button, and allowed to wrap -->
+          <div style="width: 100%; margin-top: 2.25rem;">
+            <div id="submodes-society" class="mode-switcher pill-panel submode-group" style="display: flex; flex-wrap: wrap; width: 100%; justify-content: flex-start;">
+              <button id="mode-religion" class="active submode-btn" data-i18n="mode_religion" style="flex: 1 1 auto; white-space: nowrap;" data-api-id="mode-religion" data-api-action="Показати статистику релігій">⛪️ Релігія</button>
+              <button id="mode-population" class="submode-btn" data-i18n="mode_population" style="flex: 1 1 auto; white-space: nowrap;" data-api-id="mode-population" data-api-action="Показати статистику населення">👥 Населення</button>
+              <button id="mode-demographics" class="submode-btn" data-i18n="mode_demographics" style="flex: 1 1 auto; white-space: nowrap;" data-api-id="mode-culture" data-api-action="Показати культурну статистику">📊 Культура</button>
+            </div>
+            <div id="submodes-state" class="mode-switcher pill-panel submode-group" style="display: none; flex-wrap: wrap; width: 100%; justify-content: flex-start;">
+              <button id="mode-economy" class="submode-btn" data-i18n="mode_economy" style="flex: 1 1 auto; white-space: nowrap;" data-api-id="mode-economy" data-api-action="Показати економіку">💰 Економіка</button>
+              <button id="mode-politics" class="submode-btn" data-i18n="mode_politics" style="flex: 1 1 auto; white-space: nowrap;" data-api-id="mode-politics" data-api-action="Показати політику">⚖️ Політика</button>
+              <button id="mode-military" class="submode-btn" data-i18n="mode_military" style="flex: 1 1 auto; white-space: nowrap;" data-api-id="mode-military" data-api-action="Показати військову статистику">🛡️ Армія</button>
+            </div>
+            <div id="submodes-nature" class="mode-switcher pill-panel submode-group" style="display: none; flex-wrap: wrap; width: 100%; justify-content: flex-start;">
+              <button id="mode-climate" class="submode-btn" data-i18n="mode_climate" style="flex: 1 1 auto; white-space: nowrap;" data-api-id="mode-climate" data-api-action="Показати клімат">🌤️ Клімат</button>
+              <button id="mode-geography" class="submode-btn" data-i18n="mode_geography" style="flex: 1 1 auto; white-space: nowrap;" data-api-id="mode-geography" data-api-action="Показати географію">🏔️ Рельєф</button>
+              <button id="mode-resources" class="submode-btn" data-i18n="mode_resources" style="flex: 1 1 auto; white-space: nowrap;" data-api-id="mode-resources" data-api-action="Показати ресурси">🏗️ Інфраструктура</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="stats-content">
+          <!-- Country Stats -->
+        <div id="country-view">
+          <h2 id="country-name">Назва країни</h2>
+          <div class="continent-badge" id="country-continent">Континент</div>
+          
+          <div class="dominant-card">
+            <h3 data-i18n="dominant_religion">Домінуюча релігія</h3>
+            <div class="value" id="dominant-religion">-</div>
+            <div class="percentage" id="dominant-percentage">-</div>
+          </div>
+          
+          <div class="stats-list">
+            <h3 data-i18n="religion_distribution">Розподіл релігій</h3>
+            <ul id="religion-list">
+              <!-- JS will populate this -->
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Continent Stats (Shown when no country is selected) -->
+        <div id="continent-view" style="display: none;">
+           <h2 id="continent-name">Континент</h2>
+           <p class="subtitle" data-i18n="global_stats">Глобальна статистика</p>
+           
+           <div class="dominant-card">
+            <h3 data-i18n="dominant_religion">Домінуюча релігія</h3>
+            <div class="value" id="cont-dominant-religion">-</div>
+            <div class="percentage" id="cont-dominant-percentage">-</div>
+          </div>
+          
+          <div class="stats-list">
+            <h3 data-i18n="religion_distribution">Розподіл релігій</h3>
+            <ul id="cont-religion-list">
+            </ul>
+          </div>
+        </div>
+        </div> <!-- End of stats-content -->
+      </aside>
+      
+      <!-- Instructions Overlay -->
+      <div id="instruction" class="instruction glass-panel">
+        <p data-i18n="instruction">Наведіть або клікніть на країну, щоб побачити деталі.</p>
+      </div>
+      
+    </div><!-- /ui-layer -->
+    </div><!-- /app -->
+
+    <!-- Climate Modal — OUTSIDE ui-layer and #app so pointer-events work correctly -->
+    <div id="climate-modal" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 9999; display: none; align-items: center; justify-content: center;">
+      <div style="width: 40.625rem; max-width: 95%; background: var(--glass-bg); backdrop-filter: blur(0.5rem); -webkit-backdrop-filter: blur(0.5rem); border: 1px solid var(--glass-border); border-radius: 1.5rem; padding: 1.5rem; box-shadow: 0 1.25rem 2.5rem rgba(0,0,0,0.4); max-height: 90vh; overflow-y: auto; color: var(--text-color);">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; border-bottom: 1px solid var(--glass-border); padding-bottom: 1rem;">
+          <h2 id="climate-modal-title" style="margin: 0; font-size: 1.6rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem;" data-i18n="climate_title">🌤️ Клімат</h2>
+          <button id="close-climate-modal" class="close-btn" style="position: relative; top: 0; right: 0;">&times;</button>
+        </div>
+        
+        <div id="climate-loading" style="text-align: center; padding: 2.5rem 0;">
+          <div style="font-size: 2rem; animation: spin 2s linear infinite;">⏳</div>
+          <p style="margin-top: 0.625rem; color: var(--text-secondary);" data-i18n="loading_weather">Завантаження метеоданих...</p>
+        </div>
+
+        <div id="climate-content" style="display: none;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h3 style="font-size: 1.1rem; margin: 0;" data-i18n="current_weather">Поточна погода</h3>
+            <div id="climate-season-badge" style="background: var(--accent-color); color: white; padding: 0.25rem 0.75rem; border-radius: 6.25rem; font-size: 0.85rem; font-weight: bold;" data-i18n="current_season">Поточна пора року</div>
+          </div>
+
+          <!-- Current weather -->
+          <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+            <div style="flex: 1; background: var(--card-bg); padding: 1.25rem; border-radius: 1.25rem; text-align: center; border: 1px solid var(--glass-border); box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.2s; cursor: default;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+              <div style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-secondary); margin-bottom: 0.5rem;" data-i18n="temperature">Температура</div>
+              <div id="climate-current-temp" style="font-size: 2.2rem; font-weight: 800; color: var(--accent-color);">--°C</div>
+            </div>
+            <div style="flex: 1; background: var(--card-bg); padding: 1.25rem; border-radius: 1.25rem; text-align: center; border: 1px solid var(--glass-border); box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.2s; cursor: default;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+              <div style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-secondary); margin-bottom: 0.5rem;" data-i18n="wind">Вітер</div>
+              <div id="climate-current-wind" style="font-size: 2.2rem; font-weight: 800;">--</div>
+            </div>
+            <div style="flex: 1; background: var(--card-bg); padding: 1.25rem; border-radius: 1.25rem; text-align: center; border: 1px solid var(--glass-border); box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.2s; cursor: default;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+              <div style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-secondary); margin-bottom: 0.5rem;" data-i18n="humidity">Вологість</div>
+              <div id="climate-current-humidity" style="font-size: 2.2rem; font-weight: 800;">--%</div>
+            </div>
+          </div>
+
+          <!-- Annual Average Temperatures -->
+          <h3 style="font-size: 1.1rem; margin-bottom: 0.75rem;" data-i18n="annual_temp">Середня температура протягом року</h3>
+          <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.5rem;" id="climate-annual-months">
+            <!-- JS populated -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
