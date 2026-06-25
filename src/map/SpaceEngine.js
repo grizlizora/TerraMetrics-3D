@@ -1837,10 +1837,10 @@ export class SpaceEngine {
         // Звук при наведенні / відведенні
         if (isCurrentlyHovered && !labelSprite.userData.isHovered) {
           labelSprite.userData.isHovered = true;
-          if (this.audioManager) this.audioManager.playHoverIn();
+          // if (this.audioManager) this.audioManager.playHoverIn();
         } else if (!isCurrentlyHovered && labelSprite.userData.isHovered) {
           labelSprite.userData.isHovered = false;
-          if (this.audioManager) this.audioManager.playHoverOut();
+          // if (this.audioManager) this.audioManager.playHoverOut();
         }
 
         // Спрайт цілевказівника завжди видимий (якщо не перекритий), але його вигляд (з ореолом чи без) залежить від кнопки
