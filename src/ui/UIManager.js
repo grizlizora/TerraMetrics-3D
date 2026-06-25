@@ -530,14 +530,15 @@ export class UIManager {
       const feature = this.dataLoader.getGeoJson().features.find(f => f.properties['ISO3166-1-Alpha-3'] === isoA3);
       const props = feature ? feature.properties : {};
 
-      document.querySelector('#country-view .dominant-card h3').textContent = "Військовий бюджет";
-      document.getElementById('dominant-religion').textContent = props.militarySpending ? `${props.militarySpending}% від ВВП` : "Невідомо";
+      const isUk = this.i18n.currentLanguage === 'uk';
+      document.querySelector('#country-view .dominant-card h3').textContent = isUk ? "Військовий бюджет" : "Military Budget";
+      document.getElementById('dominant-religion').textContent = props.militarySpending ? `${props.militarySpending}${isUk ? '% від ВВП' : '% of GDP'}` : (isUk ? "Невідомо" : "Unknown");
       document.getElementById('dominant-percentage').textContent = "";
-      document.querySelector('#country-view .stats-list h3').textContent = "Армія";
+      document.querySelector('#country-view .stats-list h3').textContent = isUk ? "Армія" : "Military";
       
       const list = document.getElementById('religion-list');
       const activeSize = props.militarySize ? props.militarySize.toLocaleString() : '0';
-      list.innerHTML = `<li><div class="stat-name">Активний склад</div><div class="stat-value">~${activeSize}</div></li>`;
+      list.innerHTML = `<li><div class="stat-name">${isUk ? 'Активний склад' : 'Active Personnel'}</div><div class="stat-value">~${activeSize}</div></li>`;
     } else if (this.activeMode === 'resources') {
       const feature = this.dataLoader.getGeoJson().features.find(f => f.properties['ISO3166-1-Alpha-3'] === isoA3);
       const props = feature ? feature.properties : {};
@@ -648,10 +649,29 @@ export class UIManager {
       const feature = this.dataLoader.getGeoJson().features.find(f => f.properties['ISO3166-1-Alpha-3'] === isoA3);
       const props = feature ? feature.properties : {};
 
-      document.querySelector('#country-view .dominant-card h3').textContent = "Політичний устрій";
-      document.getElementById('dominant-religion').textContent = props.politicalSystem || "Невідомо";
+      const isUk = this.i18n.currentLanguage === 'uk';
+      document.querySelector('#country-view .dominant-card h3').textContent = isUk ? "Політичний устрій" : "Political System";
+      
+      let polSys = props.politicalSystem || (isUk ? "Невідомо" : "Unknown");
+      if (!isUk) {
+          const sysMap = {
+              "Унітарна парламентська республіка": "Unitary parliamentary republic",
+              "Унітарна президентська республіка": "Unitary presidential republic",
+              "Федеративна парламентська республіка": "Federal parliamentary republic",
+              "Федеративна президентська республіка": "Federal presidential republic",
+              "Абсолютна монархія": "Absolute monarchy",
+              "Конституційна монархія": "Constitutional monarchy",
+              "Парламентська монархія": "Parliamentary monarchy",
+              "Однопартійна система": "One-party state",
+              "Військова диктатура": "Military dictatorship",
+              "Ісламська республіка": "Islamic republic",
+              "Комуністична держава": "Communist state"
+          };
+          if (sysMap[polSys]) polSys = sysMap[polSys];
+      }
+      document.getElementById('dominant-religion').textContent = polSys;
       document.getElementById('dominant-percentage').textContent = "";
-      document.querySelector('#country-view .stats-list h3').textContent = "Індекси";
+      document.querySelector('#country-view .stats-list h3').textContent = isUk ? "Індекси" : "Indexes";
       
       const list = document.getElementById('religion-list');
       
@@ -663,7 +683,7 @@ export class UIManager {
       list.innerHTML = `
         <li style="flex-direction: column; padding-bottom: 0.75rem; margin-bottom: 0.75rem;">
            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-             <span style="color: var(--text-secondary); font-size: 0.95em;">Індекс демократії (0-10)</span>
+             <span style="color: var(--text-secondary); font-size: 0.95em;">${isUk ? 'Індекс демократії' : 'Democracy Index'} (0-10)</span>
              <span style="font-weight: 700; color: ${color}; text-align: right;">${index}</span>
            </div>
            <div class="stat-bar-container" style="height: 0.375rem; background: rgba(255,255,255,0.1);">
