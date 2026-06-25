@@ -72,6 +72,11 @@ export class AudioManager {
     this._playTone('sine', 250, 150, 0.3, 0.6, 0.001);
   }
 
+  // Наведення на країну (дуже короткий, м'який клік, щоб не дратував при швидкому русі)
+  playCountryHover() {
+    this._playTone('sine', 800, 1000, 0.03, 0.05, 0.001);
+  }
+
   // 4. Перехід в 3D (свист вгору)
   playTo3D() {
     this._playTone('sine', 300, 1200, 0.3, 0.4, 0.001);

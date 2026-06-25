@@ -398,6 +398,11 @@ export class MapEngine {
             { hover: true }
           );
           this.map.getCanvas().style.cursor = 'pointer';
+          
+          // Граємо м'який звук при наведенні на нову країну
+          if (this.audioManager) {
+            this.audioManager.playCountryHover();
+          }
         }
       }
     });
