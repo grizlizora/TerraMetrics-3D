@@ -47,13 +47,7 @@ async function bootstrap() {
     const externalApi = new ExternalAPI(mapEngine, dataLoader, uiManager);
     
     mapEngine.audioManager = audioManager;
-    await mapEngine.init(dataLoader);
-    
-    // Sync map and deep space markers with the initially determined language
-    mapEngine.updateLanguage(i18n.currentLanguage);
-    if (mapEngine.spaceEngine) {
-      mapEngine.spaceEngine.updateMarkersLanguage(i18n.currentLanguage);
-    }
+    await mapEngine.init(dataLoader, i18n.currentLanguage);
     
     // Listen to language changes to update map
     i18n.onChange(() => {

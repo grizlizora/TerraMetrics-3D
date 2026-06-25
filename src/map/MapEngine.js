@@ -13,7 +13,7 @@ export class MapEngine {
     this.spaceEngine = null;
   }
 
-  async init(dataLoader) {
+  async init(dataLoader, initialLang = 'uk') {
     const geoJsonData = dataLoader.geoJsonData;
     const labelsGeoJson = dataLoader.labelsGeoJson;
     // Реалістичний супутниковий стиль із "твердою основою" (Solid Earth Base)
@@ -87,7 +87,7 @@ export class MapEngine {
         // Ініціалізація єдиного WebGL-пайплайну (SpaceBridge + SpaceEngine)
         // SpaceEngine створюється без контейнера (без власного canvas).
         // SpaceBridge вбудовує його прямо в WebGL-контекст MapLibre.
-        this.spaceEngine = new SpaceEngine(null);
+        this.spaceEngine = new SpaceEngine(null, initialLang);
         this.spaceEngine.map = this.map;
         this.spaceEngine.audioManager = this.audioManager;
         this.spaceBridge = new SpaceBridge(this.spaceEngine);
@@ -177,7 +177,7 @@ export class MapEngine {
           'type': 'symbol',
           'source': 'country-labels-source',
           'layout': {
-            'text-field': ['get', 'name_uk'], // Default to Ukrainian
+            'text-field': ['get', initialLang === 'uk' ? 'name_uk' : 'name_en'], // Apply initial language
             'text-font': ['Open Sans Regular', 'Arial Unicode MS Regular'],
             'text-size': [
               'interpolate',

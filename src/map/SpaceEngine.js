@@ -3,11 +3,12 @@ import * as Astronomy from 'astronomy-engine';
 import { CONSTELLATIONS, DEEP_SPACE_OBJECTS } from './DeepSpaceData.js';
 
 export class SpaceEngine {
-  constructor(containerId) {
+  constructor(containerId, initialLang = 'uk') {
     this.containerId = containerId;
     this.container = containerId ? document.getElementById(containerId) : null;
     this.isActive = true; // Активно тільки для 3D глобуса
     this.bridged = false; // true = рендером керує SpaceBridge (єдиний canvas)
+    this.currentLang = initialLang;
     
     this.init();
   }
@@ -20,7 +21,6 @@ export class SpaceEngine {
     this.markerData = []; // Дані для оновлення (ім'я, переклади, колір)
     this.sharedReticles = {}; // Кеш для кружечків
     this.labelsVisible = true; // Стан позначок (true = завжди видно, false = тільки при наведенні)
-    this.currentLang = 'uk'; // Поточна мова
     
     // Трекінг миші для hover-ефекту (слухаємо глобально, оскільки Mapbox може перекривати canvas)
     this.mouse = new THREE.Vector2(-9999, -9999);
