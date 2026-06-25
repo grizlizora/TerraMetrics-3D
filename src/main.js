@@ -49,6 +49,12 @@ async function bootstrap() {
     mapEngine.audioManager = audioManager;
     await mapEngine.init(dataLoader);
     
+    // Sync map and deep space markers with the initially determined language
+    mapEngine.updateLanguage(i18n.currentLanguage);
+    if (mapEngine.spaceEngine) {
+      mapEngine.spaceEngine.updateMarkersLanguage(i18n.currentLanguage);
+    }
+    
     // Listen to language changes to update map
     i18n.onChange(() => {
       mapEngine.updateLanguage(i18n.currentLanguage);
