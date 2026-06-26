@@ -476,7 +476,7 @@ export class UIManager {
         renderRow(this.i18n.getText('languages'), props.languages || '-') +
         renderRow(this.i18n.getText('currency'), props.currency || '-') +
         renderGiniRow(this.i18n.getText('gini'), props.gini) +
-        renderRow(this.i18n.currentLanguage === 'uk' ? 'Рівень медицини' : 'Healthcare Index', props.healthcareIndex ? `${props.healthcareIndex}/100` : '-') +
+        renderRow(this.i18n.currentLanguage === 'uk' ? 'Рівень медицини (Numbeo)' : 'Healthcare (Numbeo)', props.healthcareIndex ? `${props.healthcareIndex}/100` : '-') +
         renderRow(this.i18n.getText('driving_side'), props.drivingSide ? this.i18n.getText(props.drivingSide) : '-');
       
       // Останньому елементу прибираємо border-bottom
@@ -683,7 +683,7 @@ export class UIManager {
       list.innerHTML = `
         <li style="flex-direction: column; padding-bottom: 0.75rem; margin-bottom: 0.75rem;">
            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-             <span style="color: var(--text-secondary); font-size: 0.95em;">${isUk ? 'Індекс демократії' : 'Democracy Index'} (0-10)</span>
+             <span style="color: var(--text-secondary); font-size: 0.95em;">${isUk ? 'Індекс демократії (EIU)' : 'Democracy (EIU)'} (0-10)</span>
              <span style="font-weight: 700; color: ${color}; text-align: right;">${index}</span>
            </div>
            <div class="stat-bar-container" style="height: 0.375rem; background: rgba(255,255,255,0.1);">
@@ -692,7 +692,7 @@ export class UIManager {
         </li>
         <li style="flex-direction: column; padding-bottom: 0.75rem; margin-bottom: 0.75rem;">
            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-             <span style="color: var(--text-secondary); font-size: 0.95em;">${this.i18n.currentLanguage === 'uk' ? 'Індекс безпеки' : 'Safety Index'} (0-100)</span>
+             <span style="color: var(--text-secondary); font-size: 0.95em;">${this.i18n.currentLanguage === 'uk' ? 'Індекс безпеки (GPI)' : 'Safety (GPI)'} (0-100)</span>
              <span style="font-weight: 700; color: ${(props.safetyIndex || 0) > 60 ? '#2ecc71' : ((props.safetyIndex || 0) > 40 ? '#f1c40f' : '#e74c3c')}; text-align: right;">${props.safetyIndex || 0}</span>
            </div>
            <div class="stat-bar-container" style="height: 0.375rem; background: rgba(255,255,255,0.1);">
@@ -705,7 +705,7 @@ export class UIManager {
       const props = feature ? feature.properties : {};
       const isUk = this.i18n.currentLanguage === 'uk';
 
-      document.querySelector('#country-view .dominant-card h3').textContent = isUk ? 'Найвища точка' : 'Highest Point';
+      document.querySelector('#country-view .dominant-card h3').textContent = isUk ? 'Найвища точка (від рівня моря)' : 'Highest Point (above sea level)';
       document.getElementById('dominant-religion').textContent = props.highestPeak ? `${props.highestPeak.toLocaleString()} ${isUk ? 'м' : 'm'}` : (isUk ? 'Невідомо' : 'Unknown');
       document.getElementById('dominant-percentage').textContent = '';
       document.querySelector('#country-view .stats-list h3').textContent = isUk ? 'Територія' : 'Territory';
@@ -867,7 +867,7 @@ export class UIManager {
       if (stats.avgHealth > 0) {
          list.innerHTML += `<li style="flex-direction: column; align-items: flex-start; padding-top: 0.75rem; margin-top: 0.75rem; border-top: 1px solid var(--glass-border);">
           <div style="font-weight:bold; color:var(--text-secondary); margin-bottom: 0.5rem; display:flex; justify-content:space-between; width:100%; align-items:center;">
-            <span>${isUk ? 'Рівень медицини' : 'Healthcare Index'}</span>
+            <span>${isUk ? 'Рівень медицини (Numbeo)' : 'Healthcare (Numbeo)'}</span>
             <span style="color:#2ecc71; font-size:1.1em;">Сер: ${stats.avgHealth}/100</span>
           </div>
           <div style="width:100%; font-size:0.85em; color:var(--text-secondary); margin-bottom:0.5rem; text-transform:uppercase; letter-spacing:0.5px;">${isUk ? 'Топ-5 найкращої медицини' : 'Top 5 Healthcare'}</div>

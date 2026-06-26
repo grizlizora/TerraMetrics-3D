@@ -7,9 +7,10 @@ export class DataLoader {
   async loadAll() {
     try {
       console.log('Loading datasets...');
-      const [geoRes, relRes] = await Promise.all([
+      const [geoRes, relRes, idxRes] = await Promise.all([
         fetch('/countries.geojson'),
-        fetch('/religions.json')
+        fetch('/religions.json'),
+        fetch('/indexes.json')
       ]);
 
       if (!geoRes.ok || !relRes.ok) {
@@ -18,6 +19,7 @@ export class DataLoader {
 
       let rawGeoJson = await geoRes.json();
       this.religionData = await relRes.json();
+      let indexMap = await idxRes.json();
 
       // Fetch Live Population & Demographics Data
       let popMap = {};
@@ -26,10 +28,10 @@ export class DataLoader {
         let cachedStr = null;
         let cacheTime = null;
         
-        // Безпечне читання з localStorage
+        // Безпечне читання з sessionStorage
         try {
-          cachedStr = localStorage.getItem('terra_metrics_popdata');
-          cacheTime = localStorage.getItem('terra_metrics_popdata_time');
+          cachedStr = sessionStorage.getItem('terra_metrics_popdata');
+          cacheTime = sessionStorage.getItem('terra_metrics_popdata_time');
         } catch (e) {
           console.warn('LocalStorage is not available:', e);
         }
@@ -50,10 +52,10 @@ export class DataLoader {
              const popRes = await fetch('https://studies.cs.helsinki.fi/restcountries/api/all?fields=cca3,population,area,languages,capital,gini,currencies,car');
              if (popRes.ok) {
                populationData = await popRes.json();
-               // Безпечний запис у localStorage
+               // Безпечний запис у sessionStorage
                try {
-                 localStorage.setItem('terra_metrics_popdata', JSON.stringify(populationData));
-                 localStorage.setItem('terra_metrics_popdata_time', Date.now().toString());
+                 sessionStorage.setItem('terra_metrics_popdata', JSON.stringify(populationData));
+                 sessionStorage.setItem('terra_metrics_popdata_time', Date.now().toString());
                } catch (e) {
                  console.warn('Failed to save to LocalStorage (quota exceeded?):', e);
                }
@@ -90,6 +92,9 @@ export class DataLoader {
       // Filter out Antarctica (ISO_A3: ATA) to save GPU resources
       rawGeoJson.features = rawGeoJson.features.filter(f => f.properties['ISO3166-1-Alpha-3'] !== 'ATA');
 
+      // Fetch World Bank Data
+      const wbMap = await this.fetchWorldBankData();
+
       const labelsFeatures = [];
 
       // Merge religion data into geojson properties and calculate centroids for labels
@@ -113,6 +118,8 @@ export class DataLoader {
         worker.postMessage({
           rawGeoJson,
           popMap,
+          wbMap,
+          indexMap,
           religionData: this.religionData
         });
       });
@@ -123,6 +130,56 @@ export class DataLoader {
       console.error('Error loading data:', error);
       return false;
     }
+  }
+
+  async fetchWorldBankData() {
+    let wbData = {};
+    try {
+      let cachedStr = null, cacheTime = null;
+      try {
+        cachedStr = sessionStorage.getItem('terra_metrics_wbdata');
+        cacheTime = sessionStorage.getItem('terra_metrics_wbdata_time');
+      } catch (e) {}
+
+      if (cachedStr && cacheTime && (Date.now() - parseInt(cacheTime)) < 604800000) {
+        console.log('Using cached World Bank data');
+        return JSON.parse(cachedStr);
+      }
+
+      console.log('Fetching live World Bank data...');
+      const indicators = [
+        { key: 'gdp', id: 'NY.GDP.PCAP.CD' },
+        { key: 'military_percent', id: 'MS.MIL.XPND.GD.ZS' },
+        { key: 'military_active', id: 'MS.MIL.TOTL.P1' },
+        { key: 'clean_energy', id: 'EG.FEC.RNEW.ZS' }
+      ];
+
+      for (const ind of indicators) {
+        const res = await fetch(`https://api.worldbank.org/v2/country/all/indicator/${ind.id}?format=json&per_page=300&mrv=1`);
+        if (res.ok) {
+          const data = await res.json();
+          if (data && data[1]) {
+            data[1].forEach(item => {
+              if (item.countryiso3code) {
+                if (!wbData[item.countryiso3code]) wbData[item.countryiso3code] = {};
+                if (item.value !== null) {
+                  wbData[item.countryiso3code][ind.key] = item.value;
+                }
+              }
+            });
+          }
+        }
+      }
+
+      try {
+        sessionStorage.setItem('terra_metrics_wbdata', JSON.stringify(wbData));
+        sessionStorage.setItem('terra_metrics_wbdata_time', Date.now().toString());
+      } catch (e) {}
+
+    } catch (e) {
+      console.warn('Failed to fetch WB data', e);
+    }
+    return wbData;
   }
 
   getCountryStats(isoA3) {

@@ -1,5 +1,5 @@
 self.onmessage = function(e) {
-  const { rawGeoJson, popMap, religionData } = e.data;
+  const { rawGeoJson, popMap, wbMap, indexMap, religionData } = e.data;
   const labelsFeatures = [];
 
   rawGeoJson.features.forEach(feature => {
@@ -63,36 +63,50 @@ self.onmessage = function(e) {
         feature.properties.center = [centerLng, centerLat];
     }
 
-    // Generate deterministic mock data based on ISO
+    const wb = (wbMap && iso) ? (wbMap[iso] || {}) : {};
+    const idx = (indexMap && iso) ? (indexMap[iso] || {}) : {};
+    
+    // World Bank data
+    const gdp = wb.gdp ? Math.round(wb.gdp) : 0;
+    const militarySpending = wb.military_percent ? parseFloat(wb.military_percent.toFixed(1)) : 0;
+    const cleanEnergy = wb.clean_energy ? Math.round(wb.clean_energy) : 0;
+    const militaryActive = wb.military_active ? Math.round(wb.military_active) : 0;
+
+    // Derived from GDP
+    const avgSalary = gdp > 0 ? Math.floor(gdp * 0.35 / 12) : 0;
+    const colIndex = avgSalary > 0 ? Math.min(100, Math.floor(20 + (avgSalary / 5000) * 80)) : 0;
+
+    // Indexes
+    const democracyIndex = idx.democracy || 0;
+    const safetyIndex = idx.safety || 0;
+    const healthcareIndex = idx.healthcare || 0;
+    const evIndex = idx.ev || 0;
+    const internetSpeed = idx.internet || 0;
+    const highestPeak = idx.peak || 0;
+    const incomeTax = idx.tax || 0;
+    
+    // Geometry approximations
+    const areaKm2 = (popMap && iso && popMap[iso] && popMap[iso].area) ? popMap[iso].area : 1000;
+    const borderLength = Math.round(Math.sqrt(areaKm2) * 4.5); // Approximate border length based on area
+
+    // Still need political system (hard to get an API for this quickly, so pseudo-random based on hash)
     let hash = 0;
     if (iso) {
       for (let i = 0; i < iso.length; i++) hash = iso.charCodeAt(i) + ((hash << 5) - hash);
     }
     const rand = Math.abs(Math.sin(hash));
     const systems = ['Парламентська республіка', 'Президентська республіка', 'Змішана республіка', 'Конституційна монархія', 'Абсолютна монархія'];
-    const sysIndex = Math.floor(rand * systems.length);
-
-    const gdp = Math.floor(rand * 60000 + 500);
-    const avgSalary = Math.floor(gdp * 0.37 / 12);
-    const colIndex = Math.floor(20 + (avgSalary / 5000) * 80);
-    const evIndex = Math.floor(rand * 60 + 2);
-    const areaKm2 = Math.floor(Math.abs(Math.sin(hash * 1.7)) * 8000000 + 2000);
-    const borderLength = Math.floor(Math.abs(Math.sin(hash * 2.3)) * 8000 + 100);
-    
-    const incomeTax = Math.floor(Math.abs(Math.sin(hash * 4.1)) * 45 + 10);
-    const safetyIndex = Math.floor(Math.abs(Math.sin(hash * 5.2)) * 60 + 35);
-    const healthcareIndex = Math.floor(Math.abs(Math.sin(hash * 6.3)) * 60 + 30);
-    const internetSpeed = Math.floor(Math.abs(Math.sin(hash * 7.4)) * 250 + 10);
+    const politicalSystem = systems[Math.floor(rand * systems.length)];
 
     const mockData = {
       gdpPerCapita: gdp,
-      militarySpending: parseFloat((rand * 4 + 0.5).toFixed(1)),
-      cleanEnergy: Math.floor(rand * 90 + 5),
-      democracyIndex: parseFloat((rand * 10).toFixed(1)),
-      politicalSystem: systems[sysIndex],
-      highestPeak: Math.floor(rand * 7000 + 1000),
+      militarySpending,
+      cleanEnergy,
+      democracyIndex,
+      politicalSystem,
+      highestPeak,
       avgSalary,
-      colIndex: Math.min(colIndex, 100),
+      colIndex,
       evIndex,
       areaKm2,
       borderLength,
@@ -108,8 +122,7 @@ self.onmessage = function(e) {
       const popInfo = popMap[iso] || { population: 0, area: 1, languages: '', capital: '', gini: null };
       const density = popInfo.area > 0 ? Math.round(popInfo.population / popInfo.area) : 0;
       
-      const milPercentage = (Math.abs(Math.sin(hash * 3.1)) * 1.3 + 0.2) / 100;
-      const militarySize = Math.floor(popInfo.population * milPercentage);
+      const militarySize = militaryActive;
 
       feature.properties = {
         ...feature.properties,
