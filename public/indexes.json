@@ -259,6 +259,19 @@
     "col": 35,
     "system": "Змішана республіка"
   },
+  "FRA": {
+    "democracy": 8,
+    "safety": 55,
+    "healthcare": 79,
+    "ev": 40,
+    "internet": 190,
+    "peak": 4808,
+    "tax": 25,
+    "energy": 25,
+    "salary": 2800,
+    "col": 70,
+    "system": "Змішана республіка"
+  },
   "SUR": {
     "democracy": 5,
     "safety": 50,
@@ -649,6 +662,19 @@
     "col": 50,
     "system": "Парламентська республіка"
   },
+  "NOR": {
+    "democracy": 9.8,
+    "safety": 78,
+    "healthcare": 75,
+    "ev": 95,
+    "internet": 190,
+    "peak": 2469,
+    "tax": 22,
+    "energy": 100,
+    "salary": 4200,
+    "col": 90,
+    "system": "Конституційна монархія"
+  },
   "SWE": {
     "democracy": 9.3,
     "safety": 60,
@@ -791,6 +817,19 @@
     "salary": 400,
     "col": 35,
     "system": "Президентська республіка"
+  },
+  "XKX": {
+    "democracy": 5,
+    "safety": 50,
+    "healthcare": 50,
+    "ev": 0,
+    "internet": 20,
+    "peak": 1000,
+    "tax": 15,
+    "energy": 20,
+    "salary": 300,
+    "col": 40,
+    "system": "Республіка"
   },
   "TUR": {
     "democracy": 4.3,
