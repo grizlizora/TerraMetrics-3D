@@ -7,11 +7,10 @@ export class DataLoader {
   async loadAll() {
     try {
       console.log('Loading datasets...');
-      const cb = Date.now();
       const [geoRes, relRes, idxRes] = await Promise.all([
-        fetch(`/countries.geojson?v=${cb}`),
-        fetch(`/religions.json?v=${cb}`),
-        fetch(`/indexes.json?v=${cb}`)
+        fetch('/countries.geojson'),
+        fetch('/religions.json'),
+        fetch('/indexes.json')
       ]);
 
       if (!geoRes.ok || !relRes.ok) {
@@ -101,7 +100,7 @@ export class DataLoader {
       // Merge religion data into geojson properties and calculate centroids for labels
       // Оптимізація: переносимо всі важкі розрахунки у фоновий Web Worker
       await new Promise((resolve, reject) => {
-        const worker = new Worker(new URL('./dataWorker.js', import.meta.url), { type: 'module' });
+        const worker = new Worker(new URL('./processWorker.js', import.meta.url), { type: 'module' });
         
         worker.onmessage = (e) => {
           this.geoJsonData = e.data.geoJsonData;
@@ -138,8 +137,8 @@ export class DataLoader {
     try {
       let cachedStr = null, cacheTime = null;
       try {
-        cachedStr = sessionStorage.getItem('terra_metrics_wbdata');
-        cacheTime = sessionStorage.getItem('terra_metrics_wbdata_time');
+        cachedStr = sessionStorage.getItem('terra_wb_v3');
+        cacheTime = sessionStorage.getItem('terra_wb_v3_time');
       } catch (e) {}
 
       if (cachedStr && cacheTime && (Date.now() - parseInt(cacheTime)) < 604800000) {
@@ -173,8 +172,8 @@ export class DataLoader {
       }
 
       try {
-        sessionStorage.setItem('terra_metrics_wbdata', JSON.stringify(wbData));
-        sessionStorage.setItem('terra_metrics_wbdata_time', Date.now().toString());
+        sessionStorage.setItem('terra_wb_v3', JSON.stringify(wbData));
+        sessionStorage.setItem('terra_wb_v3_time', Date.now().toString());
       } catch (e) {}
 
     } catch (e) {
