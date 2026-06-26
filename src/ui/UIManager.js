@@ -395,8 +395,18 @@ export class UIManager {
 
   showCountryStats(isoA3, fallbackName = '') {
     if (this.audioManager && this.currentActiveItem !== isoA3) this.audioManager.playCountrySelect();
-    const stats = this.dataLoader.getCountryStats(isoA3);
-    if (!stats) return;
+    let stats = this.dataLoader.getCountryStats(isoA3);
+    if (!stats) {
+       // If country not in religions DB, still allow displaying other metrics
+       stats = {
+         country_en: fallbackName || isoA3,
+         country_uk: fallbackName || isoA3,
+         continent: 'World',
+         dominant_religion: 'Unknown',
+         dominant_percentage: 0,
+         stats: []
+       };
+    }
     
     this.currentViewMode = 'country';
     this.currentActiveItem = isoA3;
