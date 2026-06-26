@@ -25,12 +25,12 @@ const realData = {
 
 // Regional averages
 const regionalAverages = {
-  "Europe": { democracy: 8.0, safety: 70, healthcare: 70, ev: 30, internet: 150, tax: 22, energy: 40 },
-  "North America": { democracy: 7.5, safety: 60, healthcare: 65, ev: 25, internet: 180, tax: 20, energy: 30 },
-  "South America": { democracy: 6.0, safety: 40, healthcare: 55, ev: 5, internet: 90, tax: 15, energy: 50 },
-  "Asia": { democracy: 5.0, safety: 60, healthcare: 60, ev: 15, internet: 100, tax: 15, energy: 25 },
-  "Africa": { democracy: 4.0, safety: 45, healthcare: 40, ev: 1, internet: 40, tax: 15, energy: 15 },
-  "Oceania": { democracy: 7.0, safety: 65, healthcare: 65, ev: 10, internet: 110, tax: 20, energy: 30 }
+  "Europe": { democracy: 8.0, safety: 70, healthcare: 70, ev: 30, internet: 180, tax: 15, energy: 60 },
+  "North America": { democracy: 7.5, safety: 60, healthcare: 65, ev: 25, internet: 220, tax: 14, energy: 45 },
+  "South America": { democracy: 6.0, safety: 40, healthcare: 55, ev: 5, internet: 110, tax: 10, energy: 70 },
+  "Asia": { democracy: 5.0, safety: 60, healthcare: 60, ev: 15, internet: 120, tax: 10, energy: 40 },
+  "Africa": { democracy: 4.0, safety: 45, healthcare: 40, ev: 1, internet: 50, tax: 8, energy: 25 },
+  "Oceania": { democracy: 7.0, safety: 65, healthcare: 65, ev: 10, internet: 130, tax: 12, energy: 40 }
 };
 
 const result = {};
@@ -59,8 +59,8 @@ for (const feature of geojson.features) {
       healthcare: Math.round(Math.max(10, Math.min(100, avg.healthcare + (rand * 20 - 10)))),
       ev: Math.round(Math.max(0, Math.min(100, avg.ev + (rand * 20 - 10)))),
       internet: Math.round(Math.max(1, avg.internet + (rand * 80 - 40))),
-      peak: Math.round(Math.max(0, 1500 + (rand * 4000 - 1000))),
-      tax: Math.round(Math.max(5, Math.min(45, avg.tax + (rand * 10 - 5)))),
+      peak: Math.round(2000 + rand * 4500),
+      tax: Math.round(Math.max(5, Math.min(35, avg.tax + (rand * 10 - 5)))),
       energy: Math.round(Math.max(0, Math.min(100, avg.energy + (rand * 30 - 15))))
     };
   }

@@ -4,80 +4,80 @@
     "safety": 64,
     "healthcare": 63,
     "ev": 18,
-    "internet": 111,
-    "peak": 3039,
-    "tax": 16,
-    "energy": 29
+    "internet": 131,
+    "peak": 4856,
+    "tax": 11,
+    "energy": 44
   },
   "MYS": {
     "democracy": 6.7,
     "safety": 73,
     "healthcare": 69,
     "ev": 24,
-    "internet": 135,
-    "peak": 4249,
-    "tax": 19,
-    "energy": 38
+    "internet": 155,
+    "peak": 6218,
+    "tax": 14,
+    "energy": 53
   },
   "CHL": {
     "democracy": 7.4,
     "safety": 50,
     "healthcare": 62,
     "ev": 12,
-    "internet": 118,
-    "peak": 3892,
-    "tax": 18,
-    "energy": 60
+    "internet": 138,
+    "peak": 5816,
+    "tax": 13,
+    "energy": 80
   },
   "BOL": {
     "democracy": 5.8,
     "safety": 38,
     "healthcare": 54,
     "ev": 4,
-    "internet": 85,
-    "peak": 2256,
-    "tax": 14,
-    "energy": 48
+    "internet": 105,
+    "peak": 3976,
+    "tax": 9,
+    "energy": 68
   },
   "PER": {
     "democracy": 7.7,
     "safety": 53,
     "healthcare": 63,
     "ev": 13,
-    "internet": 123,
-    "peak": 4169,
-    "tax": 19,
-    "energy": 63
+    "internet": 143,
+    "peak": 6128,
+    "tax": 14,
+    "energy": 83
   },
   "ARG": {
     "democracy": 4.4,
     "safety": 28,
     "healthcare": 47,
     "ev": 0,
-    "internet": 57,
-    "peak": 867,
-    "tax": 11,
-    "energy": 38
+    "internet": 77,
+    "peak": 2413,
+    "tax": 6,
+    "energy": 58
   },
   "-99": {
     "democracy": 4.1,
     "safety": 54,
     "healthcare": 56,
     "ev": 11,
-    "internet": 83,
-    "peak": 1637,
-    "tax": 13,
-    "energy": 19
+    "internet": 103,
+    "peak": 3279,
+    "tax": 8,
+    "energy": 34
   },
   "CYP": {
     "democracy": 6.2,
     "safety": 69,
     "healthcare": 66,
     "ev": 21,
-    "internet": 125,
-    "peak": 3733,
-    "tax": 18,
-    "energy": 34
+    "internet": 145,
+    "peak": 5637,
+    "tax": 13,
+    "energy": 49
   },
   "IND": {
     "democracy": 7.1,
@@ -104,210 +104,210 @@
     "safety": 75,
     "healthcare": 70,
     "ev": 25,
-    "internet": 140,
-    "peak": 4499,
-    "tax": 20,
-    "energy": 40
+    "internet": 160,
+    "peak": 6499,
+    "tax": 15,
+    "energy": 55
   },
   "PSE": {
     "democracy": 6.6,
     "safety": 72,
     "healthcare": 68,
     "ev": 23,
-    "internet": 133,
-    "peak": 4126,
-    "tax": 19,
-    "energy": 37
+    "internet": 153,
+    "peak": 6079,
+    "tax": 14,
+    "energy": 52
   },
   "LBN": {
     "democracy": 5,
     "safety": 60,
     "healthcare": 60,
     "ev": 15,
-    "internet": 101,
-    "peak": 2547,
-    "tax": 15,
-    "energy": 25
+    "internet": 121,
+    "peak": 4303,
+    "tax": 10,
+    "energy": 40
   },
   "ETH": {
     "democracy": 5.8,
     "safety": 58,
     "healthcare": 49,
     "ev": 10,
-    "internet": 75,
-    "peak": 4274,
-    "tax": 19,
-    "energy": 28
+    "internet": 85,
+    "peak": 6246,
+    "tax": 12,
+    "energy": 38
   },
   "SSD": {
     "democracy": 2.1,
     "safety": 31,
     "healthcare": 30,
     "ev": 0,
-    "internet": 2,
-    "peak": 599,
-    "tax": 10,
-    "energy": 1
+    "internet": 12,
+    "peak": 2111,
+    "tax": 5,
+    "energy": 11
   },
   "SOM": {
     "democracy": 5.8,
     "safety": 59,
     "healthcare": 49,
     "ev": 10,
-    "internet": 76,
-    "peak": 4313,
-    "tax": 20,
-    "energy": 29
+    "internet": 86,
+    "peak": 6289,
+    "tax": 13,
+    "energy": 39
   },
   "KEN": {
     "democracy": 3.5,
     "safety": 41,
     "healthcare": 37,
     "ev": 0,
-    "internet": 30,
-    "peak": 1995,
-    "tax": 14,
-    "energy": 11
+    "internet": 40,
+    "peak": 3682,
+    "tax": 7,
+    "energy": 21
   },
   "MWI": {
     "democracy": 5.3,
     "safety": 55,
     "healthcare": 46,
     "ev": 7,
-    "internet": 65,
-    "peak": 3772,
-    "tax": 18,
-    "energy": 25
+    "internet": 75,
+    "peak": 5681,
+    "tax": 11,
+    "energy": 35
   },
   "TZA": {
     "democracy": 2.3,
     "safety": 32,
     "healthcare": 31,
     "ev": 0,
-    "internet": 6,
-    "peak": 776,
-    "tax": 11,
-    "energy": 2
+    "internet": 16,
+    "peak": 2310,
+    "tax": 5,
+    "energy": 12
   },
   "SYR": {
     "democracy": 6.4,
     "safety": 71,
     "healthcare": 67,
     "ev": 22,
-    "internet": 129,
-    "peak": 3944,
-    "tax": 19,
-    "energy": 36
+    "internet": 149,
+    "peak": 5875,
+    "tax": 14,
+    "energy": 51
   },
   "SUR": {
     "democracy": 6.3,
     "safety": 43,
     "healthcare": 57,
     "ev": 7,
-    "internet": 97,
-    "peak": 2845,
-    "tax": 16,
-    "energy": 53
+    "internet": 117,
+    "peak": 4638,
+    "tax": 11,
+    "energy": 73
   },
   "GUY": {
     "democracy": 7.4,
     "safety": 50,
     "healthcare": 62,
     "ev": 12,
-    "internet": 118,
-    "peak": 3891,
-    "tax": 18,
-    "energy": 60
+    "internet": 138,
+    "peak": 5815,
+    "tax": 13,
+    "energy": 80
   },
   "KOR": {
     "democracy": 5.1,
     "safety": 60,
     "healthcare": 60,
     "ev": 15,
-    "internet": 101,
-    "peak": 2565,
-    "tax": 15,
-    "energy": 25
+    "internet": 121,
+    "peak": 4323,
+    "tax": 10,
+    "energy": 40
   },
   "PRK": {
     "democracy": 6.4,
     "safety": 70,
     "healthcare": 67,
     "ev": 22,
-    "internet": 127,
-    "peak": 3870,
-    "tax": 18,
-    "energy": 35
+    "internet": 147,
+    "peak": 5792,
+    "tax": 13,
+    "energy": 50
   },
   "MAR": {
     "democracy": 6,
     "safety": 60,
     "healthcare": 50,
     "ev": 11,
-    "internet": 80,
-    "peak": 4485,
-    "tax": 20,
-    "energy": 30
+    "internet": 90,
+    "peak": 6483,
+    "tax": 13,
+    "energy": 40
   },
   "ESH": {
     "democracy": 8.9,
     "safety": 77,
     "healthcare": 75,
     "ev": 35,
-    "internet": 168,
-    "peak": 3417,
-    "tax": 24,
-    "energy": 47
+    "internet": 198,
+    "peak": 5281,
+    "tax": 17,
+    "energy": 67
   },
   "CRI": {
     "democracy": 9.3,
     "safety": 74,
     "healthcare": 74,
     "ev": 34,
-    "internet": 216,
-    "peak": 4300,
-    "tax": 25,
-    "energy": 44
+    "internet": 256,
+    "peak": 6275,
+    "tax": 19,
+    "energy": 59
   },
   "NIC": {
     "democracy": 9.5,
     "safety": 75,
     "healthcare": 75,
     "ev": 35,
-    "internet": 220,
-    "peak": 4477,
-    "tax": 25,
-    "energy": 45
+    "internet": 260,
+    "peak": 6474,
+    "tax": 19,
+    "energy": 60
   },
   "COG": {
     "democracy": 3.9,
     "safety": 44,
     "healthcare": 40,
     "ev": 1,
-    "internet": 38,
-    "peak": 2422,
-    "tax": 15,
-    "energy": 14
+    "internet": 48,
+    "peak": 4162,
+    "tax": 8,
+    "energy": 24
   },
   "COD": {
     "democracy": 4.4,
     "safety": 48,
     "healthcare": 42,
     "ev": 3,
-    "internet": 48,
-    "peak": 2898,
-    "tax": 16,
-    "energy": 18
+    "internet": 58,
+    "peak": 4698,
+    "tax": 9,
+    "energy": 28
   },
   "BTN": {
     "democracy": 5,
     "safety": 60,
     "healthcare": 60,
     "ev": 15,
-    "internet": 101,
-    "peak": 2537,
-    "tax": 15,
-    "energy": 25
+    "internet": 121,
+    "peak": 4291,
+    "tax": 10,
+    "energy": 40
   },
   "UKR": {
     "democracy": 5.8,
@@ -324,100 +324,100 @@
     "safety": 70,
     "healthcare": 70,
     "ev": 30,
-    "internet": 149,
-    "peak": 2453,
-    "tax": 22,
-    "energy": 40
+    "internet": 179,
+    "peak": 4197,
+    "tax": 15,
+    "energy": 60
   },
   "NAM": {
     "democracy": 4.6,
     "safety": 49,
     "healthcare": 43,
     "ev": 4,
-    "internet": 52,
-    "peak": 3081,
-    "tax": 16,
-    "energy": 19
+    "internet": 62,
+    "peak": 4904,
+    "tax": 9,
+    "energy": 29
   },
   "ZAF": {
     "democracy": 5.2,
     "safety": 54,
     "healthcare": 46,
     "ev": 7,
-    "internet": 64,
-    "peak": 3722,
-    "tax": 18,
-    "energy": 24
+    "internet": 74,
+    "peak": 5625,
+    "tax": 11,
+    "energy": 34
   },
   "MAF": {
     "democracy": 9,
     "safety": 72,
     "healthcare": 73,
     "ev": 33,
-    "internet": 211,
-    "peak": 4048,
-    "tax": 24,
-    "energy": 42
+    "internet": 251,
+    "peak": 5992,
+    "tax": 18,
+    "energy": 57
   },
   "SXM": {
     "democracy": 8.5,
     "safety": 73,
     "healthcare": 72,
     "ev": 32,
-    "internet": 159,
-    "peak": 2958,
-    "tax": 23,
-    "energy": 43
+    "internet": 189,
+    "peak": 4766,
+    "tax": 16,
+    "energy": 63
   },
   "OMN": {
     "democracy": 6.8,
     "safety": 74,
     "healthcare": 69,
     "ev": 24,
-    "internet": 136,
-    "peak": 4312,
-    "tax": 20,
-    "energy": 39
+    "internet": 156,
+    "peak": 6289,
+    "tax": 15,
+    "energy": 54
   },
   "UZB": {
     "democracy": 5.7,
     "safety": 65,
     "healthcare": 64,
     "ev": 19,
-    "internet": 114,
-    "peak": 3202,
-    "tax": 17,
-    "energy": 30
+    "internet": 134,
+    "peak": 5040,
+    "tax": 12,
+    "energy": 45
   },
   "KAZ": {
     "democracy": 5.6,
     "safety": 65,
     "healthcare": 63,
     "ev": 18,
-    "internet": 112,
-    "peak": 3120,
-    "tax": 17,
-    "energy": 30
+    "internet": 132,
+    "peak": 4948,
+    "tax": 12,
+    "energy": 45
   },
   "TJK": {
     "democracy": 6.4,
     "safety": 70,
     "healthcare": 67,
     "ev": 22,
-    "internet": 128,
-    "peak": 3900,
-    "tax": 18,
-    "energy": 35
+    "internet": 148,
+    "peak": 5825,
+    "tax": 13,
+    "energy": 50
   },
   "LTU": {
     "democracy": 6.2,
     "safety": 57,
     "healthcare": 61,
     "ev": 21,
-    "internet": 114,
-    "peak": 703,
-    "tax": 18,
-    "energy": 27
+    "internet": 144,
+    "peak": 2228,
+    "tax": 11,
+    "energy": 47
   },
   "BRA": {
     "democracy": 6.7,
@@ -434,20 +434,20 @@
     "safety": 53,
     "healthcare": 64,
     "ev": 14,
-    "internet": 125,
-    "peak": 4236,
-    "tax": 19,
-    "energy": 63
+    "internet": 145,
+    "peak": 6203,
+    "tax": 14,
+    "energy": 83
   },
   "MNG": {
     "democracy": 5.8,
     "safety": 66,
     "healthcare": 64,
     "ev": 19,
-    "internet": 117,
-    "peak": 3328,
-    "tax": 17,
-    "energy": 31
+    "internet": 137,
+    "peak": 5182,
+    "tax": 12,
+    "energy": 46
   },
   "RUS": {
     "democracy": 2.2,
@@ -464,10 +464,10 @@
     "safety": 61,
     "healthcare": 64,
     "ev": 24,
-    "internet": 127,
-    "peak": 1331,
-    "tax": 19,
-    "energy": 31
+    "internet": 157,
+    "peak": 2935,
+    "tax": 12,
+    "energy": 51
   },
   "DEU": {
     "democracy": 8.8,
@@ -484,20 +484,20 @@
     "safety": 84,
     "healthcare": 80,
     "ev": 40,
-    "internet": 189,
-    "peak": 4430,
-    "tax": 27,
-    "energy": 54
+    "internet": 219,
+    "peak": 6421,
+    "tax": 20,
+    "energy": 74
   },
   "LVA": {
     "democracy": 9.7,
     "safety": 83,
     "healthcare": 79,
     "ev": 39,
-    "internet": 185,
-    "peak": 4242,
-    "tax": 26,
-    "energy": 53
+    "internet": 215,
+    "peak": 6210,
+    "tax": 19,
+    "energy": 73
   },
   "SWE": {
     "democracy": 9.3,
@@ -514,210 +514,210 @@
     "safety": 67,
     "healthcare": 68,
     "ev": 28,
-    "internet": 142,
-    "peak": 2095,
-    "tax": 21,
-    "energy": 37
+    "internet": 172,
+    "peak": 3794,
+    "tax": 14,
+    "energy": 57
   },
   "VNM": {
     "democracy": 5.6,
     "safety": 64,
     "healthcare": 63,
     "ev": 18,
-    "internet": 111,
-    "peak": 3069,
-    "tax": 16,
-    "energy": 29
+    "internet": 131,
+    "peak": 4890,
+    "tax": 11,
+    "energy": 44
   },
   "KHM": {
     "democracy": 5,
     "safety": 60,
     "healthcare": 60,
     "ev": 15,
-    "internet": 99,
-    "peak": 2455,
-    "tax": 15,
-    "energy": 25
+    "internet": 119,
+    "peak": 4200,
+    "tax": 10,
+    "energy": 40
   },
   "LUX": {
     "democracy": 7.9,
     "safety": 70,
     "healthcare": 70,
     "ev": 30,
-    "internet": 149,
-    "peak": 2442,
-    "tax": 22,
-    "energy": 40
+    "internet": 179,
+    "peak": 4184,
+    "tax": 15,
+    "energy": 60
   },
   "ARE": {
     "democracy": 6.5,
     "safety": 71,
     "healthcare": 67,
     "ev": 22,
-    "internet": 129,
-    "peak": 3969,
-    "tax": 19,
-    "energy": 36
+    "internet": 149,
+    "peak": 5903,
+    "tax": 14,
+    "energy": 51
   },
   "BEL": {
     "democracy": 8.1,
     "safety": 71,
     "healthcare": 71,
     "ev": 31,
-    "internet": 153,
-    "peak": 2635,
-    "tax": 22,
-    "energy": 41
+    "internet": 183,
+    "peak": 4402,
+    "tax": 15,
+    "energy": 61
   },
   "GEO": {
     "democracy": 6.7,
     "safety": 73,
     "healthcare": 69,
     "ev": 24,
-    "internet": 135,
-    "peak": 4250,
-    "tax": 19,
-    "energy": 38
+    "internet": 155,
+    "peak": 6219,
+    "tax": 14,
+    "energy": 53
   },
   "MKD": {
     "democracy": 9.3,
     "safety": 80,
     "healthcare": 76,
     "ev": 36,
-    "internet": 176,
-    "peak": 3793,
-    "tax": 25,
-    "energy": 50
+    "internet": 206,
+    "peak": 5704,
+    "tax": 18,
+    "energy": 70
   },
   "ALB": {
     "democracy": 8.1,
     "safety": 71,
     "healthcare": 70,
     "ev": 30,
-    "internet": 151,
-    "peak": 2575,
-    "tax": 22,
-    "energy": 41
+    "internet": 181,
+    "peak": 4334,
+    "tax": 15,
+    "energy": 61
   },
   "AZE": {
     "democracy": 6,
     "safety": 68,
     "healthcare": 65,
     "ev": 20,
-    "internet": 121,
-    "peak": 3542,
-    "tax": 18,
-    "energy": 33
+    "internet": 141,
+    "peak": 5422,
+    "tax": 13,
+    "energy": 48
   },
   "TUR": {
     "democracy": 4.2,
     "safety": 54,
     "healthcare": 56,
     "ev": 11,
-    "internet": 84,
-    "peak": 1679,
-    "tax": 13,
-    "energy": 19
+    "internet": 104,
+    "peak": 3326,
+    "tax": 8,
+    "energy": 34
   },
   "ESP": {
     "democracy": 9.1,
     "safety": 78,
     "healthcare": 76,
     "ev": 36,
-    "internet": 173,
-    "peak": 3632,
-    "tax": 25,
-    "energy": 48
+    "internet": 203,
+    "peak": 5524,
+    "tax": 18,
+    "energy": 68
   },
   "LAO": {
     "democracy": 6.7,
     "safety": 73,
     "healthcare": 69,
     "ev": 24,
-    "internet": 134,
-    "peak": 4211,
-    "tax": 19,
-    "energy": 38
+    "internet": 154,
+    "peak": 6175,
+    "tax": 14,
+    "energy": 53
   },
   "KGZ": {
     "democracy": 6.9,
     "safety": 74,
     "healthcare": 70,
     "ev": 25,
-    "internet": 138,
-    "peak": 4412,
-    "tax": 20,
-    "energy": 39
+    "internet": 158,
+    "peak": 6401,
+    "tax": 15,
+    "energy": 54
   },
   "ARM": {
     "democracy": 4.5,
     "safety": 56,
     "healthcare": 57,
     "ev": 12,
-    "internet": 89,
-    "peak": 1965,
-    "tax": 14,
-    "energy": 21
+    "internet": 109,
+    "peak": 3648,
+    "tax": 9,
+    "energy": 36
   },
   "DNK": {
     "democracy": 10,
     "safety": 85,
     "healthcare": 80,
     "ev": 40,
-    "internet": 189,
-    "peak": 4470,
-    "tax": 27,
-    "energy": 55
+    "internet": 219,
+    "peak": 6466,
+    "tax": 20,
+    "energy": 75
   },
   "LBY": {
     "democracy": 5.4,
     "safety": 56,
     "healthcare": 47,
     "ev": 8,
-    "internet": 69,
-    "peak": 3927,
-    "tax": 19,
-    "energy": 26
+    "internet": 79,
+    "peak": 5856,
+    "tax": 12,
+    "energy": 36
   },
   "TUN": {
     "democracy": 4.1,
     "safety": 46,
     "healthcare": 41,
     "ev": 2,
-    "internet": 42,
-    "peak": 2622,
-    "tax": 15,
-    "energy": 16
+    "internet": 52,
+    "peak": 4388,
+    "tax": 8,
+    "energy": 26
   },
   "ROU": {
     "democracy": 6.7,
     "safety": 60,
     "healthcare": 63,
     "ev": 23,
-    "internet": 123,
-    "peak": 1162,
-    "tax": 19,
-    "energy": 30
+    "internet": 153,
+    "peak": 2744,
+    "tax": 12,
+    "energy": 50
   },
   "HUN": {
     "democracy": 6.9,
     "safety": 62,
     "healthcare": 65,
     "ev": 25,
-    "internet": 128,
-    "peak": 1402,
-    "tax": 19,
-    "energy": 32
+    "internet": 158,
+    "peak": 3014,
+    "tax": 12,
+    "energy": 52
   },
   "SVK": {
     "democracy": 7.9,
     "safety": 70,
     "healthcare": 70,
     "ev": 30,
-    "internet": 149,
-    "peak": 2440,
-    "tax": 22,
-    "energy": 40
+    "internet": 179,
+    "peak": 4182,
+    "tax": 15,
+    "energy": 60
   },
   "POL": {
     "democracy": 7.1,
@@ -734,10 +734,10 @@
     "safety": 78,
     "healthcare": 75,
     "ev": 35,
-    "internet": 170,
-    "peak": 3511,
-    "tax": 25,
-    "energy": 48
+    "internet": 200,
+    "peak": 5387,
+    "tax": 18,
+    "energy": 68
   },
   "GBR": {
     "democracy": 8.2,
@@ -754,120 +754,120 @@
     "safety": 62,
     "healthcare": 65,
     "ev": 25,
-    "internet": 128,
-    "peak": 1401,
-    "tax": 19,
-    "energy": 32
+    "internet": 158,
+    "peak": 3014,
+    "tax": 12,
+    "energy": 52
   },
   "ZMB": {
     "democracy": 5.9,
     "safety": 59,
     "healthcare": 50,
     "ev": 11,
-    "internet": 78,
-    "peak": 4420,
-    "tax": 20,
-    "energy": 29
+    "internet": 88,
+    "peak": 6410,
+    "tax": 13,
+    "energy": 39
   },
   "SLE": {
     "democracy": 4.9,
     "safety": 51,
     "healthcare": 44,
     "ev": 5,
-    "internet": 57,
-    "peak": 3354,
-    "tax": 17,
-    "energy": 21
+    "internet": 67,
+    "peak": 5211,
+    "tax": 10,
+    "energy": 31
   },
   "GIN": {
     "democracy": 4.7,
     "safety": 50,
     "healthcare": 43,
     "ev": 4,
-    "internet": 54,
-    "peak": 3189,
-    "tax": 17,
-    "energy": 20
+    "internet": 64,
+    "peak": 5026,
+    "tax": 10,
+    "energy": 30
   },
   "LBR": {
     "democracy": 5.9,
     "safety": 60,
     "healthcare": 50,
     "ev": 11,
-    "internet": 79,
-    "peak": 4439,
-    "tax": 20,
-    "energy": 30
+    "internet": 89,
+    "peak": 6431,
+    "tax": 13,
+    "energy": 40
   },
   "CAF": {
     "democracy": 5.3,
     "safety": 55,
     "healthcare": 46,
     "ev": 7,
-    "internet": 65,
-    "peak": 3774,
-    "tax": 18,
-    "energy": 25
+    "internet": 75,
+    "peak": 5684,
+    "tax": 11,
+    "energy": 35
   },
   "SDN": {
     "democracy": 4.1,
     "safety": 46,
     "healthcare": 41,
     "ev": 2,
-    "internet": 42,
-    "peak": 2610,
-    "tax": 15,
-    "energy": 16
+    "internet": 52,
+    "peak": 4374,
+    "tax": 8,
+    "energy": 26
   },
   "DJI": {
     "democracy": 5.6,
     "safety": 57,
     "healthcare": 48,
     "ev": 9,
-    "internet": 72,
-    "peak": 4086,
-    "tax": 19,
-    "energy": 27
+    "internet": 82,
+    "peak": 6035,
+    "tax": 12,
+    "energy": 37
   },
   "ERI": {
     "democracy": 4.3,
     "safety": 47,
     "healthcare": 41,
     "ev": 2,
-    "internet": 45,
-    "peak": 2755,
-    "tax": 16,
-    "energy": 17
+    "internet": 55,
+    "peak": 4536,
+    "tax": 9,
+    "energy": 27
   },
   "AUT": {
     "democracy": 9.1,
     "safety": 79,
     "healthcare": 76,
     "ev": 36,
-    "internet": 173,
-    "peak": 3648,
-    "tax": 25,
-    "energy": 49
+    "internet": 203,
+    "peak": 5542,
+    "tax": 18,
+    "energy": 69
   },
   "IRQ": {
     "democracy": 6.4,
     "safety": 70,
     "healthcare": 67,
     "ev": 22,
-    "internet": 128,
-    "peak": 3879,
-    "tax": 18,
-    "energy": 35
+    "internet": 148,
+    "peak": 5802,
+    "tax": 13,
+    "energy": 50
   },
   "ITA": {
     "democracy": 6.5,
     "safety": 59,
     "healthcare": 62,
     "ev": 22,
-    "internet": 119,
-    "peak": 970,
-    "tax": 18,
-    "energy": 29
+    "internet": 149,
+    "peak": 2528,
+    "tax": 11,
+    "energy": 49
   },
   "CHE": {
     "democracy": 9.1,
@@ -884,600 +884,600 @@
     "safety": 72,
     "healthcare": 68,
     "ev": 23,
-    "internet": 133,
-    "peak": 4147,
-    "tax": 19,
-    "energy": 37
+    "internet": 153,
+    "peak": 6103,
+    "tax": 14,
+    "energy": 52
   },
   "NLD": {
     "democracy": 10,
     "safety": 85,
     "healthcare": 80,
     "ev": 40,
-    "internet": 189,
-    "peak": 4461,
-    "tax": 27,
-    "energy": 55
+    "internet": 219,
+    "peak": 6456,
+    "tax": 20,
+    "energy": 75
   },
   "LIE": {
     "democracy": 9.7,
     "safety": 83,
     "healthcare": 79,
     "ev": 39,
-    "internet": 184,
-    "peak": 4217,
-    "tax": 26,
-    "energy": 53
+    "internet": 214,
+    "peak": 6181,
+    "tax": 19,
+    "energy": 73
   },
   "CIV": {
     "democracy": 5,
     "safety": 53,
     "healthcare": 45,
     "ev": 6,
-    "internet": 60,
-    "peak": 3512,
-    "tax": 18,
-    "energy": 23
+    "internet": 70,
+    "peak": 5389,
+    "tax": 11,
+    "energy": 33
   },
   "SRB": {
     "democracy": 10,
     "safety": 85,
     "healthcare": 80,
     "ev": 40,
-    "internet": 190,
-    "peak": 4500,
-    "tax": 27,
-    "energy": 55
+    "internet": 220,
+    "peak": 6500,
+    "tax": 20,
+    "energy": 75
   },
   "MLI": {
     "democracy": 3.8,
     "safety": 44,
     "healthcare": 39,
     "ev": 0,
-    "internet": 37,
-    "peak": 2331,
-    "tax": 15,
-    "energy": 14
+    "internet": 47,
+    "peak": 4060,
+    "tax": 8,
+    "energy": 24
   },
   "SEN": {
     "democracy": 2.6,
     "safety": 34,
     "healthcare": 33,
     "ev": 0,
-    "internet": 11,
-    "peak": 1057,
-    "tax": 11,
-    "energy": 4
+    "internet": 21,
+    "peak": 2627,
+    "tax": 5,
+    "energy": 14
   },
   "NGA": {
     "democracy": 4,
     "safety": 45,
     "healthcare": 40,
     "ev": 1,
-    "internet": 39,
-    "peak": 2456,
-    "tax": 15,
-    "energy": 15
+    "internet": 49,
+    "peak": 4201,
+    "tax": 8,
+    "energy": 25
   },
   "BEN": {
     "democracy": 4.2,
     "safety": 46,
     "healthcare": 41,
     "ev": 2,
-    "internet": 44,
-    "peak": 2687,
-    "tax": 15,
-    "energy": 16
+    "internet": 54,
+    "peak": 4460,
+    "tax": 8,
+    "energy": 26
   },
   "AGO": {
     "democracy": 2.3,
     "safety": 32,
     "healthcare": 32,
     "ev": 0,
-    "internet": 7,
-    "peak": 832,
-    "tax": 11,
-    "energy": 2
+    "internet": 17,
+    "peak": 2373,
+    "tax": 5,
+    "energy": 12
   },
   "HRV": {
     "democracy": 6.2,
     "safety": 57,
     "healthcare": 61,
     "ev": 21,
-    "internet": 114,
-    "peak": 701,
-    "tax": 18,
-    "energy": 27
+    "internet": 144,
+    "peak": 2226,
+    "tax": 11,
+    "energy": 47
   },
   "SVN": {
     "democracy": 8.4,
     "safety": 73,
     "healthcare": 72,
     "ev": 32,
-    "internet": 158,
-    "peak": 2914,
-    "tax": 23,
-    "energy": 43
+    "internet": 188,
+    "peak": 4716,
+    "tax": 16,
+    "energy": 63
   },
   "QAT": {
     "democracy": 6.3,
     "safety": 70,
     "healthcare": 66,
     "ev": 21,
-    "internet": 126,
-    "peak": 3792,
-    "tax": 18,
-    "energy": 35
+    "internet": 146,
+    "peak": 5703,
+    "tax": 13,
+    "energy": 50
   },
   "SAU": {
     "democracy": 5.3,
     "safety": 62,
     "healthcare": 62,
     "ev": 17,
-    "internet": 107,
-    "peak": 2829,
-    "tax": 16,
-    "energy": 27
+    "internet": 127,
+    "peak": 4620,
+    "tax": 11,
+    "energy": 42
   },
   "BWA": {
     "democracy": 5.2,
     "safety": 54,
     "healthcare": 46,
     "ev": 7,
-    "internet": 64,
-    "peak": 3697,
-    "tax": 18,
-    "energy": 24
+    "internet": 74,
+    "peak": 5596,
+    "tax": 11,
+    "energy": 34
   },
   "ZWE": {
     "democracy": 2.8,
     "safety": 36,
     "healthcare": 34,
     "ev": 0,
-    "internet": 17,
-    "peak": 1338,
-    "tax": 12,
-    "energy": 6
+    "internet": 27,
+    "peak": 2943,
+    "tax": 5,
+    "energy": 16
   },
   "PAK": {
     "democracy": 3.9,
     "safety": 51,
     "healthcare": 54,
     "ev": 9,
-    "internet": 77,
-    "peak": 1352,
-    "tax": 12,
-    "energy": 16
+    "internet": 97,
+    "peak": 2958,
+    "tax": 7,
+    "energy": 31
   },
   "BGR": {
     "democracy": 8.1,
     "safety": 71,
     "healthcare": 70,
     "ev": 30,
-    "internet": 152,
-    "peak": 2597,
-    "tax": 22,
-    "energy": 41
+    "internet": 182,
+    "peak": 4360,
+    "tax": 15,
+    "energy": 61
   },
   "THA": {
     "democracy": 6.8,
     "safety": 74,
     "healthcare": 69,
     "ev": 24,
-    "internet": 136,
-    "peak": 4323,
-    "tax": 20,
-    "energy": 39
+    "internet": 156,
+    "peak": 6301,
+    "tax": 15,
+    "energy": 54
   },
   "SMR": {
     "democracy": 8.9,
     "safety": 77,
     "healthcare": 75,
     "ev": 35,
-    "internet": 168,
-    "peak": 3403,
-    "tax": 24,
-    "energy": 47
+    "internet": 198,
+    "peak": 5266,
+    "tax": 17,
+    "energy": 67
   },
   "HTI": {
     "democracy": 9.2,
     "safety": 73,
     "healthcare": 74,
     "ev": 34,
-    "internet": 215,
-    "peak": 4250,
-    "tax": 24,
-    "energy": 43
+    "internet": 255,
+    "peak": 6218,
+    "tax": 18,
+    "energy": 58
   },
   "DOM": {
     "democracy": 5.9,
     "safety": 48,
     "healthcare": 57,
     "ev": 17,
-    "internet": 149,
-    "peak": 936,
-    "tax": 16,
-    "energy": 18
+    "internet": 189,
+    "peak": 2491,
+    "tax": 10,
+    "energy": 33
   },
   "TCD": {
     "democracy": 2.3,
     "safety": 32,
     "healthcare": 31,
     "ev": 0,
-    "internet": 6,
-    "peak": 776,
-    "tax": 11,
-    "energy": 2
+    "internet": 16,
+    "peak": 2310,
+    "tax": 5,
+    "energy": 12
   },
   "KWT": {
     "democracy": 6.8,
     "safety": 74,
     "healthcare": 69,
     "ev": 24,
-    "internet": 136,
-    "peak": 4323,
-    "tax": 20,
-    "energy": 39
+    "internet": 156,
+    "peak": 6300,
+    "tax": 15,
+    "energy": 54
   },
   "SLV": {
     "democracy": 9,
     "safety": 71,
     "healthcare": 72,
     "ev": 32,
-    "internet": 210,
-    "peak": 3980,
-    "tax": 24,
-    "energy": 41
+    "internet": 250,
+    "peak": 5914,
+    "tax": 18,
+    "energy": 56
   },
   "GTM": {
     "democracy": 5.6,
     "safety": 46,
     "healthcare": 56,
     "ev": 16,
-    "internet": 142,
-    "peak": 617,
-    "tax": 15,
-    "energy": 16
+    "internet": 182,
+    "peak": 2132,
+    "tax": 9,
+    "energy": 31
   },
   "TLS": {
     "democracy": 9.8,
     "safety": 83,
     "healthcare": 79,
     "ev": 39,
-    "internet": 186,
-    "peak": 4284,
-    "tax": 26,
-    "energy": 53
+    "internet": 216,
+    "peak": 6257,
+    "tax": 19,
+    "energy": 73
   },
   "BRN": {
     "democracy": 4.2,
     "safety": 54,
     "healthcare": 56,
     "ev": 11,
-    "internet": 83,
-    "peak": 1673,
-    "tax": 13,
-    "energy": 19
+    "internet": 103,
+    "peak": 3320,
+    "tax": 8,
+    "energy": 34
   },
   "MCO": {
     "democracy": 8.9,
     "safety": 76,
     "healthcare": 74,
     "ev": 34,
-    "internet": 167,
-    "peak": 3353,
-    "tax": 24,
-    "energy": 46
+    "internet": 197,
+    "peak": 5209,
+    "tax": 17,
+    "energy": 66
   },
   "DZA": {
     "democracy": 5.3,
     "safety": 55,
     "healthcare": 47,
     "ev": 8,
-    "internet": 66,
-    "peak": 3814,
-    "tax": 18,
-    "energy": 25
+    "internet": 76,
+    "peak": 5728,
+    "tax": 11,
+    "energy": 35
   },
   "MOZ": {
     "democracy": 4,
     "safety": 45,
     "healthcare": 40,
     "ev": 1,
-    "internet": 40,
-    "peak": 2487,
-    "tax": 15,
-    "energy": 15
+    "internet": 50,
+    "peak": 4235,
+    "tax": 8,
+    "energy": 25
   },
   "SWZ": {
     "democracy": 6,
     "safety": 60,
     "healthcare": 50,
     "ev": 11,
-    "internet": 80,
-    "peak": 4493,
-    "tax": 20,
-    "energy": 30
+    "internet": 90,
+    "peak": 6492,
+    "tax": 13,
+    "energy": 40
   },
   "BDI": {
     "democracy": 5.6,
     "safety": 57,
     "healthcare": 48,
     "ev": 9,
-    "internet": 72,
-    "peak": 4101,
-    "tax": 19,
-    "energy": 27
+    "internet": 82,
+    "peak": 6052,
+    "tax": 12,
+    "energy": 37
   },
   "RWA": {
     "democracy": 5.7,
     "safety": 58,
     "healthcare": 48,
     "ev": 9,
-    "internet": 74,
-    "peak": 4183,
-    "tax": 19,
-    "energy": 28
+    "internet": 84,
+    "peak": 6143,
+    "tax": 12,
+    "energy": 38
   },
   "MMR": {
     "democracy": 4.4,
     "safety": 56,
     "healthcare": 57,
     "ev": 12,
-    "internet": 89,
-    "peak": 1929,
-    "tax": 14,
-    "energy": 21
+    "internet": 109,
+    "peak": 3607,
+    "tax": 9,
+    "energy": 36
   },
   "BGD": {
     "democracy": 6.7,
     "safety": 72,
     "healthcare": 68,
     "ev": 23,
-    "internet": 133,
-    "peak": 4161,
-    "tax": 19,
-    "energy": 37
+    "internet": 153,
+    "peak": 6118,
+    "tax": 14,
+    "energy": 52
   },
   "AND": {
     "democracy": 10,
     "safety": 85,
     "healthcare": 80,
     "ev": 40,
-    "internet": 189,
-    "peak": 4459,
-    "tax": 27,
-    "energy": 55
+    "internet": 219,
+    "peak": 6454,
+    "tax": 20,
+    "energy": 75
   },
   "AFG": {
     "democracy": 6.9,
     "safety": 74,
     "healthcare": 70,
     "ev": 25,
-    "internet": 139,
-    "peak": 4430,
-    "tax": 20,
-    "energy": 39
+    "internet": 159,
+    "peak": 6422,
+    "tax": 15,
+    "energy": 54
   },
   "MNE": {
     "democracy": 9.7,
     "safety": 83,
     "healthcare": 79,
     "ev": 39,
-    "internet": 185,
-    "peak": 4249,
-    "tax": 26,
-    "energy": 53
+    "internet": 215,
+    "peak": 6218,
+    "tax": 19,
+    "energy": 73
   },
   "BIH": {
     "democracy": 9.7,
     "safety": 83,
     "healthcare": 79,
     "ev": 39,
-    "internet": 184,
-    "peak": 4202,
-    "tax": 26,
-    "energy": 53
+    "internet": 214,
+    "peak": 6165,
+    "tax": 19,
+    "energy": 73
   },
   "UGA": {
     "democracy": 5.9,
     "safety": 59,
     "healthcare": 50,
     "ev": 11,
-    "internet": 78,
-    "peak": 4412,
-    "tax": 20,
-    "energy": 29
+    "internet": 88,
+    "peak": 6401,
+    "tax": 13,
+    "energy": 39
   },
   "CUB": {
     "democracy": 8.1,
     "safety": 65,
     "healthcare": 68,
     "ev": 28,
-    "internet": 192,
-    "peak": 3111,
-    "tax": 22,
-    "energy": 35
+    "internet": 232,
+    "peak": 4937,
+    "tax": 16,
+    "energy": 50
   },
   "HND": {
     "democracy": 7.7,
     "safety": 61,
     "healthcare": 66,
     "ev": 26,
-    "internet": 184,
-    "peak": 2685,
-    "tax": 20,
-    "energy": 31
+    "internet": 224,
+    "peak": 4459,
+    "tax": 14,
+    "energy": 46
   },
   "ECU": {
     "democracy": 4,
     "safety": 25,
     "healthcare": 45,
     "ev": 0,
-    "internet": 51,
-    "peak": 548,
-    "tax": 10,
-    "energy": 35
+    "internet": 71,
+    "peak": 2053,
+    "tax": 5,
+    "energy": 55
   },
   "COL": {
     "democracy": 6.8,
     "safety": 46,
     "healthcare": 59,
     "ev": 9,
-    "internet": 106,
-    "peak": 3319,
-    "tax": 17,
-    "energy": 56
+    "internet": 126,
+    "peak": 5171,
+    "tax": 12,
+    "energy": 76
   },
   "PRY": {
     "democracy": 5.7,
     "safety": 38,
     "healthcare": 53,
     "ev": 3,
-    "internet": 83,
-    "peak": 2173,
-    "tax": 14,
-    "energy": 48
+    "internet": 103,
+    "peak": 3882,
+    "tax": 9,
+    "energy": 68
   },
   "PRT": {
     "democracy": 10,
     "safety": 85,
     "healthcare": 80,
     "ev": 40,
-    "internet": 189,
-    "peak": 4459,
-    "tax": 27,
-    "energy": 55
+    "internet": 219,
+    "peak": 6453,
+    "tax": 20,
+    "energy": 75
   },
   "MDA": {
     "democracy": 9.5,
     "safety": 81,
     "healthcare": 77,
     "ev": 37,
-    "internet": 180,
-    "peak": 3981,
-    "tax": 26,
-    "energy": 51
+    "internet": 210,
+    "peak": 5916,
+    "tax": 19,
+    "energy": 71
   },
   "TKM": {
     "democracy": 5.1,
     "safety": 60,
     "healthcare": 60,
     "ev": 15,
-    "internet": 101,
-    "peak": 2562,
-    "tax": 15,
-    "energy": 25
+    "internet": 121,
+    "peak": 4320,
+    "tax": 10,
+    "energy": 40
   },
   "JOR": {
     "democracy": 3.9,
     "safety": 51,
     "healthcare": 54,
     "ev": 9,
-    "internet": 77,
-    "peak": 1353,
-    "tax": 12,
-    "energy": 16
+    "internet": 97,
+    "peak": 2960,
+    "tax": 7,
+    "energy": 31
   },
   "NPL": {
     "democracy": 7,
     "safety": 75,
     "healthcare": 70,
     "ev": 25,
-    "internet": 140,
-    "peak": 4485,
-    "tax": 20,
-    "energy": 40
+    "internet": 160,
+    "peak": 6483,
+    "tax": 15,
+    "energy": 55
   },
   "LSO": {
     "democracy": 4.7,
     "safety": 50,
     "healthcare": 44,
     "ev": 5,
-    "internet": 55,
-    "peak": 3226,
-    "tax": 17,
-    "energy": 20
+    "internet": 65,
+    "peak": 5067,
+    "tax": 10,
+    "energy": 30
   },
   "CMR": {
     "democracy": 2.9,
     "safety": 37,
     "healthcare": 35,
     "ev": 0,
-    "internet": 18,
-    "peak": 1425,
-    "tax": 12,
-    "energy": 7
+    "internet": 28,
+    "peak": 3040,
+    "tax": 5,
+    "energy": 17
   },
   "GAB": {
     "democracy": 2.1,
     "safety": 30,
     "healthcare": 30,
     "ev": 0,
-    "internet": 1,
-    "peak": 559,
-    "tax": 10,
-    "energy": 0
+    "internet": 11,
+    "peak": 2067,
+    "tax": 5,
+    "energy": 10
   },
   "NER": {
     "democracy": 3.9,
     "safety": 45,
     "healthcare": 40,
     "ev": 1,
-    "internet": 39,
-    "peak": 2441,
-    "tax": 15,
-    "energy": 15
+    "internet": 49,
+    "peak": 4184,
+    "tax": 8,
+    "energy": 25
   },
   "BFA": {
     "democracy": 6,
     "safety": 60,
     "healthcare": 50,
     "ev": 11,
-    "internet": 79,
-    "peak": 4459,
-    "tax": 20,
-    "energy": 30
+    "internet": 89,
+    "peak": 6454,
+    "tax": 13,
+    "energy": 40
   },
   "TGO": {
     "democracy": 2.1,
     "safety": 31,
     "healthcare": 30,
     "ev": 0,
-    "internet": 2,
-    "peak": 578,
-    "tax": 10,
-    "energy": 1
+    "internet": 12,
+    "peak": 2088,
+    "tax": 5,
+    "energy": 11
   },
   "GHA": {
     "democracy": 4.7,
     "safety": 51,
     "healthcare": 44,
     "ev": 5,
-    "internet": 55,
-    "peak": 3241,
-    "tax": 17,
-    "energy": 21
+    "internet": 65,
+    "peak": 5084,
+    "tax": 10,
+    "energy": 31
   },
   "GNB": {
     "democracy": 5.1,
     "safety": 53,
     "healthcare": 46,
     "ev": 7,
-    "internet": 62,
-    "peak": 3611,
-    "tax": 18,
-    "energy": 23
+    "internet": 72,
+    "peak": 5500,
+    "tax": 11,
+    "energy": 33
   },
   "GIB": {
     "democracy": 6.7,
     "safety": 60,
     "healthcare": 63,
     "ev": 23,
-    "internet": 124,
-    "peak": 1181,
-    "tax": 19,
-    "energy": 30
+    "internet": 154,
+    "peak": 2766,
+    "tax": 12,
+    "energy": 50
   },
   "USA": {
     "democracy": 7.8,
@@ -1504,130 +1504,130 @@
     "safety": 58,
     "healthcare": 64,
     "ev": 24,
-    "internet": 176,
-    "peak": 2285,
-    "tax": 19,
-    "energy": 28
+    "internet": 216,
+    "peak": 4008,
+    "tax": 13,
+    "energy": 43
   },
   "BLZ": {
     "democracy": 8.7,
     "safety": 69,
     "healthcare": 71,
     "ev": 31,
-    "internet": 203,
-    "peak": 3670,
-    "tax": 23,
-    "energy": 39
+    "internet": 243,
+    "peak": 5566,
+    "tax": 17,
+    "energy": 54
   },
   "PAN": {
     "democracy": 6.9,
     "safety": 55,
     "healthcare": 62,
     "ev": 22,
-    "internet": 168,
-    "peak": 1895,
-    "tax": 18,
-    "energy": 25
+    "internet": 208,
+    "peak": 3569,
+    "tax": 12,
+    "energy": 40
   },
   "VEN": {
     "democracy": 7,
     "safety": 47,
     "healthcare": 60,
     "ev": 10,
-    "internet": 110,
-    "peak": 3485,
-    "tax": 17,
-    "energy": 57
+    "internet": 130,
+    "peak": 5358,
+    "tax": 12,
+    "energy": 77
   },
   "PNG": {
     "democracy": 5.8,
     "safety": 56,
     "healthcare": 59,
     "ev": 4,
-    "internet": 86,
-    "peak": 1282,
-    "tax": 17,
-    "energy": 21
+    "internet": 106,
+    "peak": 2880,
+    "tax": 9,
+    "energy": 31
   },
   "EGY": {
     "democracy": 4.9,
     "safety": 52,
     "healthcare": 45,
     "ev": 6,
-    "internet": 58,
-    "peak": 3417,
-    "tax": 17,
-    "energy": 22
+    "internet": 68,
+    "peak": 5281,
+    "tax": 10,
+    "energy": 32
   },
   "YEM": {
     "democracy": 4.2,
     "safety": 54,
     "healthcare": 56,
     "ev": 11,
-    "internet": 85,
-    "peak": 1748,
-    "tax": 13,
-    "energy": 19
+    "internet": 105,
+    "peak": 3404,
+    "tax": 8,
+    "energy": 34
   },
   "MRT": {
     "democracy": 3.7,
     "safety": 43,
     "healthcare": 39,
     "ev": 0,
-    "internet": 34,
-    "peak": 2221,
-    "tax": 14,
-    "energy": 13
+    "internet": 44,
+    "peak": 3936,
+    "tax": 7,
+    "energy": 23
   },
   "GNQ": {
     "democracy": 2.7,
     "safety": 35,
     "healthcare": 34,
     "ev": 0,
-    "internet": 15,
-    "peak": 1228,
-    "tax": 12,
-    "energy": 5
+    "internet": 25,
+    "peak": 2819,
+    "tax": 5,
+    "energy": 15
   },
   "GMB": {
     "democracy": 5.9,
     "safety": 59,
     "healthcare": 49,
     "ev": 10,
-    "internet": 77,
-    "peak": 4362,
-    "tax": 20,
-    "energy": 29
+    "internet": 87,
+    "peak": 6344,
+    "tax": 13,
+    "energy": 39
   },
   "HKG": {
     "democracy": 5,
     "safety": 60,
     "healthcare": 60,
     "ev": 15,
-    "internet": 100,
-    "peak": 2516,
-    "tax": 15,
-    "energy": 25
+    "internet": 120,
+    "peak": 4268,
+    "tax": 10,
+    "energy": 40
   },
   "VAT": {
     "democracy": 8.1,
     "safety": 70,
     "healthcare": 70,
     "ev": 30,
-    "internet": 151,
-    "peak": 2550,
-    "tax": 22,
-    "energy": 40
+    "internet": 181,
+    "peak": 4307,
+    "tax": 15,
+    "energy": 60
   },
   "ATA": {
     "democracy": 8.4,
     "safety": 73,
     "healthcare": 72,
     "ev": 32,
-    "internet": 158,
-    "peak": 2890,
-    "tax": 23,
-    "energy": 43
+    "internet": 188,
+    "peak": 4689,
+    "tax": 16,
+    "energy": 63
   },
   "AUS": {
     "democracy": 8.9,
@@ -1644,120 +1644,120 @@
     "safety": 51,
     "healthcare": 59,
     "ev": 19,
-    "internet": 156,
-    "peak": 1285,
-    "tax": 17,
-    "energy": 21
+    "internet": 196,
+    "peak": 2883,
+    "tax": 11,
+    "energy": 36
   },
   "FJI": {
     "democracy": 6.8,
     "safety": 63,
     "healthcare": 64,
     "ev": 9,
-    "internet": 105,
-    "peak": 2266,
-    "tax": 19,
-    "energy": 28
+    "internet": 125,
+    "peak": 3987,
+    "tax": 11,
+    "energy": 38
   },
   "NZL": {
     "democracy": 6.8,
     "safety": 64,
     "healthcare": 64,
     "ev": 9,
-    "internet": 106,
-    "peak": 2300,
-    "tax": 20,
-    "energy": 29
+    "internet": 126,
+    "peak": 4025,
+    "tax": 12,
+    "energy": 39
   },
   "NCL": {
     "democracy": 7.3,
     "safety": 67,
     "healthcare": 66,
     "ev": 11,
-    "internet": 116,
-    "peak": 2786,
-    "tax": 21,
-    "energy": 32
+    "internet": 136,
+    "peak": 4572,
+    "tax": 13,
+    "energy": 42
   },
   "MDG": {
     "democracy": 5.9,
     "safety": 59,
     "healthcare": 49,
     "ev": 10,
-    "internet": 78,
-    "peak": 4393,
-    "tax": 20,
-    "energy": 29
+    "internet": 88,
+    "peak": 6379,
+    "tax": 13,
+    "energy": 39
   },
   "PHL": {
     "democracy": 6.4,
     "safety": 70,
     "healthcare": 67,
     "ev": 22,
-    "internet": 128,
-    "peak": 3899,
-    "tax": 18,
-    "energy": 35
+    "internet": 148,
+    "peak": 5824,
+    "tax": 13,
+    "energy": 50
   },
   "LKA": {
     "democracy": 4.9,
     "safety": 59,
     "healthcare": 60,
     "ev": 15,
-    "internet": 98,
-    "peak": 2411,
-    "tax": 15,
-    "energy": 24
+    "internet": 118,
+    "peak": 4150,
+    "tax": 10,
+    "energy": 39
   },
   "CUW": {
     "democracy": 9.5,
     "safety": 75,
     "healthcare": 75,
     "ev": 35,
-    "internet": 219,
-    "peak": 4465,
-    "tax": 25,
-    "energy": 45
+    "internet": 259,
+    "peak": 6461,
+    "tax": 19,
+    "energy": 60
   },
   "ABW": {
     "democracy": 7.7,
     "safety": 61,
     "healthcare": 66,
     "ev": 26,
-    "internet": 183,
-    "peak": 2665,
-    "tax": 20,
-    "energy": 31
+    "internet": 223,
+    "peak": 4435,
+    "tax": 14,
+    "energy": 46
   },
   "BHS": {
     "democracy": 5.6,
     "safety": 46,
     "healthcare": 56,
     "ev": 16,
-    "internet": 143,
-    "peak": 629,
-    "tax": 15,
-    "energy": 16
+    "internet": 183,
+    "peak": 2145,
+    "tax": 9,
+    "energy": 31
   },
   "TCA": {
     "democracy": 6.3,
     "safety": 51,
     "healthcare": 59,
     "ev": 19,
-    "internet": 157,
-    "peak": 1336,
-    "tax": 17,
-    "energy": 21
+    "internet": 197,
+    "peak": 2941,
+    "tax": 11,
+    "energy": 36
   },
   "TWN": {
     "democracy": 9.9,
     "safety": 85,
     "healthcare": 80,
     "ev": 40,
-    "internet": 189,
-    "peak": 4436,
-    "tax": 27,
-    "energy": 55
+    "internet": 219,
+    "peak": 6428,
+    "tax": 20,
+    "energy": 75
   },
   "JPN": {
     "democracy": 8.3,
@@ -1774,599 +1774,599 @@
     "safety": 67,
     "healthcare": 70,
     "ev": 30,
-    "internet": 200,
-    "peak": 3499,
-    "tax": 22,
-    "energy": 37
+    "internet": 240,
+    "peak": 5374,
+    "tax": 16,
+    "energy": 52
   },
   "ISL": {
     "democracy": 9.8,
     "safety": 84,
     "healthcare": 79,
     "ev": 39,
-    "internet": 186,
-    "peak": 4318,
-    "tax": 27,
-    "energy": 54
+    "internet": 216,
+    "peak": 6295,
+    "tax": 20,
+    "energy": 74
   },
   "PCN": {
     "democracy": 9.7,
     "safety": 83,
     "healthcare": 79,
     "ev": 39,
-    "internet": 184,
-    "peak": 4210,
-    "tax": 26,
-    "energy": 53
+    "internet": 214,
+    "peak": 6174,
+    "tax": 19,
+    "energy": 73
   },
   "PYF": {
     "democracy": 7,
     "safety": 65,
     "healthcare": 65,
     "ev": 10,
-    "internet": 109,
-    "peak": 2457,
-    "tax": 20,
-    "energy": 30
+    "internet": 129,
+    "peak": 4201,
+    "tax": 12,
+    "energy": 40
   },
   "ATF": {
     "democracy": 9.8,
     "safety": 83,
     "healthcare": 79,
     "ev": 39,
-    "internet": 185,
-    "peak": 4254,
-    "tax": 26,
-    "energy": 53
+    "internet": 215,
+    "peak": 6223,
+    "tax": 19,
+    "energy": 73
   },
   "SYC": {
     "democracy": 3.3,
     "safety": 40,
     "healthcare": 36,
     "ev": 0,
-    "internet": 26,
-    "peak": 1793,
-    "tax": 13,
-    "energy": 10
+    "internet": 36,
+    "peak": 3455,
+    "tax": 6,
+    "energy": 20
   },
   "KIR": {
     "democracy": 8.7,
     "safety": 78,
     "healthcare": 74,
     "ev": 19,
-    "internet": 144,
-    "peak": 4211,
-    "tax": 24,
-    "energy": 43
+    "internet": 164,
+    "peak": 6175,
+    "tax": 16,
+    "energy": 53
   },
   "MHL": {
     "democracy": 8.6,
     "safety": 77,
     "healthcare": 73,
     "ev": 18,
-    "internet": 143,
-    "peak": 4141,
-    "tax": 24,
-    "energy": 42
+    "internet": 163,
+    "peak": 6096,
+    "tax": 16,
+    "energy": 52
   },
   "TTO": {
     "democracy": 8.5,
     "safety": 68,
     "healthcare": 70,
     "ev": 30,
-    "internet": 200,
-    "peak": 3523,
-    "tax": 23,
-    "energy": 38
+    "internet": 240,
+    "peak": 5400,
+    "tax": 17,
+    "energy": 53
   },
   "GRD": {
     "democracy": 9.3,
     "safety": 73,
     "healthcare": 74,
     "ev": 34,
-    "internet": 215,
-    "peak": 4266,
-    "tax": 24,
-    "energy": 43
+    "internet": 255,
+    "peak": 6237,
+    "tax": 18,
+    "energy": 58
   },
   "VCT": {
     "democracy": 6.7,
     "safety": 54,
     "healthcare": 61,
     "ev": 21,
-    "internet": 163,
-    "peak": 1658,
-    "tax": 18,
-    "energy": 24
+    "internet": 203,
+    "peak": 3303,
+    "tax": 12,
+    "energy": 39
   },
   "BRB": {
     "democracy": 8.5,
     "safety": 68,
     "healthcare": 70,
     "ev": 30,
-    "internet": 201,
-    "peak": 3542,
-    "tax": 23,
-    "energy": 38
+    "internet": 241,
+    "peak": 5422,
+    "tax": 17,
+    "energy": 53
   },
   "LCA": {
     "democracy": 6.7,
     "safety": 54,
     "healthcare": 61,
     "ev": 21,
-    "internet": 165,
-    "peak": 1729,
-    "tax": 18,
-    "energy": 24
+    "internet": 205,
+    "peak": 3382,
+    "tax": 12,
+    "energy": 39
   },
   "DMA": {
     "democracy": 9.3,
     "safety": 74,
     "healthcare": 74,
     "ev": 34,
-    "internet": 217,
-    "peak": 4342,
-    "tax": 25,
-    "energy": 44
+    "internet": 257,
+    "peak": 6322,
+    "tax": 19,
+    "energy": 59
   },
   "UMI": {
     "democracy": 8.2,
     "safety": 72,
     "healthcare": 71,
     "ev": 31,
-    "internet": 154,
-    "peak": 2700,
-    "tax": 23,
-    "energy": 42
+    "internet": 184,
+    "peak": 4475,
+    "tax": 16,
+    "energy": 62
   },
   "MSR": {
     "democracy": 6.6,
     "safety": 53,
     "healthcare": 61,
     "ev": 21,
-    "internet": 162,
-    "peak": 1609,
-    "tax": 18,
-    "energy": 23
+    "internet": 202,
+    "peak": 3247,
+    "tax": 12,
+    "energy": 38
   },
   "ATG": {
     "democracy": 8.7,
     "safety": 69,
     "healthcare": 71,
     "ev": 31,
-    "internet": 204,
-    "peak": 3691,
-    "tax": 23,
-    "energy": 39
+    "internet": 244,
+    "peak": 5590,
+    "tax": 17,
+    "energy": 54
   },
   "KNA": {
     "democracy": 9.5,
     "safety": 75,
     "healthcare": 75,
     "ev": 35,
-    "internet": 219,
-    "peak": 4454,
-    "tax": 25,
-    "energy": 45
+    "internet": 259,
+    "peak": 6448,
+    "tax": 19,
+    "energy": 60
   },
   "VIR": {
     "democracy": 9.5,
     "safety": 75,
     "healthcare": 75,
     "ev": 35,
-    "internet": 220,
-    "peak": 4488,
-    "tax": 25,
-    "energy": 45
+    "internet": 260,
+    "peak": 6487,
+    "tax": 19,
+    "energy": 60
   },
   "BLM": {
     "democracy": 9.4,
     "safety": 74,
     "healthcare": 75,
     "ev": 35,
-    "internet": 218,
-    "peak": 4401,
-    "tax": 25,
-    "energy": 44
+    "internet": 258,
+    "peak": 6389,
+    "tax": 19,
+    "energy": 59
   },
   "PRI": {
     "democracy": 6.1,
     "safety": 49,
     "healthcare": 58,
     "ev": 18,
-    "internet": 151,
-    "peak": 1056,
-    "tax": 16,
-    "energy": 19
+    "internet": 191,
+    "peak": 2626,
+    "tax": 10,
+    "energy": 34
   },
   "AIA": {
     "democracy": 8.4,
     "safety": 66,
     "healthcare": 69,
     "ev": 29,
-    "internet": 197,
-    "peak": 3350,
-    "tax": 22,
-    "energy": 36
+    "internet": 237,
+    "peak": 5206,
+    "tax": 16,
+    "energy": 51
   },
   "VGB": {
     "democracy": 9.1,
     "safety": 72,
     "healthcare": 73,
     "ev": 33,
-    "internet": 212,
-    "peak": 4079,
-    "tax": 24,
-    "energy": 42
+    "internet": 252,
+    "peak": 6026,
+    "tax": 18,
+    "energy": 57
   },
   "JAM": {
     "democracy": 7.8,
     "safety": 62,
     "healthcare": 66,
     "ev": 26,
-    "internet": 186,
-    "peak": 2785,
-    "tax": 21,
-    "energy": 32
+    "internet": 226,
+    "peak": 4570,
+    "tax": 15,
+    "energy": 47
   },
   "CYM": {
     "democracy": 8.4,
     "safety": 67,
     "healthcare": 69,
     "ev": 29,
-    "internet": 197,
-    "peak": 3368,
-    "tax": 22,
-    "energy": 37
+    "internet": 237,
+    "peak": 5227,
+    "tax": 16,
+    "energy": 52
   },
   "BMU": {
     "democracy": 5.7,
     "safety": 46,
     "healthcare": 56,
     "ev": 16,
-    "internet": 144,
-    "peak": 690,
-    "tax": 15,
-    "energy": 16
+    "internet": 184,
+    "peak": 2214,
+    "tax": 9,
+    "energy": 31
   },
   "HMD": {
     "democracy": 3.6,
     "safety": 50,
     "healthcare": 53,
     "ev": 8,
-    "internet": 73,
-    "peak": 1145,
-    "tax": 12,
-    "energy": 15
+    "internet": 93,
+    "peak": 2726,
+    "tax": 7,
+    "energy": 30
   },
   "SHN": {
     "democracy": 5.6,
     "safety": 57,
     "healthcare": 48,
     "ev": 9,
-    "internet": 72,
-    "peak": 4079,
-    "tax": 19,
-    "energy": 27
+    "internet": 82,
+    "peak": 6027,
+    "tax": 12,
+    "energy": 37
   },
   "MUS": {
     "democracy": 3.7,
     "safety": 43,
     "healthcare": 39,
     "ev": 0,
-    "internet": 35,
-    "peak": 2236,
-    "tax": 14,
-    "energy": 13
+    "internet": 45,
+    "peak": 3953,
+    "tax": 7,
+    "energy": 23
   },
   "COM": {
     "democracy": 2.9,
     "safety": 36,
     "healthcare": 34,
     "ev": 0,
-    "internet": 17,
-    "peak": 1365,
-    "tax": 12,
-    "energy": 6
+    "internet": 27,
+    "peak": 2974,
+    "tax": 5,
+    "energy": 16
   },
   "STP": {
     "democracy": 5.3,
     "safety": 55,
     "healthcare": 46,
     "ev": 7,
-    "internet": 65,
-    "peak": 3771,
-    "tax": 18,
-    "energy": 25
+    "internet": 75,
+    "peak": 5680,
+    "tax": 11,
+    "energy": 35
   },
   "CPV": {
     "democracy": 4.3,
     "safety": 47,
     "healthcare": 42,
     "ev": 3,
-    "internet": 47,
-    "peak": 2833,
-    "tax": 16,
-    "energy": 17
+    "internet": 57,
+    "peak": 4624,
+    "tax": 9,
+    "energy": 27
   },
   "MLT": {
     "democracy": 9.5,
     "safety": 82,
     "healthcare": 78,
     "ev": 38,
-    "internet": 181,
-    "peak": 4048,
-    "tax": 26,
-    "energy": 52
+    "internet": 211,
+    "peak": 5992,
+    "tax": 19,
+    "energy": 72
   },
   "JEY": {
     "democracy": 10,
     "safety": 85,
     "healthcare": 80,
     "ev": 40,
-    "internet": 190,
-    "peak": 4495,
-    "tax": 27,
-    "energy": 55
+    "internet": 220,
+    "peak": 6494,
+    "tax": 20,
+    "energy": 75
   },
   "GGY": {
     "democracy": 10,
     "safety": 85,
     "healthcare": 80,
     "ev": 40,
-    "internet": 190,
-    "peak": 4480,
-    "tax": 27,
-    "energy": 55
+    "internet": 220,
+    "peak": 6478,
+    "tax": 20,
+    "energy": 75
   },
   "IMN": {
     "democracy": 6.3,
     "safety": 58,
     "healthcare": 62,
     "ev": 22,
-    "internet": 117,
-    "peak": 843,
-    "tax": 18,
-    "energy": 28
+    "internet": 147,
+    "peak": 2386,
+    "tax": 11,
+    "energy": 48
   },
   "ALA": {
     "democracy": 7.8,
     "safety": 68,
     "healthcare": 69,
     "ev": 29,
-    "internet": 145,
-    "peak": 2257,
-    "tax": 21,
-    "energy": 38
+    "internet": 175,
+    "peak": 3976,
+    "tax": 14,
+    "energy": 58
   },
   "FRO": {
     "democracy": 6,
     "safety": 55,
     "healthcare": 60,
     "ev": 20,
-    "internet": 111,
-    "peak": 547,
-    "tax": 17,
-    "energy": 25
+    "internet": 141,
+    "peak": 2053,
+    "tax": 10,
+    "energy": 45
   },
   "IOT": {
     "democracy": 6.4,
     "safety": 71,
     "healthcare": 67,
     "ev": 22,
-    "internet": 129,
-    "peak": 3928,
-    "tax": 19,
-    "energy": 36
+    "internet": 149,
+    "peak": 5856,
+    "tax": 14,
+    "energy": 51
   },
   "SGP": {
     "democracy": 6.9,
     "safety": 74,
     "healthcare": 69,
     "ev": 24,
-    "internet": 137,
-    "peak": 4363,
-    "tax": 20,
-    "energy": 39
+    "internet": 157,
+    "peak": 6345,
+    "tax": 15,
+    "energy": 54
   },
   "NFK": {
     "democracy": 9,
     "safety": 80,
     "healthcare": 75,
     "ev": 20,
-    "internet": 150,
-    "peak": 4491,
-    "tax": 25,
-    "energy": 45
+    "internet": 170,
+    "peak": 6489,
+    "tax": 17,
+    "energy": 55
   },
   "COK": {
     "democracy": 8.9,
     "safety": 79,
     "healthcare": 75,
     "ev": 20,
-    "internet": 148,
-    "peak": 4411,
-    "tax": 25,
-    "energy": 44
+    "internet": 168,
+    "peak": 6400,
+    "tax": 17,
+    "energy": 54
   },
   "TON": {
     "democracy": 8.7,
     "safety": 78,
     "healthcare": 74,
     "ev": 19,
-    "internet": 145,
-    "peak": 4236,
-    "tax": 24,
-    "energy": 43
+    "internet": 165,
+    "peak": 6203,
+    "tax": 16,
+    "energy": 53
   },
   "WLF": {
     "democracy": 6.9,
     "safety": 64,
     "healthcare": 64,
     "ev": 9,
-    "internet": 107,
-    "peak": 2365,
-    "tax": 20,
-    "energy": 29
+    "internet": 127,
+    "peak": 4099,
+    "tax": 12,
+    "energy": 39
   },
   "WSM": {
     "democracy": 9,
     "safety": 80,
     "healthcare": 75,
     "ev": 20,
-    "internet": 149,
-    "peak": 4462,
-    "tax": 25,
-    "energy": 45
+    "internet": 169,
+    "peak": 6457,
+    "tax": 17,
+    "energy": 55
   },
   "SLB": {
     "democracy": 8.2,
     "safety": 74,
     "healthcare": 71,
     "ev": 16,
-    "internet": 134,
-    "peak": 3721,
-    "tax": 23,
-    "energy": 39
+    "internet": 154,
+    "peak": 5624,
+    "tax": 15,
+    "energy": 49
   },
   "TUV": {
     "democracy": 8.7,
     "safety": 77,
     "healthcare": 73,
     "ev": 18,
-    "internet": 143,
-    "peak": 4163,
-    "tax": 24,
-    "energy": 42
+    "internet": 163,
+    "peak": 6121,
+    "tax": 16,
+    "energy": 52
   },
   "MDV": {
     "democracy": 6.6,
     "safety": 72,
     "healthcare": 68,
     "ev": 23,
-    "internet": 131,
-    "peak": 4056,
-    "tax": 19,
-    "energy": 37
+    "internet": 151,
+    "peak": 6000,
+    "tax": 14,
+    "energy": 52
   },
   "NRU": {
     "democracy": 5.9,
     "safety": 57,
     "healthcare": 60,
     "ev": 5,
-    "internet": 88,
-    "peak": 1403,
-    "tax": 17,
-    "energy": 22
+    "internet": 108,
+    "peak": 3016,
+    "tax": 9,
+    "energy": 32
   },
   "FSM": {
     "democracy": 7.6,
     "safety": 70,
     "healthcare": 68,
     "ev": 13,
-    "internet": 122,
-    "peak": 3119,
-    "tax": 22,
-    "energy": 35
+    "internet": 142,
+    "peak": 4947,
+    "tax": 14,
+    "energy": 45
   },
   "SGS": {
     "democracy": 7.7,
     "safety": 53,
     "healthcare": 63,
     "ev": 13,
-    "internet": 124,
-    "peak": 4177,
-    "tax": 19,
-    "energy": 63
+    "internet": 144,
+    "peak": 6137,
+    "tax": 14,
+    "energy": 83
   },
   "FLK": {
     "democracy": 8,
     "safety": 55,
     "healthcare": 65,
     "ev": 15,
-    "internet": 130,
-    "peak": 4494,
-    "tax": 20,
-    "energy": 65
+    "internet": 150,
+    "peak": 6493,
+    "tax": 15,
+    "energy": 85
   },
   "VUT": {
     "democracy": 9,
     "safety": 80,
     "healthcare": 75,
     "ev": 20,
-    "internet": 150,
-    "peak": 4489,
-    "tax": 25,
-    "energy": 45
+    "internet": 170,
+    "peak": 6488,
+    "tax": 17,
+    "energy": 55
   },
   "NIU": {
     "democracy": 8,
     "safety": 72,
     "healthcare": 70,
     "ev": 15,
-    "internet": 129,
-    "peak": 3451,
-    "tax": 22,
-    "energy": 37
+    "internet": 149,
+    "peak": 5319,
+    "tax": 14,
+    "energy": 47
   },
   "ASM": {
     "democracy": 7.8,
     "safety": 71,
     "healthcare": 69,
     "ev": 14,
-    "internet": 127,
-    "peak": 3344,
-    "tax": 22,
-    "energy": 36
+    "internet": 147,
+    "peak": 5200,
+    "tax": 14,
+    "energy": 46
   },
   "PLW": {
     "democracy": 8.2,
     "safety": 74,
     "healthcare": 71,
     "ev": 16,
-    "internet": 134,
-    "peak": 3700,
-    "tax": 23,
-    "energy": 39
+    "internet": 154,
+    "peak": 5599,
+    "tax": 15,
+    "energy": 49
   },
   "GUM": {
     "democracy": 6.7,
     "safety": 63,
     "healthcare": 64,
     "ev": 9,
-    "internet": 104,
-    "peak": 2223,
-    "tax": 19,
-    "energy": 28
+    "internet": 124,
+    "peak": 3938,
+    "tax": 11,
+    "energy": 38
   },
   "MNP": {
     "democracy": 6.4,
     "safety": 61,
     "healthcare": 62,
     "ev": 7,
-    "internet": 98,
-    "peak": 1911,
-    "tax": 19,
-    "energy": 26
+    "internet": 118,
+    "peak": 3587,
+    "tax": 11,
+    "energy": 36
   },
   "BHR": {
     "democracy": 6.3,
     "safety": 70,
     "healthcare": 66,
     "ev": 21,
-    "internet": 126,
-    "peak": 3795,
-    "tax": 18,
-    "energy": 35
+    "internet": 146,
+    "peak": 5707,
+    "tax": 13,
+    "energy": 50
   },
   "MAC": {
     "democracy": 6.3,
     "safety": 69,
     "healthcare": 66,
     "ev": 21,
-    "internet": 125,
-    "peak": 3752,
-    "tax": 18,
-    "energy": 34
+    "internet": 145,
+    "peak": 5659,
+    "tax": 13,
+    "energy": 49
   }
 }
