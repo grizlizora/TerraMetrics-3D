@@ -566,7 +566,7 @@ export class UIManager {
       list.innerHTML = `
         <li style="flex-direction: column; padding-bottom: 0.75rem; margin-bottom: 0.75rem;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-            <span style="color: var(--text-secondary); font-size: 0.95em;">🌱 ${isUk ? 'Відновлювана енергія' : 'Clean Energy %'}</span>
+            <span style="color: var(--text-secondary); font-size: 0.95em;">🌱 ${isUk ? 'Чиста енергія' : 'Clean Energy %'}</span>
             <span style="font-weight: 700; color: #2ecc71;">${clean}%</span>
           </div>
           <div style="height: 0.375rem; background: rgba(255,255,255,0.1); border-radius: 0.25rem; margin-bottom: 0.75rem;">
