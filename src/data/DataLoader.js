@@ -8,8 +8,8 @@ export class DataLoader {
     try {
       console.log('Loading datasets...');
       const [geoRes, relRes, idxRes] = await Promise.all([
-        fetch('/countries.geojson'),
-        fetch('/religions.json'),
+        fetch('/countries.geojson?v=' + Date.now()),
+        fetch('/religions.json?v=' + Date.now()),
         fetch('/indexes.json?v=' + Date.now())
       ]);
 
