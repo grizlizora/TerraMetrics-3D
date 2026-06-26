@@ -148,7 +148,7 @@ export class DataLoader {
 
       console.log('Fetching live World Bank data...');
       const indicators = [
-        { key: 'gdp', id: 'NY.GDP.PCAP.PP.CD' },
+        { key: 'gdp', id: 'NY.GDP.PCAP.CD' },
         { key: 'military_percent', id: 'MS.MIL.XPND.GD.ZS' },
         { key: 'military_active', id: 'MS.MIL.TOTL.P1' }
       ];
