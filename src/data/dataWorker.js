@@ -69,12 +69,12 @@ self.onmessage = function(e) {
     // World Bank data
     const gdp = wb.gdp ? Math.round(wb.gdp) : 0;
     const militarySpending = wb.military_percent ? parseFloat(wb.military_percent.toFixed(1)) : 0;
-    const cleanEnergy = wb.clean_energy ? Math.round(wb.clean_energy) : 0;
+    const cleanEnergy = wb.clean_energy ? Math.round(wb.clean_energy) : (idx.energy || 0);
     const militaryActive = wb.military_active ? Math.round(wb.military_active) : 0;
 
     // Derived from GDP
-    const avgSalary = gdp > 0 ? Math.floor(gdp * 0.35 / 12) : 0;
-    const colIndex = avgSalary > 0 ? Math.min(100, Math.floor(20 + (avgSalary / 5000) * 80)) : 0;
+    const avgSalary = gdp > 0 ? Math.floor(gdp * 0.55 / 12) : 0;
+    const colIndex = avgSalary > 0 ? Math.min(100, Math.floor(25 + (avgSalary / 6000) * 75)) : 0;
 
     // Indexes
     const democracyIndex = idx.democracy || 0;
@@ -87,7 +87,7 @@ self.onmessage = function(e) {
     
     // Geometry approximations
     const areaKm2 = (popMap && iso && popMap[iso] && popMap[iso].area) ? popMap[iso].area : 1000;
-    const borderLength = Math.round(Math.sqrt(areaKm2) * 4.5); // Approximate border length based on area
+    const borderLength = Math.round(Math.sqrt(areaKm2) * 8.5); // Approximate border length based on area
 
     // Still need political system (hard to get an API for this quickly, so pseudo-random based on hash)
     let hash = 0;

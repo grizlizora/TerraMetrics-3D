@@ -521,7 +521,7 @@ export class UIManager {
         </li>
         <li style="flex-direction: column; padding-bottom: 0.75rem; margin-bottom: 0.75rem;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-            <span style="color: var(--text-secondary); font-size: 0.95em;">${isUk ? 'Податок на доходи' : 'Income Tax'}</span>
+            <span style="color: var(--text-secondary); font-size: 0.95em;">${isUk ? 'Податок на доходи (ПДФО)' : 'Income Tax (Personal)'}</span>
             <span style="font-weight: 700; color: #e74c3c;">${props.incomeTax || 0}%</span>
           </div>
         </li>
@@ -904,7 +904,7 @@ export class UIManager {
       if (stats.topTax && stats.topTax.length > 0) {
         list.innerHTML += `<li style="flex-direction: column; padding-top: 0.75rem; margin-top: 0.75rem; border-top: 1px solid var(--glass-border);">
           <div style="font-weight:bold; color:var(--text-secondary); margin-bottom: 0.5rem; display:flex; justify-content:space-between; width:100%; align-items:center;">
-            <span>${isUk ? 'Податок на доходи' : 'Income Tax'}</span>
+            <span>${isUk ? 'Податок на доходи (ПДФО)' : 'Income Tax (Personal)'}</span>
             <span style="color:#e74c3c; font-size:1.1em;">Сер: ${stats.avgTax}%</span>
           </div>
           <div style="width:100%; font-size:0.85em; color:var(--text-secondary); margin-bottom:0.5rem; text-transform:uppercase; letter-spacing:0.5px;">${isUk ? 'Топ-5 за найнижчими податками' : 'Top 5 Lowest Taxes'}</div>
