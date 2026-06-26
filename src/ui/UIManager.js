@@ -705,7 +705,7 @@ export class UIManager {
       const props = feature ? feature.properties : {};
       const isUk = this.i18n.currentLanguage === 'uk';
 
-      document.querySelector('#country-view .dominant-card h3').textContent = isUk ? 'Найвища точка (від рівня моря)' : 'Highest Point (above sea level)';
+      document.querySelector('#country-view .dominant-card h3').textContent = isUk ? 'Найвища точка' : 'Highest Point';
       document.getElementById('dominant-religion').textContent = props.highestPeak ? `${props.highestPeak.toLocaleString()} ${isUk ? 'м' : 'm'}` : (isUk ? 'Невідомо' : 'Unknown');
       document.getElementById('dominant-percentage').textContent = '';
       document.querySelector('#country-view .stats-list h3').textContent = isUk ? 'Територія' : 'Territory';

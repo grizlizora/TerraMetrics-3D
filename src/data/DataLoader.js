@@ -137,8 +137,8 @@ export class DataLoader {
     try {
       let cachedStr = null, cacheTime = null;
       try {
-        cachedStr = sessionStorage.getItem('terra_wb_v3');
-        cacheTime = sessionStorage.getItem('terra_wb_v3_time');
+        cachedStr = sessionStorage.getItem('terra_wb_v4');
+        cacheTime = sessionStorage.getItem('terra_wb_v4_time');
       } catch (e) {}
 
       if (cachedStr && cacheTime && (Date.now() - parseInt(cacheTime)) < 604800000) {
@@ -148,10 +148,9 @@ export class DataLoader {
 
       console.log('Fetching live World Bank data...');
       const indicators = [
-        { key: 'gdp', id: 'NY.GDP.PCAP.CD' },
+        { key: 'gdp', id: 'NY.GDP.PCAP.PP.CD' },
         { key: 'military_percent', id: 'MS.MIL.XPND.GD.ZS' },
-        { key: 'military_active', id: 'MS.MIL.TOTL.P1' },
-        { key: 'clean_energy', id: 'EG.FEC.RNEW.ZS' }
+        { key: 'military_active', id: 'MS.MIL.TOTL.P1' }
       ];
 
       for (const ind of indicators) {
@@ -172,8 +171,8 @@ export class DataLoader {
       }
 
       try {
-        sessionStorage.setItem('terra_wb_v3', JSON.stringify(wbData));
-        sessionStorage.setItem('terra_wb_v3_time', Date.now().toString());
+        sessionStorage.setItem('terra_wb_v4', JSON.stringify(wbData));
+        sessionStorage.setItem('terra_wb_v4_time', Date.now().toString());
       } catch (e) {}
 
     } catch (e) {

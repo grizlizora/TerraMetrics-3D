@@ -69,7 +69,7 @@ self.onmessage = function(e) {
     // World Bank data
     const gdp = wb.gdp ? Math.round(wb.gdp) : 0;
     const militarySpending = wb.military_percent ? parseFloat(wb.military_percent.toFixed(1)) : 0;
-    const cleanEnergy = wb.clean_energy ? Math.round(wb.clean_energy) : (idx.energy || 0);
+    const cleanEnergy = idx.energy || 0;
     const militaryActive = wb.military_active ? Math.round(wb.military_active) : 0;
 
     // Derived from GDP or explicit indexes
