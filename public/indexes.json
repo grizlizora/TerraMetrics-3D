@@ -267,7 +267,7 @@
     "internet": 190,
     "peak": 4808,
     "tax": 25,
-    "energy": 25,
+    "energy": 90,
     "salary": 2800,
     "col": 70,
     "system": "Змішана республіка"
@@ -423,7 +423,7 @@
     "internet": 105,
     "peak": 2061,
     "tax": 18,
-    "energy": 30,
+    "energy": 65,
     "salary": 450,
     "col": 35,
     "system": "Змішана республіка"
@@ -683,7 +683,7 @@
     "internet": 220,
     "peak": 2104,
     "tax": 25,
-    "energy": 80,
+    "energy": 95,
     "salary": 3400,
     "col": 75,
     "system": "Конституційна монархія"
@@ -696,7 +696,7 @@
     "internet": 180,
     "peak": 1324,
     "tax": 30,
-    "energy": 60,
+    "energy": 90,
     "salary": 3300,
     "col": 75,
     "system": "Парламентська республіка"
@@ -761,7 +761,7 @@
     "internet": 140,
     "peak": 694,
     "tax": 40,
-    "energy": 35,
+    "energy": 65,
     "salary": 3400,
     "col": 72,
     "system": "Конституційна монархія"
@@ -956,7 +956,7 @@
     "internet": 140,
     "peak": 1014,
     "tax": 15,
-    "energy": 20,
+    "energy": 60,
     "salary": 1200,
     "col": 45,
     "system": "Парламентська республіка"
@@ -969,7 +969,7 @@
     "internet": 110,
     "peak": 2655,
     "tax": 15,
-    "energy": 25,
+    "energy": 80,
     "salary": 1300,
     "col": 50,
     "system": "Парламентська республіка"
@@ -1970,7 +1970,7 @@
     "internet": 230,
     "peak": 6190,
     "tax": 24,
-    "energy": 20,
+    "energy": 40,
     "salary": 4500,
     "col": 75,
     "system": "Федеративна республіка"
@@ -1983,7 +1983,7 @@
     "internet": 180,
     "peak": 5959,
     "tax": 26,
-    "energy": 65,
+    "energy": 80,
     "salary": 3800,
     "col": 75,
     "system": "Конституційна монархія"
