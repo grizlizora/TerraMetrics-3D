@@ -7,10 +7,11 @@ export class DataLoader {
   async loadAll() {
     try {
       console.log('Loading datasets...');
+      const cb = Date.now();
       const [geoRes, relRes, idxRes] = await Promise.all([
-        fetch('/countries.geojson'),
-        fetch('/religions.json'),
-        fetch('/indexes.json')
+        fetch(`/countries.geojson?v=${cb}`),
+        fetch(`/religions.json?v=${cb}`),
+        fetch(`/indexes.json?v=${cb}`)
       ]);
 
       if (!geoRes.ok || !relRes.ok) {
