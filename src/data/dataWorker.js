@@ -74,7 +74,7 @@ self.onmessage = function(e) {
 
     // Derived from GDP
     const avgSalary = gdp > 0 ? Math.floor(gdp * 0.85 / 12) : 0;
-    const colIndex = avgSalary > 0 ? Math.min(100, Math.floor(20 + (avgSalary / 6000) * 75)) : 0;
+    const colIndex = avgSalary > 0 ? Math.min(100, Math.floor(30 + (avgSalary / 5000) * 80)) : 0;
 
     // Indexes
     const democracyIndex = idx.democracy || 0;
