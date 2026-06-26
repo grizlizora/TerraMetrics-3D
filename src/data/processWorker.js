@@ -72,9 +72,9 @@ self.onmessage = function(e) {
     const cleanEnergy = wb.clean_energy ? Math.round(wb.clean_energy) : (idx.energy || 0);
     const militaryActive = wb.military_active ? Math.round(wb.military_active) : 0;
 
-    // Derived from GDP
-    const avgSalary = gdp > 0 ? Math.floor(gdp * 0.85 / 12) : 0;
-    const colIndex = avgSalary > 0 ? Math.min(100, Math.floor(30 + (avgSalary / 5000) * 80)) : 0;
+    // Derived from GDP or explicit indexes
+    const avgSalary = idx.salary || (gdp > 0 ? Math.floor(gdp * 0.85 / 12) : 0);
+    const colIndex = idx.col || 40;
 
     // Indexes
     const democracyIndex = idx.democracy || 0;
@@ -84,19 +84,11 @@ self.onmessage = function(e) {
     const internetSpeed = idx.internet || 0;
     const highestPeak = idx.peak || 0;
     const incomeTax = idx.tax || 0;
+    const politicalSystem = idx.system || 'Республіка';
     
     // Geometry approximations
     const areaKm2 = (popMap && iso && popMap[iso] && popMap[iso].area) ? popMap[iso].area : 1000;
     const borderLength = Math.round(Math.sqrt(areaKm2) * 6.0); // Approximate border length based on area
-
-    // Still need political system (hard to get an API for this quickly, so pseudo-random based on hash)
-    let hash = 0;
-    if (iso) {
-      for (let i = 0; i < iso.length; i++) hash = iso.charCodeAt(i) + ((hash << 5) - hash);
-    }
-    const rand = Math.abs(Math.sin(hash));
-    const systems = ['Парламентська республіка', 'Президентська республіка', 'Змішана республіка', 'Конституційна монархія', 'Абсолютна монархія'];
-    const politicalSystem = systems[Math.floor(rand * systems.length)];
 
     const mockData = {
       gdpPerCapita: gdp,
