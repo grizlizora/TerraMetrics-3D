@@ -25,6 +25,58 @@ All installers and standalone binaries are pre-compiled, verified, and available
 
 ---
 
+## 🎮 How to Use & User Guide (Інструкція користувача)
+
+TerraMetrics-3D is designed for fluid, intuitive navigation across desktop and touchscreens:
+
+```
+  [  3D Globe Navigation  ]        [  Search & Analytics  ]        [   Space Physics Mode   ]
+   Left Click: Orbit Globe          Press ⌘K / Ctrl+K               Toggle: Basic ➔ Deep Space
+   Right Click: Pitch & Tilt        Click any of 258 Countries      Inspect Sun, Moon & Lagrange
+   Scroll: Smooth Zoom In/Out       Scrub 12-Month Climate Slider   Immerse in 3D Spatial Audio
+```
+
+### 🕹️ Keyboard & Mouse Controls
+
+| Action | Desktop (Mouse & Keyboard) | Mobile / Touch Screen |
+| :--- | :--- | :--- |
+| **Orbit / Pan Globe** | Left Click + Drag | Single Finger Drag |
+| **Tilt / 3D Pitch** | Right Click + Drag *(or Ctrl + Left Drag)* | Two Fingers Vertical Swipe |
+| **Zoom In / Out** | Mouse Wheel Scroll | Two Fingers Pinch In / Out |
+| **Fast Search** | Press `⌘K` (Mac) or `Ctrl+K` (Windows/Linux) | Tap Search Capsule in Top Bar |
+| **Move Desktop Window** | Left Click + Drag on empty Top Bar space | *N/A (Native App Frame)* |
+| **Maximize / Restore** | Double-Click on empty Top Bar space | *N/A* |
+| **Switch 3D / 2D** | Click `3D / 2D` Toggle in Top Bar | Tap `3D / 2D` Button |
+| **Switch Light / Dark** | Click `☀️ / 🌙` Button | Tap Theme Switcher |
+| **Switch Language** | Click `UK / EN` | Tap `UK / EN` |
+
+---
+
+## 📊 Analytics Matrix & Space Visualizer
+
+TerraMetrics-3D features an exhaustive 9-sector real-world analytical matrix for **258 countries** combined with 4 astronomical rendering modes:
+
+| Analytical Pillar | Submode | Real-World Metrics & Capabilities |
+| :--- | :--- | :--- |
+| 👥 **Society (Суспільство)** | **Demographics** | HDI, Median Age, Urbanization %, Life Expectancy, Literacy Rate |
+| 👥 **Society (Суспільство)** | **Population** | Live population counts, Density/km², Growth rate, Dependency ratios |
+| 👥 **Society (Суспільство)** | **Religions** | Granular confessional distribution, Dominant religious structures |
+| 🏛 **State (Держава)** | **Economy** | Nominal GDP, GDP per capita (PPP), Inflation %, Debt-to-GDP, Gini |
+| 🏛 **State (Держава)** | **Politics** | Democracy Index, Corruption Perception (CPI), Press Freedom, Regime type |
+| 🏛 **State (Держава)** | **Military** | Global Firepower (GFP), Active Personnel, Defense Budget, Nuclear status |
+| 🌿 **Nature (Природа)** | **Climate** | **12-Month Solar Scrubber**: Real-time insolation, Temperature, Tetens humidity, Wind |
+| 🌿 **Nature (Природа)** | **Topography** | Highest/Lowest elevation points, Barometric pressure, Hypsometric curves |
+| 🌿 **Nature (Природа)** | **Resources** | Major export minerals, Energy mix %, Water security, Arable land % |
+
+| 🌌 Space Rendering Mode | Visuals & Mathematical Models |
+| :--- | :--- |
+| **None (Globe Only)** | Pure Earth-focused geospatial analytical visualization (3D Globe & 2D Mercator). |
+| **Basic Space** | Real-time Sun position, Earth rotation relative to Greenwich Sidereal Time (GST), Lunar phase cycle. |
+| **Advanced Space** | Keplerian Planetary Orbits, 350+ Asteroids Belt simulation, **Sun-Earth Lagrange Points ($L_1 - L_5$)**. |
+| **Deep Space** | 73 Deep Space Objects, Procedural Fractal Brownian Motion (FBM) Nebulae shaders, 3D Spatial Audio. |
+
+---
+
 ## 🏛 System Architecture & Graphics Pipeline
 
 ```mermaid
@@ -53,31 +105,6 @@ flowchart TD
     DataLayer --> GraphicsCore
     GraphicsCore --> UserInterface
 ```
-
----
-
-## 📊 Analytics Matrix & Space Visualizer
-
-TerraMetrics-3D features an exhaustive 9-sector real-world analytical matrix for **258 countries** combined with 4 astronomical rendering modes:
-
-| Analytical Pillar | Submode | Real-World Metrics & Capabilities |
-| :--- | :--- | :--- |
-| 👥 **Society (Суспільство)** | **Demographics** | HDI, Median Age, Urbanization %, Life Expectancy, Literacy Rate |
-| 👥 **Society (Суспільство)** | **Population** | Live population counts, Density/km², Growth rate, Dependency ratios |
-| 👥 **Society (Суспільство)** | **Religions** | Granular confessional distribution, Dominant religious structures |
-| 🏛 **State (Держава)** | **Economy** | Nominal GDP, GDP per capita (PPP), Inflation %, Debt-to-GDP, Gini |
-| 🏛 **State (Держава)** | **Politics** | Democracy Index, Corruption Perception (CPI), Press Freedom, Regime type |
-| 🏛 **State (Держава)** | **Military** | Global Firepower (GFP), Active Personnel, Defense Budget, Nuclear status |
-| 🌿 **Nature (Природа)** | **Climate** | **12-Month Solar Scrubber**: Real-time insolation, Temperature, Tetens humidity, Wind |
-| 🌿 **Nature (Природа)** | **Topography** | Highest/Lowest elevation points, Barometric pressure, Hypsometric curves |
-| 🌿 **Nature (Природа)** | **Resources** | Major export minerals, Energy mix %, Water security, Arable land % |
-
-| 🌌 Space Rendering Mode | Visuals & Mathematical Models |
-| :--- | :--- |
-| **None (Globe Only)** | Pure Earth-focused geospatial analytical visualization (3D Globe & 2D Mercator). |
-| **Basic Space** | Real-time Sun position, Earth rotation relative to Greenwich Sidereal Time (GST), Lunar phase cycle. |
-| **Advanced Space** | Keplerian Planetary Orbits, 350+ Asteroids Belt simulation, **Sun-Earth Lagrange Points ($L_1 - L_5$)**. |
-| **Deep Space** | 73 Deep Space Objects, Procedural Fractal Brownian Motion (FBM) Nebulae shaders, 3D Spatial Audio. |
 
 ---
 
