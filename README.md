@@ -6,6 +6,17 @@
 
 ---
 
+## 🎥 App Presentation & Video Showcases (v2.0)
+
+Experience TerraMetrics 3D in action at fluid 60 FPS (1.5x speed):
+
+| Presentation Showcase | Resolution & Framerate | Direct Video Link |
+| :--- | :---: | :---: |
+| 🖥️ **Desktop Showcase (macOS / Windows / Linux)** | **3024 × 1898 Retina @ 60 FPS** | ▶️ **[Watch Desktop Presentation (MP4)](https://github.com/grizlizora/TerraMetrics-3D/raw/main/video/TerraMetrics-3D_Desktop_Presentation_v2.0.mp4)** |
+| 📱 **Mobile Showcase (Android / Touchscreens)** | **864 × 1920 Native @ 60 FPS** | ▶️ **[Watch Mobile Presentation (MP4)](https://github.com/grizlizora/TerraMetrics-3D/raw/main/video/TerraMetrics-3D_Mobile_Presentation_v2.0.mp4)** |
+
+---
+
 ## 📦 Multi-Platform Downloads (v2.0.0)
 
 All installers and standalone binaries are pre-compiled, verified, and available in [releases/v2.0/](https://github.com/grizlizora/TerraMetrics-3D/tree/main/releases/v2.0) and on the [Official Releases Page](https://github.com/grizlizora/TerraMetrics-3D/releases/tag/v2.0.0).
@@ -126,14 +137,18 @@ flowchart TD
 
 ---
 
-## ✨ What\'s New in v2.0
+## ✨ Evolution from v1.0 to v2.0
 
-* 🦀 **Tauri 2.0 Native Desktop Core:** Full native desktop shell for macOS, Windows, and Linux with window dragging (`startDragging`), double-click window maximize, and custom glass chrome.
-* 📐 **Zero-Clip Responsive TopBar:** Elastic search width ladder (`w-28` ➔ `w-64`) and space mode icon collapsing below 1280px with native tooltips.
-* ☀️/🌙 **Synchronized Zero-Flash Theming:** Instantaneous pre-paint theme synchronization preventing white-on-black container flash during initial launch.
-* 🌌 **VSOP87 Real-Time Ephemeris & Lagrange Points:** Exact real-time calculation of Sun, Moon, and Earth coordinates with Sun-Earth Lagrange points ($L_1 - L_5$) and a procedural 350+ asteroid Keplerian belt.
-* ⚡ **Zero-GC 120 FPS Rendering Loop:** Scratch-vector math pools with zero `.clone()` memory allocations during animation frames.
-* 🛠 **Automated Multi-Platform CI/CD:** GitHub Actions workflow with parallel Rust compilation across 5 matrix targets and automatic release publishing.
+| Feature Area | v1.0 (Vanilla JS Proof-of-Concept) | v2.0 (Enterprise Multi-Platform Architecture) |
+| :--- | :--- | :--- |
+| **Framework & Types** | Vanilla JS, manual DOM manipulation, 64KB monolithic `UIManager.js` | **React 19, TypeScript 5.7, Zustand 5, Tailwind CSS v4** |
+| **Desktop Runtime** | None (browser-only, start.sh / start.bat dev servers) | **Tauri 2.0 (Rust 1.98), 12–30 MB binaries** (macOS, Windows, Linux) |
+| **Mobile Runtime** | Mobile browser viewport only | **Capacitor 7 Native Android APK**, Haptics, Back button |
+| **Astronomical Physics** | Basic Sun/Moon position calculations | **NASA VSOP87, Lagrange Points ($L_1 - L_5$), 350+ Asteroids Belt** |
+| **Render Performance** | 60 FPS standard requestAnimationFrame loop | **Zero-GC 120 FPS hot-loop** with scratch-vector pools (~0.06 ms) |
+| **Offline Architecture** | Static JSON file fetch | **Multi-Tier L1 ➔ L2 (IndexedDB `TerraStorageDB`) ➔ L3 (Service Worker)** |
+| **Analytics Coverage** | Basic 5 metrics with unmapped continents | **9 Analytical Submodes, 258 Countries across 7 Continents (100% verified)** |
+| **Automated Testing** | 4 simple script checks | **7 Comprehensive Simulation Test Modules** (100% automated pass) |
 
 ---
 

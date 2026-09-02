@@ -21,4 +21,4 @@ dist-ssr
 src-tauri/target/
 node_modules/.cache/
 *.tsbuildinfo
-
+TerraMetrics-3D 2/
