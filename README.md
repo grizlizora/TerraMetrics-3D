@@ -129,7 +129,6 @@ npm run tauri:build
 - **LinkedIn:** [Roman Vaida](https://www.linkedin.com/in/roman-vaida-4873a6287)
 - **Telegram:** [@grizlizora](https://t.me/grizlizora)
 - **Email:** roma.vaida66@gmail.com
-- **Reddit:** [No-Ambassador-5687](https://www.reddit.com/user/No-Ambassador-5687)
 
 ---
 
