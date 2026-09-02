@@ -18,7 +18,6 @@
   "gdp_abbr": "ВВП",
   "loading_analytics": "Завантаження глобальної аналітики...",
   "exit_toast": "Натисніть ще раз для виходу",
-
   "stage_init": "Ініціалізація системи...",
   "stage_geo": "Завантаження геоданих...",
   "stage_analytics": "Обробка аналітики та показників...",
@@ -28,15 +27,14 @@
   "retry_btn": "Спробувати знову",
   "loading_app_title": "TerraMetrics 3D",
   "loading_subtitle": "Глобальна аналітика та 3D візуалізація",
-
   "space_title": "Космос",
   "space_none": "Вимкнено",
   "space_basic": "Базовий",
   "space_advanced": "Планети",
-  "space_deep": "Глибокий космос",
+  "space_deep": "Космос",
+  "space_deep_full": "Глибокий космос",
   "space_labels": "Мітки",
   "space_only_in_dark_theme": "Космічні режими доступні лише в темній темі",
-
   "Europe": "Європа",
   "Asia": "Азія",
   "Africa": "Африка",
@@ -44,20 +42,17 @@
   "South America": "Південна Америка",
   "Oceania": "Океанія",
   "World": "Світ",
-
   "top_countries": "Топ країн",
   "top_economy_title": "Топ економік (ВВП / особу)",
   "top_democracy_title": "Топ за індексом демократії",
   "top_military_title": "Топ армій (активний склад)",
   "top_area_title": "Топ країн за площею",
   "top_internet_title": "Топ за швидкістю інтернету",
-
   "unit_kmh": "км/г",
   "unit_mbps": "Мбіт/с",
   "unit_sqkm": "км²",
   "unit_km": "км",
   "unit_m": "м",
-
   "mode_religion": "Релігія",
   "mode_population": "Населення",
   "mode_demographics": "Культура",
@@ -67,7 +62,6 @@
   "mode_climate": "Клімат",
   "mode_geography": "Рельєф",
   "mode_resources": "Енергія",
-
   "pop_stats": "Статистика населення",
   "pop_segment": "Категорія",
   "population": "Населення",
@@ -128,7 +122,6 @@
   "select_country": "Оберіть країну",
   "close": "Закрити",
   "reset_world": "Скинути на Світ",
-
   "Християнство": "Християнство",
   "Іслам": "Іслам",
   "Індуїзм": "Індуїзм",
@@ -137,7 +130,6 @@
   "Народні вірування": "Народні вірування",
   "Юдаїзм": "Юдаїзм",
   "Інші": "Інші",
-
   "Президентська республіка": "Президентська республіка",
   "Парламентська республіка": "Парламентська республіка",
   "Змішана республіка": "Змішана республіка",
@@ -182,7 +174,6 @@
   "copy_stats": "Копіювати статистику",
   "copied": "Скопійовано!",
   "countries_count": "Кількість країн",
-  "borders_length": "Довжина кордонів",
   "border_length": "Довжина кордонів",
   "top_currencies": "Популярні валюти",
   "share_of_continent": "% від континенту",
@@ -191,13 +182,13 @@
   "climate_zones": "Кліматичний профіль",
   "tooltip_space_enable": "Увімкнути зорі та космос",
   "tooltip_space_disable": "Вимкнути зорі",
-  "unit_kmh": "км/г",
-  "unit_m": "м",
-  "unit_km": "км",
-  "unit_mbps": "Мбіт/с",
   "top_economy": "Топ економік",
   "top_military": "Топ армій",
   "legend_title": "Легенда карти",
   "legend_toggle": "Шкала кольорів",
-  "Unknown": "Невідомо"
+  "Unknown": "Невідомо",
+  "space_asteroid_belt": "Пояс астероїдів",
+  "space_lagrange_points": "Точки Лагранжа (L1-L5)",
+  "space_audio_drone": "Космічний ембієнт",
+  "offline_cached": "Офлайн кеш готовий"
 }

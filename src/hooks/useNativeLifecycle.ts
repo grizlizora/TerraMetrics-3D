@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { App } from '@capacitor/app';
 import { useAppStore } from '../store/useAppStore';
 import { BackButtonHandler } from '../native/BackButtonHandler';
 import { audioManager } from '../audio/AudioManager';
@@ -24,13 +25,12 @@ export function useNativeLifecycle() {
     };
   }, []);
 
-  // Background audio suppression on app pause
+  // Background audio suppression and power saving on app pause
   useEffect(() => {
     let handle: any = null;
     const setupAppLifecycle = async () => {
       try {
-        const { App: CapApp } = await import('@capacitor/app');
-        handle = await CapApp.addListener('appStateChange', ({ isActive }) => {
+        handle = await App.addListener('appStateChange', ({ isActive }) => {
           if (!isActive) {
             audioManager.stopFlySound();
           }

@@ -1,0 +1,46 @@
+name: TerraMetrics-3D CI/CD Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate-and-build:
+    name: Typecheck, Test Suites & Production Build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22 LTS
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: TypeScript Strict Typecheck
+        run: npm run typecheck
+
+      - name: Master Simulation & Stress Testing Suite (All 6 Modules)
+        run: npm test
+
+      - name: Generate Manifest & Production Build
+        run: npm run build
+
+      - name: Upload Production Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: terrametrics-3d-dist
+          path: dist/
+          retention-days: 14

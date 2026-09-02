@@ -4,14 +4,14 @@ import { useI18nStore } from '../../../store/useI18nStore';
 import { useAppStore } from '../../../store/useAppStore';
 import { audioManager } from '../../../audio/AudioManager';
 import { TerraHaptics } from '../../../native/TerraHaptics';
-import { ContinentName } from '../../../types';
+import type { ContinentName, CountryProperties, AggregatedContinentStats } from '../../../types';
 import { dataLoader } from '../../../data/DataLoader';
 import { apiSyncManager } from '../../../data/api/ApiSyncManager';
 import { LiveWeatherData } from '../../../data/api/types';
 
 interface ClimateViewProps {
-  countryProps: any;
-  continentStats: any;
+  countryProps: CountryProperties | null;
+  continentStats: AggregatedContinentStats | null;
   isCountry: boolean;
 }
 
@@ -20,7 +20,6 @@ export const ClimateView: React.FC<ClimateViewProps> = React.memo(({
   isCountry,
 }) => {
   const t = useI18nStore((s) => s.t);
-  const lang = useI18nStore((s) => s.lang);
   const selectedContinent = useAppStore((s) => s.selectedContinent);
   const setClimateModalOpen = useAppStore((s) => s.setClimateModalOpen);
 

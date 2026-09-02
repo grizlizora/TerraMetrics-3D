@@ -52,7 +52,7 @@ export class MapCameraAnimator {
     if (!feature) return;
 
     // 1. Resolve Center
-    let center: [number, number] = feature.properties.center;
+    let center: [number, number] | undefined = feature.properties.center;
     if (!center && feature.geometry) {
       center = calculatePolygonCentroid(feature.geometry.coordinates);
     }
@@ -200,5 +200,22 @@ export class MapCameraAnimator {
 
     map.once('moveend', onEnd);
     this.flyTimer = setTimeout(onEnd, flightDuration + 150);
+  }
+
+  public static cancelActiveFlight(map: MapLibreMap | null, audioManager?: AudioManager | null): void {
+    if (this.flyTimer) {
+      clearTimeout(this.flyTimer);
+      this.flyTimer = null;
+    }
+    this.activeFlightId++;
+    this.isFlying = false;
+    if (audioManager) {
+      audioManager.stopFlySound();
+    }
+    if (map) {
+      try {
+        map.stop();
+      } catch {}
+    }
   }
 }

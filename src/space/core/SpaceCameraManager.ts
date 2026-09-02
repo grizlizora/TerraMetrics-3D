@@ -79,7 +79,7 @@ export class SpaceCameraManager {
     pitch: number,
     bearing: number,
     zoom = 1,
-    fov = 45,
+    _fov = 45,
     padding = { left: 0, right: 0, top: 0, bottom: 0 },
     viewWidth?: number,
     viewHeight?: number

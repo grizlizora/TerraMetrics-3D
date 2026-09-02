@@ -41,12 +41,23 @@ export const MobileBottomSheet: React.FC = React.memo(() => {
       {sheetSnap === 'full' && (
         <div
           onClick={() => animateToSnap('peek')}
+          role="button"
+          tabIndex={0}
+          aria-label="Закрити аналітичну шторку"
+          onKeyDown={(e) => {
+            if (e.key === 'Escape' || e.key === 'Enter' || e.key === ' ') {
+              animateToSnap('peek');
+            }
+          }}
           className="fixed inset-0 z-35 bg-black/40 backdrop-blur-xs transition-opacity duration-300 pointer-events-auto"
         />
       )}
 
       <div
         ref={sheetRef}
+        role="region"
+        aria-label="Аналітична панель даних"
+        aria-expanded={sheetSnap !== 'peek'}
         className="fixed inset-x-0 top-0 z-40 max-w-xl mx-auto flex flex-col pointer-events-auto select-none px-2 sm:px-4"
         style={{
           height: 'calc(100dvh + 120px)',

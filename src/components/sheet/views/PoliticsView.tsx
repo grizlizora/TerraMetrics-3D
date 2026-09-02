@@ -4,10 +4,11 @@ import { useI18nStore } from '../../../store/useI18nStore';
 import { useAppStore } from '../../../store/useAppStore';
 import { audioManager } from '../../../audio/AudioManager';
 import { TerraHaptics } from '../../../native/TerraHaptics';
+import type { CountryProperties, AggregatedContinentStats, AggregatedCountryItem } from '../../../types';
 
 interface PoliticsViewProps {
-  countryProps: any;
-  continentStats: any;
+  countryProps: CountryProperties | null;
+  continentStats: AggregatedContinentStats | null;
   isCountry: boolean;
 }
 
@@ -60,7 +61,7 @@ export const PoliticsView: React.FC<PoliticsViewProps> = React.memo(({
           </div>
 
           <div className="space-y-1.5">
-            {topDemoc.map((c: any, idx: number) => {
+            {topDemoc.map((c: AggregatedCountryItem, idx: number) => {
               const name = lang === 'uk' ? c.name_uk : c.name_en;
               return (
                 <button

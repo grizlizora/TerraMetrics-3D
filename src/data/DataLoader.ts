@@ -25,6 +25,7 @@ export class DataLoader {
   public countryPropsMap: Record<ISO3Code, CountryProperties> = {} as any;
 
   private continentStatsCache: Map<ContinentName, AggregatedContinentStats> = new Map();
+  private inFlightLoadPromise: Promise<boolean> | null = null;
 
   public getCountryProps(iso: string): CountryProperties | null {
     if (!iso) return null;
@@ -58,11 +59,29 @@ export class DataLoader {
     return countrySearchEngine.search(query, lang);
   }
 
-  async loadAll(onProgress?: ProgressCallback): Promise<boolean> {
+  public async loadAll(
+    onProgress?: ProgressCallback,
+    options?: { syncInBackground?: boolean; forceReload?: boolean }
+  ): Promise<boolean> {
+    if (this.inFlightLoadPromise) {
+      return this.inFlightLoadPromise;
+    }
+
+    this.inFlightLoadPromise = this._executeLoadAll(onProgress, options).finally(() => {
+      this.inFlightLoadPromise = null;
+    });
+
+    return this.inFlightLoadPromise;
+  }
+
+  private async _executeLoadAll(
+    onProgress?: ProgressCallback,
+    options?: { syncInBackground?: boolean; forceReload?: boolean }
+  ): Promise<boolean> {
     try {
       onProgress?.('init', 10);
 
-      // Load dataset via DataSyncManager (L2 IndexedDB cache -> Delta check -> L3 Bundled fallback)
+      // Load dataset via DataSyncManager (L1 in-memory -> L2 IndexedDB cache -> Delta check -> L3 Bundled fallback)
       const bundle = await dataSyncManager.loadDataset((prog) => {
         if (prog.stage === 'manifest') onProgress?.('init', 15);
         else if (prog.stage === 'delta_download') {
@@ -70,7 +89,7 @@ export class DataLoader {
         } else if (prog.stage === 'integrity_check') {
           onProgress?.('geo', 58);
         }
-      });
+      }, options);
 
       onProgress?.('analytics', 60);
       this.religionData = bundle.religions;
@@ -80,12 +99,14 @@ export class DataLoader {
       const rawGeoJson = bundle.geoJson;
 
       // Clean unrecognised ISO codes
-      rawGeoJson.features = rawGeoJson.features.filter(
-        (f: any) =>
-          f.properties &&
-          f.properties['ISO3166-1-Alpha-3'] &&
-          f.properties['ISO3166-1-Alpha-3'] !== '-99'
-      );
+      if (rawGeoJson && Array.isArray(rawGeoJson.features)) {
+        rawGeoJson.features = rawGeoJson.features.filter(
+          (f: any) =>
+            f.properties &&
+            f.properties['ISO3166-1-Alpha-3'] &&
+            f.properties['ISO3166-1-Alpha-3'] !== '-99'
+        );
+      }
 
       // Process GeoJSON, Centroids, Props Map, Search Index, and Continent Aggregations in background worker
       const result = await this.runWorkerProcessing({
@@ -129,21 +150,39 @@ export class DataLoader {
             type: 'module',
           });
 
+          let isResolved = false;
+          const safetyTimeout = setTimeout(() => {
+            if (!isResolved) {
+              isResolved = true;
+              console.warn('[DataLoader] Worker timeout (3500ms), falling back to synchronous processing');
+              worker.terminate();
+              resolve(processGeoData(payload));
+            }
+          }, 3500);
+
           worker.onmessage = (e: MessageEvent) => {
-            worker.terminate();
-            resolve(e.data);
+            if (!isResolved) {
+              isResolved = true;
+              clearTimeout(safetyTimeout);
+              worker.terminate();
+              resolve(e.data);
+            }
           };
 
           worker.onerror = (err) => {
-            console.warn('[DataLoader] Worker error, falling back to sync processing:', err);
-            worker.terminate();
-            resolve(processGeoData(payload));
+            if (!isResolved) {
+              isResolved = true;
+              clearTimeout(safetyTimeout);
+              console.warn('[DataLoader] Worker error, falling back to sync processing:', err);
+              worker.terminate();
+              resolve(processGeoData(payload));
+            }
           };
 
           worker.postMessage(payload);
           return;
         } catch {
-          // Fallback if worker construction is not supported
+          // Fallback if worker construction is not supported in this runtime
         }
       }
       resolve(processGeoData(payload));
@@ -152,3 +191,4 @@ export class DataLoader {
 }
 
 export const dataLoader = new DataLoader();
+

@@ -4,10 +4,11 @@ import { useI18nStore } from '../../../store/useI18nStore';
 import { useAppStore } from '../../../store/useAppStore';
 import { audioManager } from '../../../audio/AudioManager';
 import { TerraHaptics } from '../../../native/TerraHaptics';
+import type { CountryProperties, AggregatedContinentStats, AggregatedCountryItem } from '../../../types';
 
 interface MilitaryViewProps {
-  countryProps: any;
-  continentStats: any;
+  countryProps: CountryProperties | null;
+  continentStats: AggregatedContinentStats | null;
   isCountry: boolean;
 }
 
@@ -52,7 +53,7 @@ export const MilitaryView: React.FC<MilitaryViewProps> = React.memo(({
           </div>
 
           <div className="space-y-1.5">
-            {topMil.map((c: any, idx: number) => {
+            {topMil.map((c: AggregatedCountryItem, idx: number) => {
               const name = lang === 'uk' ? c.name_uk : c.name_en;
               return (
                 <button
@@ -69,7 +70,7 @@ export const MilitaryView: React.FC<MilitaryViewProps> = React.memo(({
                     </span>
                   </div>
                   <span className="text-xs font-bold text-red-500 dark:text-red-400">
-                    {formatNumber(c.military)}
+                    {formatNumber(c.military || c.military_personnel || 0)}
                   </span>
                 </button>
               );
@@ -95,7 +96,7 @@ export const MilitaryView: React.FC<MilitaryViewProps> = React.memo(({
       },
       {
         icon: <TrendingUp className="w-3.5 h-3.5 text-amber-500" />,
-        label: `${t('military_spending')} (% ${t('gdp_abbr')})`,
+        label: t('military_spending'),
         value: spending > 0 ? `${spending}%` : t('no_data'),
         highlight: 'text-amber-500',
       },

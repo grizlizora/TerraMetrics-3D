@@ -1,6 +1,7 @@
-import type { AppLanguage, SubMode } from '../types/index.ts';
+import type { AppLanguage, SubMode, CountryProperties, AggregatedContinentStats, AggregatedCountryItem } from '../types/index.ts';
 import { getCountryFlag } from './geoUtils.ts';
 import { pluralize, PLURAL_COUNTRIES } from './pluralUtils.ts';
+import { DeterministicSolarClimateEngine } from '../data/DeterministicSolarClimateEngine.ts';
 
 /**
  * Formats structured, contextual metrics for clipboard copying or native sharing.
@@ -8,8 +9,8 @@ import { pluralize, PLURAL_COUNTRIES } from './pluralUtils.ts';
  * as well as the entity level (Specific Country, Continent, or Global World).
  */
 export function formatCountrySummary(
-  countryProps: any,
-  continentStats: any,
+  countryProps: CountryProperties | null | undefined,
+  continentStats: (AggregatedContinentStats & Record<string, any>) | null | undefined,
   isCountry: boolean,
   lang: AppLanguage,
   t: (key: string) => string,
@@ -47,7 +48,7 @@ export function formatCountrySummary(
         lines.push(`🕊 ${t('dominant_religion')}: ${dominantRel} ${relPct}`.trim());
 
         if (Array.isArray(countryProps.stats) && countryProps.stats.length > 0) {
-          countryProps.stats.slice(0, 5).forEach((r: any) => {
+          countryProps.stats.slice(0, 5).forEach((r: { name: string; percentage?: number; percent?: number }) => {
             const rName = t(r.name) || r.name;
             const rPct = Number(r.percentage || r.percent || 0).toFixed(1);
             lines.push(` • ${rName}: ${rPct}%`);
@@ -110,7 +111,7 @@ export function formatCountrySummary(
           lines.push(`🏷 ${t('col_index')}: ${countryProps.colIndex || countryProps.col} / 100`);
         }
         if (countryProps.incomeTax !== undefined) {
-          lines.push(`📑 ${t('tax_rate')} (${t('pit_abbr')}): ${countryProps.incomeTax}%`);
+          lines.push(`📑 ${t('tax_rate')}: ${countryProps.incomeTax}%`);
         }
         if (countryProps.macroTaxRevenue || countryProps.macro_tax) {
           lines.push(`🏛 ${t('tax_macro')}: ${countryProps.macroTaxRevenue || countryProps.macro_tax}%`);
@@ -141,22 +142,38 @@ export function formatCountrySummary(
           lines.push(`⚔️ ${t('military_size')}: ${Number(countryProps.militarySize || countryProps.military_active).toLocaleString(numLocale)}`);
         }
         if (countryProps.militarySpending !== null && countryProps.militarySpending !== undefined) {
-          lines.push(`🛡 ${t('military_spending')}: ${countryProps.militarySpending}% GDP`);
+          lines.push(`🛡 ${t('military_spending')}: ${countryProps.militarySpending}%`);
         }
         break;
       }
 
       case 'climate': {
         lines.push(`─── 🌦 ${t('mode_climate')} ───`);
-        const temp = countryProps.temperature ?? countryProps.currentTemp;
+        let temp = countryProps.temperature ?? countryProps.currentTemp;
+        let humidity = countryProps.humidity;
+        let windSpeed = countryProps.windSpeed;
+        let uv = (countryProps as any).uvIndex;
+
+        if (temp === undefined && countryProps.center) {
+          const [lng, lat] = countryProps.center;
+          const report = DeterministicSolarClimateEngine.calculate(lat, lng);
+          temp = report.estimatedTemperatureC;
+          humidity = report.estimatedHumidityPct;
+          windSpeed = Math.round(report.windSpeedMs * 3.6);
+          uv = report.uvIndex;
+        }
+
         if (temp !== undefined) {
-          lines.push(`🌡 ${t('temperature') || 'Температура'}: ${temp}°C`);
+          lines.push(`🌡 ${t('temperature') || 'Температура'}: ${temp > 0 ? '+' : ''}${temp}°C`);
         }
-        if (countryProps.humidity !== undefined) {
-          lines.push(`💧 ${t('humidity') || 'Вологість'}: ${countryProps.humidity}%`);
+        if (humidity !== undefined) {
+          lines.push(`💧 ${t('humidity') || 'Вологість'}: ${humidity}%`);
         }
-        if (countryProps.windSpeed !== undefined) {
-          lines.push(`💨 ${t('wind_speed') || 'Вітер'}: ${countryProps.windSpeed} ${t('unit_kmh') || 'км/г'}`);
+        if (windSpeed !== undefined) {
+          lines.push(`💨 ${t('wind_speed') || 'Вітер'}: ${windSpeed} ${t('unit_kmh') || 'км/г'}`);
+        }
+        if (uv !== undefined) {
+          lines.push(`☀️ UV: ${uv}`);
         }
         break;
       }
@@ -237,7 +254,7 @@ export function formatCountrySummary(
         lines.push(`🕊 ${t('dominant_religion')}: ${domRel} (${continentStats.dominant_percentage || 0}%)`);
       }
       if (Array.isArray(continentStats?.stats) && continentStats.stats.length > 0) {
-        continentStats.stats.slice(0, 4).forEach((r: any) => {
+        continentStats.stats.slice(0, 4).forEach((r: { name: string; percentage?: number }) => {
           lines.push(` • ${t(r.name) || r.name}: ${r.percentage}%`);
         });
       }
@@ -248,8 +265,8 @@ export function formatCountrySummary(
       lines.push(`─── 👥 ${t('mode_population')} ───`);
       if (Array.isArray(continentStats?.top_populated) && continentStats.top_populated.length > 0) {
         lines.push(`🏆 ${t('top_countries')}:`);
-        continentStats.top_populated.slice(0, 5).forEach((c: any, idx: number) => {
-          const cName = isUk ? c.name_uk || c.name : c.name_en || c.name;
+        continentStats.top_populated.slice(0, 5).forEach((c: AggregatedCountryItem, idx: number) => {
+          const cName = isUk ? c.name_uk || (c as any).name : c.name_en || (c as any).name;
           const flag = getCountryFlag(c.iso) || '🏳️';
           lines.push(` ${idx + 1}. ${flag} ${cName}: ${Number(c.population).toLocaleString(numLocale)}`);
         });
@@ -270,7 +287,7 @@ export function formatCountrySummary(
       }
       if (Array.isArray(continentStats?.topCurrencies) && continentStats.topCurrencies.length > 0) {
         lines.push(`💱 ${t('top_currencies')}:`);
-        continentStats.topCurrencies.slice(0, 4).forEach((c: any) => {
+        continentStats.topCurrencies.slice(0, 4).forEach((c: { name_uk?: string; name_en?: string; name?: string; currency?: string; count: number }) => {
           const cName = (isUk ? c.name_uk || c.name : c.name_en || c.name || c.name_uk) || c.currency;
           lines.push(` • ${cName}: ${pluralize(c.count, lang, PLURAL_COUNTRIES)}`);
         });
@@ -285,8 +302,8 @@ export function formatCountrySummary(
       }
       if (Array.isArray(continentStats?.topEconomy) && continentStats.topEconomy.length > 0) {
         lines.push(`🏆 ${t('top_economy') || t('top_economy_title') || 'Топ економік'}:`);
-        continentStats.topEconomy.slice(0, 5).forEach((c: any, idx: number) => {
-          const cName = isUk ? c.name_uk || c.name : c.name_en || c.name;
+        continentStats.topEconomy.slice(0, 5).forEach((c: AggregatedCountryItem, idx: number) => {
+          const cName = isUk ? c.name_uk || (c as any).name : c.name_en || (c as any).name;
           const flag = getCountryFlag(c.iso) || '🏳️';
           lines.push(` ${idx + 1}. ${flag} ${cName}: $${Number(c.gdp).toLocaleString(numLocale)}`);
         });
@@ -315,8 +332,8 @@ export function formatCountrySummary(
       }
       if (Array.isArray(continentStats?.topMilitary) && continentStats.topMilitary.length > 0) {
         lines.push(`🏆 ${t('top_military') || t('top_military_title') || 'Топ армій'}:`);
-        continentStats.topMilitary.slice(0, 5).forEach((c: any, idx: number) => {
-          const cName = isUk ? c.name_uk || c.name : c.name_en || c.name;
+        continentStats.topMilitary.slice(0, 5).forEach((c: AggregatedCountryItem, idx: number) => {
+          const cName = isUk ? c.name_uk || (c as any).name : c.name_en || (c as any).name;
           const flag = getCountryFlag(c.iso) || '🏳️';
           lines.push(` ${idx + 1}. ${flag} ${cName}: ${Number(c.military).toLocaleString(numLocale)}`);
         });
@@ -326,7 +343,15 @@ export function formatCountrySummary(
 
     case 'climate': {
       lines.push(`─── 🌦 ${t('mode_climate')} ───`);
-      lines.push(`🌦 ${t('climate_zones') || 'Кліматичний профіль'}: ${isGlobal ? (isUk ? 'Глобальне покриття 258 країн' : 'Global 258 Countries Coverage') : regionName}`);
+      if (continentStats?.climateCoords?.[0]) {
+        const [lng, lat] = continentStats.climateCoords[0];
+        const report = DeterministicSolarClimateEngine.calculate(lat, lng);
+        lines.push(`🌡 ${t('temperature') || 'Температура'}: ${report.estimatedTemperatureC > 0 ? '+' : ''}${report.estimatedTemperatureC}°C`);
+        lines.push(`💧 ${t('humidity') || 'Вологість'}: ${report.estimatedHumidityPct}%`);
+        lines.push(`💨 ${t('wind_speed') || 'Вітер'}: ${Math.round(report.windSpeedMs * 3.6)} ${t('unit_kmh') || 'км/г'}`);
+      } else {
+        lines.push(`🌦 ${t('climate_zones') || 'Кліматичний профіль'}: ${isGlobal ? (isUk ? 'Глобальне покриття 258 країн' : 'Global 258 Countries Coverage') : regionName}`);
+      }
       break;
     }
 

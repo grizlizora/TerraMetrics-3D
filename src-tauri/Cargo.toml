@@ -1,0 +1,27 @@
+[package]
+name = "terrametrics-3d"
+version = "2.0.0"
+description = "TerraMetrics 3D - Global Analytics & 3D WebGL Planetary Visualization Engine"
+authors = ["TerraMetrics Team"]
+edition = "2021"
+
+[lib]
+name = "terrametrics_3d_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["tray-icon"] }
+tauri-plugin-single-instance = "2"
+tauri-plugin-window-state = "2"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 16
+panic = "abort"
+strip = true

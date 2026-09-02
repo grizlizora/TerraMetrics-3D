@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Search, Sun, Moon, Languages, Globe, Sparkles, Wifi, WifiOff } from 'lucide-react';
+import { Search, Sun, Moon, Languages, Globe, Sparkles } from 'lucide-react';
 import { useAppStore } from '../../store/useAppStore';
 import { useI18nStore } from '../../store/useI18nStore';
 import { audioManager } from '../../audio/AudioManager';
@@ -74,7 +74,7 @@ export const MobileTopBar: React.FC = React.memo(() => {
 
     const next: SpaceMode = spaceMode === 'none' ? 'basic' : 'none';
     audioManager.playSwitchCategory();
-    TerraHaptics.selectionChanged();
+    TerraHaptics.modeSwitched();
     setSpaceMode(next);
   };
 
@@ -87,7 +87,16 @@ export const MobileTopBar: React.FC = React.memo(() => {
         <LiquidGlassPanel
           intensity="high"
           onClick={handleOpenSearch}
-          className="h-9 sm:h-11 px-2.5 sm:px-3.5 flex items-center gap-1.5 sm:gap-2 rounded-full cursor-pointer hover:border-blue-500/40 active:scale-[0.98] transition-all shadow-lg group"
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              handleOpenSearch();
+            }
+          }}
+          role="button"
+          tabIndex={0}
+          aria-label={t('search_placeholder')}
+          className="h-9 sm:h-11 px-2.5 sm:px-3.5 flex items-center gap-1.5 sm:gap-2 rounded-full cursor-pointer hover:border-blue-500/40 focus-visible:ring-2 focus-visible:ring-blue-500 outline-none active:scale-[0.98] transition-all shadow-lg group"
         >
           <Search className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-blue-500 shrink-0 group-hover:scale-110 transition-transform" strokeWidth={2.4} />
           <span className="flex-1 min-w-0 text-xs sm:text-sm font-semibold text-zinc-600 dark:text-zinc-300 truncate">
@@ -99,6 +108,7 @@ export const MobileTopBar: React.FC = React.memo(() => {
                 isOnline ? 'bg-emerald-500 animate-pulse' : 'bg-amber-500'
               }`}
               title={isOnline ? t('status_online') : t('status_offline')}
+              aria-label={isOnline ? t('status_online') : t('status_offline')}
             />
           </div>
         </LiquidGlassPanel>
@@ -112,8 +122,11 @@ export const MobileTopBar: React.FC = React.memo(() => {
         >
           {/* 3D / 2D Projection Toggle */}
           <button
+            type="button"
             onClick={handleToggleProjection}
-            className="h-8 sm:h-9 px-2 sm:px-2.5 min-w-[34px] sm:min-w-[42px] rounded-full flex items-center justify-center gap-1 text-[11px] sm:text-xs font-extrabold text-zinc-800 dark:text-zinc-100 hover:bg-black/5 dark:hover:bg-white/10 active:scale-95 transition-all cursor-pointer"
+            aria-label={projection === 'globe' ? t('tooltip_switch_2d') : t('tooltip_switch_3d')}
+            aria-pressed={projection === 'globe'}
+            className="h-8 sm:h-9 px-2 sm:px-2.5 min-w-[34px] sm:min-w-[42px] rounded-full flex items-center justify-center gap-1 text-[11px] sm:text-xs font-extrabold text-zinc-800 dark:text-zinc-100 hover:bg-black/5 dark:hover:bg-white/10 focus-visible:ring-2 focus-visible:ring-blue-500 outline-none active:scale-95 transition-all cursor-pointer"
             title={projection === 'globe' ? t('tooltip_switch_2d') : t('tooltip_switch_3d')}
           >
             <Globe className="w-3.5 h-3.5 text-blue-500 shrink-0" strokeWidth={2.2} />
@@ -124,8 +137,11 @@ export const MobileTopBar: React.FC = React.memo(() => {
 
           {/* Stars Mode Quick Toggle */}
           <button
+            type="button"
             onClick={handleToggleSpace}
-            className={`w-8 h-8 sm:w-9 sm:h-9 rounded-full flex items-center justify-center active:scale-95 transition-all cursor-pointer relative ${
+            aria-label={isSpaceActive ? t('tooltip_space_disable') || 'Зорі ввімкнено' : t('tooltip_space_enable') || 'Увімкнути зорі'}
+            aria-pressed={isSpaceActive}
+            className={`w-8 h-8 sm:w-9 sm:h-9 rounded-full flex items-center justify-center active:scale-95 focus-visible:ring-2 focus-visible:ring-blue-500 outline-none transition-all cursor-pointer relative ${
               isSpaceActive
                 ? 'bg-blue-600/25 text-blue-400 border border-blue-500/40 shadow-[0_0_10px_rgba(59,130,246,0.35)]'
                 : 'text-zinc-700 dark:text-zinc-300 hover:bg-black/5 dark:hover:bg-white/10'
@@ -142,8 +158,10 @@ export const MobileTopBar: React.FC = React.memo(() => {
 
           {/* Theme Toggle Button */}
           <button
+            type="button"
             onClick={handleToggleTheme}
-            className="w-8 h-8 sm:w-9 sm:h-9 rounded-full flex items-center justify-center text-zinc-800 dark:text-zinc-100 hover:bg-black/5 dark:hover:bg-white/10 active:scale-95 transition-all cursor-pointer"
+            aria-label={theme === 'dark' ? t('tooltip_light_theme') : t('tooltip_dark_theme')}
+            className="w-8 h-8 sm:w-9 sm:h-9 rounded-full flex items-center justify-center text-zinc-800 dark:text-zinc-100 hover:bg-black/5 dark:hover:bg-white/10 focus-visible:ring-2 focus-visible:ring-blue-500 outline-none active:scale-95 transition-all cursor-pointer"
             title={theme === 'dark' ? t('tooltip_light_theme') : t('tooltip_dark_theme')}
           >
             {theme === 'dark' ? (
@@ -157,8 +175,10 @@ export const MobileTopBar: React.FC = React.memo(() => {
 
           {/* Language Toggle Button */}
           <button
+            type="button"
             onClick={handleToggleLang}
-            className="h-8 sm:h-9 px-2 sm:px-2.5 min-w-[32px] sm:min-w-[40px] rounded-full flex items-center justify-center gap-0.5 text-[11px] sm:text-xs font-extrabold text-zinc-800 dark:text-zinc-100 hover:bg-black/5 dark:hover:bg-white/10 active:scale-95 transition-all cursor-pointer"
+            aria-label={t('tooltip_lang_switch')}
+            className="h-8 sm:h-9 px-2 sm:px-2.5 min-w-[32px] sm:min-w-[40px] rounded-full flex items-center justify-center gap-0.5 text-[11px] sm:text-xs font-extrabold text-zinc-800 dark:text-zinc-100 hover:bg-black/5 dark:hover:bg-white/10 focus-visible:ring-2 focus-visible:ring-blue-500 outline-none active:scale-95 transition-all cursor-pointer"
             title={t('tooltip_lang_switch')}
           >
             <Languages className="w-3.5 h-3.5 text-indigo-500 shrink-0" strokeWidth={2.2} />

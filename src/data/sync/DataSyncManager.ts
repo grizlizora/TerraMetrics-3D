@@ -4,13 +4,30 @@ import { CryptoResolver } from './CryptoResolver.ts';
 import { GoogleDriveProvider } from './GoogleDriveProvider.ts';
 import { DataValidator } from './DataValidator.ts';
 
+function getAssetUrl(path: string): string {
+  if (typeof window !== 'undefined' && window.location) {
+    try {
+      const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+      return new URL(cleanPath, window.location.href).href;
+    } catch {}
+  }
+  return path.startsWith('/') ? path : `/${path}`;
+}
+
 export class DataSyncManager {
   private remoteProvider: IRemoteDataProvider | null = null;
-  public lastSyncTimestamp = 0;
-  public syncOrigin: 'bundled' | 'cached_l2' | 'remote_synced' = 'bundled';
+  private l1CachedBundle: DatasetBundle | null = null;
+  public syncOrigin: 'cached_l2' | 'bundled' | 'remote_synced' = 'bundled';
+  public lastSyncTimestamp: number = 0;
 
   constructor() {
     this.initDefaultProvider();
+    if (typeof window !== 'undefined') {
+      window.addEventListener('online', () => {
+        const fileKeys: DatasetFileKey[] = ['countries', 'religions', 'indexes', 'demographics'];
+        terraStorageDB.getManifest().then((m) => this.scheduleBackgroundSync(fileKeys, m)).catch(() => {});
+      });
+    }
   }
 
   /**
@@ -66,18 +83,23 @@ export class DataSyncManager {
   }
 
   /**
-   * Loads the full dataset bundle with delta sync and IndexedDB caching
-   */
-  /**
-   * Loads the full dataset bundle with instant SWR cold start (<50ms)
+   * Loads the full dataset bundle with instant SWR cold start (<15ms)
    * and non-blocking background delta-sync.
    */
-  public async loadDataset(onProgress?: SyncProgressCallback): Promise<DatasetBundle> {
+  public async loadDataset(
+    _onProgress?: SyncProgressCallback,
+    options?: { syncInBackground?: boolean; forceReload?: boolean }
+  ): Promise<DatasetBundle> {
+    if (this.l1CachedBundle && !options?.forceReload) {
+      return this.l1CachedBundle;
+    }
+
     const fileKeys: DatasetFileKey[] = ['countries', 'religions', 'indexes', 'demographics'];
     const localManifest = await terraStorageDB.getManifest();
+    const syncInBackground = options?.syncInBackground ?? true;
 
     // 1. First attempt: Read L2 IndexedDB immediately (<15ms)
-    const [rawGeoStr, rawRelStr, rawIdxStr, rawDemoStr] = await Promise.all([
+    const [rawGeo, rawRel, rawIdx, rawDemo] = await Promise.all([
       terraStorageDB.getFile('countries'),
       terraStorageDB.getFile('religions'),
       terraStorageDB.getFile('indexes'),
@@ -89,24 +111,33 @@ export class DataSyncManager {
     let indexes: any = null;
     let demographics: any = null;
 
-    if (rawGeoStr && rawRelStr && rawIdxStr && rawDemoStr) {
+    if (rawGeo && rawRel && rawIdx && rawDemo) {
       try {
-        geoJson = JSON.parse(rawGeoStr);
-        religions = JSON.parse(rawRelStr);
-        indexes = JSON.parse(rawIdxStr);
-        demographics = JSON.parse(rawDemoStr);
+        geoJson = typeof rawGeo === 'string' ? JSON.parse(rawGeo) : rawGeo;
+        religions = typeof rawRel === 'string' ? JSON.parse(rawRel) : rawRel;
+        indexes = typeof rawIdx === 'string' ? JSON.parse(rawIdx) : rawIdx;
+        demographics = typeof rawDemo === 'string' ? JSON.parse(rawDemo) : rawDemo;
 
         const val = DataValidator.validateBundle({ geoJson, religions, indexes, demographics });
         if (val.valid) {
           this.syncOrigin = 'cached_l2';
           this.lastSyncTimestamp = localManifest ? new Date(localManifest.datasetRelease).getTime() : Date.now();
-          // Schedule background delta sync without blocking startup in browser (or awaited in Node test)
-          await this.scheduleBackgroundSync(fileKeys, localManifest);
-          if ((this.syncOrigin as string) === 'remote_synced') {
-            const freshDemo = await terraStorageDB.getFile('demographics');
-            if (freshDemo) demographics = JSON.parse(freshDemo);
+          this.l1CachedBundle = { geoJson, religions, indexes, demographics };
+          
+          // SWR: non-blocking background delta sync
+          if (syncInBackground) {
+            this.scheduleBackgroundSync(fileKeys, localManifest).catch(() => {});
+          } else {
+            await this.scheduleBackgroundSync(fileKeys, localManifest);
+            if ((this.syncOrigin as string) === 'remote_synced') {
+              const freshDemo = await terraStorageDB.getFile('demographics');
+              if (freshDemo) {
+                demographics = typeof freshDemo === 'string' ? JSON.parse(freshDemo) : freshDemo;
+                this.l1CachedBundle = { geoJson, religions, indexes, demographics };
+              }
+            }
           }
-          return { geoJson, religions, indexes, demographics };
+          return this.l1CachedBundle;
         } else {
           console.warn('[DataSyncManager] L2 cache failed validation, falling back to L3 bundled assets');
           geoJson = null;
@@ -117,13 +148,13 @@ export class DataSyncManager {
       }
     }
 
-    // 2. Fallback to L3 bundled /public/*.json if L2 was empty or invalid
+    // 2. Fallback to L3 bundled assets if L2 was empty or invalid
     if (!geoJson || !religions || !indexes || !demographics) {
       const [gRes, rRes, iRes, dRes] = await Promise.all([
-        fetch('/countries.geojson'),
-        fetch('/religions.json'),
-        fetch('/indexes.json'),
-        fetch('/demographics.json'),
+        fetch(getAssetUrl('countries.geojson')),
+        fetch(getAssetUrl('religions.json')),
+        fetch(getAssetUrl('indexes.json')),
+        fetch(getAssetUrl('demographics.json')),
       ]);
 
       geoJson = await gRes.json();
@@ -134,36 +165,42 @@ export class DataSyncManager {
       this.syncOrigin = 'bundled';
       this.lastSyncTimestamp = Date.now();
 
-      // Seed L2 cache & version.json manifest for subsequent instant starts
-      const verRes = await fetch('/version.json').catch(() => null);
+      // Seed L2 cache & version.json manifest for subsequent instant starts (structured clone)
+      const verRes = await fetch(getAssetUrl('version.json')).catch(() => null);
       const pVer = verRes ? await verRes.json().catch(() => null) : null;
 
       await Promise.allSettled([
-        terraStorageDB.saveFile('countries', JSON.stringify(geoJson)),
-        terraStorageDB.saveFile('religions', JSON.stringify(religions)),
-        terraStorageDB.saveFile('indexes', JSON.stringify(indexes)),
-        terraStorageDB.saveFile('demographics', JSON.stringify(demographics)),
+        terraStorageDB.saveFile('countries', geoJson),
+        terraStorageDB.saveFile('religions', religions),
+        terraStorageDB.saveFile('indexes', indexes),
+        terraStorageDB.saveFile('demographics', demographics),
         pVer ? terraStorageDB.saveManifest(pVer) : Promise.resolve(),
       ]);
 
       // Schedule background delta check
-      await this.scheduleBackgroundSync(fileKeys, pVer || localManifest);
+      if (syncInBackground) {
+        this.scheduleBackgroundSync(fileKeys, pVer || localManifest).catch(() => {});
+      } else {
+        await this.scheduleBackgroundSync(fileKeys, pVer || localManifest);
+      }
     }
 
-    return {
+    this.l1CachedBundle = {
       geoJson,
       religions,
       indexes,
       demographics,
     };
+    return this.l1CachedBundle;
   }
 
   public async scheduleBackgroundSync(fileKeys: DatasetFileKey[], localManifest: VersionManifest | null): Promise<void> {
     if (!this.remoteProvider) return;
+    if (typeof navigator !== 'undefined' && navigator.onLine === false) return;
 
     const runSync = async () => {
       try {
-        const remoteManifest = await this.remoteProvider!.fetchManifest(4000);
+        const remoteManifest = await this.remoteProvider!.fetchManifest(2500);
         if (!remoteManifest || !remoteManifest.files) return;
 
         const deltaKeysToDownload: DatasetFileKey[] = [];
@@ -183,7 +220,11 @@ export class DataSyncManager {
               const computedHash = await CryptoResolver.computeSha256(buffer);
               if (computedHash.toLowerCase() === entry.sha256.toLowerCase()) {
                 const text = new TextDecoder('utf-8').decode(buffer);
-                await terraStorageDB.saveFile(key, text);
+                let parsed: any = text;
+                try {
+                  parsed = JSON.parse(text);
+                } catch {}
+                await terraStorageDB.saveFile(key, parsed);
               }
             }
           }
@@ -213,6 +254,11 @@ export class DataSyncManager {
    * 4. Returns whether new updates were applied
    */
   public async syncNow(onProgress?: SyncProgressCallback): Promise<{ updated: boolean; count: number; error?: string }> {
+    if (typeof navigator !== 'undefined' && navigator.onLine === false) {
+      onProgress?.({ stage: 'done', percentage: 100, loadedBytes: 100, totalBytes: 100 });
+      return { updated: false, count: 0, error: 'Offline mode active' };
+    }
+
     const fileKeys: DatasetFileKey[] = ['countries', 'religions', 'indexes', 'demographics'];
     try {
       onProgress?.({ stage: 'manifest', percentage: 15, loadedBytes: 0, totalBytes: 100 });

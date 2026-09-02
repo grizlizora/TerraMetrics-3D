@@ -196,11 +196,19 @@ export async function runMobileGesturesUISimulation(): Promise<boolean> {
       calculateBoundingBox,
       isPointInPolygon,
       getCountryFlag,
+      calculateGeodesicPolygonAreaKm2,
     } = await import('../../../src/utils/geoUtils.ts');
 
     // Kyiv to London distance ~2130 km
     const distKm = haversineDistance(50.45, 30.52, 51.5074, -0.1278, 'km');
     assert(distKm >= 2100 && distKm <= 2200, `geoUtils: точний розрахунок відстані Гаверсину (Київ-Лондон: ${distKm.toFixed(1)} км)`);
+
+    // Geodesic Polygon Area test (1 degree square around equator)
+    const eqSquare = [
+      [[0, 0], [1, 0], [1, 1], [0, 1], [0, 0]]
+    ];
+    const areaKm2 = calculateGeodesicPolygonAreaKm2(eqSquare);
+    assert(areaKm2 > 12000 && areaKm2 < 12500, `geoUtils: точний розрахунок геодезичної площі полігону Гаусса-Бонне (${areaKm2.toFixed(1)} км²)`);
 
     // DMS coordinate formatting
     const dms = formatCoordinatesDMS(50.45, 30.52);

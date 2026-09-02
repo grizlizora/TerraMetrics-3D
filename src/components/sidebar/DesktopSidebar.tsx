@@ -1,7 +1,7 @@
 import React from 'react';
 import { Globe, ChevronLeft, ChevronRight, RefreshCw, X, Copy, Check } from 'lucide-react';
 import { useAppStore } from '../../store/useAppStore';
-import { useI18nStore } from '../../store/useI18nStore';
+import { useTranslation } from '../../store/useI18nStore';
 import { LiquidGlassPanel } from '../common/LiquidGlassPanel';
 import { CategorySubmodeBar } from '../common/CategorySubmodeBar';
 import { SheetContentRouter } from '../sheet/SheetContentRouter';
@@ -10,7 +10,7 @@ import { useEntityDetails } from '../../hooks/useEntityDetails';
 export const DesktopSidebar: React.FC = React.memo(() => {
   const isSidebarCollapsed = useAppStore((s) => s.isSidebarCollapsed);
   const setSidebarCollapsed = useAppStore((s) => s.setSidebarCollapsed);
-  const t = useI18nStore((s) => s.t);
+  const { t } = useTranslation();
 
   const {
     selectedCountryIso,

@@ -1,7 +1,11 @@
-// scripts/simulations/harness/MockWebGLContext.ts
-/**
- * Headless WebGL2, Canvas 2D & DOM Environment Mock for TerraMetrics-3D
- */
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const projectRoot = path.resolve(__dirname, '../../..');
+const publicDir = path.join(projectRoot, 'public');
 
 export interface WebGLMockMetrics {
   drawCalls: number;
@@ -250,6 +254,10 @@ export function setupHeadlessBrowserEnvironment(): {
     innerWidth: 1920,
     innerHeight: 1080,
     devicePixelRatio: 1,
+    location: {
+      href: 'http://localhost/',
+      origin: 'http://localhost',
+    },
     addEventListener: () => {},
     removeEventListener: () => {},
     requestAnimationFrame: (cb: Function) => setTimeout(() => cb(performance.now()), 16),
@@ -258,6 +266,23 @@ export function setupHeadlessBrowserEnvironment(): {
     clearTimeout: globalThis.clearTimeout,
     setInterval: globalThis.setInterval,
     clearInterval: globalThis.clearInterval,
+  };
+
+  const originalFetch = globalThis.fetch;
+  (globalThis as any).fetch = async (url: string | URL | Request, init?: RequestInit) => {
+    const urlStr = url.toString();
+    if (urlStr.startsWith('/') || urlStr.startsWith('http://localhost') || !urlStr.startsWith('http')) {
+      const cleanFileName = urlStr.replace(/^https?:\/\/[^\/]+\//, '').replace(/^\//, '').split('?')[0];
+      const localFilePath = path.join(publicDir, cleanFileName);
+      if (fs.existsSync(localFilePath)) {
+        const content = fs.readFileSync(localFilePath);
+        return new Response(content, {
+          status: 200,
+          headers: { 'Content-Type': 'application/json' },
+        });
+      }
+    }
+    return originalFetch ? originalFetch(url, init) : new Response('{}', { status: 200 });
   };
 
   class MockImageElement {

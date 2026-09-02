@@ -235,7 +235,11 @@ async function runSuite() {
 
   // Verify L2 Seeding
   const cachedGeo = await storageDB.getFile('countries');
-  assert(cachedGeo !== null && cachedGeo.length > 1000, 'L2 IndexedDB seeded with GeoJSON data');
+  const isGeoValid = cachedGeo !== null && (
+    (typeof cachedGeo === 'string' && cachedGeo.length > 1000) ||
+    (typeof cachedGeo === 'object' && (cachedGeo as any).features?.length >= 150)
+  );
+  assert(isGeoValid, 'L2 IndexedDB seeded with GeoJSON data');
 
   // Subsequent load should now resolve from L2
   const secondLoadManager = new DataSyncManager();
@@ -266,7 +270,7 @@ async function runSuite() {
 
   const zeroSpamManager = new DataSyncManager();
   (zeroSpamManager as any).remoteProvider = new MockZeroSpamProvider();
-  await zeroSpamManager.loadDataset();
+  await zeroSpamManager.loadDataset(undefined, { syncInBackground: false });
 
   assert(mockFetchCallCount === 0, 'Zero-Spam: 0 files downloaded when remote SHA-256 hashes match local');
 
@@ -294,7 +298,7 @@ async function runSuite() {
 
   const deltaManager = new DataSyncManager();
   (deltaManager as any).remoteProvider = new MockDeltaProvider();
-  await deltaManager.loadDataset();
+  await deltaManager.loadDataset(undefined, { syncInBackground: false });
 
   assert(downloadedKeys.length === 1 && downloadedKeys[0] === 'demographics',
     'Delta Update: Only the 1 modified file (demographics) was downloaded over network');
@@ -321,7 +325,7 @@ async function runSuite() {
   const prevValidIndexes = await storageDB.getFile('indexes');
   const corruptTestManager = new DataSyncManager();
   (corruptTestManager as any).remoteProvider = new MockCorruptProvider();
-  await corruptTestManager.loadDataset();
+  await corruptTestManager.loadDataset(undefined, { syncInBackground: false });
 
   const currentIndexesInDB = await storageDB.getFile('indexes');
   assert(currentIndexesInDB === prevValidIndexes,

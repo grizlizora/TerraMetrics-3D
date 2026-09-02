@@ -2,10 +2,11 @@ import React from 'react';
 import { Landmark, Languages, Coins, Car, Map, PieChart } from 'lucide-react';
 import { useI18nStore } from '../../../store/useI18nStore';
 import { pluralize, PLURAL_COUNTRIES } from '../../../utils/pluralUtils';
+import type { CountryProperties, AggregatedContinentStats } from '../../../types';
 
 interface DemographicsViewProps {
-  countryProps: any;
-  continentStats: any;
+  countryProps: CountryProperties | null;
+  continentStats: AggregatedContinentStats | null;
   isCountry: boolean;
 }
 
@@ -149,7 +150,7 @@ export const DemographicsView: React.FC<DemographicsViewProps> = React.memo(({
               <span>{t('top_currencies')}</span>
             </div>
             <div className="flex flex-col gap-1.5">
-              {continentStats.topCurrencies.slice(0, 4).map((c: any, idx: number) => {
+              {continentStats.topCurrencies.slice(0, 4).map((c: { name_uk?: string; name_en?: string; name?: string; currency?: string; count: number }, idx: number) => {
                 const curName =
                   (lang === 'uk' ? c.name_uk || c.name : c.name_en || c.name || c.name_uk) ||
                   c.currency ||

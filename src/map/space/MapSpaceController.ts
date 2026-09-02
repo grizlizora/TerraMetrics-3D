@@ -1,5 +1,4 @@
 import type { Map as MapLibreMap } from 'maplibre-gl';
-import { Capacitor } from '@capacitor/core';
 import type { AppLanguage, SpaceMode } from '../../types';
 import { SpaceEngine } from '../../space/SpaceEngine';
 import { SpaceBridge } from '../../space/SpaceBridge';
@@ -106,15 +105,20 @@ export class MapSpaceController {
   }
 
   public destroy(map: MapLibreMap | null) {
-    if (this.spaceBridge && map && map.getLayer(this.spaceBridge.id)) {
+    if (this.spaceBridge) {
+      if (map && map.getLayer(this.spaceBridge.id)) {
+        try {
+          map.removeLayer(this.spaceBridge.id);
+        } catch {}
+      }
       try {
-        map.removeLayer(this.spaceBridge.id);
+        this.spaceBridge.onRemove();
       } catch {}
+      this.spaceBridge = null;
     }
     if (this.spaceEngine) {
       this.spaceEngine.dispose();
       this.spaceEngine = null;
     }
-    this.spaceBridge = null;
   }
 }

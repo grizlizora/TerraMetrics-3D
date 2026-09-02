@@ -1,4 +1,4 @@
-import type { AppLanguage, ISO3Code, SearchIndexEntry } from '../../types';
+import type { AppLanguage, SearchIndexEntry } from '../../types';
 import { SearchIndexBuilder, SearchResultItem } from '../processors/searchIndexBuilder';
 
 export type { SearchResultItem };

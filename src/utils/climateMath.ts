@@ -21,7 +21,6 @@ export class ClimateMath {
   public static generateMonthlyTemperatures(lat: number, lang: AppLanguage): MonthlyClimatePoint[] {
     const monthNames = this.getMonthNames(lang);
     const absLat = Math.abs(lat);
-    const radLat = (lat * Math.PI) / 180;
 
     // Base temperature: Equatorial ~28°C, Poles ~ -35°C
     const baseAvg = 28 - Math.pow(absLat / 90, 1.4) * 58;

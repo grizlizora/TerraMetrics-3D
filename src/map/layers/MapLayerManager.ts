@@ -15,6 +15,14 @@ export class MapLayerManager {
   public isDataLayersSetup = false;
   public pendingGeoJson: CountryFeatureCollection | null = null;
   public pendingLabelsGeoJson: LabelFeatureCollection | null = null;
+  private lastIngestedGeoJson: CountryFeatureCollection | null = null;
+  private lastIngestedLabels: LabelFeatureCollection | null = null;
+
+  public reset(): void {
+    this.isDataLayersSetup = false;
+    this.lastIngestedGeoJson = null;
+    this.lastIngestedLabels = null;
+  }
 
   public setupWorldFramingLayers(
     map: MapLibreMap,
@@ -111,11 +119,18 @@ export class MapLayerManager {
     const labelsSource = map.getSource('country-labels-source') as GeoJSONSource | undefined;
 
     if (countriesSource) {
-      countriesSource.setData(geoJsonData as any);
+      if (this.lastIngestedGeoJson !== geoJsonData) {
+        this.lastIngestedGeoJson = geoJsonData;
+        countriesSource.setData(geoJsonData as any);
+      }
       if (labelsGeoJson) {
         if (labelsSource) {
-          labelsSource.setData(labelsGeoJson as any);
+          if (this.lastIngestedLabels !== labelsGeoJson) {
+            this.lastIngestedLabels = labelsGeoJson;
+            labelsSource.setData(labelsGeoJson as any);
+          }
         } else if (map.isStyleLoaded()) {
+          this.lastIngestedLabels = labelsGeoJson;
           map.addSource('country-labels-source', {
             type: 'geojson',
             data: labelsGeoJson as any,
@@ -124,6 +139,8 @@ export class MapLayerManager {
         }
       }
     } else {
+      this.lastIngestedGeoJson = geoJsonData;
+      this.lastIngestedLabels = labelsGeoJson;
       this.setupDataLayers(map, geoJsonData, labelsGeoJson, currentSubMode, currentTheme, currentLang);
     }
 
@@ -266,7 +283,7 @@ export class MapLayerManager {
           6, 14,
           10, 18,
         ],
-        'text-font': ['Open Sans Regular'],
+        'text-font': ['Open Sans Semibold'],
         'symbol-sort-key': ['-', 0, ['coalesce', ['get', 'population'], 0]],
         'symbol-placement': 'point',
         'symbol-z-order': 'auto',

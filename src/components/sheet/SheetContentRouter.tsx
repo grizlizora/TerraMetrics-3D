@@ -1,5 +1,5 @@
 import React from 'react';
-import type { SubMode } from '../../types';
+import type { SubMode, CountryProperties, AggregatedContinentStats } from '../../types';
 import { ReligionView } from './views/ReligionView';
 import { PopulationView } from './views/PopulationView';
 import { DemographicsView } from './views/DemographicsView';
@@ -10,11 +10,13 @@ import { ClimateView } from './views/ClimateView';
 import { GeographyView } from './views/GeographyView';
 import { ResourcesView } from './views/ResourcesView';
 
+import { useI18nStore } from '../../store/useI18nStore';
+
 interface SheetContentRouterProps {
   subMode: SubMode;
   dataVersion: number;
-  countryProps: any;
-  continentStats: any;
+  countryProps: CountryProperties | null;
+  continentStats: AggregatedContinentStats | null;
   isCountry: boolean;
 }
 
@@ -25,8 +27,9 @@ export const SheetContentRouter: React.FC<SheetContentRouterProps> = React.memo(
   continentStats,
   isCountry,
 }) => {
+  const lang = useI18nStore((s) => s.lang);
   const commonProps = { countryProps, continentStats, isCountry };
-  const key = `${subMode}_${dataVersion}`;
+  const key = `${subMode}_${dataVersion}_${lang}`;
 
   switch (subMode) {
     case 'religion':

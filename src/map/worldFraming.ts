@@ -2,7 +2,6 @@
 import { Feature, FeatureCollection, LineString, Polygon } from 'geojson';
 import { ContinentName, SheetSnap } from '../types';
 import { PaddingOptions } from 'maplibre-gl';
-import { Capacitor } from '@capacitor/core';
 import { MapCameraAnimator } from './camera/MapCameraAnimator';
 
 /**

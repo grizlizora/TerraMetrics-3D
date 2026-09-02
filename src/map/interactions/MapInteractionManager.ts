@@ -16,6 +16,7 @@ export class MapInteractionManager {
   private onMouseMoveHandler?: (e: MapMouseEvent) => void;
   private onMouseLeaveHandler?: () => void;
   private onClickHandler?: (e: MapMouseEvent) => void;
+  private onWindowBlurHandler?: () => void;
 
   public bindEvents(map: MapLibreMap, callbacks: InteractionCallbacks) {
     const handlePointerMove = (point: { x: number; y: number }) => {
@@ -99,17 +100,37 @@ export class MapInteractionManager {
       }
     };
 
+    this.onWindowBlurHandler = () => {
+      if (map && map.isMoving()) {
+        map.stop();
+      }
+      if (this.hoveredCountryId !== null) {
+        const oldId = this.hoveredCountryId;
+        this.hoveredCountryId = null;
+        callbacks.onHoverChange?.(null, oldId);
+        const canvas = map.getCanvas();
+        if (canvas) canvas.style.cursor = '';
+      }
+    };
+
     map.on('mousemove', this.onMouseMoveHandler);
     map.on('mouseleave', this.onMouseLeaveHandler);
     map.on('click', this.onClickHandler);
+    if (typeof window !== 'undefined') {
+      window.addEventListener('blur', this.onWindowBlurHandler);
+    }
   }
 
-  public unbindEvents(map: MapLibreMap) {
+  public unbindEvents(map: MapLibreMap | null) {
     if (this._rafId !== null) {
       cancelAnimationFrame(this._rafId);
       this._rafId = null;
     }
     this.isThrottled = false;
+    if (typeof window !== 'undefined' && this.onWindowBlurHandler) {
+      window.removeEventListener('blur', this.onWindowBlurHandler);
+    }
+    if (!map) return;
     if (this.onMouseMoveHandler) map.off('mousemove', this.onMouseMoveHandler);
     if (this.onMouseLeaveHandler) map.off('mouseleave', this.onMouseLeaveHandler);
     if (this.onClickHandler) map.off('click', this.onClickHandler);

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Globe, X, Copy, Check, RefreshCw, ChevronUp, ChevronDown } from 'lucide-react';
-import { useI18nStore } from '../../../store/useI18nStore';
+import { useTranslation } from '../../../store/useI18nStore';
 import type { SheetSnap } from '../../../types';
 
 interface SheetEntityBannerProps {
@@ -30,7 +30,7 @@ export const SheetEntityBanner: React.FC<SheetEntityBannerProps> = React.memo(({
   onCopySummary,
   onManualSync,
 }) => {
-  const t = useI18nStore((s) => s.t);
+  const { t } = useTranslation();
 
   return (
     <div className="flex items-center justify-between gap-2.5 pt-1">

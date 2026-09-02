@@ -1,4 +1,5 @@
 import { getCountryFlag } from './flagUtils.ts';
+import type { GeoJsonCoordinates } from '../types/index.ts';
 
 export { getCountryFlag };
 
@@ -64,22 +65,24 @@ export function formatCoordinatesDMS(lat: number, lng: number): string {
 /**
  * Calculates the bounding box [minLng, minLat, maxLng, maxLat] from GeoJSON coordinates.
  */
-export function calculateBoundingBox(coords: any): [number, number, number, number] {
+export function calculateBoundingBox(coords: GeoJsonCoordinates | unknown): [number, number, number, number] {
   let minLng = 180;
   let maxLng = -180;
   let minLat = 90;
   let maxLat = -90;
 
-  const scan = (c: any) => {
-    if (typeof c[0] === 'number') {
-      const lng = c[0];
-      const lat = c[1];
-      if (lng < minLng) minLng = lng;
-      if (lng > maxLng) maxLng = lng;
-      if (lat < minLat) minLat = lat;
-      if (lat > maxLat) maxLat = lat;
-    } else if (Array.isArray(c)) {
-      for (let i = 0; i < c.length; i++) scan(c[i]);
+  const scan = (c: unknown) => {
+    if (Array.isArray(c)) {
+      if (typeof c[0] === 'number' && typeof c[1] === 'number') {
+        const lng = c[0];
+        const lat = c[1];
+        if (lng < minLng) minLng = lng;
+        if (lng > maxLng) maxLng = lng;
+        if (lat < minLat) minLat = lat;
+        if (lat > maxLat) maxLat = lat;
+      } else {
+        for (let i = 0; i < c.length; i++) scan(c[i]);
+      }
     }
   };
 
@@ -92,7 +95,7 @@ export function calculateBoundingBox(coords: any): [number, number, number, numb
  * Calculates the bounding box of the primary (largest landmass) polygon for a Feature geometry,
  * avoiding distortion from distant overseas territories or tiny remote islands.
  */
-export function calculatePrimaryBoundingBox(geometry: any): [number, number, number, number] {
+export function calculatePrimaryBoundingBox(geometry: { type?: string; coordinates?: GeoJsonCoordinates } | null | undefined): [number, number, number, number] {
   if (!geometry || !geometry.coordinates) {
     return [-180, -90, 180, 90];
   }
@@ -124,20 +127,22 @@ export function calculatePrimaryBoundingBox(geometry: any): [number, number, num
  * Computes a weighted or bounding centroid for GeoJSON Polygons / MultiPolygons,
  * accounting for anti-meridian crossing and island archipelagos.
  */
-export function calculatePolygonCentroid(coordinates: any): [number, number] {
+export function calculatePolygonCentroid(coordinates: GeoJsonCoordinates | unknown): [number, number] {
   const [minLng, minLat, maxLng, maxLat] = calculateBoundingBox(coordinates);
   
   // If polygon wraps around anti-meridian
   if (maxLng - minLng > 180) {
     let altMinLng = 180;
     let altMaxLng = -180;
-    const scanNormalized = (c: any) => {
-      if (typeof c[0] === 'number') {
-        const normLng = c[0] < 0 ? c[0] + 360 : c[0];
-        if (normLng < altMinLng) altMinLng = normLng;
-        if (normLng > altMaxLng) altMaxLng = normLng;
-      } else if (Array.isArray(c)) {
-        for (let i = 0; i < c.length; i++) scanNormalized(c[i]);
+    const scanNormalized = (c: unknown) => {
+      if (Array.isArray(c)) {
+        if (typeof c[0] === 'number') {
+          const normLng = c[0] < 0 ? c[0] + 360 : c[0];
+          if (normLng < altMinLng) altMinLng = normLng;
+          if (normLng > altMaxLng) altMaxLng = normLng;
+        } else {
+          for (let i = 0; i < c.length; i++) scanNormalized(c[i]);
+        }
       }
     };
     scanNormalized(coordinates);
@@ -170,4 +175,55 @@ export function isPointInPolygon(point: [number, number], polygon: [number, numb
   }
 
   return inside;
+}
+
+/**
+ * Calculates the geodesic surface area of a polygon or multipolygon on Earth's sphere in square kilometers (km²),
+ * using the spherical excess Gauss-Bonnet formula.
+ */
+export function calculateGeodesicRingAreaKm2(ring: number[][]): number {
+  if (!ring || ring.length < 3) return 0;
+  let total = 0;
+  const len = ring.length;
+  const toRad = Math.PI / 180.0;
+
+  for (let i = 0; i < len; i++) {
+    const p1 = ring[i];
+    const p2 = ring[(i + 1) % len];
+    const p0 = ring[(i - 1 + len) % len];
+
+    const dLon = (p2[0] - p0[0]) * toRad;
+    const latRad = p1[1] * toRad;
+    total += dLon * Math.sin(latRad);
+  }
+
+  const excess = Math.abs(total / 2.0);
+  return excess * EARTH_RADIUS_KM * EARTH_RADIUS_KM;
+}
+
+/**
+ * Computes the total geodesic area of GeoJSON Polygon or MultiPolygon coordinates in square kilometers (km²).
+ */
+export function calculateGeodesicPolygonAreaKm2(coords: GeoJsonCoordinates | unknown): number {
+  if (!coords || !Array.isArray(coords) || coords.length === 0) return 0;
+
+  // MultiPolygon: array of polygons
+  if (Array.isArray(coords[0]) && Array.isArray(coords[0][0]) && Array.isArray(coords[0][0][0])) {
+    let sum = 0;
+    for (const poly of coords) {
+      sum += calculateGeodesicPolygonAreaKm2(poly);
+    }
+    return sum;
+  }
+
+  // Polygon: array of linear rings (outer ring - inner holes)
+  if (Array.isArray(coords[0]) && Array.isArray(coords[0][0])) {
+    let area = calculateGeodesicRingAreaKm2(coords[0]);
+    for (let i = 1; i < coords.length; i++) {
+      area -= calculateGeodesicRingAreaKm2(coords[i]);
+    }
+    return Math.max(0, area);
+  }
+
+  return 0;
 }

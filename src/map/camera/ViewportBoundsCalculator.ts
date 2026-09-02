@@ -1,5 +1,5 @@
-import maplibregl, { Map as MapLibreMap, PaddingOptions } from 'maplibre-gl';
-import type { AvailableViewportRect, CameraContext, SafeAreaInsets } from './types';
+import maplibregl, { Map as MapLibreMap } from 'maplibre-gl';
+import type { AvailableViewportRect, SafeAreaInsets } from './types';
 
 export class ViewportBoundsCalculator {
   /**
@@ -286,9 +286,13 @@ export class ViewportBoundsCalculator {
       const width = container?.clientWidth || window.innerWidth || 390;
       const height = container?.clientHeight || window.innerHeight || 844;
 
-      const padding = map.getPadding() || { top: 0, bottom: 0, left: 0, right: 0 };
-      const centerPointX = padding.left + (width - padding.left - padding.right) / 2;
-      const centerPointY = padding.top + (height - padding.top - padding.bottom) / 2;
+      const padding = (typeof map.getPadding === 'function' ? map.getPadding() : null) || { top: 0, bottom: 0, left: 0, right: 0 };
+      const padLeft = padding.left ?? 0;
+      const padRight = padding.right ?? 0;
+      const padTop = padding.top ?? 0;
+      const padBottom = padding.bottom ?? 0;
+      const centerPointX = padLeft + (width - padLeft - padRight) / 2;
+      const centerPointY = padTop + (height - padTop - padBottom) / 2;
 
       const origX = ((lngLat.lng + 180) / 360) * worldSize;
       const lat = Math.max(-85.051128, Math.min(85.051128, lngLat.lat));

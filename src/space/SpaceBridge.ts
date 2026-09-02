@@ -93,7 +93,7 @@ export class SpaceBridge implements CustomLayerInterface {
     if (gl.isContextLost()) return;
 
     // Only render in 3D globe projection
-    const isGlobe = (this.map as any).getProjection?.()?.type === 'globe';
+    const isGlobe = this.map.getProjection?.()?.type === 'globe';
     if (!isGlobe) return;
 
     let isMoving = false;
@@ -102,13 +102,15 @@ export class SpaceBridge implements CustomLayerInterface {
       const pitch = this.map.getPitch();
       const bearing = this.map.getBearing();
       const zoom = this.map.getZoom();
-      const padding = (this.map as any).getPadding?.() || DEFAULT_PADDING;
-      const fov = (this.map as any).transform?.fov ? (((this.map as any).transform.fov * 180) / Math.PI) : 45;
+      const padding = this.map.getPadding?.() || DEFAULT_PADDING;
+      const fov = this.map.transform?.fov ? (((this.map.transform.fov * 180) / Math.PI)) : 45;
 
       const viewW = this.cachedViewW || 960;
       const viewH = this.cachedViewH || 540;
 
-      // 1. Camera Sync Dirty-Checking
+      const isMoving = this.map.isMoving();
+
+      // 1. Camera Sync Dirty-Checking (including active trackpad inertia)
       const cameraChanged =
         Math.abs(this.lastLng - center.lng) > 1e-5 ||
         Math.abs(this.lastLat - center.lat) > 1e-5 ||
@@ -118,7 +120,7 @@ export class SpaceBridge implements CustomLayerInterface {
         this.lastPadLeft !== padding.left ||
         this.lastPadRight !== padding.right;
 
-      if (cameraChanged) {
+      if (cameraChanged || isMoving) {
         this.lastLng = center.lng;
         this.lastLat = center.lat;
         this.lastPitch = pitch;
@@ -132,7 +134,6 @@ export class SpaceBridge implements CustomLayerInterface {
 
       // 2. Physics & Real-Time Ephemeris Update
       const now = performance.now();
-      isMoving = this.map.isMoving();
       this.spaceEngine.updatePhysics(now, isMoving);
 
       // 3. Render Three.js celestial background directly into shared WebGL context
@@ -178,15 +179,15 @@ export class SpaceBridge implements CustomLayerInterface {
     gl.colorMask(true, true, true, true);
     gl.disable(gl.SCISSOR_TEST);
 
-    const painterContext = (this.map as any)?.painter?.context;
+    const painterContext = this.map.painter?.context;
     if (painterContext) {
       if (typeof painterContext.setDirty === 'function') {
         painterContext.setDirty();
       } else {
-        if ('currentProgram' in painterContext) painterContext.currentProgram = null;
-        if ('currentVAO' in painterContext) painterContext.currentVAO = null;
-        if ('activeTexture' in painterContext) painterContext.activeTexture = null;
-        if ('boundBuffers' in painterContext) painterContext.boundBuffers = {};
+        if ('currentProgram' in painterContext) (painterContext as any).currentProgram = null;
+        if ('currentVAO' in painterContext) (painterContext as any).currentVAO = null;
+        if ('activeTexture' in painterContext) (painterContext as any).activeTexture = null;
+        if ('boundBuffers' in painterContext) (painterContext as any).boundBuffers = {};
       }
     }
 

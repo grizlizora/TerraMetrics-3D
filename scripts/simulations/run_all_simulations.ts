@@ -4,6 +4,8 @@ import { runMobileGesturesUISimulation } from './suites/02_mobile_gestures_ui.te
 import { runAnalyticsMatrixScanner } from './suites/03_analytics_matrix_scanner.test.ts';
 import { runPerfZeroGCProfiler } from './suites/04_perf_zero_gc_profiler.test.ts';
 import { runStorageCryptoChaos } from './suites/05_storage_crypto_chaos.test.ts';
+import { runVisualSpatialQASimulation } from './suites/06_visual_spatial_qa.test.ts';
+import { runVisualRegressionSnapshotsSimulation } from './suites/07_visual_regression_snapshots.test.ts';
 
 async function main() {
   console.log('======================================================================');
@@ -18,6 +20,8 @@ async function main() {
     await runAnalyticsMatrixScanner(),
     await runPerfZeroGCProfiler(),
     await runStorageCryptoChaos(),
+    await runVisualSpatialQASimulation(),
+    await runVisualRegressionSnapshotsSimulation(),
   ];
 
   const durationMs = performance.now() - startTime;
@@ -25,7 +29,7 @@ async function main() {
 
   console.log('\n======================================================================');
   if (allPassed) {
-    console.log(` 🏁 Підсумок тестування: ВСІ 5 МОДУЛІВ ПРОЙДЕНО (100% Успіх)`);
+    console.log(` 🏁 Підсумок тестування: ВСІ 7 МОДУЛІВ ПРОЙДЕНО (100% Успіх)`);
     console.log(` ⏱️ Загальний час виконання: ${(durationMs / 1000).toFixed(2)}s`);
     console.log('======================================================================\n');
     process.exit(0);

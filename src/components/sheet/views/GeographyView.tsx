@@ -4,10 +4,11 @@ import { useAppStore } from '../../../store/useAppStore';
 import { useI18nStore } from '../../../store/useI18nStore';
 import { audioManager } from '../../../audio/AudioManager';
 import { TerraHaptics } from '../../../native/TerraHaptics';
+import type { CountryProperties, AggregatedContinentStats, AggregatedCountryItem } from '../../../types';
 
 interface GeographyViewProps {
-  countryProps: any;
-  continentStats: any;
+  countryProps: CountryProperties | null;
+  continentStats: AggregatedContinentStats | null;
   isCountry: boolean;
 }
 
@@ -111,7 +112,7 @@ export const GeographyView: React.FC<GeographyViewProps> = React.memo(({
             <span>{t('top_area_title')}</span>
           </div>
           <div className="space-y-1.5">
-            {continentStats.topArea.map((c: any, index: number) => {
+            {continentStats.topArea.map((c: AggregatedCountryItem, index: number) => {
               const name = lang === 'uk' ? c.name_uk : c.name_en;
               return (
                 <button

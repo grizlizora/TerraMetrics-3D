@@ -27,6 +27,7 @@ export default defineConfig({
   build: {
     target: ['es2022', 'chrome100', 'safari15'],
     chunkSizeWarningLimit: 1200,
+    reportCompressedSize: false,
     rollupOptions: {
       output: {
         manualChunks: {

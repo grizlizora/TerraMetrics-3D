@@ -1,0 +1,76 @@
+name: "TerraMetrics-3D v2.0 Multi-Platform Desktop Build"
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+jobs:
+  build-tauri:
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - platform: "macos-latest"
+            targets: "x86_64-apple-darwin,aarch64-apple-darwin"
+            args: "--target universal-apple-darwin"
+          - platform: "windows-latest"
+            targets: "x86_64-pc-windows-msvc"
+            args: "--target x86_64-pc-windows-msvc"
+          - platform: "windows-latest"
+            targets: "aarch64-pc-windows-msvc"
+            args: "--target aarch64-pc-windows-msvc"
+          - platform: "ubuntu-22.04"
+            targets: "x86_64-unknown-linux-gnu"
+            args: ""
+          - platform: "ubuntu-24.04-arm"
+            targets: "aarch64-unknown-linux-gnu"
+            args: ""
+
+    runs-on: ${{ matrix.platform }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: Install Rust Stable
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.targets }}
+
+      - name: Rust Dependency Cache
+        uses: swatinem/rust-cache@v2
+        with:
+          workspaces: "src-tauri -> target"
+          key: ${{ matrix.targets }}
+
+      - name: Install Linux Dependencies (Ubuntu)
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libwebkit2gtk-4.1-dev libgtk-3-dev libsoup-3.0-dev libjavascriptcoregtk-4.1-dev curl wget file build-essential libssl-dev libayatana-appindicator3-dev librsvg2-dev
+
+      - name: Install Frontend Dependencies
+        run: npm ci
+
+      - name: Build Web Bundle & Manifest
+        run: npm run build
+
+      - name: Build Desktop Binaries with Tauri
+        uses: tauri-apps/tauri-action@v0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tagName: ${{ github.ref_name }}
+          releaseName: "TerraMetrics-3D v${{ github.ref_name }}"
+          releaseBody: "TerraMetrics 3D v2.0 Multi-Platform Release for macOS, Windows, and Linux."
+          releaseDraft: false
+          prerelease: false
+          args: ${{ matrix.args }}

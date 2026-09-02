@@ -3,15 +3,15 @@ import {
   Users, Building2, Trees, Sparkles, Shield, Coins, CloudSun, Mountain, Zap, BookOpen
 } from 'lucide-react';
 import { useAppStore } from '../../store/useAppStore';
-import { useI18nStore } from '../../store/useI18nStore';
+import { useTranslation } from '../../store/useI18nStore';
 import { audioManager } from '../../audio/AudioManager';
 import { TerraHaptics } from '../../native/TerraHaptics';
 import type { MacroCategory, SubMode } from '../../types';
 
 export const CATEGORIES: Array<{ id: MacroCategory; labelKey: string; icon: React.ReactNode }> = [
-  { id: 'society', labelKey: 'cat_society', icon: <Users className="w-4 h-4 sm:w-4.5 sm:h-4.5" /> },
-  { id: 'state', labelKey: 'cat_state', icon: <Building2 className="w-4 h-4 sm:w-4.5 sm:h-4.5" /> },
-  { id: 'nature', labelKey: 'cat_nature', icon: <Trees className="w-4 h-4 sm:w-4.5 sm:h-4.5" /> },
+  { id: 'society', labelKey: 'cat_society', icon: <Users className="w-3.5 h-3.5 sm:w-4 sm:h-4" /> },
+  { id: 'state', labelKey: 'cat_state', icon: <Building2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" /> },
+  { id: 'nature', labelKey: 'cat_nature', icon: <Trees className="w-3.5 h-3.5 sm:w-4 sm:h-4" /> },
 ];
 
 export const SUBMODES_BY_CATEGORY: Record<MacroCategory, Array<{ id: SubMode; labelKey: string; icon: React.ReactNode }>> = {
@@ -41,13 +41,13 @@ export const CategorySubmodeBar: React.FC<CategorySubmodeBarProps> = React.memo(
   const setCategory = useAppStore((s) => s.setCategory);
   const subMode = useAppStore((s) => s.subMode);
   const setSubMode = useAppStore((s) => s.setSubMode);
-  const t = useI18nStore((s) => s.t);
+  const { t } = useTranslation();
   const [, startTransition] = useTransition();
 
   const handleSelectCategory = (cat: MacroCategory) => {
     if (category === cat) return;
     audioManager.playSwitchCategory();
-    TerraHaptics.selectionChanged();
+    TerraHaptics.categoryChanged();
     startTransition(() => setCategory(cat));
   };
 
@@ -67,7 +67,7 @@ export const CategorySubmodeBar: React.FC<CategorySubmodeBarProps> = React.memo(
         onTouchStart={(e) => isMobile && e.stopPropagation()}
         onTouchMove={(e) => isMobile && e.stopPropagation()}
         onTouchEnd={(e) => isMobile && e.stopPropagation()}
-        className={`grid grid-cols-3 gap-1.5 p-1.5 rounded-2xl bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/5 ${isMobile ? 'sm:rounded-full' : ''}`}
+        className={`grid grid-cols-3 gap-1 p-1 sm:p-1.5 rounded-2xl bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/5 ${isMobile ? 'sm:rounded-full' : ''}`}
       >
         {CATEGORIES.map((cat) => {
           const isActive = category === cat.id;
@@ -75,7 +75,7 @@ export const CategorySubmodeBar: React.FC<CategorySubmodeBarProps> = React.memo(
             <button
               key={cat.id}
               onClick={() => handleSelectCategory(cat.id)}
-              className={`flex items-center justify-center gap-1.5 py-2 px-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all active:scale-95 cursor-pointer min-w-0 ${
+              className={`flex items-center justify-center gap-1 sm:gap-1.5 py-1.5 sm:py-2 px-1 sm:px-2 rounded-xl text-[11px] sm:text-xs md:text-sm font-bold tracking-tight transition-all active:scale-95 cursor-pointer min-w-0 ${
                 isActive
                   ? 'bg-blue-600 text-white shadow-md shadow-blue-500/25 scale-[1.02]'
                   : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/10'

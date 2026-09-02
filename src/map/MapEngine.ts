@@ -1,5 +1,5 @@
 import maplibregl, { Map as MapLibreMap, PaddingOptions } from 'maplibre-gl';
-import {
+import type {
   AppLanguage,
   ContinentName,
   CountryFeatureCollection,
@@ -10,35 +10,60 @@ import {
   SubMode,
   ThemeMode,
 } from '../types';
-import { DataLoader, dataLoader } from '../data/DataLoader';
-import { AudioManager } from '../audio/AudioManager';
+import type { DataLoader } from '../data/DataLoader';
+import type { AudioManager } from '../audio/AudioManager';
 import { MapStyleExpressions } from './styles/MapStyleExpressions';
 import { MapThemeManager } from './styles/MapThemeManager';
+import { MapInitialStyleFactory } from './styles/MapInitialStyleFactory';
 import { MapLayerManager } from './layers/MapLayerManager';
 import { MapInteractionManager } from './interactions/MapInteractionManager';
 import { MapCameraAnimator } from './camera/MapCameraAnimator';
 import { MapSpaceController } from './space/MapSpaceController';
-import { getWorldBoundaryGeoJson, getGraticuleGeoJson } from './worldFraming';
+import { MapProjectionManager } from './projection/MapProjectionManager';
+import { MapFramingCoordinator } from './framing/MapFramingCoordinator';
+import { MapContextCoordinator } from './context/MapContextCoordinator';
 
 export class MapEngine {
   private containerId: string;
   public map: MapLibreMap | null = null;
   public hoveredCountryId: string | number | null = null;
-  public selectedCountryId: ISO3Code | null = null;
-  public selectedContinent: ContinentName = 'World';
   public currentTheme: ThemeMode = 'dark';
   public currentSubMode: SubMode = 'religion';
   public currentLang: AppLanguage = 'uk';
-  public currentProjection: 'globe' | 'mercator' = 'globe';
 
   public onCountrySelect: ((iso: ISO3Code, name: string) => void) | null = null;
   public onContinentSelect: ((continent: ContinentName) => void) | null = null;
   public audioManager: AudioManager | null = null;
 
-  // Submodules
+  // Submodules & Coordinators
   public readonly layers: MapLayerManager;
   public readonly interactions: MapInteractionManager;
   public readonly spaceController: MapSpaceController;
+  public readonly projectionManager: MapProjectionManager;
+  public readonly framing: MapFramingCoordinator;
+  public readonly contextCoordinator: MapContextCoordinator;
+
+  // Backward-compatible getters and setters
+  public get selectedCountryId(): ISO3Code | null {
+    return this.framing.selectedCountryId;
+  }
+  public set selectedCountryId(iso: ISO3Code | null) {
+    this.framing.selectedCountryId = iso;
+  }
+
+  public get selectedContinent(): ContinentName {
+    return this.framing.selectedContinent;
+  }
+  public set selectedContinent(continent: ContinentName) {
+    this.framing.selectedContinent = continent;
+  }
+
+  public get currentProjection(): 'globe' | 'mercator' {
+    return this.projectionManager.projection;
+  }
+  public set currentProjection(mode: 'globe' | 'mercator') {
+    this.setProjection(mode);
+  }
 
   public get spaceEngine() {
     return this.spaceController.spaceEngine;
@@ -46,12 +71,14 @@ export class MapEngine {
   public set spaceEngine(engine) {
     this.spaceController.spaceEngine = engine;
   }
+
   public get spaceBridge() {
     return this.spaceController.spaceBridge;
   }
   public set spaceBridge(bridge) {
     this.spaceController.spaceBridge = bridge;
   }
+
   public get currentSpaceMode(): SpaceMode {
     return this.spaceController.currentSpaceMode;
   }
@@ -59,18 +86,18 @@ export class MapEngine {
     this.spaceController.currentSpaceMode = mode;
   }
 
-  private onContextLostHandler: ((e: Event) => void) | null = null;
-  private onContextRestoredHandler: (() => void) | null = null;
-
   constructor(containerId: string) {
     this.containerId = containerId;
     this.layers = new MapLayerManager();
     this.interactions = new MapInteractionManager();
     this.spaceController = new MapSpaceController();
+    this.projectionManager = new MapProjectionManager('globe');
+    this.framing = new MapFramingCoordinator();
+    this.contextCoordinator = new MapContextCoordinator();
   }
 
   public calculateMercatorMinZoom(): number {
-    return MapCameraAnimator.calculateMercatorMinZoom(this.map);
+    return this.projectionManager.calculateMercatorMinZoom(this.map);
   }
 
   public getViewportPadding(
@@ -85,7 +112,7 @@ export class MapEngine {
   }
 
   public async init(
-    dataLoader: DataLoader,
+    _dataLoader: DataLoader,
     initialLang: AppLanguage = 'uk',
     initialTheme: ThemeMode = 'dark',
     initialSubMode: SubMode = 'religion',
@@ -94,76 +121,18 @@ export class MapEngine {
     this.currentLang = initialLang;
     this.currentTheme = initialTheme;
     this.currentSubMode = initialSubMode;
-    this.currentProjection = initialProjection;
+
+    const effectiveProjection = this.projectionManager.projection || initialProjection;
+    this.projectionManager.setProjection(effectiveProjection);
 
     return new Promise((resolve) => {
-      const isDark = this.currentTheme === 'dark';
-      const initialBg = isDark ? '#060a12' : '#f0f4f8';
-
       const dpr =
         typeof window !== 'undefined' ? Math.min(window.devicePixelRatio || 1, 2.0) : 1;
 
-      const initialStyle: any = {
-        version: 8,
-        projection: { type: this.currentProjection },
-        sources: {
-          'world-base': {
-            type: 'geojson',
-            data: getWorldBoundaryGeoJson(),
-          },
-          'satellite': {
-            type: 'raster',
-            tiles: [
-              'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-            ],
-            tileSize: 256,
-            bounds: [-180, -85.051129, 180, 85.051129],
-          },
-          'world-graticule-source': {
-            type: 'geojson',
-            data: getGraticuleGeoJson(),
-          },
-        },
-        layers: [
-          {
-            id: 'background',
-            type: 'background',
-            paint: {
-              'background-color': initialBg,
-            },
-          },
-          {
-            id: 'world-base-layer',
-            type: 'fill',
-            source: 'world-base',
-            paint: {
-              'fill-color': isDark ? '#060a12' : '#081a26',
-              'fill-opacity': 1.0,
-            },
-          },
-          {
-            id: 'satellite-layer',
-            type: 'raster',
-            source: 'satellite',
-            minzoom: 0,
-            maxzoom: 22,
-          },
-          {
-            id: 'world-graticule-lines',
-            type: 'line',
-            source: 'world-graticule-source',
-            layout: {
-              visibility: 'none',
-            },
-            paint: {
-              'line-color': isDark ? 'rgba(255, 255, 255, 0.12)' : 'rgba(0, 0, 0, 0.12)',
-              'line-width': 0.8,
-              'line-dasharray': [2, 3],
-            },
-          },
-        ],
-        glyphs: 'https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf',
-      };
+      const initialStyle = MapInitialStyleFactory.create(
+        effectiveProjection,
+        initialTheme
+      );
 
       this.map = new maplibregl.Map({
         container: this.containerId,
@@ -172,7 +141,7 @@ export class MapEngine {
         center: [15, 0],
         zoom: this.getOptimalZoom(false),
         attributionControl: false,
-        maxPitch: this.currentProjection === 'mercator' ? 0 : 65,
+        maxPitch: effectiveProjection === 'mercator' ? 0 : 65,
         minPitch: 0,
         pitch: 0,
         bearing: 0,
@@ -183,18 +152,22 @@ export class MapEngine {
 
       const canvas = this.map.getCanvas();
       if (canvas) {
-        this.onContextLostHandler = (e: Event) => {
-          e.preventDefault();
-          console.warn('[MapEngine] WebGL Context Lost.');
-        };
-        this.onContextRestoredHandler = () => {
-          console.info('[MapEngine] WebGL Context Restored. Re-initializing data layers.');
-          if (this.layers.pendingGeoJson) {
-            this.setData(this.layers.pendingGeoJson, this.layers.pendingLabelsGeoJson);
-          }
-        };
-        canvas.addEventListener('webglcontextlost', this.onContextLostHandler, false);
-        canvas.addEventListener('webglcontextrestored', this.onContextRestoredHandler, false);
+        this.contextCoordinator.attach(canvas, {
+          onRestoreStyleAndLayers: () => {
+            this.layers.reset();
+            if (this.layers.pendingGeoJson) {
+              this.setData(this.layers.pendingGeoJson, this.layers.pendingLabelsGeoJson);
+            }
+          },
+          onRestoreSpaceBridge: () => {
+            if (this.map && this.spaceController.spaceBridge) {
+              this.spaceController.warmUpIdle(this.map, this.currentLang);
+            }
+          },
+          onRefreshTheme: () => {
+            this.setTheme(this.currentTheme);
+          },
+        });
       }
 
       this.map.on('load', () => {
@@ -235,7 +208,7 @@ export class MapEngine {
   public setData(
     geoJsonData: CountryFeatureCollection,
     labelsGeoJson: LabelFeatureCollection | null = null
-  ) {
+  ): void {
     this.layers.setData(
       this.map,
       geoJsonData,
@@ -247,126 +220,51 @@ export class MapEngine {
     );
   }
 
-  public setProjection(mode: 'globe' | 'mercator') {
-    this.currentProjection = mode;
-    if (!this.map) return;
-
-    this.map.stop();
-    this.map.setMaxBounds(null);
-
-    if (this.map.getLayer('world-base-layer')) {
-      this.map.setLayoutProperty(
-        'world-base-layer',
-        'visibility',
-        mode === 'mercator' ? 'visible' : 'none'
-      );
-    }
-
-    if (mode === 'mercator') {
-      const minZ = this.calculateMercatorMinZoom();
-      this.map.setMinZoom(minZ);
-      this.map.setMaxPitch(0);
-      this.map.setMinPitch(0);
-      this.map.setRenderWorldCopies(false);
-      this.map.setProjection({ type: 'mercator' });
-
-      this.interactions.configureGesturesForProjection(this.map, 'mercator');
-
-      if (this.map.getLayer('world-graticule-lines')) {
-        this.map.setLayoutProperty('world-graticule-lines', 'visibility', 'none');
-      }
-
-      (this.map.transform as any)?.setConstrainOverride?.(
-        MapCameraAnimator.createMercatorConstrainFunction(this.map)
-      );
-      this.map.setMaxBounds([[-180, -85.051128], [180, 85.051128]]);
-
-      const currentCenter = this.map.getCenter();
-      const targetLat = Math.max(-60, Math.min(60, currentCenter?.lat ?? 20));
-      const targetLng = currentCenter?.lng ?? 15;
-
-      this.map.easeTo({
-        center: [targetLng, targetLat],
-        zoom: Math.max(minZ, this.getOptimalZoom()),
-        pitch: 0,
-        bearing: 0,
-        duration: 350,
-        essential: true,
-      });
-    } else {
-      (this.map.transform as any)?.setConstrainOverride?.(null);
-      this.map.setMaxBounds(null);
-
-      this.map.setMinZoom(0.5);
-      this.map.setProjection({ type: 'globe' });
-
-      this.map.setMaxPitch(65);
-      this.map.setMinPitch(0);
-
-      this.interactions.configureGesturesForProjection(this.map, 'globe');
-
-      if (this.map.getLayer('world-graticule-lines')) {
-        this.map.setLayoutProperty('world-graticule-lines', 'visibility', 'none');
-      }
-
-      this.map.easeTo({ pitch: 0, duration: 350, essential: true });
-    }
-
-    this.setTheme(this.currentTheme);
-    this.map.triggerRepaint();
-
-    // Reframe current selection in the new projection
-    const geoJson = dataLoader.getGeoJson();
-    if (this.selectedCountryId && geoJson) {
-      this.flyToCountry(this.selectedCountryId, geoJson);
-    } else if (this.selectedContinent && this.selectedContinent !== 'World') {
-      this.flyToContinent(this.selectedContinent);
-    }
-  }
-
-  public onResize() {
-    if (!this.map) return;
-    if (this.currentProjection === 'mercator') {
-      const minZ = this.calculateMercatorMinZoom();
-      this.map.setMinZoom(minZ);
-      if (this.map.getZoom() < minZ) {
-        this.map.setZoom(minZ);
-      }
-    }
-  }
-
-  public updateViewportPadding(snap: SheetSnap = 'peek', isSidebarCollapsed = false) {
-    if (!this.map || MapCameraAnimator.isFlying) return;
-    const geoJson = dataLoader.getGeoJson();
-    if (this.selectedCountryId && geoJson) {
-      this.flyToCountry(this.selectedCountryId, geoJson, snap, isSidebarCollapsed);
+  public setProjection(mode: 'globe' | 'mercator'): void {
+    if (!this.map) {
+      this.projectionManager.setProjection(mode);
       return;
     }
-    if (this.selectedContinent && this.selectedContinent !== 'World') {
-      this.flyToContinent(this.selectedContinent, snap, isSidebarCollapsed);
-      return;
-    }
-    if (typeof window !== 'undefined' && window.innerWidth < 768) {
-      this.flyToContinent('World', snap, isSidebarCollapsed);
-      return;
-    }
-    const padding = this.getViewportPadding(snap, isSidebarCollapsed);
-    this.map.easeTo({
-      padding,
-      duration: 350,
-      essential: true,
+
+    this.projectionManager.setProjection(mode, {
+      map: this.map,
+      interactions: this.interactions,
+      onThemeRefresh: () => this.setTheme(this.currentTheme),
+      onReframeSelection: () => {
+        this.framing.reframeSelection(
+          this.map,
+          mode,
+          this.layers.pendingGeoJson,
+          this.audioManager
+        );
+      },
     });
   }
 
-  public setSpaceMode(mode: SpaceMode) {
+  public onResize(): void {
+    this.projectionManager.onResize(this.map);
+  }
+
+  public updateViewportPadding(snap: SheetSnap = 'peek', isSidebarCollapsed = false): void {
+    this.framing.updateViewportPadding(
+      this.map,
+      this.currentProjection,
+      snap,
+      isSidebarCollapsed,
+      this.layers.pendingGeoJson,
+      this.audioManager
+    );
+  }
+
+  public setSpaceMode(mode: SpaceMode): void {
     this.spaceController.setSpaceMode(mode, this.map, this.currentLang);
   }
 
-  public setSpaceLabelsVisible(visible: boolean) {
+  public setSpaceLabelsVisible(visible: boolean): void {
     this.spaceController.setSpaceLabelsVisible(visible, this.map);
   }
 
-  public setTimeScale(scale: number) {
+  public setTimeScale(scale: number): void {
     this.spaceController.setTimeScale(scale, this.map);
   }
 
@@ -374,7 +272,7 @@ export class MapEngine {
     return MapStyleExpressions.getFillColorExpression(subMode);
   }
 
-  public setSubMode(subMode: SubMode) {
+  public setSubMode(subMode: SubMode): void {
     this.currentSubMode = subMode;
     if (this.map && this.map.getLayer('country-fills')) {
       this.map.setPaintProperty(
@@ -385,7 +283,7 @@ export class MapEngine {
     }
   }
 
-  public setTheme(theme: ThemeMode) {
+  public setTheme(theme: ThemeMode): void {
     this.currentTheme = theme;
     MapThemeManager.applyTheme(this.map, theme, this.currentProjection);
     if (theme === 'light') {
@@ -393,7 +291,7 @@ export class MapEngine {
     }
   }
 
-  public updateLanguage(lang: AppLanguage) {
+  public updateLanguage(lang: AppLanguage): void {
     this.currentLang = lang;
     this.layers.updateLanguage(this.map, lang);
     if (this.spaceEngine) {
@@ -401,10 +299,8 @@ export class MapEngine {
     }
   }
 
-  public selectCountry(isoA3: ISO3Code | null) {
-    const oldIso = this.selectedCountryId;
-    this.selectedCountryId = isoA3;
-    this.layers.setSelectedCountry(this.map, isoA3, oldIso);
+  public selectCountry(isoA3: ISO3Code | null): void {
+    this.framing.selectCountry(isoA3, this.map, this.layers);
   }
 
   public flyToCountry(
@@ -412,17 +308,16 @@ export class MapEngine {
     geoJsonData?: CountryFeatureCollection | null,
     snap: SheetSnap = 'half',
     isSidebarCollapsed = false
-  ) {
-    this.selectedContinent = 'World';
-    this.selectCountry(isoA3);
-    MapCameraAnimator.flyToCountry(
+  ): void {
+    this.framing.flyToCountry(
       this.map,
       isoA3,
       geoJsonData,
       snap,
       isSidebarCollapsed,
       this.currentProjection,
-      this.audioManager
+      this.audioManager,
+      this.layers
     );
   }
 
@@ -430,27 +325,25 @@ export class MapEngine {
     continent: ContinentName,
     snap: SheetSnap = 'peek',
     isSidebarCollapsed = false
-  ) {
-    this.selectedContinent = continent;
-    this.selectCountry(null);
-    MapCameraAnimator.flyToContinent(
+  ): void {
+    this.framing.flyToContinent(
       this.map,
       continent,
       snap,
       isSidebarCollapsed,
       this.currentProjection,
-      this.audioManager
+      this.audioManager,
+      this.layers
     );
   }
 
-  public resetToWorld(isSidebarCollapsed = false) {
-    this.selectedContinent = 'World';
-    this.selectCountry(null);
-    MapCameraAnimator.flyToWorld(
+  public resetToWorld(isSidebarCollapsed = false): void {
+    this.framing.resetToWorld(
       this.map,
       isSidebarCollapsed,
       this.currentProjection,
-      this.audioManager
+      this.audioManager,
+      this.layers
     );
   }
 
@@ -458,29 +351,25 @@ export class MapEngine {
     return this.layers.waitForFirstFrame(this.map, sourceId, timeoutMs);
   }
 
-  public destroy() {
-    this.interactions.unbindEvents(this.map!);
+  public destroy(): void {
+    MapCameraAnimator.cancelActiveFlight(this.map, this.audioManager);
+    this.contextCoordinator.detach();
+    this.interactions.unbindEvents(this.map);
+    this.projectionManager.cleanup(this.map);
     this.spaceController.destroy(this.map);
-
-    const canvas = this.map?.getCanvas();
-    if (canvas) {
-      if (this.onContextLostHandler) {
-        canvas.removeEventListener('webglcontextlost', this.onContextLostHandler);
-      }
-      if (this.onContextRestoredHandler) {
-        canvas.removeEventListener('webglcontextrestored', this.onContextRestoredHandler);
-      }
-    }
 
     this.onCountrySelect = null;
     this.onContinentSelect = null;
-    this.selectedCountryId = null;
+    this.framing.selectedCountryId = null;
+    this.framing.selectedContinent = 'World';
     this.hoveredCountryId = null;
     this.layers.pendingGeoJson = null;
     this.layers.pendingLabelsGeoJson = null;
 
     if (this.map) {
-      this.map.remove();
+      try {
+        this.map.remove();
+      } catch {}
       this.map = null;
     }
   }

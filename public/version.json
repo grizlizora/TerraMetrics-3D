@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "datasetRelease": "2026-09-02T10:24:01.091Z",
+  "datasetRelease": "2026-09-02T17:11:39.361Z",
   "minAppVersion": "2.0.0",
   "description": "TerraMetrics-3D Production Geo & Demographics Dataset",
   "files": {
@@ -12,8 +12,8 @@
     },
     "demographics": {
       "fileName": "demographics.json",
-      "sha256": "c7c3a12413e31d0decb42caad4be9521fd8f62d0a5ec65327b993cddb0f032a7",
-      "sizeBytes": 108409,
+      "sha256": "ef325a416e09898a65572302ccb5c5481b6c4f4e208c6e239fcc28eb28d578b0",
+      "sizeBytes": 106056,
       "sourceId": ""
     },
     "indexes": {
@@ -24,8 +24,8 @@
     },
     "religions": {
       "fileName": "religions.json",
-      "sha256": "1ecd5dc7fef57e92d91b1096677cb62cb25bc858e52e7f5a50bd437500722c9e",
-      "sizeBytes": 162794,
+      "sha256": "5e59fbb285fa6cf0e7bca677a24a2ee3b24c4904ec3d2871bbd5a26e188dac8a",
+      "sizeBytes": 151134,
       "sourceId": ""
     }
   }

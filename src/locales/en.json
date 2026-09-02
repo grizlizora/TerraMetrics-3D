@@ -18,7 +18,6 @@
   "gdp_abbr": "GDP",
   "loading_analytics": "Loading global analytics...",
   "exit_toast": "Press back again to exit",
-
   "stage_init": "Initializing system...",
   "stage_geo": "Loading map data...",
   "stage_analytics": "Processing analytics...",
@@ -28,15 +27,14 @@
   "retry_btn": "Try Again",
   "loading_app_title": "TerraMetrics 3D",
   "loading_subtitle": "Global Analytics & 3D Visualization",
-
   "space_title": "Space",
   "space_none": "Off",
   "space_basic": "Basic",
   "space_advanced": "Planets",
   "space_deep": "Deep Space",
+  "space_deep_full": "Deep Space",
   "space_labels": "Labels",
   "space_only_in_dark_theme": "Space modes are only available in Dark Theme",
-
   "Europe": "Europe",
   "Asia": "Asia",
   "Africa": "Africa",
@@ -44,20 +42,17 @@
   "South America": "South America",
   "Oceania": "Oceania",
   "World": "World",
-
   "top_countries": "Top Countries",
   "top_economy_title": "Top Economies (GDP per Capita)",
   "top_democracy_title": "Top by Democracy Index",
   "top_military_title": "Top Armies (Active Personnel)",
   "top_area_title": "Top Countries by Area",
   "top_internet_title": "Top Internet Speeds",
-
   "unit_kmh": "km/h",
   "unit_mbps": "Mbps",
   "unit_sqkm": "km²",
   "unit_km": "km",
   "unit_m": "m",
-
   "mode_religion": "Religion",
   "mode_population": "Population",
   "mode_demographics": "Culture",
@@ -67,7 +62,6 @@
   "mode_climate": "Climate",
   "mode_geography": "Relief",
   "mode_resources": "Energy",
-
   "pop_stats": "Population Statistics",
   "pop_segment": "Category",
   "population": "Population",
@@ -105,7 +99,7 @@
   "avg_gdp": "Avg GDP / Capita",
   "avg_salary": "Average Salary",
   "col_index": "Cost of Living Index",
-  "tax_rate": "Income Tax Rate",
+  "tax_rate": "Income Tax (PIT)",
   "avg_tax": "Avg Tax Rate",
   "tax_macro": "Tax Revenue (% GDP)",
   "democracy_index": "Democracy Index (EIU)",
@@ -128,7 +122,6 @@
   "select_country": "Select Country",
   "close": "Close",
   "reset_world": "Reset to World",
-
   "Християнство": "Christianity",
   "Іслам": "Islam",
   "Індуїзм": "Hinduism",
@@ -137,7 +130,6 @@
   "Народні вірування": "Folk Religions",
   "Юдаїзм": "Judaism",
   "Інші": "Other",
-
   "Президентська республіка": "Presidential Republic",
   "Парламентська республіка": "Parliamentary Republic",
   "Змішана республіка": "Semi-Presidential Republic",
@@ -182,7 +174,6 @@
   "copy_stats": "Copy Statistics",
   "copied": "Copied!",
   "countries_count": "Countries Count",
-  "borders_length": "Border Length",
   "border_length": "Border Length",
   "top_currencies": "Top Currencies",
   "share_of_continent": "% of continent",
@@ -191,13 +182,13 @@
   "climate_zones": "Climate Profile",
   "tooltip_space_enable": "Enable Stars & Deep Space",
   "tooltip_space_disable": "Disable Stars",
-  "unit_kmh": "km/h",
-  "unit_m": "m",
-  "unit_km": "km",
-  "unit_mbps": "Mbps",
   "top_economy": "Top Economies",
   "top_military": "Top Armies",
   "legend_title": "Map Legend",
   "legend_toggle": "Color Scale",
-  "Unknown": "Unknown"
+  "Unknown": "Unknown",
+  "space_asteroid_belt": "Asteroid Belt",
+  "space_lagrange_points": "Lagrange Points (L1-L5)",
+  "space_audio_drone": "Space Ambient Drone",
+  "offline_cached": "Offline Cache Ready"
 }

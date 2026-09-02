@@ -7,6 +7,7 @@ import { SunCoronaSystem } from './solar/SunCoronaSystem.ts';
 import { MoonSystem } from './solar/MoonSystem.ts';
 import { PlanetarySystem } from './solar/PlanetarySystem.ts';
 import { PlanetaryMoonsSystem } from './solar/PlanetaryMoonsSystem.ts';
+import { AsteroidBeltSystem } from './solar/AsteroidBeltSystem.ts';
 
 export type { PlanetaryBody, MoonBody };
 
@@ -17,6 +18,7 @@ export class SolarSystemModule {
   public moonSystem = new MoonSystem();
   public planetarySystem = new PlanetarySystem();
   public moonsSystem = new PlanetaryMoonsSystem();
+  public asteroidBelt = new AsteroidBeltSystem();
 
   private _sunPosScratch = new THREE.Vector3();
   private _moonPosScratch = new THREE.Vector3();
@@ -76,6 +78,7 @@ export class SolarSystemModule {
     this.moonSystem.init(this.group, registerMarker, textureLoader);
     this.planetarySystem.init(this.group, registerMarker, textureLoader);
     this.moonsSystem.init(this.group, registerMarker);
+    this.asteroidBelt.init(this.group);
   }
 
   public update(
@@ -104,6 +107,7 @@ export class SolarSystemModule {
         this.planetarySystem.saturnBody,
         this.planetarySystem.plutoBody
       );
+      this.asteroidBelt.update(simDays, this._sunPosScratch);
     }
   }
 
@@ -118,6 +122,7 @@ export class SolarSystemModule {
     const showPlanets = mode === 'advanced' || mode === 'deep';
     this.planetarySystem.setVisible(showPlanets);
     this.moonsSystem.setVisible(showPlanets);
+    this.asteroidBelt.setVisible(showPlanets);
   }
 
   public dispose() {
@@ -146,5 +151,6 @@ export class SolarSystemModule {
     this.moonSystem.clear();
     this.planetarySystem.clear();
     this.moonsSystem.clear();
+    this.asteroidBelt.clear();
   }
 }

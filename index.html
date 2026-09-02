@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' 'unsafe-inline' blob:; worker-src 'self' blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https://server.arcgisonline.com https://*.arcgisonline.com; connect-src 'self' https://server.arcgisonline.com https://api.open-meteo.com https://api.worldbank.org https://studies.cs.helsinki.fi https://drive.google.com https://*.googleusercontent.com blob: data:; media-src 'self' blob:; object-src 'none'; base-uri 'self';"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' blob:; worker-src 'self' blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://demotiles.maplibre.org https://*.maplibre.org data:; img-src 'self' data: blob: https://server.arcgisonline.com https://*.arcgisonline.com https://demotiles.maplibre.org https://*.maplibre.org; connect-src 'self' https://server.arcgisonline.com https://*.arcgisonline.com https://demotiles.maplibre.org https://*.maplibre.org https://api.open-meteo.com https://api.worldbank.org https://studies.cs.helsinki.fi https://drive.google.com https://*.googleusercontent.com ws: wss: http://localhost:* ws://localhost:* http://127.0.0.1:* ws://127.0.0.1:* blob: data:; media-src 'self' blob:; object-src 'none'; base-uri 'self';"
     />
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
@@ -19,6 +21,19 @@
       name="description"
       content="TerraMetrics 3D - Interactive Global Analytics & 120Hz 3D WebGL Globe."
     />
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('terrametrics_theme');
+          var isDark = saved ? saved === 'dark' : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch(e) {}
+      })();
+    </script>
     <title>TerraMetrics 3D</title>
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

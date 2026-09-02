@@ -124,7 +124,7 @@ export function useSheetGestures({ sheetRef, activeSnap, onSnapChange }: UseShee
         } else {
           audioManager.playClosePanel();
         }
-        TerraHaptics.selectionChanged();
+        TerraHaptics.sheetSnapped(targetSnap);
         onSnapChange(targetSnap);
       }
     },

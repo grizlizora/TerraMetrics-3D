@@ -11,7 +11,6 @@ import { ViewportBoundsCalculator } from '../ViewportBoundsCalculator';
 import {
   CONTINENT_BOUNDING_BOXES,
   CONTINENT_CENTERS,
-  GLOBE_CONTINENT_ZOOM_PRESETS,
 } from '../framingConstants';
 
 export class MobileCameraStrategy implements ICameraStrategy {
@@ -51,10 +50,15 @@ export class MobileCameraStrategy implements ICameraStrategy {
     const { windowWidth, windowHeight } = context;
     const padding = this.getViewportPadding(context);
 
-    const x = padding.left;
-    const y = padding.top;
-    const width = Math.max(160, windowWidth - padding.left - padding.right);
-    const height = Math.max(160, windowHeight - padding.top - padding.bottom);
+    const padLeft = padding.left ?? 0;
+    const padRight = padding.right ?? 0;
+    const padTop = padding.top ?? 0;
+    const padBottom = padding.bottom ?? 0;
+
+    const x = padLeft;
+    const y = padTop;
+    const width = Math.max(160, windowWidth - padLeft - padRight);
+    const height = Math.max(160, windowHeight - padTop - padBottom);
 
     return {
       x,

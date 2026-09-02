@@ -1,5 +1,6 @@
 import { Capacitor } from '@capacitor/core';
 import { Haptics, ImpactStyle, NotificationType } from '@capacitor/haptics';
+import type { SheetSnap } from '../types';
 
 export class TerraHaptics {
   private static readonly isNative = Capacitor.isNativePlatform();
@@ -85,6 +86,42 @@ export class TerraHaptics {
     }
     if (typeof navigator !== 'undefined' && navigator.vibrate) {
       navigator.vibrate([30, 30]);
+    }
+  }
+  static async modeSwitched(): Promise<void> {
+    if (this.isNative) {
+      try {
+        await Haptics.impact({ style: ImpactStyle.Medium });
+        return;
+      } catch {}
+    }
+    if (typeof navigator !== 'undefined' && navigator.vibrate) {
+      navigator.vibrate(15);
+    }
+  }
+
+  static async sheetSnapped(snap: SheetSnap): Promise<void> {
+    if (this.isNative) {
+      try {
+        const style = snap === 'full' ? ImpactStyle.Heavy : snap === 'half' ? ImpactStyle.Medium : ImpactStyle.Light;
+        await Haptics.impact({ style });
+        return;
+      } catch {}
+    }
+    if (typeof navigator !== 'undefined' && navigator.vibrate) {
+      navigator.vibrate(snap === 'full' ? 25 : snap === 'half' ? 15 : 8);
+    }
+  }
+
+  static async categoryChanged(): Promise<void> {
+    if (this.isNative) {
+      try {
+        await Haptics.selectionChanged();
+        return;
+      } catch {}
+    }
+    if (typeof navigator !== 'undefined' && navigator.vibrate) {
+      navigator.vibrate([10, 20]);
     }
   }
 }

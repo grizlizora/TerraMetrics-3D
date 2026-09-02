@@ -13,6 +13,22 @@ export function useAppBootstrap() {
   const [isEngineReady, setIsEngineReady] = useState(false);
   const [isFirstFrameRendered, setIsFirstFrameRendered] = useState(false);
 
+  // Register PWA Service Worker for 100% offline asset availability
+  useEffect(() => {
+    if (typeof window !== 'undefined' && 'serviceWorker' in navigator && process.env.NODE_ENV === 'production') {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker
+          .register('/sw.js')
+          .then((reg) => {
+            console.log('[PWA] Service Worker registered with scope:', reg.scope);
+          })
+          .catch((err) => {
+            console.warn('[PWA] Service Worker registration failed:', err);
+          });
+      });
+    }
+  }, []);
+
   const startBootstrap = useCallback(async () => {
     setStage('init');
     setProgress(5);

@@ -1,6 +1,5 @@
 import * as THREE from 'three';
 import * as Astronomy from 'astronomy-engine';
-import type { AppLanguage } from '../types/index.ts';
 
 export type SpaceModeType = 'none' | 'basic' | 'advanced' | 'deep';
 export type MarkerTier = 'basic' | 'advanced' | 'deep';

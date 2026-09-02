@@ -1,6 +1,9 @@
 import { useAppStore } from '../store/useAppStore';
 import { useI18nStore } from '../store/useI18nStore';
 import { dataLoader } from '../data/DataLoader';
+import { audioManager } from '../audio/AudioManager';
+import { LagrangePointsCalculator } from '../space/physics/LagrangePoints';
+import * as Astronomy from 'astronomy-engine';
 
 export interface UIControlItem {
   id: string;
@@ -39,12 +42,15 @@ export class ExternalAPI {
     return this.scanUI();
   }
 
-  public onUpdate(callback: (controls: UIControlItem[]) => void) {
-    if (typeof window !== 'undefined') {
-      window.addEventListener('terra-api-update', ((e: CustomEvent) => {
-        callback(e.detail);
-      }) as EventListener);
-    }
+  public onUpdate(callback: (controls: UIControlItem[]) => void): () => void {
+    if (typeof window === 'undefined') return () => {};
+    const listener = (e: Event) => {
+      callback((e as CustomEvent).detail);
+    };
+    window.addEventListener('terra-api-update', listener);
+    return () => {
+      window.removeEventListener('terra-api-update', listener);
+    };
   }
 
   private setupObserver() {
@@ -52,9 +58,9 @@ export class ExternalAPI {
     const targetNode = document.body;
     const config = {
       attributes: true,
-      childList: true,
+      childList: false,
       subtree: true,
-      attributeFilter: ['class', 'style', 'data-api-action'],
+      attributeFilter: ['data-api-action'],
     };
 
     let timeout: number | null = null;
@@ -62,7 +68,7 @@ export class ExternalAPI {
       if (timeout) window.clearTimeout(timeout);
       timeout = window.setTimeout(() => {
         this.broadcastUpdate();
-      }, 150);
+      }, 400);
     });
     this.observer.observe(targetNode, config);
   }
@@ -131,6 +137,7 @@ export class ExternalAPI {
       selectedContinent: store.selectedContinent,
       lang: i18n.lang,
       isDataReady: Boolean(dataLoader.getGeoJson()),
+      isDroneActive: audioManager.isSpaceDroneActive(),
     };
   }
 
@@ -156,6 +163,36 @@ export class ExternalAPI {
 
   public selectCountry(iso: string | null) {
     useAppStore.getState().selectCountry(iso as any);
+  }
+
+  public toggleSpaceDrone() {
+    if (audioManager.isSpaceDroneActive()) {
+      audioManager.stopSpaceDrone();
+    } else {
+      audioManager.startSpaceDrone();
+    }
+    return audioManager.isSpaceDroneActive();
+  }
+
+  public getLagrangePoints() {
+    const astroTime = new Astronomy.AstroTime(new Date());
+    const gstHours = Astronomy.SiderealTime(astroTime);
+    const stRad = (gstHours / 24) * Math.PI * 2;
+    const sunGeo = Astronomy.GeoVector(Astronomy.Body.Sun, astroTime, true);
+    if (!sunGeo) return [];
+    return LagrangePointsCalculator.computeSunEarthPoints(astroTime, stRad, {
+      x: sunGeo.x * 2348100,
+      y: sunGeo.y * 2348100,
+      z: sunGeo.z * 2348100,
+    });
+  }
+
+  public getOfflineStatus() {
+    return {
+      isOnline: typeof navigator !== 'undefined' ? navigator.onLine : true,
+      hasServiceWorker: typeof navigator !== 'undefined' && 'serviceWorker' in navigator,
+      hasIndexedDB: typeof window !== 'undefined' && 'indexedDB' in window,
+    };
   }
 }
 

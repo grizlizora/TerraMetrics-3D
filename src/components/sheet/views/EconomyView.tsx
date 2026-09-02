@@ -4,10 +4,11 @@ import { useI18nStore } from '../../../store/useI18nStore';
 import { useAppStore } from '../../../store/useAppStore';
 import { audioManager } from '../../../audio/AudioManager';
 import { TerraHaptics } from '../../../native/TerraHaptics';
+import type { CountryProperties, AggregatedContinentStats, AggregatedCountryItem } from '../../../types';
 
 interface EconomyViewProps {
-  countryProps: any;
-  continentStats: any;
+  countryProps: CountryProperties | null;
+  continentStats: AggregatedContinentStats | null;
   isCountry: boolean;
 }
 
@@ -61,7 +62,7 @@ export const EconomyView: React.FC<EconomyViewProps> = React.memo(({
           </div>
 
           <div className="space-y-1.5">
-            {topEcon.map((c: any, idx: number) => {
+            {topEcon.map((c: AggregatedCountryItem, idx: number) => {
               const name = lang === 'uk' ? c.name_uk : c.name_en;
               return (
                 <button
@@ -78,7 +79,7 @@ export const EconomyView: React.FC<EconomyViewProps> = React.memo(({
                     </span>
                   </div>
                   <span className="text-xs font-bold text-emerald-500 dark:text-emerald-400">
-                    ${formatNumber(c.gdp)}
+                    ${formatNumber(c.gdp || c.gdp_per_capita || 0)}
                   </span>
                 </button>
               );
@@ -117,7 +118,7 @@ export const EconomyView: React.FC<EconomyViewProps> = React.memo(({
       },
       {
         icon: <Receipt className="w-3.5 h-3.5 text-purple-500" />,
-        label: `${t('tax_rate')} (${t('pit_abbr')})`,
+        label: t('tax_rate'),
         value: `${tax}%`,
         highlight: 'text-purple-500',
       },

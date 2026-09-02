@@ -4,10 +4,11 @@ import { useI18nStore } from '../../../store/useI18nStore';
 import { useAppStore } from '../../../store/useAppStore';
 import { audioManager } from '../../../audio/AudioManager';
 import { TerraHaptics } from '../../../native/TerraHaptics';
+import type { CountryProperties, AggregatedContinentStats, AggregatedCountryItem } from '../../../types';
 
 interface ResourcesViewProps {
-  countryProps: any;
-  continentStats: any;
+  countryProps: CountryProperties | null;
+  continentStats: AggregatedContinentStats | null;
   isCountry: boolean;
 }
 
@@ -60,7 +61,7 @@ export const ResourcesView: React.FC<ResourcesViewProps> = React.memo(({
           </div>
 
           <div className="space-y-1.5">
-            {topNet.map((c: any, idx: number) => {
+            {topNet.map((c: AggregatedCountryItem, idx: number) => {
               const name = lang === 'uk' ? c.name_uk : c.name_en;
               return (
                 <button
@@ -89,27 +90,27 @@ export const ResourcesView: React.FC<ResourcesViewProps> = React.memo(({
   }
 
   if (isCountry && countryProps) {
-    const energy = countryProps.cleanEnergy || 0;
-    const ev = countryProps.evIndex || 0;
-    const internet = countryProps.internetSpeed || 0;
+    const energy = countryProps.cleanEnergy;
+    const ev = countryProps.evIndex;
+    const internet = countryProps.internetSpeed;
 
     const metrics = [
       {
         icon: <Wifi className="w-3.5 h-3.5 text-cyan-500" />,
         label: t('internet_speed'),
-        value: internet > 0 ? `${internet} ${t('unit_mbps')}` : t('no_data'),
+        value: internet !== undefined && internet !== null && internet > 0 ? `${internet} ${t('unit_mbps')}` : t('no_data'),
         highlight: 'text-cyan-500',
       },
       {
         icon: <Zap className="w-3.5 h-3.5 text-emerald-500" />,
         label: t('clean_energy'),
-        value: energy > 0 ? `${energy}%` : t('no_data'),
+        value: energy !== undefined && energy !== null && energy >= 0 ? `${energy}%` : t('no_data'),
         highlight: 'text-emerald-500',
       },
       {
         icon: <Car className="w-3.5 h-3.5 text-blue-500" />,
         label: t('ev_index'),
-        value: ev > 0 ? `${ev} / 100` : t('no_data'),
+        value: ev !== undefined && ev !== null && ev >= 0 ? `${ev} / 100` : t('no_data'),
         highlight: 'text-blue-500',
       },
     ];

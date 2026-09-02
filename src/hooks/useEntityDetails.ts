@@ -62,7 +62,7 @@ export function useEntityDetails() {
     try {
       const result = await dataSyncManager.syncNow();
       if (result.updated) {
-        await dataLoader.loadAll();
+        await dataLoader.loadAll(undefined, { forceReload: true });
       }
       incrementDataVersion();
       TerraHaptics.success();

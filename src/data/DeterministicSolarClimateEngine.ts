@@ -17,6 +17,9 @@ export interface SolarClimateReport {
   estimatedHumidityPct: number;
   windSpeedMs: number;
   seasonName: "spring" | "summer" | "autumn" | "winter";
+  atmosphericPressureHpa?: number;
+  apparentTemperatureC?: number;
+  effectiveLapseRateCm?: number;
 }
 
 export class DeterministicSolarClimateEngine {
@@ -123,6 +126,22 @@ export class DeterministicSolarClimateEngine {
       (3.2 + 2.5 * Math.abs(Math.sin(absLat * (Math.PI / 30))) + deterministicNoise).toFixed(1)
     );
 
+    // Barometric formula (Laplace-Babinet) for atmospheric pressure
+    const atmosphericPressureHpa = parseFloat(
+      (1013.25 * Math.pow(Math.max(0.1, 1 - (0.0065 * altitudeMeters) / 288.15), 5.255)).toFixed(1)
+    );
+
+    // Dynamic moist vs dry adiabatic lapse rate (K/100m)
+    const effectiveLapseRateCm = parseFloat(
+      (0.98 - 0.48 * (estimatedHumidityPct / 100)).toFixed(2)
+    );
+
+    // Apparent Temperature (Steadman / Australian apparent temperature)
+    const vaporPressureKPa = (estimatedHumidityPct / 100) * es;
+    const apparentTemperatureC = parseFloat(
+      (estimatedTemperatureC + 0.33 * (vaporPressureKPa * 10) - 0.70 * windSpeedMs - 4.00).toFixed(1)
+    );
+
     return {
       timestamp: time,
       latitude: lat,
@@ -140,6 +159,9 @@ export class DeterministicSolarClimateEngine {
       estimatedHumidityPct,
       windSpeedMs,
       seasonName: season,
+      atmosphericPressureHpa,
+      apparentTemperatureC,
+      effectiveLapseRateCm,
     };
   }
 }

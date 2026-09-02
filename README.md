@@ -38,24 +38,27 @@ Depth-testing conflicts and Z-fighting are eliminated through deliberate layer o
 - **Layer 3 (0):** Solar system bodies (Sun, Earth, Moon) and MapLibre Vector/Raster Tiles.
 *Result: The Sun naturally occludes deep space nebulas, reproducing physical reality.*
 
-### 4. Real-Time Astronomical Physics (NASA VSOP87)
+### 4. Real-Time Astronomical Physics (NASA VSOP87) & Lagrange Points ($L_1 - L_5$)
 Integrates NASA VSOP87 planetary ephemeris algorithms to compute exact celestial positions:
 - Transforms J2000 Equatorial ICRF coordinates into Earth-Centered Earth-Fixed (ECEF) MapLibre coordinates via Greenwich Sidereal Time (GST).
+- **Lagrange Equilibrium Calculator:** Real-time 3D computation of all 5 Sun-Earth Lagrange points ($L_1, L_2, L_3, L_4, L_5$) based on the restricted three-body gravitational problem.
+- **Procedural Main Asteroid Belt:** Renders 350+ instanced Keplerian asteroids between Mars and Jupiter with craggy procedural vertex deformation.
 - Dynamic lunar phases, sub-solar/sub-lunar geographic points, and solar eclipse geometric calculations.
 - Procedural Eddington limb darkening ($0.62 + 0.38 \cdot \mu^{0.60}$) and atmospheric Fresnel glow shaders.
 
-### 5. Multi-Tier Offline Architecture (L1 ➔ L2 ➔ L3) & Delta Sync
+### 5. Multi-Tier Offline Architecture (L1 ➔ L2 ➔ L3) & PWA Service Worker
 - **L1 (In-Memory):** Zustand state store for instantaneous UI reaction.
 - **L2 (IndexedDB):** `TerraStorageDB` delivers cold-start boots in `<15 ms`.
-- **L3 (Bundled Fallback):** Guaranteed asset fallback for completely offline environments.
+- **L3 (Bundled Fallback & Service Worker):** PWA Service Worker (`public/sw.js`) precaches app shell, static assets, vector data, and offline tile fallbacks.
 - **Non-blocking Delta Sync:** Checks remote SHA-256 version manifests via background `requestIdleCallback` and downloads only modified files.
 - **Deterministic Solar Climate Engine:** Offline mathematical climate model (Tetens vapor pressure, air mass solar attenuation, GHI/DNI calculations) without network calls.
 
-### 6. Procedural Web Audio Synthesis
-- 100% zero audio asset downloads: 14 distinct sound effects (button clicks, panel whooshes, continent bass pings, flight sounds) synthesized on the fly via `AudioContext`, `OscillatorNode`, and `BiquadFilterNode`.
+### 6. Procedural Web Audio Synthesis & Ambient Space Drone
+- 100% zero audio asset downloads: 14 distinct sound effects synthesized on the fly via `AudioContext`, `OscillatorNode`, and resonant `BiquadFilterNode` warm acoustic filters.
+- **Cinematic Space Ambient Drone:** Dual sub-harmonic resonant sub-bass oscillators (43.65 Hz / 65.41 Hz) modulated by ultra-slow 0.08 Hz LFO filter sweeps for deep space immersion.
 
-### 7. "Live UI" API (AI & Agent Ready)
-- Exposes `window.TerraMetricsAPI` backed by a `MutationObserver` to map physical screen bounding boxes and trigger semantic actions programmatically.
+### 7. "Live UI" & AI Agent API
+- Exposes `window.TerraMetricsAPI` backed by a `MutationObserver` to map physical screen bounding boxes, retrieve exact Lagrange point coordinates, inspect offline cache status, and trigger semantic actions programmatically.
 
 ---
 
@@ -103,6 +106,9 @@ npm run dev
 
 # Run automated test suites
 npm test
+
+# Run strict TypeScript and lint verification
+npm run lint
 
 # Build production bundle
 npm run build

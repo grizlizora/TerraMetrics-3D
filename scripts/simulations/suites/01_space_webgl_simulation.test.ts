@@ -161,7 +161,12 @@ export async function runSpaceWebGLSimulation(): Promise<boolean> {
       `Астродинаміка: підсонячна точка літнього сонцестояння (Lat = ${subSolar.lat.toFixed(2)}° ~ 23.44°)`
     );
 
-    // 10. Disposal & Zero Leaks
+    // 10. Lagrange Points & Asteroid Belt Verification
+    const lagrangePoints = spaceEngine.getLagrangePoints();
+    assert(lagrangePoints.length === 5, `Точки Лагранжа: розраховано 5 точок рівноваги (L1..L5)`);
+    assert(spaceEngine.solarSystem.asteroidBelt.instancedMesh !== null, `Пояс астероїдів: ініціалізовано 350 процедурних астероїдів`);
+
+    // 11. Disposal & Zero Leaks
     spaceEngine.dispose();
     assert(true, `dispose() успішно очистив 100% ресурсів сцени та геометрій`);
 

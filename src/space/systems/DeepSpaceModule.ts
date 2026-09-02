@@ -2,12 +2,14 @@ import * as THREE from 'three';
 import { CONSTELLATIONS, DEEP_SPACE_OBJECTS } from '../DeepSpaceData.ts';
 import { SpaceProceduralTextures } from '../SpaceProceduralTextures.ts';
 import { CELESTIAL_SPHERE_RADIUS, BODY_NAMES } from '../core/SpaceConstants.ts';
+import { ProceduralNebulaShader } from '../SpaceShaders.ts';
 import type { MarkerRegistrationCallback } from '../SpaceTypes.ts';
 import type { EphemerisEngine } from '../physics/EphemerisEngine.ts';
 
 export class DeepSpaceModule {
   public group: THREE.Group;
   private registeredBodyKeys: string[] = [];
+  private nebulaMaterials: THREE.ShaderMaterial[] = [];
 
   constructor() {
     this.group = new THREE.Group();
@@ -143,6 +145,31 @@ export class DeepSpaceModule {
         const diskMesh = new THREE.Mesh(diskGeom, diskMat);
         diskMesh.rotation.x = Math.PI / 3;
         dummy.add(diskMesh);
+      } else if (dso.type === 'nebula') {
+        const nebulaGeom = new THREE.PlaneGeometry(1, 1);
+        const nebulaMat = new THREE.ShaderMaterial({
+          uniforms: {
+            time: { value: 0.0 },
+            coreColor: { value: new THREE.Color(dso.color || '#aaccff') },
+            midColor: { value: new THREE.Color(dso.haloColor || '#aa44ff') },
+            haloColor: { value: new THREE.Color(0x1a0533) },
+            density: { value: 1.1 },
+            opacity: { value: 0.85 },
+          },
+          vertexShader: ProceduralNebulaShader.vertexShader,
+          fragmentShader: ProceduralNebulaShader.fragmentShader,
+          transparent: true,
+          blending: THREE.AdditiveBlending,
+          depthWrite: false,
+          side: THREE.DoubleSide,
+        });
+        const nebulaMesh = new THREE.Mesh(nebulaGeom, nebulaMat);
+        const r = radius * 0.02 * ((dso.size || 3.0) / 3.0);
+        const scaleMult = 2.4;
+        nebulaMesh.scale.set(r * scaleMult, r * scaleMult, 1);
+        nebulaMesh.lookAt(0, 0, 0);
+        dummy.add(nebulaMesh);
+        this.nebulaMaterials.push(nebulaMat);
       } else {
         const mat = SpaceProceduralTextures.getDeepSpaceMaterial(
           dso.type,
@@ -150,7 +177,7 @@ export class DeepSpaceModule {
         );
         const sprite = new THREE.Sprite(mat);
         const r = radius * 0.02 * ((dso.size || 3.0) / 3.0);
-        const scaleMult = dso.type === 'galaxy' ? 2.5 : dso.type === 'nebula' ? 2.0 : 1.2;
+        const scaleMult = dso.type === 'galaxy' ? 2.5 : 1.2;
         sprite.scale.set(r * scaleMult, r * scaleMult, 1);
         dummy.add(sprite);
       }
@@ -177,7 +204,19 @@ export class DeepSpaceModule {
     this.group.visible = visible;
   }
 
+  public update(time: number): void {
+    const tSec = time * 0.001;
+    for (let i = 0; i < this.nebulaMaterials.length; i++) {
+      this.nebulaMaterials[i].uniforms.time.value = tSec;
+    }
+  }
+
   public dispose() {
+    for (let i = 0; i < this.nebulaMaterials.length; i++) {
+      this.nebulaMaterials[i].dispose();
+    }
+    this.nebulaMaterials = [];
+
     this.group.traverse((child) => {
       const mesh = child as any;
       if (mesh.geometry) mesh.geometry.dispose();

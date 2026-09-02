@@ -135,7 +135,7 @@ export async function runStorageCryptoChaos(): Promise<boolean> {
       `DeterministicSolarClimateEngine: C^∞ гладкість річної інсоляції (макс. зміна між сусідніми днями: ${maxDayShift.toFixed(2)}°C < 0.40°C)`
     );
 
-    // Deterministic wind hash repeatability test
+    // 6. Deterministic wind hash repeatability test
     const dateFixed = new Date(Date.UTC(2026, 6, 15, 14, 0));
     const repA = DeterministicSolarClimateEngine.calculate(48.85, 2.35, 35, dateFixed);
     const repB = DeterministicSolarClimateEngine.calculate(48.85, 2.35, 35, dateFixed);
@@ -143,6 +143,17 @@ export async function runStorageCryptoChaos(): Promise<boolean> {
       repA.windSpeedMs === repB.windSpeedMs && repA.estimatedTemperatureC === repB.estimatedTemperatureC,
       `DeterministicSolarClimateEngine: 100% математична детермінованість (повторюваність без випадкового шуму: ${repA.windSpeedMs} м/с === ${repB.windSpeedMs} м/с)`
     );
+
+    // 7. TerraStorageDB Environment & Quota Resilience
+    const { TerraStorageDB } = await import('../../../src/data/sync/TerraStorageDB.ts');
+    const testDb = new TerraStorageDB();
+    let dbResilient = true;
+    try {
+      await testDb.saveFile('countries', '{}');
+    } catch (e: any) {
+      dbResilient = e.message.includes('IndexedDB is not available');
+    }
+    assert(dbResilient, `TerraStorageDB: безпечна деградація та перехоплення помилок середовища без падіння процесу`);
 
   } catch (err: any) {
     console.error('  ❌ Unhandled exception in Storage Crypto Chaos test:', err);

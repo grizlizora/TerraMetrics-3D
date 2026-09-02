@@ -10,6 +10,16 @@ import { SolarSystemModule } from './systems/SolarSystemModule.ts';
 import { DeepSpaceModule } from './systems/DeepSpaceModule.ts';
 import { SpaceMarkerSystem } from './systems/SpaceMarkerSystem.ts';
 import { SpaceProceduralTextures } from './SpaceProceduralTextures.ts';
+import type { LagrangePointInfo } from './physics/LagrangePoints.ts';
+
+export interface SpaceSubsystems {
+  cameraManager: SpaceCameraManager;
+  ephemeris: EphemerisEngine;
+  starfield: StarfieldSystem;
+  solarSystem: SolarSystemModule;
+  deepSpace: DeepSpaceModule;
+  markers: SpaceMarkerSystem;
+}
 
 export class SpaceEngine {
   public scene: THREE.Scene;
@@ -35,6 +45,18 @@ export class SpaceEngine {
   // Static API compatibility
   public static isMarkerActive = SpaceMarkerSystem.isMarkerActive;
   public static BODY_NAMES = BODY_NAMES;
+
+  // Direct unified access to all subsystems
+  public get subsystems(): SpaceSubsystems {
+    return {
+      cameraManager: this.cameraManager,
+      ephemeris: this.ephemeris,
+      starfield: this.starfield,
+      solarSystem: this.solarSystem,
+      deepSpace: this.deepSpace,
+      markers: this.markers,
+    };
+  }
 
   // Property proxies for backward compatibility
   public get simTimeDays() {
@@ -63,6 +85,9 @@ export class SpaceEngine {
   }
   public set onRequestRepaint(fn: (() => void) | undefined) {
     this.cameraManager.onRequestRepaint = fn;
+    if (this.markers) {
+      this.markers.onRequestRepaint = fn;
+    }
   }
 
   public get mouseX() {
@@ -202,8 +227,11 @@ export class SpaceEngine {
     this.starfield.setSiderealRotation(stRad);
     this.starfield.update(time, this.mode === 'deep');
     this.deepSpace.setSiderealRotation(stRad);
+    if (this.mode === 'deep') {
+      this.deepSpace.update(time);
+    }
 
-    // 2. Solar System Orbital Mechanics
+    // 2. Solar System Orbital Mechanics (Sun, Moon, Planets, Asteroid Belt)
     this.solarSystem.update(
       astroTime,
       now,
@@ -228,6 +256,10 @@ export class SpaceEngine {
 
   public setTimeScale(scale: number) {
     this.ephemeris.timeScale = scale;
+  }
+
+  public getLagrangePoints(): LagrangePointInfo[] {
+    return this.ephemeris.getLagrangePoints();
   }
 
   public createMarker(
@@ -297,6 +329,7 @@ export class SpaceEngine {
     if (this.currentLang === lang) return;
     this.currentLang = lang;
     this.markers.setLanguage(lang);
+    this.onRequestRepaint?.();
   }
 
   public updateAstronomicalPositions(date?: Date) {

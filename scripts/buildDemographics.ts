@@ -1,8 +1,8 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
-import { StaticDemographicsMap } from '../src/types';
-import { WORLD_COUNTRY_PROFILES } from './worldCapitalsData.js';
+import type { StaticDemographicsMap } from '../src/types/index.ts';
+import { WORLD_COUNTRY_PROFILES } from './worldCapitalsData.ts';
 
 const rootDir = process.cwd();
 

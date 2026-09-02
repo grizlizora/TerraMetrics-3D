@@ -10,6 +10,12 @@ export const SheetGrabHandle: React.FC<SheetGrabHandleProps> = React.memo(({ onT
     <div
       onClick={onToggleSnap}
       onDoubleClick={onExpandFull}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onToggleSnap();
+        }
+      }}
       role="button"
       tabIndex={0}
       aria-label="Toggle Sheet"

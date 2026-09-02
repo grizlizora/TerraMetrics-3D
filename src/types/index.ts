@@ -54,6 +54,7 @@ export interface ReligionDataset {
 }
 
 export interface CountryProperties {
+  [key: string]: any;
   'ISO3166-1-Alpha-3': ISO3Code;
   name?: string;
   name_uk?: string;
@@ -121,14 +122,18 @@ export interface CountryProperties {
   center?: [number, number];
   bbox?: [number, number, number, number];
   primaryBbox?: [number, number, number, number];
+  iso?: ISO3Code;
+  density?: number;
 }
+
+export type GeoJsonCoordinates = number[][] | number[][][] | number[][][][];
 
 export interface CountryFeature {
   type: 'Feature';
   properties: CountryProperties;
   geometry: {
     type: 'Polygon' | 'MultiPolygon';
-    coordinates: any;
+    coordinates: GeoJsonCoordinates;
   };
 }
 
@@ -255,7 +260,7 @@ export interface AggregatedCountryItem {
   healthcare_index?: number;
   internet_speed_mbps?: number;
   ev_readiness_score?: number;
-  gini_index?: number;
+  gini_index?: number | null;
   income_tax_top_pct?: number;
   coastline_km?: number;
   dom_religion?: string;

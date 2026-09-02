@@ -21,7 +21,16 @@ const getInitialLang = (): AppLanguage => {
   return 'en';
 };
 
-interface I18nStoreState {
+const createTranslate = (lang: AppLanguage) => (key: string): string => {
+  return DICTIONARY[lang]?.[key] || DICTIONARY.en?.[key] || key;
+};
+
+const createFormatter = (lang: AppLanguage) => (value: number, options?: Intl.NumberFormatOptions): string => {
+  const locale = lang === 'uk' ? 'uk-UA' : 'en-US';
+  return Number(value || 0).toLocaleString(locale, options);
+};
+
+export interface I18nStoreState {
   lang: AppLanguage;
   setLang: (lang: AppLanguage) => void;
   toggleLang: () => void;
@@ -29,15 +38,23 @@ interface I18nStoreState {
   formatNumber: (value: number, options?: Intl.NumberFormatOptions) => string;
 }
 
+const initialLang = getInitialLang();
+
 export const useI18nStore = create<I18nStoreState>((set, get) => ({
-  lang: getInitialLang(),
+  lang: initialLang,
+  t: createTranslate(initialLang),
+  formatNumber: createFormatter(initialLang),
   setLang: (lang) => {
     if (typeof localStorage !== 'undefined') {
       try {
         localStorage.setItem('terrametrics_lang', lang);
       } catch {}
     }
-    set({ lang });
+    set({
+      lang,
+      t: createTranslate(lang),
+      formatNumber: createFormatter(lang),
+    });
   },
   toggleLang: () => {
     const next = get().lang === 'uk' ? 'en' : 'uk';
@@ -46,15 +63,17 @@ export const useI18nStore = create<I18nStoreState>((set, get) => ({
         localStorage.setItem('terrametrics_lang', next);
       } catch {}
     }
-    set({ lang: next });
-  },
-  t: (key: string) => {
-    const { lang } = get();
-    return DICTIONARY[lang]?.[key] || DICTIONARY.en?.[key] || key;
-  },
-  formatNumber: (value: number, options?: Intl.NumberFormatOptions) => {
-    const { lang } = get();
-    const locale = lang === 'uk' ? 'uk-UA' : 'en-US';
-    return Number(value || 0).toLocaleString(locale, options);
+    set({
+      lang: next,
+      t: createTranslate(next),
+      formatNumber: createFormatter(next),
+    });
   },
 }));
+
+export function useTranslation() {
+  const lang = useI18nStore((s) => s.lang);
+  const t = useI18nStore((s) => s.t);
+  const formatNumber = useI18nStore((s) => s.formatNumber);
+  return { lang, t, formatNumber };
+}

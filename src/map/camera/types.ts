@@ -1,4 +1,4 @@
-import type { Map as MapLibreMap, PaddingOptions, LngLatLike } from 'maplibre-gl';
+import type { Map as MapLibreMap, PaddingOptions } from 'maplibre-gl';
 import type { ContinentName, ISO3Code, SheetSnap } from '../../types';
 
 export interface SafeAreaInsets {

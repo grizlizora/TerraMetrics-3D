@@ -1,11 +1,12 @@
 import React from 'react';
-import { Sparkles, PieChart } from 'lucide-react';
+import { PieChart } from 'lucide-react';
 import { useI18nStore } from '../../../store/useI18nStore';
 import { ProgressBar } from '../../common/ProgressBar';
+import type { CountryProperties, AggregatedContinentStats } from '../../../types';
 
 interface ReligionViewProps {
-  countryProps: any;
-  continentStats: any;
+  countryProps: CountryProperties | null;
+  continentStats: AggregatedContinentStats | null;
   isCountry: boolean;
 }
 
@@ -26,7 +27,6 @@ export const ReligionView: React.FC<ReligionViewProps> = React.memo(({
   isCountry,
 }) => {
   const t = useI18nStore((s) => s.t);
-  const lang = useI18nStore((s) => s.lang);
 
   const data = isCountry ? countryProps : continentStats;
   if (!data) return <div className="text-xs text-zinc-400 py-4">{t('no_data')}</div>;

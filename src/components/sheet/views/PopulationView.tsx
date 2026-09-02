@@ -1,15 +1,16 @@
 import React from 'react';
-import { TrendingUp, Award, Users } from 'lucide-react';
+import { TrendingUp } from 'lucide-react';
 import { useI18nStore } from '../../../store/useI18nStore';
 import { useAppStore } from '../../../store/useAppStore';
 import { audioManager } from '../../../audio/AudioManager';
 import { TerraHaptics } from '../../../native/TerraHaptics';
 import { dataLoader } from '../../../data/DataLoader';
 import { getCountryFlag } from '../../../utils/flagUtils';
+import type { CountryProperties, AggregatedContinentStats, AggregatedCountryItem } from '../../../types';
 
 interface PopulationViewProps {
-  countryProps: any;
-  continentStats: any;
+  countryProps: CountryProperties | null;
+  continentStats: AggregatedContinentStats | null;
   isCountry: boolean;
 }
 
@@ -127,7 +128,7 @@ export const PopulationView: React.FC<PopulationViewProps> = React.memo(({
           </div>
 
           <div className="space-y-1.5">
-            {topPop.map((c: any, idx: number) => {
+            {topPop.map((c: AggregatedCountryItem, idx: number) => {
               const name = lang === 'uk' ? c.name_uk : c.name_en;
               return (
                 <button

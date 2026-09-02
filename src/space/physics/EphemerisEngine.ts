@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import * as Astronomy from 'astronomy-engine';
 import { AU, CELESTIAL_SPHERE_RADIUS, J2000_MS } from '../core/SpaceConstants.ts';
 import { CoordinateTransforms } from '../core/CoordinateTransforms.ts';
+import { LagrangePointsCalculator, type LagrangePointInfo } from './LagrangePoints.ts';
 
 export class EphemerisEngine {
   public simTimeDays = 0;
@@ -10,7 +11,6 @@ export class EphemerisEngine {
   private _cachedSimDate = new Date();
   private _cachedAstroTime: Astronomy.AstroTime | null = null;
   private _lastAstroCalcMs = 0;
-  private _cachedPositions: Record<string, { pos: THREE.Vector3; lastCalc: number }> = {};
   private _simResultScratch: { astroTime: Astronomy.AstroTime; stRad: number; now: number } | null = null;
 
   constructor() {
@@ -24,7 +24,6 @@ export class EphemerisEngine {
     this._cachedSimDate = new Date(date.getTime());
     this._cachedAstroTime = new Astronomy.AstroTime(this._cachedSimDate);
     this._lastAstroCalcMs = 0;
-    this._cachedPositions = {};
     this._cachedGeoVectors = {};
   }
 
@@ -127,5 +126,20 @@ export class EphemerisEngine {
     }
 
     return { eclipseRedness, eclipseDarkening };
+  }
+
+  public getLagrangePoints(astroTime?: Astronomy.AstroTime): LagrangePointInfo[] {
+    const time = astroTime || (this._cachedAstroTime ?? new Astronomy.AstroTime(this._cachedSimDate));
+    const gstHours = Astronomy.SiderealTime(time);
+    const stRad = (gstHours / 24) * Math.PI * 2;
+
+    const sunGeo = Astronomy.GeoVector(Astronomy.Body.Sun, time, true);
+    if (!sunGeo) return [];
+
+    return LagrangePointsCalculator.computeSunEarthPoints(time, stRad, {
+      x: sunGeo.x * AU,
+      y: sunGeo.y * AU,
+      z: sunGeo.z * AU,
+    });
   }
 }

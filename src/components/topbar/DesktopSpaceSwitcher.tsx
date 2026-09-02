@@ -47,10 +47,10 @@ export const DesktopSpaceSwitcher: React.FC = () => {
   };
 
   return (
-    <div className={`hidden md:flex items-center pointer-events-auto shrink-0 ${isMercator && !isLight ? 'opacity-80' : ''}`}>
+    <div className={`hidden md:flex items-center no-drag shrink-0 ${isMercator && !isLight ? 'opacity-80' : ''}`}>
       <LiquidGlassPanel
         intensity="high"
-        className="flex items-center p-1.5 shadow-lg rounded-2xl gap-1.5"
+        className="flex items-center p-0.5 sm:p-1 xl:p-1.5 shadow-lg rounded-2xl gap-0.5 sm:gap-1 xl:gap-1.5 no-drag"
       >
         {modes.map((m) => {
           const isActive = spaceMode === m.id;
@@ -69,7 +69,7 @@ export const DesktopSpaceSwitcher: React.FC = () => {
               onClick={() => handleSelectMode(m.id)}
               disabled={isDisabled}
               title={buttonTitle}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all ${
+              className={`flex items-center gap-1 xl:gap-1.5 px-2 xl:px-2.5 2xl:px-3 py-1 sm:py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all whitespace-nowrap no-drag ${
                 isDisabled
                   ? 'opacity-35 cursor-not-allowed text-zinc-400 dark:text-zinc-600'
                   : isActive
@@ -78,7 +78,7 @@ export const DesktopSpaceSwitcher: React.FC = () => {
               }`}
             >
               {m.icon}
-              <span>{t(m.labelKey)}</span>
+              <span className="hidden xl:inline">{t(m.labelKey)}</span>
             </button>
           );
         })}
@@ -88,14 +88,14 @@ export const DesktopSpaceSwitcher: React.FC = () => {
           <button
             onClick={handleToggleLabels}
             title={t('space_labels')}
-            className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all active:scale-95 cursor-pointer border ${
+            className={`flex items-center gap-1 xl:gap-1.5 px-2 xl:px-2.5 py-1 sm:py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all active:scale-95 cursor-pointer border whitespace-nowrap no-drag ${
               spaceLabelsVisible
                 ? 'border-blue-500/40 bg-blue-500/15 text-blue-500 font-bold shadow-xs'
                 : 'border-transparent text-zinc-500 dark:text-zinc-400 hover:bg-black/5 dark:hover:bg-white/10'
             }`}
           >
             <Tag className="w-3.5 h-3.5" />
-            <span>{t('space_labels')}</span>
+            <span className="hidden xl:inline">{t('space_labels')}</span>
           </button>
         )}
       </LiquidGlassPanel>

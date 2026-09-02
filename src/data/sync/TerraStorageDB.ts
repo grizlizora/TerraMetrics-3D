@@ -38,14 +38,26 @@ export class TerraStorageDB {
     return this.dbPromise;
   }
 
-  public async getFile(key: DatasetFileKey): Promise<string | null> {
+  public async getFile<T = any>(key: DatasetFileKey): Promise<T | null> {
     try {
       const db = await this.openDB();
       return new Promise((resolve, reject) => {
         const tx = db.transaction(TerraStorageDB.STORE_FILES, 'readonly');
         const store = tx.objectStore(TerraStorageDB.STORE_FILES);
         const req = store.get(key);
-        req.onsuccess = () => resolve(req.result || null);
+        req.onsuccess = () => {
+          const res = req.result;
+          if (res == null) return resolve(null);
+          if (typeof res === 'string') {
+            try {
+              // Gracefully handle legacy stringified cache
+              if (res.charCodeAt(0) === 123 || res.charCodeAt(0) === 91) { // '{' or '['
+                return resolve(JSON.parse(res) as T);
+              }
+            } catch {}
+          }
+          resolve(res as T);
+        };
         req.onerror = () => reject(req.error);
       });
     } catch {
@@ -75,28 +87,59 @@ export class TerraStorageDB {
     }
   }
 
-  public async saveFile(key: DatasetFileKey, content: string): Promise<void> {
-    const db = await this.openDB();
-    return new Promise((resolve, reject) => {
-      const tx = db.transaction(TerraStorageDB.STORE_FILES, 'readwrite');
-      const store = tx.objectStore(TerraStorageDB.STORE_FILES);
-      store.put(content, key);
-      tx.oncomplete = () => resolve();
-      tx.onerror = () => reject(tx.error || new Error('Transaction failed'));
-      tx.onabort = () => reject(new Error('Transaction aborted'));
-    });
+  public async saveFile(key: DatasetFileKey, content: any): Promise<void> {
+    try {
+      const db = await this.openDB();
+      return await new Promise((resolve, reject) => {
+        const tx = db.transaction(TerraStorageDB.STORE_FILES, 'readwrite');
+        const store = tx.objectStore(TerraStorageDB.STORE_FILES);
+        store.put(content, key);
+        tx.oncomplete = () => resolve();
+        tx.onerror = () => {
+          const err = tx.error;
+          if (err && (err.name === 'QuotaExceededError' || err.name === 'NS_ERROR_DOM_QUOTA_REACHED')) {
+            console.warn(`[TerraStorageDB] Quota exceeded while saving ${key}. Operating in memory-only mode.`);
+            resolve(); // Graceful degradation: don't crash caller
+          } else {
+            reject(err || new Error('Transaction failed'));
+          }
+        };
+        tx.onabort = () => reject(new Error('Transaction aborted'));
+      });
+    } catch (err: any) {
+      if (err?.name === 'QuotaExceededError' || err?.name === 'NS_ERROR_DOM_QUOTA_REACHED') {
+        console.warn(`[TerraStorageDB] Quota exceeded in saveFile for ${key}`);
+        return;
+      }
+      throw err;
+    }
   }
 
   public async saveManifest(manifest: VersionManifest): Promise<void> {
-    const db = await this.openDB();
-    return new Promise((resolve, reject) => {
-      const tx = db.transaction(TerraStorageDB.STORE_META, 'readwrite');
-      const store = tx.objectStore(TerraStorageDB.STORE_META);
-      store.put(JSON.stringify(manifest), 'current_manifest');
-      tx.oncomplete = () => resolve();
-      tx.onerror = () => reject(tx.error || new Error('Transaction failed'));
-      tx.onabort = () => reject(new Error('Transaction aborted'));
-    });
+    try {
+      const db = await this.openDB();
+      return await new Promise((resolve, reject) => {
+        const tx = db.transaction(TerraStorageDB.STORE_META, 'readwrite');
+        const store = tx.objectStore(TerraStorageDB.STORE_META);
+        store.put(manifest, 'current_manifest');
+        tx.oncomplete = () => resolve();
+        tx.onerror = () => {
+          const err = tx.error;
+          if (err && (err.name === 'QuotaExceededError' || err.name === 'NS_ERROR_DOM_QUOTA_REACHED')) {
+            console.warn(`[TerraStorageDB] Quota exceeded while saving manifest.`);
+            resolve();
+          } else {
+            reject(err || new Error('Transaction failed'));
+          }
+        };
+        tx.onabort = () => reject(new Error('Transaction aborted'));
+      });
+    } catch (err: any) {
+      if (err?.name === 'QuotaExceededError' || err?.name === 'NS_ERROR_DOM_QUOTA_REACHED') {
+        return;
+      }
+      throw err;
+    }
   }
 
   public async clearAll(): Promise<void> {
