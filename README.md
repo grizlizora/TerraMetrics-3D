@@ -25,6 +25,62 @@ All installers and standalone binaries are pre-compiled, verified, and available
 
 ---
 
+## 🏛 System Architecture & Graphics Pipeline
+
+```mermaid
+flowchart TD
+    subgraph DataLayer["1. Geospatial & Physics Data Layer"]
+        VSOP["NASA VSOP87 Ephemeris & Lagrange Engine"]
+        GeoJSON["258 Countries GeoJSON & Topo-Bathymetry"]
+        Solar["Deterministic Solar Climate Model (Tetens / GHI)"]
+        OfflineDB["TerraStorageDB (IndexedDB + SWR Delta Sync)"]
+    end
+
+    subgraph GraphicsCore["2. Hybrid WebGL 2.0 State Machine"]
+        MapLibre["MapLibre GL JS (Vector Tile Engine & Globe)"]
+        ThreeBridge["Three.js CustomLayerInterface Bridge"]
+        Shaders["GLSL Atmosphere Rayleigh, Sun Glow & FBM Nebulae"]
+        ZeroGC["Zero-GC 120 FPS Animation Loop (Scratch Vector Pools)"]
+    end
+
+    subgraph UserInterface["3. Liquid Glass UI & Native Shell"]
+        React["React 19 & TypeScript 5.7 (9 Submodes / 258 Entities)"]
+        Audio["Procedural Web Audio Engine (14 Sound Synthesizers)"]
+        Tauri["Tauri 2.0 Native Rust Shell (macOS, Windows, Linux)"]
+        Capacitor["Capacitor 7 Mobile Engine (Android / iOS)"]
+    end
+
+    DataLayer --> GraphicsCore
+    GraphicsCore --> UserInterface
+```
+
+---
+
+## 📊 Analytics Matrix & Space Visualizer
+
+TerraMetrics-3D features an exhaustive 9-sector real-world analytical matrix for **258 countries** combined with 4 astronomical rendering modes:
+
+| Analytical Pillar | Submode | Real-World Metrics & Capabilities |
+| :--- | :--- | :--- |
+| 👥 **Society (Суспільство)** | **Demographics** | HDI, Median Age, Urbanization %, Life Expectancy, Literacy Rate |
+| 👥 **Society (Суспільство)** | **Population** | Live population counts, Density/km², Growth rate, Dependency ratios |
+| 👥 **Society (Суспільство)** | **Religions** | Granular confessional distribution, Dominant religious structures |
+| 🏛 **State (Держава)** | **Economy** | Nominal GDP, GDP per capita (PPP), Inflation %, Debt-to-GDP, Gini |
+| 🏛 **State (Держава)** | **Politics** | Democracy Index, Corruption Perception (CPI), Press Freedom, Regime type |
+| 🏛 **State (Держава)** | **Military** | Global Firepower (GFP), Active Personnel, Defense Budget, Nuclear status |
+| 🌿 **Nature (Природа)** | **Climate** | **12-Month Solar Scrubber**: Real-time insolation, Temperature, Tetens humidity, Wind |
+| 🌿 **Nature (Природа)** | **Topography** | Highest/Lowest elevation points, Barometric pressure, Hypsometric curves |
+| 🌿 **Nature (Природа)** | **Resources** | Major export minerals, Energy mix %, Water security, Arable land % |
+
+| 🌌 Space Rendering Mode | Visuals & Mathematical Models |
+| :--- | :--- |
+| **None (Globe Only)** | Pure Earth-focused geospatial analytical visualization (3D Globe & 2D Mercator). |
+| **Basic Space** | Real-time Sun position, Earth rotation relative to Greenwich Sidereal Time (GST), Lunar phase cycle. |
+| **Advanced Space** | Keplerian Planetary Orbits, 350+ Asteroids Belt simulation, **Sun-Earth Lagrange Points ($L_1 - L_5$)**. |
+| **Deep Space** | 73 Deep Space Objects, Procedural Fractal Brownian Motion (FBM) Nebulae shaders, 3D Spatial Audio. |
+
+---
+
 ## ✨ What\'s New in v2.0
 
 * 🦀 **Tauri 2.0 Native Desktop Core:** Full native desktop shell for macOS, Windows, and Linux with window dragging (`startDragging`), double-click window maximize, and custom glass chrome.
