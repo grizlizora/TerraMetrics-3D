@@ -1,15 +1,15 @@
 {
   "IDN": {
-    "democracy": 6.7,
-    "safety": 55,
-    "healthcare": 55,
-    "ev": 2,
-    "internet": 45,
+    "democracy": 6.53,
+    "safety": 60,
+    "healthcare": 58,
+    "ev": 5,
+    "internet": 35,
     "peak": 4884,
     "tax": 15,
-    "energy": 25,
-    "salary": 350,
-    "col": 35,
+    "energy": 15,
+    "salary": 400,
+    "col": 32,
     "system": "Президентська республіка"
   },
   "MYS": {
@@ -104,42 +104,42 @@
     "system": "Президентська республіка"
   },
   "IND": {
-    "democracy": 7.1,
+    "democracy": 7.18,
     "safety": 55,
-    "healthcare": 66,
-    "ev": 5,
-    "internet": 70,
+    "healthcare": 58,
+    "ev": 8,
+    "internet": 85,
     "peak": 8586,
     "tax": 15,
-    "energy": 20,
-    "salary": 400,
-    "col": 25,
+    "energy": 23,
+    "salary": 450,
+    "col": 22,
     "system": "Федеративна республіка"
   },
   "CHN": {
-    "democracy": 2.1,
+    "democracy": 2.12,
     "safety": 75,
     "healthcare": 68,
-    "ev": 60,
-    "internet": 190,
-    "peak": 8848,
+    "ev": 78,
+    "internet": 230,
+    "peak": 8848.86,
     "tax": 20,
-    "energy": 30,
+    "energy": 35,
     "salary": 1000,
-    "col": 45,
-    "system": "Комуністична держава"
+    "col": 37,
+    "system": "Однопартійна соціалістична республіка"
   },
   "ISR": {
-    "democracy": 7.9,
-    "safety": 60,
-    "healthcare": 72,
-    "ev": 20,
+    "democracy": 7.8,
+    "safety": 45,
+    "healthcare": 75,
+    "ev": 28,
     "internet": 180,
     "peak": 1208,
     "tax": 25,
-    "energy": 10,
-    "salary": 3200,
-    "col": 85,
+    "energy": 12,
+    "salary": 3100,
+    "col": 75,
     "system": "Парламентська республіка"
   },
   "PSE": {
@@ -260,16 +260,16 @@
     "system": "Змішана республіка"
   },
   "FRA": {
-    "democracy": 8,
-    "safety": 55,
+    "democracy": 8.07,
+    "safety": 56,
     "healthcare": 79,
-    "ev": 40,
-    "internet": 190,
-    "peak": 4808,
+    "ev": 42,
+    "internet": 220,
+    "peak": 4809,
     "tax": 25,
-    "energy": 90,
-    "salary": 2800,
-    "col": 70,
+    "energy": 92,
+    "salary": 2700,
+    "col": 68,
     "system": "Змішана республіка"
   },
   "SUR": {
@@ -299,22 +299,22 @@
     "system": "Президентська республіка"
   },
   "KOR": {
-    "democracy": 8,
+    "democracy": 8.09,
     "safety": 82,
-    "healthcare": 82,
-    "ev": 30,
-    "internet": 220,
+    "healthcare": 83,
+    "ev": 25,
+    "internet": 215,
     "peak": 1950,
-    "tax": 15,
-    "energy": 10,
+    "tax": 24,
+    "energy": 35,
     "salary": 2800,
-    "col": 75,
+    "col": 68,
     "system": "Президентська республіка"
   },
   "PRK": {
-    "democracy": 1,
-    "safety": 60,
-    "healthcare": 30,
+    "democracy": 1.08,
+    "safety": 40,
+    "healthcare": 25,
     "ev": 0,
     "internet": 1,
     "peak": 2744,
@@ -322,7 +322,7 @@
     "energy": 60,
     "salary": 50,
     "col": 35,
-    "system": "Комуністична держава"
+    "system": "Тоталітарна диктатура"
   },
   "MAR": {
     "democracy": 5,
@@ -351,16 +351,16 @@
     "system": "Республіка"
   },
   "CRI": {
-    "democracy": 8.2,
-    "safety": 50,
+    "democracy": 8.29,
+    "safety": 55,
     "healthcare": 75,
-    "ev": 15,
-    "internet": 85,
-    "peak": 3821,
+    "ev": 12,
+    "internet": 100,
+    "peak": 3820,
     "tax": 15,
     "energy": 99,
     "salary": 850,
-    "col": 55,
+    "col": 48,
     "system": "Президентська республіка"
   },
   "NIC": {
@@ -416,21 +416,21 @@
     "system": "Конституційна монархія"
   },
   "UKR": {
-    "democracy": 5.8,
-    "safety": 48,
+    "democracy": 4.9,
+    "safety": 28,
     "healthcare": 53,
-    "ev": 12,
-    "internet": 105,
+    "ev": 18,
+    "internet": 110,
     "peak": 2061,
     "tax": 18,
     "energy": 65,
-    "salary": 450,
-    "col": 35,
+    "salary": 520,
+    "col": 30,
     "system": "Змішана республіка"
   },
   "BLR": {
-    "democracy": 2.5,
-    "safety": 70,
+    "democracy": 1.99,
+    "safety": 65,
     "healthcare": 60,
     "ev": 2,
     "internet": 60,
@@ -439,7 +439,7 @@
     "energy": 5,
     "salary": 500,
     "col": 35,
-    "system": "Президентська республіка"
+    "system": "Президентська автократія"
   },
   "NAM": {
     "democracy": 6.5,
@@ -455,7 +455,7 @@
     "system": "Президентська республіка"
   },
   "ZAF": {
-    "democracy": 7,
+    "democracy": 7.05,
     "safety": 30,
     "healthcare": 55,
     "ev": 2,
@@ -463,8 +463,8 @@
     "peak": 3450,
     "tax": 28,
     "energy": 20,
-    "salary": 1100,
-    "col": 45,
+    "salary": 1200,
+    "col": 40,
     "system": "Парламентська республіка"
   },
   "MAF": {
@@ -565,10 +565,10 @@
     "ev": 5,
     "internet": 130,
     "peak": 2995,
-    "tax": 27,
-    "energy": 85,
-    "salary": 450,
-    "col": 45,
+    "tax": 27.5,
+    "energy": 89,
+    "salary": 480,
+    "col": 40,
     "system": "Федеративна республіка"
   },
   "URY": {
@@ -598,9 +598,9 @@
     "system": "Змішана республіка"
   },
   "RUS": {
-    "democracy": 2.2,
-    "safety": 40,
-    "healthcare": 58,
+    "democracy": 2.22,
+    "safety": 25,
+    "healthcare": 55,
     "ev": 2,
     "internet": 90,
     "peak": 5642,
@@ -608,7 +608,7 @@
     "energy": 20,
     "salary": 700,
     "col": 40,
-    "system": "Змішана республіка"
+    "system": "Президентська автократія"
   },
   "CZE": {
     "democracy": 7.9,
@@ -625,15 +625,15 @@
   },
   "DEU": {
     "democracy": 8.8,
-    "safety": 76,
+    "safety": 74,
     "healthcare": 74,
-    "ev": 55,
-    "internet": 160,
+    "ev": 44,
+    "internet": 165,
     "peak": 2962,
-    "tax": 25,
-    "energy": 50,
-    "salary": 3100,
-    "col": 70,
+    "tax": 26,
+    "energy": 56,
+    "salary": 3200,
+    "col": 66,
     "system": "Федеративна республіка"
   },
   "EST": {
@@ -663,16 +663,16 @@
     "system": "Парламентська республіка"
   },
   "NOR": {
-    "democracy": 9.8,
+    "democracy": 9.81,
     "safety": 78,
     "healthcare": 75,
-    "ev": 95,
+    "ev": 98,
     "internet": 190,
     "peak": 2469,
     "tax": 22,
-    "energy": 100,
-    "salary": 4200,
-    "col": 90,
+    "energy": 99,
+    "salary": 3900,
+    "col": 82,
     "system": "Конституційна монархія"
   },
   "SWE": {
@@ -845,14 +845,14 @@
     "system": "Президентська республіка"
   },
   "ESP": {
-    "democracy": 8,
+    "democracy": 8.07,
     "safety": 72,
     "healthcare": 78,
-    "ev": 20,
+    "ev": 22,
     "internet": 180,
-    "peak": 3404,
+    "peak": 3718,
     "tax": 25,
-    "energy": 50,
+    "energy": 54,
     "salary": 2000,
     "col": 60,
     "system": "Конституційна монархія"
@@ -975,16 +975,16 @@
     "system": "Парламентська республіка"
   },
   "POL": {
-    "democracy": 7.1,
-    "safety": 70,
-    "healthcare": 60,
-    "ev": 10,
-    "internet": 150,
+    "democracy": 7.18,
+    "safety": 72,
+    "healthcare": 62,
+    "ev": 12,
+    "internet": 155,
     "peak": 2499,
     "tax": 12,
-    "energy": 30,
-    "salary": 1300,
-    "col": 45,
+    "energy": 28,
+    "salary": 1450,
+    "col": 44,
     "system": "Парламентська республіка"
   },
   "IRL": {
@@ -1001,16 +1001,16 @@
     "system": "Парламентська республіка"
   },
   "GBR": {
-    "democracy": 8.2,
-    "safety": 55,
+    "democracy": 8.1,
+    "safety": 58,
     "healthcare": 72,
-    "ev": 45,
+    "ev": 40,
     "internet": 130,
     "peak": 1345,
     "tax": 20,
-    "energy": 40,
-    "salary": 3200,
-    "col": 75,
+    "energy": 45,
+    "salary": 3300,
+    "col": 70,
     "system": "Конституційна монархія"
   },
   "GRC": {
@@ -1170,16 +1170,16 @@
     "system": "Парламентська республіка"
   },
   "CHE": {
-    "democracy": 9.1,
+    "democracy": 9.14,
     "safety": 80,
     "healthcare": 74,
-    "ev": 50,
+    "ev": 52,
     "internet": 250,
     "peak": 4634,
     "tax": 22,
-    "energy": 60,
-    "salary": 6500,
-    "col": 120,
+    "energy": 65,
+    "salary": 7300,
+    "col": 108,
     "system": "Федеративна республіка"
   },
   "IRN": {
@@ -1209,17 +1209,17 @@
     "system": "Конституційна монархія"
   },
   "LIE": {
-    "democracy": 5,
-    "safety": 50,
-    "healthcare": 50,
-    "ev": 0,
-    "internet": 20,
-    "peak": 1000,
-    "tax": 15,
-    "energy": 20,
-    "salary": 300,
-    "col": 40,
-    "system": "Республіка"
+    "democracy": 7.8,
+    "safety": 92,
+    "healthcare": 78,
+    "ev": 40,
+    "internet": 220,
+    "peak": 2599,
+    "tax": 18,
+    "energy": 60,
+    "salary": 6800,
+    "col": 102,
+    "system": "Конституційна монархія"
   },
   "CIV": {
     "democracy": 4.1,
@@ -1248,9 +1248,9 @@
     "system": "Парламентська республіка"
   },
   "MLI": {
-    "democracy": 3.2,
-    "safety": 25,
-    "healthcare": 30,
+    "democracy": 2.58,
+    "safety": 20,
+    "healthcare": 25,
     "ev": 0,
     "internet": 15,
     "peak": 1152,
@@ -1258,7 +1258,7 @@
     "energy": 30,
     "salary": 150,
     "col": 35,
-    "system": "Президентська республіка"
+    "system": "Військова хунта"
   },
   "SEN": {
     "democracy": 5.5,
@@ -1352,16 +1352,16 @@
     "system": "Абсолютна монархія"
   },
   "SAU": {
-    "democracy": 2,
+    "democracy": 2.08,
     "safety": 70,
-    "healthcare": 62,
-    "ev": 1,
-    "internet": 100,
-    "peak": 3133,
+    "healthcare": 64,
+    "ev": 5,
+    "internet": 160,
+    "peak": 3000,
     "tax": 0,
-    "energy": 5,
-    "salary": 2500,
-    "col": 60,
+    "energy": 2,
+    "salary": 2600,
+    "col": 55,
     "system": "Абсолютна монархія"
   },
   "BWA": {
@@ -1547,17 +1547,17 @@
     "system": "Абсолютна монархія"
   },
   "MCO": {
-    "democracy": 5,
-    "safety": 50,
-    "healthcare": 50,
-    "ev": 0,
-    "internet": 20,
-    "peak": 1000,
-    "tax": 15,
-    "energy": 20,
-    "salary": 300,
-    "col": 40,
-    "system": "Республіка"
+    "democracy": 7.5,
+    "safety": 92,
+    "healthcare": 80,
+    "ev": 30,
+    "internet": 210,
+    "peak": 161,
+    "tax": 0,
+    "energy": 40,
+    "salary": 7500,
+    "col": 120,
+    "system": "Конституційна монархія"
   },
   "DZA": {
     "democracy": 3.6,
@@ -1625,9 +1625,9 @@
     "system": "Президентська республіка"
   },
   "MMR": {
-    "democracy": 0.8,
-    "safety": 20,
-    "healthcare": 35,
+    "democracy": 0.85,
+    "safety": 15,
+    "healthcare": 25,
     "ev": 0,
     "internet": 15,
     "peak": 5881,
@@ -1635,7 +1635,7 @@
     "energy": 50,
     "salary": 150,
     "col": 35,
-    "system": "Парламентська республіка"
+    "system": "Військова хунта"
   },
   "BGD": {
     "democracy": 5.9,
@@ -1651,17 +1651,17 @@
     "system": "Парламентська республіка"
   },
   "AND": {
-    "democracy": 5,
-    "safety": 50,
-    "healthcare": 50,
-    "ev": 0,
-    "internet": 20,
-    "peak": 1000,
-    "tax": 15,
-    "energy": 20,
-    "salary": 300,
-    "col": 40,
-    "system": "Республіка"
+    "democracy": 7.8,
+    "safety": 90,
+    "healthcare": 77,
+    "ev": 25,
+    "internet": 180,
+    "peak": 2942,
+    "tax": 10,
+    "energy": 50,
+    "salary": 2800,
+    "col": 62,
+    "system": "Конституційна монархія"
   },
   "AFG": {
     "democracy": 0.3,
@@ -1872,7 +1872,7 @@
     "system": "Президентська республіка"
   },
   "GAB": {
-    "democracy": 3.4,
+    "democracy": 2.18,
     "safety": 45,
     "healthcare": 35,
     "ev": 0,
@@ -1882,11 +1882,11 @@
     "energy": 50,
     "salary": 400,
     "col": 50,
-    "system": "Президентська республіка"
+    "system": "Перехідний військовий режим"
   },
   "NER": {
-    "democracy": 2.3,
-    "safety": 25,
+    "democracy": 2.37,
+    "safety": 20,
     "healthcare": 25,
     "ev": 0,
     "internet": 5,
@@ -1895,12 +1895,12 @@
     "energy": 5,
     "salary": 80,
     "col": 35,
-    "system": "Президентська республіка"
+    "system": "Військова хунта"
   },
   "BFA": {
-    "democracy": 3,
-    "safety": 25,
-    "healthcare": 30,
+    "democracy": 2.73,
+    "safety": 20,
+    "healthcare": 25,
     "ev": 0,
     "internet": 8,
     "peak": 749,
@@ -1908,7 +1908,7 @@
     "energy": 20,
     "salary": 100,
     "col": 32,
-    "system": "Президентська республіка"
+    "system": "Військова хунта"
   },
   "TGO": {
     "democracy": 2.9,
@@ -1963,16 +1963,16 @@
     "system": "Республіка"
   },
   "USA": {
-    "democracy": 7.8,
-    "safety": 49,
+    "democracy": 7.85,
+    "safety": 50,
     "healthcare": 69,
-    "ev": 35,
-    "internet": 230,
+    "ev": 30,
+    "internet": 245,
     "peak": 6190,
     "tax": 24,
-    "energy": 40,
+    "energy": 42,
     "salary": 4500,
-    "col": 75,
+    "col": 74,
     "system": "Федеративна республіка"
   },
   "CAN": {
@@ -2015,16 +2015,16 @@
     "system": "Конституційна монархія"
   },
   "PAN": {
-    "democracy": 7,
-    "safety": 50,
-    "healthcare": 60,
-    "ev": 2,
-    "internet": 100,
+    "democracy": 6.91,
+    "safety": 52,
+    "healthcare": 62,
+    "ev": 5,
+    "internet": 135,
     "peak": 3475,
     "tax": 15,
-    "energy": 65,
-    "salary": 800,
-    "col": 55,
+    "energy": 75,
+    "salary": 950,
+    "col": 52,
     "system": "Президентська республіка"
   },
   "VEN": {
@@ -2054,16 +2054,16 @@
     "system": "Конституційна монархія"
   },
   "EGY": {
-    "democracy": 2.9,
-    "safety": 50,
-    "healthcare": 45,
-    "ev": 1,
-    "internet": 45,
+    "democracy": 2.93,
+    "safety": 45,
+    "healthcare": 50,
+    "ev": 2,
+    "internet": 65,
     "peak": 2629,
-    "tax": 15,
-    "energy": 20,
-    "salary": 150,
-    "col": 30,
+    "tax": 20,
+    "energy": 15,
+    "salary": 220,
+    "col": 24,
     "system": "Президентська республіка"
   },
   "YEM": {
@@ -2119,43 +2119,43 @@
     "system": "Президентська республіка"
   },
   "HKG": {
-    "democracy": 5,
-    "safety": 50,
-    "healthcare": 50,
-    "ev": 0,
-    "internet": 20,
-    "peak": 1000,
+    "democracy": 4.5,
+    "safety": 82,
+    "healthcare": 80,
+    "ev": 68,
+    "internet": 285,
+    "peak": 957,
     "tax": 15,
-    "energy": 20,
-    "salary": 300,
-    "col": 40,
-    "system": "Республіка"
+    "energy": 5,
+    "salary": 3400,
+    "col": 74,
+    "system": "Спеціальний адміністративний район"
   },
   "VAT": {
-    "democracy": 5,
-    "safety": 50,
-    "healthcare": 50,
-    "ev": 0,
-    "internet": 20,
-    "peak": 1000,
-    "tax": 15,
-    "energy": 20,
-    "salary": 300,
-    "col": 40,
-    "system": "Республіка"
+    "democracy": 2,
+    "safety": 95,
+    "healthcare": 85,
+    "ev": 35,
+    "internet": 150,
+    "peak": 75,
+    "tax": 0,
+    "energy": 85,
+    "salary": 2500,
+    "col": 75,
+    "system": "Абсолютна теократична монархія"
   },
   "ATA": {
-    "democracy": 5,
-    "safety": 50,
-    "healthcare": 50,
-    "ev": 0,
-    "internet": 20,
-    "peak": 1000,
-    "tax": 15,
-    "energy": 20,
-    "salary": 300,
-    "col": 40,
-    "system": "Республіка"
+    "democracy": 10,
+    "safety": 99,
+    "healthcare": 70,
+    "ev": 5,
+    "internet": 10,
+    "peak": 4892,
+    "tax": 0,
+    "energy": 15,
+    "salary": 3000,
+    "col": 90,
+    "system": "Міжнародна територія за Договором про Антарктику"
   },
   "AUS": {
     "democracy": 8.9,
@@ -2171,17 +2171,17 @@
     "system": "Конституційна монархія"
   },
   "GRL": {
-    "democracy": 5,
-    "safety": 50,
-    "healthcare": 50,
-    "ev": 0,
-    "internet": 20,
-    "peak": 1000,
-    "tax": 15,
-    "energy": 20,
-    "salary": 300,
-    "col": 40,
-    "system": "Республіка"
+    "democracy": 8.5,
+    "safety": 75,
+    "healthcare": 70,
+    "ev": 5,
+    "internet": 45,
+    "peak": 3694,
+    "tax": 36,
+    "energy": 75,
+    "salary": 2800,
+    "col": 75,
+    "system": "Парламентська республіка"
   },
   "FJI": {
     "democracy": 5.6,
@@ -2314,9 +2314,9 @@
     "system": "Республіка"
   },
   "TWN": {
-    "democracy": 8.9,
+    "democracy": 8.92,
     "safety": 85,
-    "healthcare": 85,
+    "healthcare": 86,
     "ev": 25,
     "internet": 190,
     "peak": 3952,
@@ -2327,16 +2327,16 @@
     "system": "Змішана республіка"
   },
   "JPN": {
-    "democracy": 8.3,
-    "safety": 77,
-    "healthcare": 80,
-    "ev": 25,
+    "democracy": 8.4,
+    "safety": 82,
+    "healthcare": 81,
+    "ev": 15,
     "internet": 200,
     "peak": 3776,
     "tax": 20,
-    "energy": 20,
-    "salary": 2500,
-    "col": 75,
+    "energy": 26,
+    "salary": 2350,
+    "col": 56,
     "system": "Конституційна монархія"
   },
   "SPM": {
@@ -2353,16 +2353,16 @@
     "system": "Республіка"
   },
   "ISL": {
-    "democracy": 9.5,
-    "safety": 90,
-    "healthcare": 80,
-    "ev": 80,
-    "internet": 220,
-    "peak": 2109,
+    "democracy": 9.52,
+    "safety": 95,
+    "healthcare": 82,
+    "ev": 85,
+    "internet": 210,
+    "peak": 2110,
     "tax": 35,
-    "energy": 99,
-    "salary": 4500,
-    "col": 95,
+    "energy": 100,
+    "salary": 4200,
+    "col": 88,
     "system": "Парламентська республіка"
   },
   "PCN": {
@@ -2704,17 +2704,17 @@
     "system": "Республіка"
   },
   "MUS": {
-    "democracy": 5,
-    "safety": 50,
-    "healthcare": 50,
-    "ev": 0,
-    "internet": 20,
-    "peak": 1000,
+    "democracy": 8.14,
+    "safety": 72,
+    "healthcare": 62,
+    "ev": 5,
+    "internet": 80,
+    "peak": 828,
     "tax": 15,
-    "energy": 20,
-    "salary": 300,
-    "col": 40,
-    "system": "Республіка"
+    "energy": 25,
+    "salary": 900,
+    "col": 45,
+    "system": "Парламентська республіка"
   },
   "COM": {
     "democracy": 5,
@@ -2756,17 +2756,17 @@
     "system": "Республіка"
   },
   "MLT": {
-    "democracy": 5,
-    "safety": 50,
-    "healthcare": 50,
-    "ev": 0,
-    "internet": 20,
-    "peak": 1000,
-    "tax": 15,
-    "energy": 20,
-    "salary": 300,
-    "col": 40,
-    "system": "Республіка"
+    "democracy": 7.93,
+    "safety": 78,
+    "healthcare": 75,
+    "ev": 15,
+    "internet": 150,
+    "peak": 253,
+    "tax": 25,
+    "energy": 15,
+    "salary": 1800,
+    "col": 62,
+    "system": "Парламентська республіка"
   },
   "JEY": {
     "democracy": 5,

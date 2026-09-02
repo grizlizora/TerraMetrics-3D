@@ -1,5 +1,6 @@
 @echo off
 setlocal
+cd /d "%~dp0"
 
 echo ========================================
 echo   TerraMetrics 3D - Windows Launcher
