@@ -1,6 +1,6 @@
-import { CountryPropsMerger } from './processors/countryPropsMerger';
-import { ContinentStatsAggregator } from './processors/continentStatsAggregator';
-import { SearchIndexBuilder } from './processors/searchIndexBuilder';
+import { CountryPropsMerger } from './processors/countryPropsMerger.ts';
+import { ContinentStatsAggregator } from './processors/continentStatsAggregator.ts';
+import { SearchIndexBuilder } from './processors/searchIndexBuilder.ts';
 
 export function processGeoData({ rawGeoJson, demographicsMap, indexMap, religionData }: any) {
   const { validFeatures, labelsFeatures, countryPropsMap } = CountryPropsMerger.processAll(

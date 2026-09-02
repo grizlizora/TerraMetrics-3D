@@ -6,6 +6,7 @@ import type {
   ReligionDataset,
   StaticDemographicsMap,
 } from '../../types/index.ts';
+import { getContinentForIso } from '../constants/continents.ts';
 
 export const CONTINENT_NAMES: ContinentName[] = [
   'World',
@@ -58,7 +59,9 @@ export class ContinentStatsAggregator {
       ? rawList
       : rawList.filter((f) => {
           const props = f.properties || f;
-          return props?.continent === continentName;
+          const iso = (props['ISO3166-1-Alpha-3'] || props.iso || '') as string;
+          const cont = props?.continent || getContinentForIso(iso);
+          return cont === continentName;
         });
 
     const countryItems: AggregatedCountryItem[] = [];

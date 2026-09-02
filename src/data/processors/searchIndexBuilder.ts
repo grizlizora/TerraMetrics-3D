@@ -1,4 +1,4 @@
-import { ContinentName, CountryFeature, ISO3Code, SearchIndexEntry } from '../../types';
+import type { ContinentName, CountryFeature, ISO3Code, SearchIndexEntry } from '../../types/index.ts';
 
 export interface SearchResultItem {
   iso: ISO3Code;

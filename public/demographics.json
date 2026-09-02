@@ -13,7 +13,8 @@
     "gdp": 5100,
     "military_percent": 0.8,
     "military_active": 400000,
-    "macro_tax": 12
+    "macro_tax": 12,
+    "continent": "Asia"
   },
   "MYS": {
     "capital_uk": "Куала-Лумпур",
@@ -29,7 +30,8 @@
     "gdp": 12465,
     "military_percent": 1.8,
     "military_active": 167500,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Asia"
   },
   "CHL": {
     "capital_uk": "Сантьяго",
@@ -45,7 +47,8 @@
     "gdp": 15355,
     "military_percent": 1.8,
     "military_active": 97500,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "South America"
   },
   "BOL": {
     "capital_uk": "Сукре / Ла-Пас",
@@ -61,7 +64,8 @@
     "gdp": 14400,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 13
+    "macro_tax": 13,
+    "continent": "South America"
   },
   "PER": {
     "capital_uk": "Ліма",
@@ -77,7 +81,8 @@
     "gdp": 7125,
     "military_percent": 1.8,
     "military_active": 168500,
-    "macro_tax": 18
+    "macro_tax": 18,
+    "continent": "South America"
   },
   "ARG": {
     "capital_uk": "Буенос-Айрес",
@@ -93,7 +98,8 @@
     "gdp": 10636,
     "military_percent": 1.8,
     "military_active": 229050,
-    "macro_tax": 25
+    "macro_tax": 25,
+    "continent": "South America"
   },
   "CYP": {
     "capital_uk": "Нікосія",
@@ -109,7 +115,8 @@
     "gdp": 57600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Europe"
   },
   "IND": {
     "capital_uk": "Нью-Делі",
@@ -125,7 +132,8 @@
     "gdp": 2730,
     "military_percent": 2.4,
     "military_active": 1450000,
-    "macro_tax": 17.5
+    "macro_tax": 17.5,
+    "continent": "Asia"
   },
   "CHN": {
     "capital_uk": "Пекін",
@@ -141,7 +149,8 @@
     "gdp": 13140,
     "military_percent": 1.7,
     "military_active": 2035000,
-    "macro_tax": 21
+    "macro_tax": 21,
+    "continent": "Asia"
   },
   "ISR": {
     "capital_uk": "Єрусалим",
@@ -157,7 +166,8 @@
     "gdp": 53500,
     "military_percent": 5.3,
     "military_active": 170000,
-    "macro_tax": 32.5
+    "macro_tax": 32.5,
+    "continent": "Asia"
   },
   "PSE": {
     "capital_uk": "Palestine",
@@ -173,7 +183,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Asia"
   },
   "LBN": {
     "capital_uk": "Бейрут",
@@ -189,7 +200,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Asia"
   },
   "ETH": {
     "capital_uk": "Аддис-Абеба",
@@ -205,7 +217,8 @@
     "gdp": 1020,
     "military_percent": 1.8,
     "military_active": 600000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Africa"
   },
   "SSD": {
     "capital_uk": "South Sudan",
@@ -221,7 +234,8 @@
     "gdp": 3200,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 10
+    "macro_tax": 10,
+    "continent": "Africa"
   },
   "SOM": {
     "capital_uk": "Могадішо",
@@ -237,7 +251,8 @@
     "gdp": 3200,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 35
+    "macro_tax": 35,
+    "continent": "Africa"
   },
   "KEN": {
     "capital_uk": "Найробі",
@@ -253,7 +268,8 @@
     "gdp": 2099,
     "military_percent": 1.8,
     "military_active": 265000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Africa"
   },
   "MWI": {
     "capital_uk": "Лілонгве",
@@ -269,7 +285,8 @@
     "gdp": 3200,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Africa"
   },
   "TZA": {
     "capital_uk": "Додома",
@@ -285,7 +302,8 @@
     "gdp": 8000,
     "military_percent": 1.8,
     "military_active": 317500,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Africa"
   },
   "SYR": {
     "capital_uk": "Дамаск",
@@ -301,7 +319,8 @@
     "gdp": 3200,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Asia"
   },
   "FRA": {
     "capital_uk": "Париж",
@@ -317,7 +336,8 @@
     "gdp": 44500,
     "military_percent": 2.1,
     "military_active": 205000,
-    "macro_tax": 45.5
+    "macro_tax": 45.5,
+    "continent": "Europe"
   },
   "SUR": {
     "capital_uk": "Парамарибо",
@@ -333,7 +353,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "South America"
   },
   "GUY": {
     "capital_uk": "Джорджтаун",
@@ -349,7 +370,8 @@
     "gdp": 19200,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 25
+    "macro_tax": 25,
+    "continent": "South America"
   },
   "KOR": {
     "capital_uk": "Сеул",
@@ -365,7 +387,8 @@
     "gdp": 34500,
     "military_percent": 2.8,
     "military_active": 500000,
-    "macro_tax": 29.5
+    "macro_tax": 29.5,
+    "continent": "Asia"
   },
   "PRK": {
     "capital_uk": "Пхеньян",
@@ -381,7 +404,8 @@
     "gdp": 1200,
     "military_percent": 25,
     "military_active": 1280000,
-    "macro_tax": 0
+    "macro_tax": 0,
+    "continent": "Asia"
   },
   "MAR": {
     "capital_uk": "Рабат",
@@ -397,7 +421,8 @@
     "gdp": 12800,
     "military_percent": 1.8,
     "military_active": 187500,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Africa"
   },
   "ESH": {
     "capital_uk": "Western Sahara",
@@ -413,7 +438,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Africa"
   },
   "CRI": {
     "capital_uk": "Сан-Хосе",
@@ -429,7 +455,8 @@
     "gdp": 16500,
     "military_percent": 0,
     "military_active": 0,
-    "macro_tax": 23
+    "macro_tax": 23,
+    "continent": "North America"
   },
   "NIC": {
     "capital_uk": "Манагуа",
@@ -445,7 +472,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "COG": {
     "capital_uk": "Браззавіль",
@@ -461,7 +489,8 @@
     "gdp": 6400,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 30
+    "macro_tax": 30,
+    "continent": "Africa"
   },
   "COD": {
     "capital_uk": "Кіншаса",
@@ -477,7 +506,8 @@
     "gdp": 3200,
     "military_percent": 1.8,
     "military_active": 479450,
-    "macro_tax": 30
+    "macro_tax": 30,
+    "continent": "Africa"
   },
   "BTN": {
     "capital_uk": "Тхімпху",
@@ -493,7 +523,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 25
+    "macro_tax": 25,
+    "continent": "Asia"
   },
   "UKR": {
     "capital_uk": "Київ",
@@ -509,7 +540,8 @@
     "gdp": 5300,
     "military_percent": 34.5,
     "military_active": 850000,
-    "macro_tax": 34
+    "macro_tax": 34,
+    "continent": "Europe"
   },
   "BLR": {
     "capital_uk": "Мінськ",
@@ -525,7 +557,8 @@
     "gdp": 7800,
     "military_percent": 1.6,
     "military_active": 65000,
-    "macro_tax": 28
+    "macro_tax": 28,
+    "continent": "Europe"
   },
   "NAM": {
     "capital_uk": "Віндгук",
@@ -541,7 +574,8 @@
     "gdp": 14400,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 25
+    "macro_tax": 25,
+    "continent": "Africa"
   },
   "ZAF": {
     "capital_uk": "Преторія",
@@ -557,7 +591,8 @@
     "gdp": 6200,
     "military_percent": 0.8,
     "military_active": 73000,
-    "macro_tax": 28
+    "macro_tax": 28,
+    "continent": "Africa"
   },
   "MAF": {
     "capital_uk": "Saint Martin",
@@ -573,7 +608,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "SXM": {
     "capital_uk": "Sint Maarten",
@@ -589,7 +625,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "OMN": {
     "capital_uk": "Маскат",
@@ -605,7 +642,8 @@
     "gdp": 57600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 35
+    "macro_tax": 35,
+    "continent": "Asia"
   },
   "UZB": {
     "capital_uk": "Ташкент",
@@ -621,7 +659,8 @@
     "gdp": 12800,
     "military_percent": 1.8,
     "military_active": 178000,
-    "macro_tax": 12
+    "macro_tax": 12,
+    "continent": "Asia"
   },
   "KAZ": {
     "capital_uk": "Астана",
@@ -637,7 +676,8 @@
     "gdp": 11244,
     "military_percent": 1.8,
     "military_active": 98000,
-    "macro_tax": 10
+    "macro_tax": 10,
+    "continent": "Asia"
   },
   "TJK": {
     "capital_uk": "Душанбе",
@@ -653,7 +693,8 @@
     "gdp": 8000,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 13
+    "macro_tax": 13,
+    "continent": "Asia"
   },
   "LTU": {
     "capital_uk": "Вільнюс",
@@ -669,7 +710,8 @@
     "gdp": 44800,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Europe"
   },
   "BRA": {
     "capital_uk": "Бразиліа",
@@ -685,7 +727,8 @@
     "gdp": 10300,
     "military_percent": 1.3,
     "military_active": 360000,
-    "macro_tax": 33.5
+    "macro_tax": 33.5,
+    "continent": "South America"
   },
   "URY": {
     "capital_uk": "Монтевідео",
@@ -701,7 +744,8 @@
     "gdp": 20000,
     "military_percent": 1.8,
     "military_active": 17100,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "South America"
   },
   "MNG": {
     "capital_uk": "Улан-Батор",
@@ -717,7 +761,8 @@
     "gdp": 14400,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 10
+    "macro_tax": 10,
+    "continent": "Asia"
   },
   "RUS": {
     "capital_uk": "Москва",
@@ -733,7 +778,8 @@
     "gdp": 14000,
     "military_percent": 7.1,
     "military_active": 1320000,
-    "macro_tax": 32
+    "macro_tax": 32,
+    "continent": "Europe"
   },
   "CZE": {
     "capital_uk": "Прага",
@@ -749,7 +795,8 @@
     "gdp": 26821,
     "military_percent": 1.8,
     "military_active": 52600,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Europe"
   },
   "DEU": {
     "capital_uk": "Берлін",
@@ -765,7 +812,8 @@
     "gdp": 54300,
     "military_percent": 2.1,
     "military_active": 181500,
-    "macro_tax": 39.5
+    "macro_tax": 39.5,
+    "continent": "Europe"
   },
   "EST": {
     "capital_uk": "Таллінн",
@@ -781,7 +829,8 @@
     "gdp": 28000,
     "military_percent": 1.8,
     "military_active": 6650,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Europe"
   },
   "LVA": {
     "capital_uk": "Рига",
@@ -797,7 +846,8 @@
     "gdp": 41600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Europe"
   },
   "NOR": {
     "capital_uk": "Осло",
@@ -813,7 +863,8 @@
     "gdp": 89500,
     "military_percent": 2.2,
     "military_active": 25000,
-    "macro_tax": 43
+    "macro_tax": 43,
+    "continent": "Europe"
   },
   "SWE": {
     "capital_uk": "Стокгольм",
@@ -829,7 +880,8 @@
     "gdp": 55873,
     "military_percent": 1.8,
     "military_active": 52250,
-    "macro_tax": 25
+    "macro_tax": 25,
+    "continent": "Europe"
   },
   "FIN": {
     "capital_uk": "Гельсінкі",
@@ -845,7 +897,8 @@
     "gdp": 53654,
     "military_percent": 1.8,
     "military_active": 27700,
-    "macro_tax": 30
+    "macro_tax": 30,
+    "continent": "Europe"
   },
   "VNM": {
     "capital_uk": "Ханой",
@@ -861,7 +914,8 @@
     "gdp": 4163,
     "military_percent": 1.8,
     "military_active": 490900,
-    "macro_tax": 10
+    "macro_tax": 10,
+    "continent": "Asia"
   },
   "KHM": {
     "capital_uk": "Пномпень",
@@ -877,7 +931,8 @@
     "gdp": 8000,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Asia"
   },
   "LUX": {
     "capital_uk": "Люксембург",
@@ -893,7 +948,8 @@
     "gdp": 126000,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 25
+    "macro_tax": 25,
+    "continent": "Europe"
   },
   "ARE": {
     "capital_uk": "Абу-Дабі",
@@ -909,7 +965,8 @@
     "gdp": 53700,
     "military_percent": 1.8,
     "military_active": 47200,
-    "macro_tax": 35
+    "macro_tax": 35,
+    "continent": "Asia"
   },
   "BEL": {
     "capital_uk": "Брюссель",
@@ -925,7 +982,8 @@
     "gdp": 50114,
     "military_percent": 1.8,
     "military_active": 58000,
-    "macro_tax": 40
+    "macro_tax": 40,
+    "continent": "Europe"
   },
   "GEO": {
     "capital_uk": "Тбілісі",
@@ -941,7 +999,8 @@
     "gdp": 19200,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Asia"
   },
   "MKD": {
     "capital_uk": "Скоп'є",
@@ -957,7 +1016,8 @@
     "gdp": 19200,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 10
+    "macro_tax": 10,
+    "continent": "Europe"
   },
   "ALB": {
     "capital_uk": "Тирана",
@@ -973,7 +1033,8 @@
     "gdp": 19200,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 23
+    "macro_tax": 23,
+    "continent": "Europe"
   },
   "AZE": {
     "capital_uk": "Баку",
@@ -989,7 +1050,8 @@
     "gdp": 12800,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 14
+    "macro_tax": 14,
+    "continent": "Asia"
   },
   "XKX": {
     "capital_uk": "Kosovo",
@@ -1005,7 +1067,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Europe"
   },
   "TUR": {
     "capital_uk": "Анкара",
@@ -1021,7 +1084,8 @@
     "gdp": 10616,
     "military_percent": 1.8,
     "military_active": 423900,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Asia"
   },
   "ESP": {
     "capital_uk": "Мадрид",
@@ -1037,7 +1101,8 @@
     "gdp": 34000,
     "military_percent": 1.3,
     "military_active": 120000,
-    "macro_tax": 38.5
+    "macro_tax": 38.5,
+    "continent": "Europe"
   },
   "LAO": {
     "capital_uk": "В'єнтьян",
@@ -1053,7 +1118,8 @@
     "gdp": 6400,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Asia"
   },
   "KGZ": {
     "capital_uk": "Бішкек",
@@ -1069,7 +1135,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 10
+    "macro_tax": 10,
+    "continent": "Asia"
   },
   "ARM": {
     "capital_uk": "Єреван",
@@ -1085,7 +1152,8 @@
     "gdp": 16000,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Asia"
   },
   "DNK": {
     "capital_uk": "Копенгаген",
@@ -1101,7 +1169,8 @@
     "gdp": 68000,
     "military_percent": 1.8,
     "military_active": 29250,
-    "macro_tax": 45
+    "macro_tax": 45,
+    "continent": "Europe"
   },
   "LBY": {
     "capital_uk": "Тріполі",
@@ -1117,7 +1186,8 @@
     "gdp": 12800,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 10
+    "macro_tax": 10,
+    "continent": "Africa"
   },
   "TUN": {
     "capital_uk": "Туніс",
@@ -1133,7 +1203,8 @@
     "gdp": 11200,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Africa"
   },
   "ROU": {
     "capital_uk": "Бухарест",
@@ -1149,7 +1220,8 @@
     "gdp": 15890,
     "military_percent": 1.8,
     "military_active": 95600,
-    "macro_tax": 10
+    "macro_tax": 10,
+    "continent": "Europe"
   },
   "HUN": {
     "capital_uk": "Будапешт",
@@ -1165,7 +1237,8 @@
     "gdp": 18728,
     "military_percent": 1.8,
     "military_active": 48500,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Europe"
   },
   "SVK": {
     "capital_uk": "Братислава",
@@ -1181,7 +1254,8 @@
     "gdp": 21258,
     "military_percent": 1.8,
     "military_active": 27150,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Europe"
   },
   "POL": {
     "capital_uk": "Варшава",
@@ -1197,7 +1271,8 @@
     "gdp": 23500,
     "military_percent": 4.2,
     "military_active": 216000,
-    "macro_tax": 35.5
+    "macro_tax": 35.5,
+    "continent": "Europe"
   },
   "IRL": {
     "capital_uk": "Дублін",
@@ -1213,7 +1288,8 @@
     "gdp": 104000,
     "military_percent": 1.8,
     "military_active": 25150,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Europe"
   },
   "GBR": {
     "capital_uk": "Лондон",
@@ -1229,7 +1305,8 @@
     "gdp": 51100,
     "military_percent": 2.3,
     "military_active": 148000,
-    "macro_tax": 35.5
+    "macro_tax": 35.5,
+    "continent": "Europe"
   },
   "GRC": {
     "capital_uk": "Афіни",
@@ -1245,7 +1322,8 @@
     "gdp": 20867,
     "military_percent": 1.8,
     "military_active": 52150,
-    "macro_tax": 22
+    "macro_tax": 22,
+    "continent": "Europe"
   },
   "ZMB": {
     "capital_uk": "Лусака",
@@ -1261,7 +1339,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 25
+    "macro_tax": 25,
+    "continent": "Africa"
   },
   "SLE": {
     "capital_uk": "Sierra Leone",
@@ -1277,7 +1356,8 @@
     "gdp": 4800,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Africa"
   },
   "GIN": {
     "capital_uk": "Конакрі",
@@ -1293,7 +1373,8 @@
     "gdp": 4800,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Africa"
   },
   "LBR": {
     "capital_uk": "Монровія",
@@ -1309,7 +1390,8 @@
     "gdp": 4800,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Africa"
   },
   "CAF": {
     "capital_uk": "Бангі",
@@ -1325,7 +1407,8 @@
     "gdp": 1920,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 30
+    "macro_tax": 30,
+    "continent": "Africa"
   },
   "SDN": {
     "capital_uk": "Хартум",
@@ -1341,7 +1424,8 @@
     "gdp": 780,
     "military_percent": 1.8,
     "military_active": 228286,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Africa"
   },
   "DJI": {
     "capital_uk": "Джибуті",
@@ -1357,7 +1441,8 @@
     "gdp": 8000,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Africa"
   },
   "ERI": {
     "capital_uk": "Асмера",
@@ -1373,7 +1458,8 @@
     "gdp": 1600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 10
+    "macro_tax": 10,
+    "continent": "Africa"
   },
   "AUT": {
     "capital_uk": "Відень",
@@ -1389,7 +1475,8 @@
     "gdp": 53638,
     "military_percent": 1.8,
     "military_active": 44750,
-    "macro_tax": 30
+    "macro_tax": 30,
+    "continent": "Europe"
   },
   "IRQ": {
     "capital_uk": "Багдад",
@@ -1405,7 +1492,8 @@
     "gdp": 14400,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 10
+    "macro_tax": 10,
+    "continent": "Asia"
   },
   "ITA": {
     "capital_uk": "Рим",
@@ -1421,7 +1509,8 @@
     "gdp": 34158,
     "military_percent": 1.8,
     "military_active": 295000,
-    "macro_tax": 24
+    "macro_tax": 24,
+    "continent": "Europe"
   },
   "CHE": {
     "capital_uk": "Берн",
@@ -1437,7 +1526,8 @@
     "gdp": 103500,
     "military_percent": 0.8,
     "military_active": 24000,
-    "macro_tax": 28
+    "macro_tax": 28,
+    "continent": "Europe"
   },
   "IRN": {
     "capital_uk": "Тегеран",
@@ -1453,7 +1543,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 425000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Asia"
   },
   "NLD": {
     "capital_uk": "Амстердам",
@@ -1469,7 +1560,8 @@
     "gdp": 57768,
     "military_percent": 1.8,
     "military_active": 88500,
-    "macro_tax": 30
+    "macro_tax": 30,
+    "continent": "Europe"
   },
   "LIE": {
     "capital_uk": "Вадуц",
@@ -1485,7 +1577,8 @@
     "gdp": 210000,
     "military_percent": 0,
     "military_active": 0,
-    "macro_tax": 22
+    "macro_tax": 22,
+    "continent": "Europe"
   },
   "CIV": {
     "capital_uk": "Ямусукро",
@@ -1501,7 +1594,8 @@
     "gdp": 8000,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Africa"
   },
   "SRB": {
     "capital_uk": "Белград",
@@ -1517,7 +1611,8 @@
     "gdp": 25600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 10
+    "macro_tax": 10,
+    "continent": "Europe"
   },
   "MLI": {
     "capital_uk": "Бамако",
@@ -1533,7 +1628,8 @@
     "gdp": 900,
     "military_percent": 3.2,
     "military_active": 21000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Africa"
   },
   "SEN": {
     "capital_uk": "Дакар",
@@ -1549,7 +1645,8 @@
     "gdp": 8000,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Africa"
   },
   "NGA": {
     "capital_uk": "Абуджа",
@@ -1565,7 +1662,8 @@
     "gdp": 2184,
     "military_percent": 1.8,
     "military_active": 1067000,
-    "macro_tax": 12
+    "macro_tax": 12,
+    "continent": "Africa"
   },
   "BEN": {
     "capital_uk": "Порто-Ново",
@@ -1581,7 +1679,8 @@
     "gdp": 3840,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Africa"
   },
   "AGO": {
     "capital_uk": "Луанда",
@@ -1597,7 +1696,8 @@
     "gdp": 8000,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 25
+    "macro_tax": 25,
+    "continent": "Africa"
   },
   "HRV": {
     "capital_uk": "Загреб",
@@ -1613,7 +1713,8 @@
     "gdp": 18570,
     "military_percent": 1.8,
     "military_active": 20250,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Europe"
   },
   "SVN": {
     "capital_uk": "Любляна",
@@ -1629,7 +1730,8 @@
     "gdp": 29460,
     "military_percent": 1.8,
     "military_active": 10550,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Europe"
   },
   "QAT": {
     "capital_uk": "Доха",
@@ -1645,7 +1747,8 @@
     "gdp": 88000,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 35
+    "macro_tax": 35,
+    "continent": "Asia"
   },
   "SAU": {
     "capital_uk": "Ер-Ріяд",
@@ -1661,7 +1764,8 @@
     "gdp": 32500,
     "military_percent": 7.1,
     "military_active": 257000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Asia"
   },
   "BWA": {
     "capital_uk": "Габороне",
@@ -1677,7 +1781,8 @@
     "gdp": 12800,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 25
+    "macro_tax": 25,
+    "continent": "Africa"
   },
   "ZWE": {
     "capital_uk": "Хараре",
@@ -1693,7 +1798,8 @@
     "gdp": 8000,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Africa"
   },
   "PAK": {
     "capital_uk": "Ісламабад",
@@ -1709,7 +1815,8 @@
     "gdp": 6400,
     "military_percent": 1.8,
     "military_active": 1157000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Asia"
   },
   "BGR": {
     "capital_uk": "Софія",
@@ -1725,7 +1832,8 @@
     "gdp": 32000,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 10
+    "macro_tax": 10,
+    "continent": "Europe"
   },
   "THA": {
     "capital_uk": "Бангкок",
@@ -1741,7 +1849,8 @@
     "gdp": 6909,
     "military_percent": 1.8,
     "military_active": 358000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Asia"
   },
   "SMR": {
     "capital_uk": "San Marino",
@@ -1757,7 +1866,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Europe"
   },
   "HTI": {
     "capital_uk": "Порт-о-Пренс",
@@ -1773,7 +1883,8 @@
     "gdp": 3200,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "DOM": {
     "capital_uk": "Санто-Домінго",
@@ -1789,7 +1900,8 @@
     "gdp": 14400,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 25
+    "macro_tax": 25,
+    "continent": "North America"
   },
   "TCD": {
     "capital_uk": "Нджамена",
@@ -1805,7 +1917,8 @@
     "gdp": 720,
     "military_percent": 1.8,
     "military_active": 85900,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Africa"
   },
   "KWT": {
     "capital_uk": "Ель-Кувейт",
@@ -1821,7 +1934,8 @@
     "gdp": 96000,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 35
+    "macro_tax": 35,
+    "continent": "Asia"
   },
   "SLV": {
     "capital_uk": "Сан-Сальвадор",
@@ -1837,7 +1951,8 @@
     "gdp": 14400,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "GTM": {
     "capital_uk": "Гватемала",
@@ -1853,7 +1968,8 @@
     "gdp": 14400,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "TLS": {
     "capital_uk": "Ділі",
@@ -1869,7 +1985,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Asia"
   },
   "BRN": {
     "capital_uk": "Бандар-Сері-Бегаван",
@@ -1885,7 +2002,8 @@
     "gdp": 70400,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 35
+    "macro_tax": 35,
+    "continent": "Asia"
   },
   "MCO": {
     "capital_uk": "Монако",
@@ -1901,7 +2019,8 @@
     "gdp": 240000,
     "military_percent": 0,
     "military_active": 0,
-    "macro_tax": 12
+    "macro_tax": 12,
+    "continent": "Europe"
   },
   "DZA": {
     "capital_uk": "Алжир",
@@ -1917,7 +2036,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Africa"
   },
   "MOZ": {
     "capital_uk": "Мапуту",
@@ -1933,7 +2053,8 @@
     "gdp": 4800,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Africa"
   },
   "SWZ": {
     "capital_uk": "eSwatini",
@@ -1949,7 +2070,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Africa"
   },
   "BDI": {
     "capital_uk": "Гітега",
@@ -1965,7 +2087,8 @@
     "gdp": 1600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 30
+    "macro_tax": 30,
+    "continent": "Africa"
   },
   "RWA": {
     "capital_uk": "Кігалі",
@@ -1981,7 +2104,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 25
+    "macro_tax": 25,
+    "continent": "Africa"
   },
   "MMR": {
     "capital_uk": "Найп'їдо",
@@ -1997,7 +2121,8 @@
     "gdp": 1200,
     "military_percent": 3.5,
     "military_active": 150000,
-    "macro_tax": 10
+    "macro_tax": 10,
+    "continent": "Asia"
   },
   "BGD": {
     "capital_uk": "Дакка",
@@ -2013,7 +2138,8 @@
     "gdp": 8000,
     "military_percent": 1.8,
     "military_active": 847000,
-    "macro_tax": 25
+    "macro_tax": 25,
+    "continent": "Asia"
   },
   "AND": {
     "capital_uk": "Андорра-ла-Велья",
@@ -2029,7 +2155,8 @@
     "gdp": 47000,
     "military_percent": 0,
     "military_active": 0,
-    "macro_tax": 25
+    "macro_tax": 25,
+    "continent": "Europe"
   },
   "AFG": {
     "capital_uk": "Кабул",
@@ -2045,7 +2172,8 @@
     "gdp": 4800,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Asia"
   },
   "MNE": {
     "capital_uk": "Подгориця",
@@ -2061,7 +2189,8 @@
     "gdp": 25600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Europe"
   },
   "BIH": {
     "capital_uk": "Сараєво",
@@ -2077,7 +2206,8 @@
     "gdp": 22400,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 10
+    "macro_tax": 10,
+    "continent": "Europe"
   },
   "UGA": {
     "capital_uk": "Кампала",
@@ -2093,7 +2223,8 @@
     "gdp": 6400,
     "military_percent": 1.8,
     "military_active": 236000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Africa"
   },
   "CUB": {
     "capital_uk": "Гавана",
@@ -2109,7 +2240,8 @@
     "gdp": 1280,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "HND": {
     "capital_uk": "Тегусігальпа",
@@ -2125,7 +2257,8 @@
     "gdp": 11200,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "ECU": {
     "capital_uk": "Кіто",
@@ -2141,7 +2274,8 @@
     "gdp": 14400,
     "military_percent": 1.8,
     "military_active": 89000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "South America"
   },
   "COL": {
     "capital_uk": "Богота",
@@ -2157,7 +2291,8 @@
     "gdp": 6630,
     "military_percent": 1.8,
     "military_active": 257500,
-    "macro_tax": 22
+    "macro_tax": 22,
+    "continent": "South America"
   },
   "PRY": {
     "capital_uk": "Асунсьйон",
@@ -2173,7 +2308,8 @@
     "gdp": 14400,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 10
+    "macro_tax": 10,
+    "continent": "South America"
   },
   "PRT": {
     "capital_uk": "Лісабон",
@@ -2189,7 +2325,8 @@
     "gdp": 24530,
     "military_percent": 1.8,
     "military_active": 51500,
-    "macro_tax": 25
+    "macro_tax": 25,
+    "continent": "Europe"
   },
   "MDA": {
     "capital_uk": "Кишинів",
@@ -2205,7 +2342,8 @@
     "gdp": 16000,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 12
+    "macro_tax": 12,
+    "continent": "Europe"
   },
   "TKM": {
     "capital_uk": "Ашгабат",
@@ -2221,7 +2359,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 10
+    "macro_tax": 10,
+    "continent": "Asia"
   },
   "JOR": {
     "capital_uk": "Амман",
@@ -2237,7 +2376,8 @@
     "gdp": 16000,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Asia"
   },
   "NPL": {
     "capital_uk": "Катманду",
@@ -2253,7 +2393,8 @@
     "gdp": 8000,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Asia"
   },
   "LSO": {
     "capital_uk": "Масеру",
@@ -2269,7 +2410,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Africa"
   },
   "CMR": {
     "capital_uk": "Яунде",
@@ -2285,7 +2427,8 @@
     "gdp": 4800,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 30
+    "macro_tax": 30,
+    "continent": "Africa"
   },
   "GAB": {
     "capital_uk": "Лібревіль",
@@ -2301,7 +2444,8 @@
     "gdp": 9000,
     "military_percent": 1.8,
     "military_active": 6500,
-    "macro_tax": 14
+    "macro_tax": 14,
+    "continent": "Africa"
   },
   "NER": {
     "capital_uk": "Ніамей",
@@ -2317,7 +2461,8 @@
     "gdp": 600,
     "military_percent": 2.5,
     "military_active": 12000,
-    "macro_tax": 11
+    "macro_tax": 11,
+    "continent": "Africa"
   },
   "BFA": {
     "capital_uk": "Уагадугу",
@@ -2333,7 +2478,8 @@
     "gdp": 850,
     "military_percent": 3.8,
     "military_active": 15000,
-    "macro_tax": 16
+    "macro_tax": 16,
+    "continent": "Africa"
   },
   "TGO": {
     "capital_uk": "Ломе",
@@ -2349,7 +2495,8 @@
     "gdp": 6400,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Africa"
   },
   "GHA": {
     "capital_uk": "Аккра",
@@ -2365,7 +2512,8 @@
     "gdp": 8000,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Africa"
   },
   "GNB": {
     "capital_uk": "Бісау",
@@ -2381,7 +2529,8 @@
     "gdp": 2560,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Africa"
   },
   "GIB": {
     "capital_uk": "Gibraltar",
@@ -2397,7 +2546,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Europe"
   },
   "USA": {
     "capital_uk": "Вашингтон",
@@ -2413,7 +2563,8 @@
     "gdp": 85400,
     "military_percent": 3.4,
     "military_active": 1328000,
-    "macro_tax": 27.5
+    "macro_tax": 27.5,
+    "continent": "North America"
   },
   "CAN": {
     "capital_uk": "Оттава",
@@ -2429,7 +2580,8 @@
     "gdp": 52051,
     "military_percent": 1.8,
     "military_active": 191250,
-    "macro_tax": 26
+    "macro_tax": 26,
+    "continent": "North America"
   },
   "MEX": {
     "capital_uk": "Мехіко",
@@ -2445,7 +2597,8 @@
     "gdp": 11091,
     "military_percent": 1.8,
     "military_active": 633500,
-    "macro_tax": 25
+    "macro_tax": 25,
+    "continent": "North America"
   },
   "BLZ": {
     "capital_uk": "Бельмопан",
@@ -2461,7 +2614,8 @@
     "gdp": 25600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 25
+    "macro_tax": 25,
+    "continent": "North America"
   },
   "PAN": {
     "capital_uk": "Панама",
@@ -2477,7 +2631,8 @@
     "gdp": 18000,
     "military_percent": 0,
     "military_active": 0,
-    "macro_tax": 16
+    "macro_tax": 16,
+    "continent": "North America"
   },
   "VEN": {
     "capital_uk": "Каракас",
@@ -2493,7 +2648,8 @@
     "gdp": 6400,
     "military_percent": 1.8,
     "military_active": 141500,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "South America"
   },
   "PNG": {
     "capital_uk": "Порт-Морсбі",
@@ -2509,7 +2665,8 @@
     "gdp": 11200,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 25
+    "macro_tax": 25,
+    "continent": "Oceania"
   },
   "EGY": {
     "capital_uk": "Каїр",
@@ -2525,7 +2682,8 @@
     "gdp": 3800,
     "military_percent": 1.3,
     "military_active": 440000,
-    "macro_tax": 14.5
+    "macro_tax": 14.5,
+    "continent": "Africa"
   },
   "YEM": {
     "capital_uk": "Сана",
@@ -2541,7 +2699,8 @@
     "gdp": 4800,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Asia"
   },
   "MRT": {
     "capital_uk": "Нуакшот",
@@ -2557,7 +2716,8 @@
     "gdp": 6400,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Africa"
   },
   "GNQ": {
     "capital_uk": "Малабо",
@@ -2573,7 +2733,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Africa"
   },
   "GMB": {
     "capital_uk": "Банжул",
@@ -2589,7 +2750,8 @@
     "gdp": 3200,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Africa"
   },
   "HKG": {
     "capital_uk": "Гонконг",
@@ -2605,7 +2767,8 @@
     "gdp": 54000,
     "military_percent": 0,
     "military_active": 0,
-    "macro_tax": 14
+    "macro_tax": 14,
+    "continent": "Asia"
   },
   "VAT": {
     "capital_uk": "Ватикан",
@@ -2621,7 +2784,8 @@
     "gdp": 35000,
     "military_percent": 0,
     "military_active": 135,
-    "macro_tax": 0
+    "macro_tax": 0,
+    "continent": "Europe"
   },
   "ATA": {
     "capital_uk": "Південний полюс",
@@ -2637,7 +2801,8 @@
     "gdp": 0,
     "military_percent": 0,
     "military_active": 0,
-    "macro_tax": 0
+    "macro_tax": 0,
+    "continent": "Oceania"
   },
   "AUS": {
     "capital_uk": "Канберра",
@@ -2653,7 +2818,8 @@
     "gdp": 64964,
     "military_percent": 1.8,
     "military_active": 128450,
-    "macro_tax": 32
+    "macro_tax": 32,
+    "continent": "Oceania"
   },
   "GRL": {
     "capital_uk": "Нуук",
@@ -2669,7 +2835,8 @@
     "gdp": 54000,
     "military_percent": 0,
     "military_active": 0,
-    "macro_tax": 36
+    "macro_tax": 36,
+    "continent": "North America"
   },
   "FJI": {
     "capital_uk": "Сува",
@@ -2685,7 +2852,8 @@
     "gdp": 11200,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Oceania"
   },
   "NZL": {
     "capital_uk": "Веллінгтон",
@@ -2701,7 +2869,8 @@
     "gdp": 48800,
     "military_percent": 1.8,
     "military_active": 25600,
-    "macro_tax": 25
+    "macro_tax": 25,
+    "continent": "Oceania"
   },
   "NCL": {
     "capital_uk": "New Caledonia",
@@ -2717,7 +2886,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Oceania"
   },
   "MDG": {
     "capital_uk": "Антананаріву",
@@ -2733,7 +2903,8 @@
     "gdp": 3200,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "Africa"
   },
   "PHL": {
     "capital_uk": "Маніла",
@@ -2749,7 +2920,8 @@
     "gdp": 3623,
     "military_percent": 1.8,
     "military_active": 569500,
-    "macro_tax": 18
+    "macro_tax": 18,
+    "continent": "Asia"
   },
   "LKA": {
     "capital_uk": "Коломбо",
@@ -2765,7 +2937,8 @@
     "gdp": 8000,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Asia"
   },
   "CUW": {
     "capital_uk": "Curaçao",
@@ -2781,7 +2954,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "ABW": {
     "capital_uk": "Aruba",
@@ -2797,7 +2971,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "BHS": {
     "capital_uk": "Нассау",
@@ -2813,7 +2988,8 @@
     "gdp": 80000,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 35
+    "macro_tax": 35,
+    "continent": "North America"
   },
   "TCA": {
     "capital_uk": "Turks and Caicos Islands",
@@ -2829,7 +3005,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "TWN": {
     "capital_uk": "Тайбей",
@@ -2845,7 +3022,8 @@
     "gdp": 33500,
     "military_percent": 2.5,
     "military_active": 169000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Asia"
   },
   "JPN": {
     "capital_uk": "Токіо",
@@ -2861,7 +3039,8 @@
     "gdp": 33800,
     "military_percent": 1.4,
     "military_active": 247000,
-    "macro_tax": 33
+    "macro_tax": 33,
+    "continent": "Asia"
   },
   "SPM": {
     "capital_uk": "Saint Pierre and Miquelon",
@@ -2877,7 +3056,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "ISL": {
     "capital_uk": "Рейк'явік",
@@ -2893,7 +3073,8 @@
     "gdp": 78000,
     "military_percent": 0.1,
     "military_active": 0,
-    "macro_tax": 36
+    "macro_tax": 36,
+    "continent": "Europe"
   },
   "PCN": {
     "capital_uk": "Pitcairn Islands",
@@ -2909,7 +3090,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Oceania"
   },
   "PYF": {
     "capital_uk": "French Polynesia",
@@ -2925,7 +3107,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Oceania"
   },
   "ATF": {
     "capital_uk": "French Southern and Antarctic Lands",
@@ -2941,7 +3124,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Oceania"
   },
   "SYC": {
     "capital_uk": "Seychelles",
@@ -2957,7 +3141,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Africa"
   },
   "KIR": {
     "capital_uk": "Kiribati",
@@ -2973,7 +3158,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Oceania"
   },
   "MHL": {
     "capital_uk": "Marshall Islands",
@@ -2989,7 +3175,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Oceania"
   },
   "TTO": {
     "capital_uk": "Порт-оф-Спейн",
@@ -3005,7 +3192,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "GRD": {
     "capital_uk": "Grenada",
@@ -3021,7 +3209,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "VCT": {
     "capital_uk": "Saint Vincent and the Grenadines",
@@ -3037,7 +3226,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "BRB": {
     "capital_uk": "Бриджтаун",
@@ -3053,7 +3243,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "LCA": {
     "capital_uk": "Saint Lucia",
@@ -3069,7 +3260,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "DMA": {
     "capital_uk": "Dominica",
@@ -3085,7 +3277,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "UMI": {
     "capital_uk": "United States Minor Outlying Islands",
@@ -3101,7 +3294,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "MSR": {
     "capital_uk": "Montserrat",
@@ -3117,7 +3311,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "ATG": {
     "capital_uk": "Antigua and Barbuda",
@@ -3133,7 +3328,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "KNA": {
     "capital_uk": "Saint Kitts and Nevis",
@@ -3149,7 +3345,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "VIR": {
     "capital_uk": "United States Virgin Islands",
@@ -3165,7 +3362,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "BLM": {
     "capital_uk": "Saint Barthelemy",
@@ -3181,7 +3379,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "PRI": {
     "capital_uk": "Puerto Rico",
@@ -3197,7 +3396,8 @@
     "gdp": 64000,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 20
+    "macro_tax": 20,
+    "continent": "North America"
   },
   "AIA": {
     "capital_uk": "Anguilla",
@@ -3213,7 +3413,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "VGB": {
     "capital_uk": "British Virgin Islands",
@@ -3229,7 +3430,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "JAM": {
     "capital_uk": "Кінгстон",
@@ -3245,7 +3447,8 @@
     "gdp": 19200,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 25
+    "macro_tax": 25,
+    "continent": "North America"
   },
   "CYM": {
     "capital_uk": "Cayman Islands",
@@ -3261,7 +3464,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "BMU": {
     "capital_uk": "Bermuda",
@@ -3277,7 +3481,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "North America"
   },
   "HMD": {
     "capital_uk": "Heard Island and McDonald Islands",
@@ -3293,7 +3498,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Oceania"
   },
   "SHN": {
     "capital_uk": "Saint Helena",
@@ -3309,7 +3515,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Africa"
   },
   "MUS": {
     "capital_uk": "Порт-Луї",
@@ -3325,7 +3532,8 @@
     "gdp": 11500,
     "military_percent": 0.2,
     "military_active": 0,
-    "macro_tax": 22
+    "macro_tax": 22,
+    "continent": "Africa"
   },
   "COM": {
     "capital_uk": "Мороні",
@@ -3341,7 +3549,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Africa"
   },
   "STP": {
     "capital_uk": "São Tomé and Principe",
@@ -3357,7 +3566,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Africa"
   },
   "CPV": {
     "capital_uk": "Прая",
@@ -3373,7 +3583,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Africa"
   },
   "MLT": {
     "capital_uk": "Валлетта",
@@ -3389,7 +3600,8 @@
     "gdp": 39500,
     "military_percent": 0.8,
     "military_active": 1950,
-    "macro_tax": 30
+    "macro_tax": 30,
+    "continent": "Europe"
   },
   "JEY": {
     "capital_uk": "Jersey",
@@ -3405,7 +3617,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Europe"
   },
   "GGY": {
     "capital_uk": "Guernsey",
@@ -3421,7 +3634,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Europe"
   },
   "IMN": {
     "capital_uk": "Isle of Man",
@@ -3437,7 +3651,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Europe"
   },
   "ALA": {
     "capital_uk": "Aland",
@@ -3453,7 +3668,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Europe"
   },
   "FRO": {
     "capital_uk": "Faroe Islands",
@@ -3469,7 +3685,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Europe"
   },
   "IOT": {
     "capital_uk": "British Indian Ocean Territory",
@@ -3485,7 +3702,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Asia"
   },
   "SGP": {
     "capital_uk": "Сінгапур",
@@ -3501,7 +3719,8 @@
     "gdp": 82800,
     "military_percent": 1.8,
     "military_active": 28200,
-    "macro_tax": 12
+    "macro_tax": 12,
+    "continent": "Asia"
   },
   "NFK": {
     "capital_uk": "Norfolk Island",
@@ -3517,7 +3736,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Oceania"
   },
   "COK": {
     "capital_uk": "Cook Islands",
@@ -3533,7 +3753,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Oceania"
   },
   "TON": {
     "capital_uk": "Tonga",
@@ -3549,7 +3770,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Oceania"
   },
   "WLF": {
     "capital_uk": "Wallis and Futuna",
@@ -3565,7 +3787,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Oceania"
   },
   "WSM": {
     "capital_uk": "Samoa",
@@ -3581,7 +3804,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Oceania"
   },
   "SLB": {
     "capital_uk": "Solomon Islands",
@@ -3597,7 +3821,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Oceania"
   },
   "TUV": {
     "capital_uk": "Tuvalu",
@@ -3613,7 +3838,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Oceania"
   },
   "MDV": {
     "capital_uk": "Мале",
@@ -3629,7 +3855,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Asia"
   },
   "NRU": {
     "capital_uk": "Nauru",
@@ -3645,7 +3872,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Oceania"
   },
   "FSM": {
     "capital_uk": "Federated States of Micronesia",
@@ -3661,7 +3889,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Oceania"
   },
   "SGS": {
     "capital_uk": "South Georgia and the Islands",
@@ -3677,7 +3906,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "South America"
   },
   "FLK": {
     "capital_uk": "Falkland Islands",
@@ -3693,7 +3923,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "South America"
   },
   "VUT": {
     "capital_uk": "Порт-Віла",
@@ -3709,7 +3940,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Oceania"
   },
   "NIU": {
     "capital_uk": "Niue",
@@ -3725,7 +3957,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Oceania"
   },
   "ASM": {
     "capital_uk": "American Samoa",
@@ -3741,7 +3974,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Oceania"
   },
   "PLW": {
     "capital_uk": "Palau",
@@ -3757,7 +3991,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Oceania"
   },
   "GUM": {
     "capital_uk": "Guam",
@@ -3773,7 +4008,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Oceania"
   },
   "MNP": {
     "capital_uk": "Northern Mariana Islands",
@@ -3789,7 +4025,8 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Oceania"
   },
   "BHR": {
     "capital_uk": "Манама",
@@ -3805,7 +4042,8 @@
     "gdp": 80000,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 35
+    "macro_tax": 35,
+    "continent": "Asia"
   },
   "MAC": {
     "capital_uk": "Macao S.A.R",
@@ -3821,6 +4059,7 @@
     "gdp": 9600,
     "military_percent": 1.8,
     "military_active": 5000,
-    "macro_tax": 15
+    "macro_tax": 15,
+    "continent": "Asia"
   }
 }
