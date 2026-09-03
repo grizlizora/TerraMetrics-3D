@@ -9,6 +9,7 @@ import type {
 } from '../../types/index.ts';
 import { GeoCentroidCalculator } from './geoCentroidCalculator.ts';
 import { getContinentForIso } from '../constants/continents.ts';
+import { getCountryNameUk } from '../i18n/countryNamesUk.ts';
 
 export interface ProcessFeaturesResult {
   validFeatures: CountryFeature[];
@@ -68,7 +69,7 @@ export class CountryPropsMerger {
     }
   ): CountryProperties {
     const nameEn = getStr([rel?.country_en, demo?.name_en, rawProps.name_en, rawProps.name], iso);
-    const nameUk = getStr([rel?.country_uk, demo?.name_uk, rawProps.name_uk, rawProps.name_en, rawProps.name], iso);
+    const nameUk = getCountryNameUk(iso, rawProps.name) || getStr([rel?.country_uk, demo?.name_uk, rawProps.name_uk, rawProps.name_en, rawProps.name], iso);
     const continent = (getContinentForIso(iso) || getStr([rel?.continent, demo?.continent, rawProps.continent], 'World')) as any;
 
     const population = getNum([demo?.population, rawProps.population, rel?.population], 0);

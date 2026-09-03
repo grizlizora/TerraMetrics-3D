@@ -4,7 +4,7 @@
   "countries": {
     "IDN": {
       "country_en": "Indonesia",
-      "country_uk": "Indonesia",
+      "country_uk": "Індонезія",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 26.4,
@@ -38,11 +38,12 @@
           "percentage": 2.7
         }
       ],
-      "population": 281600000
+      "population": 281600000,
+      "name_uk": "Індонезія"
     },
     "MYS": {
       "country_en": "Malaysia",
-      "country_uk": "Malaysia",
+      "country_uk": "Малайзія",
       "continent": "Asia",
       "dominant_religion": "Іслам",
       "dominant_percentage": 27.3,
@@ -76,11 +77,12 @@
           "percentage": 3.1
         }
       ],
-      "population": 33500000
+      "population": 33500000,
+      "name_uk": "Малайзія"
     },
     "CHL": {
       "country_en": "Chile",
-      "country_uk": "Chile",
+      "country_uk": "Чилі",
       "continent": "South America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 83.8,
@@ -98,11 +100,12 @@
           "percentage": 5.7
         }
       ],
-      "population": 19500000
+      "population": 19500000,
+      "name_uk": "Чилі"
     },
     "BOL": {
       "country_en": "Bolivia",
-      "country_uk": "Bolivia",
+      "country_uk": "Болівія",
       "continent": "South America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 86.2,
@@ -120,11 +123,12 @@
           "percentage": 4.4
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Болівія"
     },
     "PER": {
       "country_en": "Peru",
-      "country_uk": "Peru",
+      "country_uk": "Перу",
       "continent": "South America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 86,
@@ -142,11 +146,12 @@
           "percentage": 4.4
         }
       ],
-      "population": 33700000
+      "population": 33700000,
+      "name_uk": "Перу"
     },
     "ARG": {
       "country_en": "Argentina",
-      "country_uk": "Argentina",
+      "country_uk": "Аргентина",
       "continent": "South America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 86.1,
@@ -164,11 +169,12 @@
           "percentage": 4.5
         }
       ],
-      "population": 45810000
+      "population": 45810000,
+      "name_uk": "Аргентина"
     },
     "CYP": {
       "country_en": "Cyprus",
-      "country_uk": "Cyprus",
+      "country_uk": "Кіпр",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 71.9,
@@ -190,11 +196,12 @@
           "percentage": 2.6
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Кіпр"
     },
     "IND": {
       "country_en": "India",
-      "country_uk": "India",
+      "country_uk": "Індія",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 24.5,
@@ -228,11 +235,12 @@
           "percentage": 2.8
         }
       ],
-      "population": 1441720000
+      "population": 1441720000,
+      "name_uk": "Індія"
     },
     "CHN": {
       "country_en": "China",
-      "country_uk": "China",
+      "country_uk": "Китай",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 26.5,
@@ -266,11 +274,12 @@
           "percentage": 2.8
         }
       ],
-      "population": 1419320000
+      "population": 1419320000,
+      "name_uk": "Китай"
     },
     "ISR": {
       "country_en": "Israel",
-      "country_uk": "Israel",
+      "country_uk": "Ізраїль",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 23.7,
@@ -304,11 +313,12 @@
           "percentage": 3
         }
       ],
-      "population": 9900000
+      "population": 9900000,
+      "name_uk": "Ізраїль"
     },
     "PSE": {
       "country_en": "Palestine",
-      "country_uk": "Palestine",
+      "country_uk": "Палестина",
       "continent": "Asia",
       "dominant_religion": "Іслам",
       "dominant_percentage": 27.3,
@@ -342,11 +352,12 @@
           "percentage": 3.2
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Палестина"
     },
     "LBN": {
       "country_en": "Lebanon",
-      "country_uk": "Lebanon",
+      "country_uk": "Ліван",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 26.3,
@@ -380,11 +391,12 @@
           "percentage": 2.6
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Ліван"
     },
     "ETH": {
       "country_en": "Ethiopia",
-      "country_uk": "Ethiopia",
+      "country_uk": "Ефіопія",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 51.6,
@@ -406,11 +418,12 @@
           "percentage": 0.9
         }
       ],
-      "population": 120000000
+      "population": 120000000,
+      "name_uk": "Ефіопія"
     },
     "SSD": {
       "country_en": "South Sudan",
-      "country_uk": "South Sudan",
+      "country_uk": "Південний Судан",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 48.2,
@@ -432,11 +445,12 @@
           "percentage": 1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Південний Судан"
     },
     "SOM": {
       "country_en": "Somalia",
-      "country_uk": "Somalia",
+      "country_uk": "Сомалі",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 49.4,
@@ -458,11 +472,12 @@
           "percentage": 1.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Сомалі"
     },
     "KEN": {
       "country_en": "Kenya",
-      "country_uk": "Kenya",
+      "country_uk": "Кенія",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 47.8,
@@ -484,11 +499,12 @@
           "percentage": 1.1
         }
       ],
-      "population": 53000000
+      "population": 53000000,
+      "name_uk": "Кенія"
     },
     "MWI": {
       "country_en": "Malawi",
-      "country_uk": "Malawi",
+      "country_uk": "Малаві",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 47.9,
@@ -510,11 +526,12 @@
           "percentage": 1.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Малаві"
     },
     "TZA": {
       "country_en": "United Republic of Tanzania",
-      "country_uk": "United Republic of Tanzania",
+      "country_uk": "Танзанія",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 48.2,
@@ -536,11 +553,12 @@
           "percentage": 1
         }
       ],
-      "population": 63500000
+      "population": 63500000,
+      "name_uk": "Танзанія"
     },
     "SYR": {
       "country_en": "Syria",
-      "country_uk": "Syria",
+      "country_uk": "Сирія",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 24.3,
@@ -574,11 +592,12 @@
           "percentage": 2.8
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Сирія"
     },
     "FRA": {
       "country_en": "France",
-      "country_uk": "France",
+      "country_uk": "Франція",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 71.4,
@@ -600,11 +619,12 @@
           "percentage": 2.6
         }
       ],
-      "population": 68370000
+      "population": 68370000,
+      "name_uk": "Франція"
     },
     "SUR": {
       "country_en": "Suriname",
-      "country_uk": "Suriname",
+      "country_uk": "Суринам",
       "continent": "South America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 84.6,
@@ -622,11 +642,12 @@
           "percentage": 5.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Суринам"
     },
     "GUY": {
       "country_en": "Guyana",
-      "country_uk": "Guyana",
+      "country_uk": "Гаяна",
       "continent": "South America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 83.8,
@@ -644,11 +665,12 @@
           "percentage": 5.7
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Гаяна"
     },
     "KOR": {
       "country_en": "South Korea",
-      "country_uk": "South Korea",
+      "country_uk": "Південна Корея",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 25,
@@ -682,11 +704,12 @@
           "percentage": 2.7
         }
       ],
-      "population": 51710000
+      "population": 51710000,
+      "name_uk": "Південна Корея"
     },
     "PRK": {
       "country_en": "North Korea",
-      "country_uk": "North Korea",
+      "country_uk": "Північна Корея",
       "continent": "Asia",
       "dominant_religion": "Іслам",
       "dominant_percentage": 27.3,
@@ -720,11 +743,12 @@
           "percentage": 3.2
         }
       ],
-      "population": 26160000
+      "population": 26160000,
+      "name_uk": "Північна Корея"
     },
     "MAR": {
       "country_en": "Morocco",
-      "country_uk": "Morocco",
+      "country_uk": "Марокко",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 48.9,
@@ -746,11 +770,12 @@
           "percentage": 1.2
         }
       ],
-      "population": 37500000
+      "population": 37500000,
+      "name_uk": "Марокко"
     },
     "ESH": {
       "country_en": "Western Sahara",
-      "country_uk": "Western Sahara",
+      "country_uk": "Західна Сахара",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 52.1,
@@ -772,11 +797,12 @@
           "percentage": 0.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Західна Сахара"
     },
     "CRI": {
       "country_en": "Costa Rica",
-      "country_uk": "Costa Rica",
+      "country_uk": "Коста-Рика",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 74.4,
@@ -794,11 +820,12 @@
           "percentage": 10.7
         }
       ],
-      "population": 5200000
+      "population": 5200000,
+      "name_uk": "Коста-Рика"
     },
     "NIC": {
       "country_en": "Nicaragua",
-      "country_uk": "Nicaragua",
+      "country_uk": "Нікарагуа",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 73.6,
@@ -816,11 +843,12 @@
           "percentage": 11.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Нікарагуа"
     },
     "COG": {
       "country_en": "Republic of the Congo",
-      "country_uk": "Republic of the Congo",
+      "country_uk": "Республіка Конго",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 51.2,
@@ -842,11 +870,12 @@
           "percentage": 1.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Республіка Конго"
     },
     "COD": {
       "country_en": "Democratic Republic of the Congo",
-      "country_uk": "Democratic Republic of the Congo",
+      "country_uk": "ДР Конго",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 49.2,
@@ -868,11 +897,12 @@
           "percentage": 0.9
         }
       ],
-      "population": 95890000
+      "population": 95890000,
+      "name_uk": "ДР Конго"
     },
     "BTN": {
       "country_en": "Bhutan",
-      "country_uk": "Bhutan",
+      "country_uk": "Бутан",
       "continent": "Asia",
       "dominant_religion": "Іслам",
       "dominant_percentage": 26.9,
@@ -906,11 +936,12 @@
           "percentage": 3.4
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Бутан"
     },
     "UKR": {
       "country_en": "Ukraine",
-      "country_uk": "Ukraine",
+      "country_uk": "Україна",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 69.8,
@@ -932,11 +963,12 @@
           "percentage": 3.3
         }
       ],
-      "population": 38000000
+      "population": 38000000,
+      "name_uk": "Україна"
     },
     "BLR": {
       "country_en": "Belarus",
-      "country_uk": "Belarus",
+      "country_uk": "Білорусь",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 70.8,
@@ -958,11 +990,12 @@
           "percentage": 3.1
         }
       ],
-      "population": 9200000
+      "population": 9200000,
+      "name_uk": "Білорусь"
     },
     "NAM": {
       "country_en": "Namibia",
-      "country_uk": "Namibia",
+      "country_uk": "Намібія",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 47.7,
@@ -984,11 +1017,12 @@
           "percentage": 1.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Намібія"
     },
     "ZAF": {
       "country_en": "South Africa",
-      "country_uk": "South Africa",
+      "country_uk": "ПАР",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 49.8,
@@ -1010,11 +1044,12 @@
           "percentage": 0.9
         }
       ],
-      "population": 60400000
+      "population": 60400000,
+      "name_uk": "ПАР"
     },
     "MAF": {
       "country_en": "Saint Martin",
-      "country_uk": "Saint Martin",
+      "country_uk": "Сен-Мартен",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 73.2,
@@ -1032,11 +1067,12 @@
           "percentage": 11.2
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Сен-Мартен"
     },
     "SXM": {
       "country_en": "Sint Maarten",
-      "country_uk": "Sint Maarten",
+      "country_uk": "Сінт-Мартен",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 74.5,
@@ -1054,11 +1090,12 @@
           "percentage": 10.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Сінт-Мартен"
     },
     "OMN": {
       "country_en": "Oman",
-      "country_uk": "Oman",
+      "country_uk": "Оман",
       "continent": "Asia",
       "dominant_religion": "Іслам",
       "dominant_percentage": 26.6,
@@ -1092,11 +1129,12 @@
           "percentage": 2.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Оман"
     },
     "UZB": {
       "country_en": "Uzbekistan",
-      "country_uk": "Uzbekistan",
+      "country_uk": "Узбекистан",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 26.4,
@@ -1130,11 +1168,12 @@
           "percentage": 2.7
         }
       ],
-      "population": 35600000
+      "population": 35600000,
+      "name_uk": "Узбекистан"
     },
     "KAZ": {
       "country_en": "Kazakhstan",
-      "country_uk": "Kazakhstan",
+      "country_uk": "Казахстан",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 26.4,
@@ -1168,11 +1207,12 @@
           "percentage": 2.7
         }
       ],
-      "population": 19600000
+      "population": 19600000,
+      "name_uk": "Казахстан"
     },
     "TJK": {
       "country_en": "Tajikistan",
-      "country_uk": "Tajikistan",
+      "country_uk": "Таджикистан",
       "continent": "Asia",
       "dominant_religion": "Іслам",
       "dominant_percentage": 23.7,
@@ -1206,11 +1246,12 @@
           "percentage": 3.2
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Таджикистан"
     },
     "LTU": {
       "country_en": "Lithuania",
-      "country_uk": "Lithuania",
+      "country_uk": "Литва",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 68.5,
@@ -1232,11 +1273,12 @@
           "percentage": 3.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Литва"
     },
     "BRA": {
       "country_en": "Brazil",
-      "country_uk": "Brazil",
+      "country_uk": "Бразилія",
       "continent": "South America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 86.1,
@@ -1254,11 +1296,12 @@
           "percentage": 4.5
         }
       ],
-      "population": 216000000
+      "population": 216000000,
+      "name_uk": "Бразилія"
     },
     "URY": {
       "country_en": "Uruguay",
-      "country_uk": "Uruguay",
+      "country_uk": "Уругвай",
       "continent": "South America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 85.9,
@@ -1276,11 +1319,12 @@
           "percentage": 4.4
         }
       ],
-      "population": 3420000
+      "population": 3420000,
+      "name_uk": "Уругвай"
     },
     "MNG": {
       "country_en": "Mongolia",
-      "country_uk": "Mongolia",
+      "country_uk": "Монголія",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 26.5,
@@ -1314,11 +1358,12 @@
           "percentage": 2.7
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Монголія"
     },
     "RUS": {
       "country_en": "Russia",
-      "country_uk": "Russia",
+      "country_uk": "Росія",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 71.7,
@@ -1340,11 +1385,12 @@
           "percentage": 2.5
         }
       ],
-      "population": 144000000
+      "population": 144000000,
+      "name_uk": "Росія"
     },
     "CZE": {
       "country_en": "Czechia",
-      "country_uk": "Czechia",
+      "country_uk": "Чехія",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 71.4,
@@ -1366,11 +1412,12 @@
           "percentage": 3
         }
       ],
-      "population": 10520000
+      "population": 10520000,
+      "name_uk": "Чехія"
     },
     "DEU": {
       "country_en": "Germany",
-      "country_uk": "Germany",
+      "country_uk": "Німеччина",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 72,
@@ -1392,11 +1439,12 @@
           "percentage": 2.7
         }
       ],
-      "population": 84600000
+      "population": 84600000,
+      "name_uk": "Німеччина"
     },
     "EST": {
       "country_en": "Estonia",
-      "country_uk": "Estonia",
+      "country_uk": "Естонія",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 71.5,
@@ -1418,11 +1466,12 @@
           "percentage": 2.6
         }
       ],
-      "population": 1330000
+      "population": 1330000,
+      "name_uk": "Естонія"
     },
     "LVA": {
       "country_en": "Latvia",
-      "country_uk": "Latvia",
+      "country_uk": "Латвія",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 69.3,
@@ -1444,11 +1493,12 @@
           "percentage": 3.4
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Латвія"
     },
     "NOR": {
       "country_en": "Norway",
-      "country_uk": "Norway",
+      "country_uk": "Норвегія",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 68.5,
@@ -1470,11 +1520,12 @@
           "percentage": 3.5
         }
       ],
-      "population": 5550000
+      "population": 5550000,
+      "name_uk": "Норвегія"
     },
     "SWE": {
       "country_en": "Sweden",
-      "country_uk": "Sweden",
+      "country_uk": "Швеція",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 67.8,
@@ -1496,11 +1547,12 @@
           "percentage": 3.4
         }
       ],
-      "population": 10450000
+      "population": 10450000,
+      "name_uk": "Швеція"
     },
     "FIN": {
       "country_en": "Finland",
-      "country_uk": "Finland",
+      "country_uk": "Фінляндія",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 68,
@@ -1522,11 +1574,12 @@
           "percentage": 3.3
         }
       ],
-      "population": 5540000
+      "population": 5540000,
+      "name_uk": "Фінляндія"
     },
     "VNM": {
       "country_en": "Vietnam",
-      "country_uk": "Vietnam",
+      "country_uk": "В'єтнам",
       "continent": "Asia",
       "dominant_religion": "Іслам",
       "dominant_percentage": 24.4,
@@ -1560,11 +1613,12 @@
           "percentage": 3.3
         }
       ],
-      "population": 98180000
+      "population": 98180000,
+      "name_uk": "В'єтнам"
     },
     "KHM": {
       "country_en": "Cambodia",
-      "country_uk": "Cambodia",
+      "country_uk": "Камбоджа",
       "continent": "Asia",
       "dominant_religion": "Іслам",
       "dominant_percentage": 24.8,
@@ -1598,11 +1652,12 @@
           "percentage": 3.4
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Камбоджа"
     },
     "LUX": {
       "country_en": "Luxembourg",
-      "country_uk": "Luxembourg",
+      "country_uk": "Люксембург",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 72,
@@ -1624,11 +1679,12 @@
           "percentage": 2.7
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Люксембург"
     },
     "ARE": {
       "country_en": "United Arab Emirates",
-      "country_uk": "United Arab Emirates",
+      "country_uk": "ОАЕ",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 26.5,
@@ -1662,11 +1718,12 @@
           "percentage": 2.8
         }
       ],
-      "population": 9440000
+      "population": 9440000,
+      "name_uk": "ОАЕ"
     },
     "BEL": {
       "country_en": "Belgium",
-      "country_uk": "Belgium",
+      "country_uk": "Бельгія",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 69.4,
@@ -1688,11 +1745,12 @@
           "percentage": 2.9
         }
       ],
-      "population": 11600000
+      "population": 11600000,
+      "name_uk": "Бельгія"
     },
     "GEO": {
       "country_en": "Georgia",
-      "country_uk": "Georgia",
+      "country_uk": "Грузія",
       "continent": "Asia",
       "dominant_religion": "Іслам",
       "dominant_percentage": 27.3,
@@ -1726,11 +1784,12 @@
           "percentage": 3.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Грузія"
     },
     "MKD": {
       "country_en": "North Macedonia",
-      "country_uk": "North Macedonia",
+      "country_uk": "Північна Македонія",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 67.9,
@@ -1752,11 +1811,12 @@
           "percentage": 3.5
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Північна Македонія"
     },
     "ALB": {
       "country_en": "Albania",
-      "country_uk": "Albania",
+      "country_uk": "Албанія",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 69.3,
@@ -1778,11 +1838,12 @@
           "percentage": 2.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Албанія"
     },
     "AZE": {
       "country_en": "Azerbaijan",
-      "country_uk": "Azerbaijan",
+      "country_uk": "Азербайджан",
       "continent": "Asia",
       "dominant_religion": "Іслам",
       "dominant_percentage": 24,
@@ -1816,11 +1877,12 @@
           "percentage": 3.3
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Азербайджан"
     },
     "XKX": {
       "country_en": "Kosovo",
-      "country_uk": "Kosovo",
+      "country_uk": "Косово",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 71.9,
@@ -1842,11 +1904,12 @@
           "percentage": 2.7
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Косово"
     },
     "TUR": {
       "country_en": "Turkey",
-      "country_uk": "Turkey",
+      "country_uk": "Туреччина",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 26.1,
@@ -1880,11 +1943,12 @@
           "percentage": 2.6
         }
       ],
-      "population": 84780000
+      "population": 84780000,
+      "name_uk": "Туреччина"
     },
     "ESP": {
       "country_en": "Spain",
-      "country_uk": "Spain",
+      "country_uk": "Іспанія",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 70,
@@ -1906,11 +1970,12 @@
           "percentage": 3.3
         }
       ],
-      "population": 48600000
+      "population": 48600000,
+      "name_uk": "Іспанія"
     },
     "LAO": {
       "country_en": "Laos",
-      "country_uk": "Laos",
+      "country_uk": "Лаос",
       "continent": "Asia",
       "dominant_religion": "Іслам",
       "dominant_percentage": 27.3,
@@ -1944,11 +2009,12 @@
           "percentage": 3.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Лаос"
     },
     "KGZ": {
       "country_en": "Kyrgyzstan",
-      "country_uk": "Kyrgyzstan",
+      "country_uk": "Киргизстан",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 23.5,
@@ -1982,11 +2048,12 @@
           "percentage": 3.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Киргизстан"
     },
     "ARM": {
       "country_en": "Armenia",
-      "country_uk": "Armenia",
+      "country_uk": "Вірменія",
       "continent": "Asia",
       "dominant_religion": "Іслам",
       "dominant_percentage": 26.7,
@@ -2020,11 +2087,12 @@
           "percentage": 3.4
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Вірменія"
     },
     "DNK": {
       "country_en": "Denmark",
-      "country_uk": "Denmark",
+      "country_uk": "Данія",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 71,
@@ -2046,11 +2114,12 @@
           "percentage": 2.6
         }
       ],
-      "population": 5850000
+      "population": 5850000,
+      "name_uk": "Данія"
     },
     "LBY": {
       "country_en": "Libya",
-      "country_uk": "Libya",
+      "country_uk": "Лівія",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 47.9,
@@ -2072,11 +2141,12 @@
           "percentage": 1.2
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Лівія"
     },
     "TUN": {
       "country_en": "Tunisia",
-      "country_uk": "Tunisia",
+      "country_uk": "Туніс",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 52.2,
@@ -2098,11 +2168,12 @@
           "percentage": 0.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Туніс"
     },
     "ROU": {
       "country_en": "Romania",
-      "country_uk": "Romania",
+      "country_uk": "Румунія",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 68.6,
@@ -2124,11 +2195,12 @@
           "percentage": 3
         }
       ],
-      "population": 19120000
+      "population": 19120000,
+      "name_uk": "Румунія"
     },
     "HUN": {
       "country_en": "Hungary",
-      "country_uk": "Hungary",
+      "country_uk": "Угорщина",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 68.7,
@@ -2150,11 +2222,12 @@
           "percentage": 3
         }
       ],
-      "population": 9700000
+      "population": 9700000,
+      "name_uk": "Угорщина"
     },
     "SVK": {
       "country_en": "Slovakia",
-      "country_uk": "Slovakia",
+      "country_uk": "Словаччина",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 67.9,
@@ -2176,11 +2249,12 @@
           "percentage": 3.3
         }
       ],
-      "population": 5430000
+      "population": 5430000,
+      "name_uk": "Словаччина"
     },
     "POL": {
       "country_en": "Poland",
-      "country_uk": "Poland",
+      "country_uk": "Польща",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 69.2,
@@ -2202,11 +2276,12 @@
           "percentage": 3.4
         }
       ],
-      "population": 37600000
+      "population": 37600000,
+      "name_uk": "Польща"
     },
     "IRL": {
       "country_en": "Ireland",
-      "country_uk": "Ireland",
+      "country_uk": "Ірландія",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 67.8,
@@ -2228,11 +2303,12 @@
           "percentage": 3.5
         }
       ],
-      "population": 5030000
+      "population": 5030000,
+      "name_uk": "Ірландія"
     },
     "GBR": {
       "country_en": "United Kingdom",
-      "country_uk": "United Kingdom",
+      "country_uk": "Велика Британія",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 68.3,
@@ -2254,11 +2330,12 @@
           "percentage": 3.2
         }
       ],
-      "population": 68500000
+      "population": 68500000,
+      "name_uk": "Велика Британія"
     },
     "GRC": {
       "country_en": "Greece",
-      "country_uk": "Greece",
+      "country_uk": "Греція",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 71.4,
@@ -2280,11 +2357,12 @@
           "percentage": 3
         }
       ],
-      "population": 10430000
+      "population": 10430000,
+      "name_uk": "Греція"
     },
     "ZMB": {
       "country_en": "Zambia",
-      "country_uk": "Zambia",
+      "country_uk": "Замбія",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 49.2,
@@ -2306,11 +2384,12 @@
           "percentage": 1.2
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Замбія"
     },
     "SLE": {
       "country_en": "Sierra Leone",
-      "country_uk": "Sierra Leone",
+      "country_uk": "Сьєрра-Леоне",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 50.6,
@@ -2332,11 +2411,12 @@
           "percentage": 1.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Сьєрра-Леоне"
     },
     "GIN": {
       "country_en": "Guinea",
-      "country_uk": "Guinea",
+      "country_uk": "Гвінея",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 47.7,
@@ -2358,11 +2438,12 @@
           "percentage": 1.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Гвінея"
     },
     "LBR": {
       "country_en": "Liberia",
-      "country_uk": "Liberia",
+      "country_uk": "Ліберія",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 49.1,
@@ -2384,11 +2465,12 @@
           "percentage": 1.2
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Ліберія"
     },
     "CAF": {
       "country_en": "Central African Republic",
-      "country_uk": "Central African Republic",
+      "country_uk": "ЦАР",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 52,
@@ -2410,11 +2492,12 @@
           "percentage": 0.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "ЦАР"
     },
     "SDN": {
       "country_en": "Sudan",
-      "country_uk": "Sudan",
+      "country_uk": "Судан",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 51.1,
@@ -2436,11 +2519,12 @@
           "percentage": 1.1
         }
       ],
-      "population": 45657202
+      "population": 45657202,
+      "name_uk": "Судан"
     },
     "DJI": {
       "country_en": "Djibouti",
-      "country_uk": "Djibouti",
+      "country_uk": "Джибуті",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 50.2,
@@ -2462,11 +2546,12 @@
           "percentage": 0.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Джибуті"
     },
     "ERI": {
       "country_en": "Eritrea",
-      "country_uk": "Eritrea",
+      "country_uk": "Еритрея",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 51,
@@ -2488,11 +2573,12 @@
           "percentage": 1.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Еритрея"
     },
     "AUT": {
       "country_en": "Austria",
-      "country_uk": "Austria",
+      "country_uk": "Австрія",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 71.9,
@@ -2514,11 +2600,12 @@
           "percentage": 2.6
         }
       ],
-      "population": 8950000
+      "population": 8950000,
+      "name_uk": "Австрія"
     },
     "IRQ": {
       "country_en": "Iraq",
-      "country_uk": "Iraq",
+      "country_uk": "Ірак",
       "continent": "Asia",
       "dominant_religion": "Іслам",
       "dominant_percentage": 23.7,
@@ -2552,11 +2639,12 @@
           "percentage": 3.2
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Ірак"
     },
     "ITA": {
       "country_en": "Italy",
-      "country_uk": "Italy",
+      "country_uk": "Італія",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 68.2,
@@ -2578,11 +2666,12 @@
           "percentage": 3.2
         }
       ],
-      "population": 59000000
+      "population": 59000000,
+      "name_uk": "Італія"
     },
     "CHE": {
       "country_en": "Switzerland",
-      "country_uk": "Switzerland",
+      "country_uk": "Швейцарія",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 68.9,
@@ -2604,11 +2693,12 @@
           "percentage": 3.5
         }
       ],
-      "population": 8960000
+      "population": 8960000,
+      "name_uk": "Швейцарія"
     },
     "IRN": {
       "country_en": "Iran",
-      "country_uk": "Iran",
+      "country_uk": "Іран",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 26.5,
@@ -2642,11 +2732,12 @@
           "percentage": 2.8
         }
       ],
-      "population": 85000000
+      "population": 85000000,
+      "name_uk": "Іран"
     },
     "NLD": {
       "country_en": "Netherlands",
-      "country_uk": "Netherlands",
+      "country_uk": "Нідерланди",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 68.8,
@@ -2668,11 +2759,12 @@
           "percentage": 3.5
         }
       ],
-      "population": 17700000
+      "population": 17700000,
+      "name_uk": "Нідерланди"
     },
     "LIE": {
       "country_en": "Liechtenstein",
-      "country_uk": "Liechtenstein",
+      "country_uk": "Ліхтенштейн",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 70.6,
@@ -2694,11 +2786,12 @@
           "percentage": 2.6
         }
       ],
-      "population": 40000
+      "population": 40000,
+      "name_uk": "Ліхтенштейн"
     },
     "CIV": {
       "country_en": "Ivory Coast",
-      "country_uk": "Ivory Coast",
+      "country_uk": "Кот-д'Івуар",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 52.1,
@@ -2720,11 +2813,12 @@
           "percentage": 0.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Кот-д'Івуар"
     },
     "SRB": {
       "country_en": "Republic of Serbia",
-      "country_uk": "Republic of Serbia",
+      "country_uk": "Сербія",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 68.6,
@@ -2746,11 +2840,12 @@
           "percentage": 3.5
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Сербія"
     },
     "MLI": {
       "country_en": "Mali",
-      "country_uk": "Mali",
+      "country_uk": "Малі",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 51.3,
@@ -2772,11 +2867,12 @@
           "percentage": 1
         }
       ],
-      "population": 23290000
+      "population": 23290000,
+      "name_uk": "Малі"
     },
     "SEN": {
       "country_en": "Senegal",
-      "country_uk": "Senegal",
+      "country_uk": "Сенегал",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 51.8,
@@ -2798,11 +2894,12 @@
           "percentage": 1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Сенегал"
     },
     "NGA": {
       "country_en": "Nigeria",
-      "country_uk": "Nigeria",
+      "country_uk": "Нігерія",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 51.2,
@@ -2824,11 +2921,12 @@
           "percentage": 1.1
         }
       ],
-      "population": 213400000
+      "population": 213400000,
+      "name_uk": "Нігерія"
     },
     "BEN": {
       "country_en": "Benin",
-      "country_uk": "Benin",
+      "country_uk": "Бенін",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 52.2,
@@ -2850,11 +2948,12 @@
           "percentage": 0.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Бенін"
     },
     "AGO": {
       "country_en": "Angola",
-      "country_uk": "Angola",
+      "country_uk": "Ангола",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 52.1,
@@ -2876,11 +2975,12 @@
           "percentage": 1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Ангола"
     },
     "HRV": {
       "country_en": "Croatia",
-      "country_uk": "Croatia",
+      "country_uk": "Хорватія",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 71.6,
@@ -2902,11 +3002,12 @@
           "percentage": 2.9
         }
       ],
-      "population": 4050000
+      "population": 4050000,
+      "name_uk": "Хорватія"
     },
     "SVN": {
       "country_en": "Slovenia",
-      "country_uk": "Slovenia",
+      "country_uk": "Словенія",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 72,
@@ -2928,11 +3029,12 @@
           "percentage": 2.6
         }
       ],
-      "population": 2110000
+      "population": 2110000,
+      "name_uk": "Словенія"
     },
     "QAT": {
       "country_en": "Qatar",
-      "country_uk": "Qatar",
+      "country_uk": "Катар",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 24.4,
@@ -2966,11 +3068,12 @@
           "percentage": 2.8
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Катар"
     },
     "SAU": {
       "country_en": "Saudi Arabia",
-      "country_uk": "Saudi Arabia",
+      "country_uk": "Саудівська Аравія",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 24.9,
@@ -3004,11 +3107,12 @@
           "percentage": 2.7
         }
       ],
-      "population": 36947000
+      "population": 36947000,
+      "name_uk": "Саудівська Аравія"
     },
     "BWA": {
       "country_en": "Botswana",
-      "country_uk": "Botswana",
+      "country_uk": "Ботсвана",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 49.8,
@@ -3030,11 +3134,12 @@
           "percentage": 0.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Ботсвана"
     },
     "ZWE": {
       "country_en": "Zimbabwe",
-      "country_uk": "Zimbabwe",
+      "country_uk": "Зімбабве",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 51.7,
@@ -3056,11 +3161,12 @@
           "percentage": 1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Зімбабве"
     },
     "PAK": {
       "country_en": "Pakistan",
-      "country_uk": "Pakistan",
+      "country_uk": "Пакистан",
       "continent": "Asia",
       "dominant_religion": "Іслам",
       "dominant_percentage": 26.4,
@@ -3094,11 +3200,12 @@
           "percentage": 3.4
         }
       ],
-      "population": 231400000
+      "population": 231400000,
+      "name_uk": "Пакистан"
     },
     "BGR": {
       "country_en": "Bulgaria",
-      "country_uk": "Bulgaria",
+      "country_uk": "Болгарія",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 67.9,
@@ -3120,11 +3227,12 @@
           "percentage": 3.4
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Болгарія"
     },
     "THA": {
       "country_en": "Thailand",
-      "country_uk": "Thailand",
+      "country_uk": "Таїланд",
       "continent": "Asia",
       "dominant_religion": "Іслам",
       "dominant_percentage": 26.6,
@@ -3158,11 +3266,12 @@
           "percentage": 2.9
         }
       ],
-      "population": 71600000
+      "population": 71600000,
+      "name_uk": "Таїланд"
     },
     "SMR": {
       "country_en": "San Marino",
-      "country_uk": "San Marino",
+      "country_uk": "Сан-Марино",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 70.2,
@@ -3184,11 +3293,12 @@
           "percentage": 3.3
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Сан-Марино"
     },
     "HTI": {
       "country_en": "Haiti",
-      "country_uk": "Haiti",
+      "country_uk": "Гаїті",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 76.5,
@@ -3206,11 +3316,12 @@
           "percentage": 9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Гаїті"
     },
     "DOM": {
       "country_en": "Dominican Republic",
-      "country_uk": "Dominican Republic",
+      "country_uk": "Домініканська Республіка",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 76.7,
@@ -3228,11 +3339,12 @@
           "percentage": 9.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Домініканська Республіка"
     },
     "TCD": {
       "country_en": "Chad",
-      "country_uk": "Chad",
+      "country_uk": "Чад",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 48.2,
@@ -3254,11 +3366,12 @@
           "percentage": 1
         }
       ],
-      "population": 17180000
+      "population": 17180000,
+      "name_uk": "Чад"
     },
     "KWT": {
       "country_en": "Kuwait",
-      "country_uk": "Kuwait",
+      "country_uk": "Кувейт",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 23.5,
@@ -3292,11 +3405,12 @@
           "percentage": 3.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Кувейт"
     },
     "SLV": {
       "country_en": "El Salvador",
-      "country_uk": "El Salvador",
+      "country_uk": "Сальвадор",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 76.6,
@@ -3314,11 +3428,12 @@
           "percentage": 8.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Сальвадор"
     },
     "GTM": {
       "country_en": "Guatemala",
-      "country_uk": "Guatemala",
+      "country_uk": "Гватемала",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 73.4,
@@ -3336,11 +3451,12 @@
           "percentage": 10.8
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Гватемала"
     },
     "TLS": {
       "country_en": "East Timor",
-      "country_uk": "East Timor",
+      "country_uk": "Східний Тимор",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 24,
@@ -3374,11 +3490,12 @@
           "percentage": 2.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Східний Тимор"
     },
     "BRN": {
       "country_en": "Brunei",
-      "country_uk": "Brunei",
+      "country_uk": "Бруней",
       "continent": "Asia",
       "dominant_religion": "Іслам",
       "dominant_percentage": 25.3,
@@ -3412,11 +3529,12 @@
           "percentage": 3.4
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Бруней"
     },
     "MCO": {
       "country_en": "Monaco",
-      "country_uk": "Monaco",
+      "country_uk": "Монако",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 69.8,
@@ -3438,11 +3556,12 @@
           "percentage": 2.8
         }
       ],
-      "population": 39000
+      "population": 39000,
+      "name_uk": "Монако"
     },
     "DZA": {
       "country_en": "Algeria",
-      "country_uk": "Algeria",
+      "country_uk": "Алжир",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 47.9,
@@ -3464,11 +3583,12 @@
           "percentage": 1.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Алжир"
     },
     "MOZ": {
       "country_en": "Mozambique",
-      "country_uk": "Mozambique",
+      "country_uk": "Мозамбік",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 49,
@@ -3490,11 +3610,12 @@
           "percentage": 1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Мозамбік"
     },
     "SWZ": {
       "country_en": "eSwatini",
-      "country_uk": "eSwatini",
+      "country_uk": "Есватіні",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 51,
@@ -3516,11 +3637,12 @@
           "percentage": 0.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Есватіні"
     },
     "BDI": {
       "country_en": "Burundi",
-      "country_uk": "Burundi",
+      "country_uk": "Бурунді",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 49.8,
@@ -3542,11 +3664,12 @@
           "percentage": 1.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Бурунді"
     },
     "RWA": {
       "country_en": "Rwanda",
-      "country_uk": "Rwanda",
+      "country_uk": "Руанда",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 51.7,
@@ -3568,11 +3691,12 @@
           "percentage": 0.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Руанда"
     },
     "MMR": {
       "country_en": "Myanmar",
-      "country_uk": "Myanmar",
+      "country_uk": "М'янма",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 25.3,
@@ -3606,11 +3730,12 @@
           "percentage": 2.6
         }
       ],
-      "population": 54500000
+      "population": 54500000,
+      "name_uk": "М'янма"
     },
     "BGD": {
       "country_en": "Bangladesh",
-      "country_uk": "Bangladesh",
+      "country_uk": "Бангладеш",
       "continent": "Asia",
       "dominant_religion": "Іслам",
       "dominant_percentage": 23.4,
@@ -3644,11 +3769,12 @@
           "percentage": 3.2
         }
       ],
-      "population": 169400000
+      "population": 169400000,
+      "name_uk": "Бангладеш"
     },
     "AND": {
       "country_en": "Andorra",
-      "country_uk": "Andorra",
+      "country_uk": "Андорра",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 71.4,
@@ -3670,11 +3796,12 @@
           "percentage": 2.6
         }
       ],
-      "population": 80000
+      "population": 80000,
+      "name_uk": "Андорра"
     },
     "AFG": {
       "country_en": "Afghanistan",
-      "country_uk": "Afghanistan",
+      "country_uk": "Афганістан",
       "continent": "Asia",
       "dominant_religion": "Іслам",
       "dominant_percentage": 27.2,
@@ -3708,11 +3835,12 @@
           "percentage": 3.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Афганістан"
     },
     "MNE": {
       "country_en": "Montenegro",
-      "country_uk": "Montenegro",
+      "country_uk": "Чорногорія",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 68.1,
@@ -3734,11 +3862,12 @@
           "percentage": 3.5
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Чорногорія"
     },
     "BIH": {
       "country_en": "Bosnia and Herzegovina",
-      "country_uk": "Bosnia and Herzegovina",
+      "country_uk": "Боснія і Герцеговина",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 70.5,
@@ -3760,11 +3889,12 @@
           "percentage": 2.6
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Боснія і Герцеговина"
     },
     "UGA": {
       "country_en": "Uganda",
-      "country_uk": "Uganda",
+      "country_uk": "Уганда",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 50.7,
@@ -3786,11 +3916,12 @@
           "percentage": 0.9
         }
       ],
-      "population": 47200000
+      "population": 47200000,
+      "name_uk": "Уганда"
     },
     "CUB": {
       "country_en": "Cuba",
-      "country_uk": "Cuba",
+      "country_uk": "Куба",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 76.8,
@@ -3808,11 +3939,12 @@
           "percentage": 8.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Куба"
     },
     "HND": {
       "country_en": "Honduras",
-      "country_uk": "Honduras",
+      "country_uk": "Гондурас",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 73,
@@ -3830,11 +3962,12 @@
           "percentage": 11.2
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Гондурас"
     },
     "ECU": {
       "country_en": "Ecuador",
-      "country_uk": "Ecuador",
+      "country_uk": "Еквадор",
       "continent": "South America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 86.1,
@@ -3852,11 +3985,12 @@
           "percentage": 4.6
         }
       ],
-      "population": 17800000
+      "population": 17800000,
+      "name_uk": "Еквадор"
     },
     "COL": {
       "country_en": "Colombia",
-      "country_uk": "Colombia",
+      "country_uk": "Колумбія",
       "continent": "South America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 86.2,
@@ -3874,11 +4008,12 @@
           "percentage": 4.4
         }
       ],
-      "population": 51500000
+      "population": 51500000,
+      "name_uk": "Колумбія"
     },
     "PRY": {
       "country_en": "Paraguay",
-      "country_uk": "Paraguay",
+      "country_uk": "Парагвай",
       "continent": "South America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 85.7,
@@ -3896,11 +4031,12 @@
           "percentage": 4.8
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Парагвай"
     },
     "PRT": {
       "country_en": "Portugal",
-      "country_uk": "Portugal",
+      "country_uk": "Португалія",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 68.3,
@@ -3922,11 +4058,12 @@
           "percentage": 3.5
         }
       ],
-      "population": 10300000
+      "population": 10300000,
+      "name_uk": "Португалія"
     },
     "MDA": {
       "country_en": "Moldova",
-      "country_uk": "Moldova",
+      "country_uk": "Молдова",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 67.9,
@@ -3948,11 +4085,12 @@
           "percentage": 3.5
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Молдова"
     },
     "TKM": {
       "country_en": "Turkmenistan",
-      "country_uk": "Turkmenistan",
+      "country_uk": "Туркменістан",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 25,
@@ -3986,11 +4124,12 @@
           "percentage": 2.7
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Туркменістан"
     },
     "JOR": {
       "country_en": "Jordan",
-      "country_uk": "Jordan",
+      "country_uk": "Йорданія",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 25.5,
@@ -4024,11 +4163,12 @@
           "percentage": 2.6
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Йорданія"
     },
     "NPL": {
       "country_en": "Nepal",
-      "country_uk": "Nepal",
+      "country_uk": "Непал",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 23.6,
@@ -4062,11 +4202,12 @@
           "percentage": 3.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Непал"
     },
     "LSO": {
       "country_en": "Lesotho",
-      "country_uk": "Lesotho",
+      "country_uk": "Лесото",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 49.4,
@@ -4088,11 +4229,12 @@
           "percentage": 0.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Лесото"
     },
     "CMR": {
       "country_en": "Cameroon",
-      "country_uk": "Cameroon",
+      "country_uk": "Камерун",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 52.2,
@@ -4114,11 +4256,12 @@
           "percentage": 0.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Камерун"
     },
     "GAB": {
       "country_en": "Gabon",
-      "country_uk": "Gabon",
+      "country_uk": "Габон",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 52,
@@ -4140,11 +4283,12 @@
           "percentage": 1
         }
       ],
-      "population": 2440000
+      "population": 2440000,
+      "name_uk": "Габон"
     },
     "NER": {
       "country_en": "Niger",
-      "country_uk": "Niger",
+      "country_uk": "Нігер",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 52.2,
@@ -4166,11 +4310,12 @@
           "percentage": 0.9
         }
       ],
-      "population": 27200000
+      "population": 27200000,
+      "name_uk": "Нігер"
     },
     "BFA": {
       "country_en": "Burkina Faso",
-      "country_uk": "Burkina Faso",
+      "country_uk": "Буркіна-Фасо",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 51.3,
@@ -4192,11 +4337,12 @@
           "percentage": 0.9
         }
       ],
-      "population": 23250000
+      "population": 23250000,
+      "name_uk": "Буркіна-Фасо"
     },
     "TGO": {
       "country_en": "Togo",
-      "country_uk": "Togo",
+      "country_uk": "Того",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 52,
@@ -4218,11 +4364,12 @@
           "percentage": 1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Того"
     },
     "GHA": {
       "country_en": "Ghana",
-      "country_uk": "Ghana",
+      "country_uk": "Гана",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 47.7,
@@ -4244,11 +4391,12 @@
           "percentage": 1.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Гана"
     },
     "GNB": {
       "country_en": "Guinea-Bissau",
-      "country_uk": "Guinea-Bissau",
+      "country_uk": "Гвінея-Бісау",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 50.3,
@@ -4270,11 +4418,12 @@
           "percentage": 1.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Гвінея-Бісау"
     },
     "GIB": {
       "country_en": "Gibraltar",
-      "country_uk": "Gibraltar",
+      "country_uk": "Гібралтар",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 68.2,
@@ -4296,11 +4445,12 @@
           "percentage": 3.2
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Гібралтар"
     },
     "USA": {
       "country_en": "United States of America",
-      "country_uk": "United States of America",
+      "country_uk": "США",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 76.9,
@@ -4318,11 +4468,12 @@
           "percentage": 8.9
         }
       ],
-      "population": 342000000
+      "population": 342000000,
+      "name_uk": "США"
     },
     "CAN": {
       "country_en": "Canada",
-      "country_uk": "Canada",
+      "country_uk": "Канада",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 75.4,
@@ -4340,11 +4491,12 @@
           "percentage": 10
         }
       ],
-      "population": 38250000
+      "population": 38250000,
+      "name_uk": "Канада"
     },
     "MEX": {
       "country_en": "Mexico",
-      "country_uk": "Mexico",
+      "country_uk": "Мексика",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 76.9,
@@ -4362,11 +4514,12 @@
           "percentage": 8.9
         }
       ],
-      "population": 126700000
+      "population": 126700000,
+      "name_uk": "Мексика"
     },
     "BLZ": {
       "country_en": "Belize",
-      "country_uk": "Belize",
+      "country_uk": "Беліз",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 73.1,
@@ -4384,11 +4537,12 @@
           "percentage": 11.3
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Беліз"
     },
     "PAN": {
       "country_en": "Panama",
-      "country_uk": "Panama",
+      "country_uk": "Панама",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 73.1,
@@ -4406,11 +4560,12 @@
           "percentage": 11.1
         }
       ],
-      "population": 4460000
+      "population": 4460000,
+      "name_uk": "Панама"
     },
     "VEN": {
       "country_en": "Venezuela",
-      "country_uk": "Venezuela",
+      "country_uk": "Венесуела",
       "continent": "South America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 86.1,
@@ -4428,11 +4583,12 @@
           "percentage": 4.4
         }
       ],
-      "population": 28300000
+      "population": 28300000,
+      "name_uk": "Венесуела"
     },
     "PNG": {
       "country_en": "Papua New Guinea",
-      "country_uk": "Papua New Guinea",
+      "country_uk": "Папуа-Нова Гвінея",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 57.8,
@@ -4450,11 +4606,12 @@
           "percentage": 16.2
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Папуа-Нова Гвінея"
     },
     "EGY": {
       "country_en": "Egypt",
-      "country_uk": "Egypt",
+      "country_uk": "Єгипет",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 47.8,
@@ -4476,11 +4633,12 @@
           "percentage": 1.1
         }
       ],
-      "population": 114500000
+      "population": 114500000,
+      "name_uk": "Єгипет"
     },
     "YEM": {
       "country_en": "Yemen",
-      "country_uk": "Yemen",
+      "country_uk": "Ємен",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 26.1,
@@ -4514,11 +4672,12 @@
           "percentage": 2.6
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Ємен"
     },
     "MRT": {
       "country_en": "Mauritania",
-      "country_uk": "Mauritania",
+      "country_uk": "Мавританія",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 47.8,
@@ -4540,11 +4699,12 @@
           "percentage": 1.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Мавританія"
     },
     "GNQ": {
       "country_en": "Equatorial Guinea",
-      "country_uk": "Equatorial Guinea",
+      "country_uk": "Екваторіальна Гвінея",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 48.4,
@@ -4566,11 +4726,12 @@
           "percentage": 1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Екваторіальна Гвінея"
     },
     "GMB": {
       "country_en": "Gambia",
-      "country_uk": "Gambia",
+      "country_uk": "Гамбія",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 49.3,
@@ -4592,11 +4753,12 @@
           "percentage": 1.2
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Гамбія"
     },
     "HKG": {
       "country_en": "Hong Kong S.A.R.",
-      "country_uk": "Hong Kong S.A.R.",
+      "country_uk": "Гонконг",
       "continent": "Asia",
       "dominant_religion": "Іслам",
       "dominant_percentage": 24.8,
@@ -4630,11 +4792,12 @@
           "percentage": 3.4
         }
       ],
-      "population": 7500000
+      "population": 7500000,
+      "name_uk": "Гонконг"
     },
     "VAT": {
       "country_en": "Vatican",
-      "country_uk": "Vatican",
+      "country_uk": "Ватикан",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 70.8,
@@ -4656,11 +4819,12 @@
           "percentage": 3.1
         }
       ],
-      "population": 800
+      "population": 800,
+      "name_uk": "Ватикан"
     },
     "ATA": {
       "country_en": "Antarctica",
-      "country_uk": "Antarctica",
+      "country_uk": "Антарктида",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 62.4,
@@ -4678,11 +4842,12 @@
           "percentage": 13.5
         }
       ],
-      "population": 4000
+      "population": 4000,
+      "name_uk": "Антарктида"
     },
     "AUS": {
       "country_en": "Australia",
-      "country_uk": "Australia",
+      "country_uk": "Австралія",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 60.6,
@@ -4700,11 +4865,12 @@
           "percentage": 14.3
         }
       ],
-      "population": 25690000
+      "population": 25690000,
+      "name_uk": "Австралія"
     },
     "GRL": {
       "country_en": "Greenland",
-      "country_uk": "Greenland",
+      "country_uk": "Гренландія",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 73.3,
@@ -4722,11 +4888,12 @@
           "percentage": 10.9
         }
       ],
-      "population": 56600
+      "population": 56600,
+      "name_uk": "Гренландія"
     },
     "FJI": {
       "country_en": "Fiji",
-      "country_uk": "Fiji",
+      "country_uk": "Фіджі",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 58.9,
@@ -4744,11 +4911,12 @@
           "percentage": 15.3
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Фіджі"
     },
     "NZL": {
       "country_en": "New Zealand",
-      "country_uk": "New Zealand",
+      "country_uk": "Нова Зеландія",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 58.9,
@@ -4766,11 +4934,12 @@
           "percentage": 15.3
         }
       ],
-      "population": 5120000
+      "population": 5120000,
+      "name_uk": "Нова Зеландія"
     },
     "NCL": {
       "country_en": "New Caledonia",
-      "country_uk": "New Caledonia",
+      "country_uk": "Нова Каледонія",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 60.9,
@@ -4788,11 +4957,12 @@
           "percentage": 14.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Нова Каледонія"
     },
     "MDG": {
       "country_en": "Madagascar",
-      "country_uk": "Madagascar",
+      "country_uk": "Мадагаскар",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 48.3,
@@ -4814,11 +4984,12 @@
           "percentage": 1.2
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Мадагаскар"
     },
     "PHL": {
       "country_en": "Philippines",
-      "country_uk": "Philippines",
+      "country_uk": "Філіппіни",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 26.5,
@@ -4852,11 +5023,12 @@
           "percentage": 2.8
         }
       ],
-      "population": 113900000
+      "population": 113900000,
+      "name_uk": "Філіппіни"
     },
     "LKA": {
       "country_en": "Sri Lanka",
-      "country_uk": "Sri Lanka",
+      "country_uk": "Шрі-Ланка",
       "continent": "Asia",
       "dominant_religion": "Іслам",
       "dominant_percentage": 26.9,
@@ -4890,11 +5062,12 @@
           "percentage": 3.4
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Шрі-Ланка"
     },
     "CUW": {
       "country_en": "Curaçao",
-      "country_uk": "Curaçao",
+      "country_uk": "Кюрасао",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 74,
@@ -4912,11 +5085,12 @@
           "percentage": 10.8
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Кюрасао"
     },
     "ABW": {
       "country_en": "Aruba",
-      "country_uk": "Aruba",
+      "country_uk": "Аруба",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 74.3,
@@ -4934,11 +5108,12 @@
           "percentage": 10.2
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Аруба"
     },
     "BHS": {
       "country_en": "The Bahamas",
-      "country_uk": "The Bahamas",
+      "country_uk": "Багамські Острови",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 73.5,
@@ -4956,11 +5131,12 @@
           "percentage": 10.7
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Багамські Острови"
     },
     "TCA": {
       "country_en": "Turks and Caicos Islands",
-      "country_uk": "Turks and Caicos Islands",
+      "country_uk": "Теркс і Кайкос",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 76.3,
@@ -4978,11 +5154,12 @@
           "percentage": 9.4
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Теркс і Кайкос"
     },
     "TWN": {
       "country_en": "Taiwan",
-      "country_uk": "Taiwan",
+      "country_uk": "Тайвань",
       "continent": "Asia",
       "dominant_religion": "Іслам",
       "dominant_percentage": 27.2,
@@ -5016,11 +5193,12 @@
           "percentage": 3.1
         }
       ],
-      "population": 23420000
+      "population": 23420000,
+      "name_uk": "Тайвань"
     },
     "JPN": {
       "country_en": "Japan",
-      "country_uk": "Japan",
+      "country_uk": "Японія",
       "continent": "Asia",
       "dominant_religion": "Іслам",
       "dominant_percentage": 27.1,
@@ -5054,11 +5232,12 @@
           "percentage": 3
         }
       ],
-      "population": 124500000
+      "population": 124500000,
+      "name_uk": "Японія"
     },
     "SPM": {
       "country_en": "Saint Pierre and Miquelon",
-      "country_uk": "Saint Pierre and Miquelon",
+      "country_uk": "Сен-П'єр і Мікелон",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 75.2,
@@ -5076,11 +5255,12 @@
           "percentage": 10.2
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Сен-П'єр і Мікелон"
     },
     "ISL": {
       "country_en": "Iceland",
-      "country_uk": "Iceland",
+      "country_uk": "Ісландія",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 68.1,
@@ -5102,11 +5282,12 @@
           "percentage": 3.5
         }
       ],
-      "population": 393000
+      "population": 393000,
+      "name_uk": "Ісландія"
     },
     "PCN": {
       "country_en": "Pitcairn Islands",
-      "country_uk": "Pitcairn Islands",
+      "country_uk": "Острови Піткерн",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 57.8,
@@ -5124,11 +5305,12 @@
           "percentage": 16.6
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Острови Піткерн"
     },
     "PYF": {
       "country_en": "French Polynesia",
-      "country_uk": "French Polynesia",
+      "country_uk": "Французька Полінезія",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 59,
@@ -5146,11 +5328,12 @@
           "percentage": 15.3
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Французька Полінезія"
     },
     "ATF": {
       "country_en": "French Southern and Antarctic Lands",
-      "country_uk": "French Southern and Antarctic Lands",
+      "country_uk": "Французькі Південні Території",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 60.6,
@@ -5168,11 +5351,12 @@
           "percentage": 14.3
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Французькі Південні Території"
     },
     "SYC": {
       "country_en": "Seychelles",
-      "country_uk": "Seychelles",
+      "country_uk": "Сейшели",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 52.2,
@@ -5194,11 +5378,12 @@
           "percentage": 0.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Сейшели"
     },
     "KIR": {
       "country_en": "Kiribati",
-      "country_uk": "Kiribati",
+      "country_uk": "Кірибаті",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 61.9,
@@ -5216,11 +5401,12 @@
           "percentage": 13.6
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Кірибаті"
     },
     "MHL": {
       "country_en": "Marshall Islands",
-      "country_uk": "Marshall Islands",
+      "country_uk": "Маршаллові Острови",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 62,
@@ -5238,11 +5424,12 @@
           "percentage": 13.6
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Маршаллові Острови"
     },
     "TTO": {
       "country_en": "Trinidad and Tobago",
-      "country_uk": "Trinidad and Tobago",
+      "country_uk": "Тринідад і Тобаго",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 75.2,
@@ -5260,11 +5447,12 @@
           "percentage": 10.2
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Тринідад і Тобаго"
     },
     "GRD": {
       "country_en": "Grenada",
-      "country_uk": "Grenada",
+      "country_uk": "Гренада",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 74.4,
@@ -5282,11 +5470,12 @@
           "percentage": 10.6
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Гренада"
     },
     "VCT": {
       "country_en": "Saint Vincent and the Grenadines",
-      "country_uk": "Saint Vincent and the Grenadines",
+      "country_uk": "Сент-Вінсент і Гренадини",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 76.8,
@@ -5304,11 +5493,12 @@
           "percentage": 9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Сент-Вінсент і Гренадини"
     },
     "BRB": {
       "country_en": "Barbados",
-      "country_uk": "Barbados",
+      "country_uk": "Барбадос",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 75.2,
@@ -5326,11 +5516,12 @@
           "percentage": 10.2
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Барбадос"
     },
     "LCA": {
       "country_en": "Saint Lucia",
-      "country_uk": "Saint Lucia",
+      "country_uk": "Сент-Люсія",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 73.2,
@@ -5348,11 +5539,12 @@
           "percentage": 11
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Сент-Люсія"
     },
     "DMA": {
       "country_en": "Dominica",
-      "country_uk": "Dominica",
+      "country_uk": "Домініка",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 74.3,
@@ -5370,11 +5562,12 @@
           "percentage": 10.7
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Домініка"
     },
     "UMI": {
       "country_en": "United States Minor Outlying Islands",
-      "country_uk": "United States Minor Outlying Islands",
+      "country_uk": "Малі Острови США",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 74.4,
@@ -5392,11 +5585,12 @@
           "percentage": 10.2
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Малі Острови США"
     },
     "MSR": {
       "country_en": "Montserrat",
-      "country_uk": "Montserrat",
+      "country_uk": "Монтсеррат",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 76.2,
@@ -5414,11 +5608,12 @@
           "percentage": 9.5
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Монтсеррат"
     },
     "ATG": {
       "country_en": "Antigua and Barbuda",
-      "country_uk": "Antigua and Barbuda",
+      "country_uk": "Антигуа і Барбуда",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 76.7,
@@ -5436,11 +5631,12 @@
           "percentage": 8.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Антигуа і Барбуда"
     },
     "KNA": {
       "country_en": "Saint Kitts and Nevis",
-      "country_uk": "Saint Kitts and Nevis",
+      "country_uk": "Сент-Кіттс і Невіс",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 76.2,
@@ -5458,11 +5654,12 @@
           "percentage": 9.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Сент-Кіттс і Невіс"
     },
     "VIR": {
       "country_en": "United States Virgin Islands",
-      "country_uk": "United States Virgin Islands",
+      "country_uk": "Віргінські Острови США",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 73.9,
@@ -5480,11 +5677,12 @@
           "percentage": 10.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Віргінські Острови США"
     },
     "BLM": {
       "country_en": "Saint Barthelemy",
-      "country_uk": "Saint Barthelemy",
+      "country_uk": "Сен-Бартелемі",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 73.4,
@@ -5502,11 +5700,12 @@
           "percentage": 11.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Сен-Бартелемі"
     },
     "PRI": {
       "country_en": "Puerto Rico",
-      "country_uk": "Puerto Rico",
+      "country_uk": "Пуерто-Рико",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 73.7,
@@ -5524,11 +5723,12 @@
           "percentage": 10.6
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Пуерто-Рико"
     },
     "AIA": {
       "country_en": "Anguilla",
-      "country_uk": "Anguilla",
+      "country_uk": "Ангілья",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 74.7,
@@ -5546,11 +5746,12 @@
           "percentage": 9.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Ангілья"
     },
     "VGB": {
       "country_en": "British Virgin Islands",
-      "country_uk": "British Virgin Islands",
+      "country_uk": "Британські Віргінські Острови",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 76.6,
@@ -5568,11 +5769,12 @@
           "percentage": 8.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Британські Віргінські Острови"
     },
     "JAM": {
       "country_en": "Jamaica",
-      "country_uk": "Jamaica",
+      "country_uk": "Ямайка",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 74.4,
@@ -5590,11 +5792,12 @@
           "percentage": 10.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Ямайка"
     },
     "CYM": {
       "country_en": "Cayman Islands",
-      "country_uk": "Cayman Islands",
+      "country_uk": "Кайманові Острови",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 73,
@@ -5612,11 +5815,12 @@
           "percentage": 11.2
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Кайманові Острови"
     },
     "BMU": {
       "country_en": "Bermuda",
-      "country_uk": "Bermuda",
+      "country_uk": "Бермуди",
       "continent": "North America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 73.4,
@@ -5634,11 +5838,12 @@
           "percentage": 10.8
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Бермуди"
     },
     "HMD": {
       "country_en": "Heard Island and McDonald Islands",
-      "country_uk": "Heard Island and McDonald Islands",
+      "country_uk": "Острови Герд і Макдональд",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 57.9,
@@ -5656,11 +5861,12 @@
           "percentage": 16.2
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Острови Герд і Макдональд"
     },
     "SHN": {
       "country_en": "Saint Helena",
-      "country_uk": "Saint Helena",
+      "country_uk": "Острів Святої Єлени",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 51.8,
@@ -5682,11 +5888,12 @@
           "percentage": 0.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Острів Святої Єлени"
     },
     "MUS": {
       "country_en": "Mauritius",
-      "country_uk": "Mauritius",
+      "country_uk": "Маврикій",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 51.3,
@@ -5708,11 +5915,12 @@
           "percentage": 1
         }
       ],
-      "population": 1260000
+      "population": 1260000,
+      "name_uk": "Маврикій"
     },
     "COM": {
       "country_en": "Comoros",
-      "country_uk": "Comoros",
+      "country_uk": "Комори",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 51.7,
@@ -5734,11 +5942,12 @@
           "percentage": 1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Комори"
     },
     "STP": {
       "country_en": "São Tomé and Principe",
-      "country_uk": "São Tomé and Principe",
+      "country_uk": "Сан-Томе і Принсіпі",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 47.9,
@@ -5760,11 +5969,12 @@
           "percentage": 1.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Сан-Томе і Принсіпі"
     },
     "CPV": {
       "country_en": "Cabo Verde",
-      "country_uk": "Cabo Verde",
+      "country_uk": "Кабо-Верде",
       "continent": "Africa",
       "dominant_religion": "Християнство",
       "dominant_percentage": 47.7,
@@ -5786,11 +5996,12 @@
           "percentage": 1.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Кабо-Верде"
     },
     "MLT": {
       "country_en": "Malta",
-      "country_uk": "Malta",
+      "country_uk": "Мальта",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 71.8,
@@ -5812,11 +6023,12 @@
           "percentage": 2.6
         }
       ],
-      "population": 535000
+      "population": 535000,
+      "name_uk": "Мальта"
     },
     "JEY": {
       "country_en": "Jersey",
-      "country_uk": "Jersey",
+      "country_uk": "Джерсі",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 68.7,
@@ -5838,11 +6050,12 @@
           "percentage": 3.5
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Джерсі"
     },
     "GGY": {
       "country_en": "Guernsey",
-      "country_uk": "Guernsey",
+      "country_uk": "Гернсі",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 68.4,
@@ -5864,11 +6077,12 @@
           "percentage": 3.5
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Гернсі"
     },
     "IMN": {
       "country_en": "Isle of Man",
-      "country_uk": "Isle of Man",
+      "country_uk": "Острів Мен",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 71.6,
@@ -5890,11 +6104,12 @@
           "percentage": 2.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Острів Мен"
     },
     "ALA": {
       "country_en": "Aland",
-      "country_uk": "Aland",
+      "country_uk": "Аландські Острови",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 67.9,
@@ -5916,11 +6131,12 @@
           "percentage": 3.3
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Аландські Острови"
     },
     "FRO": {
       "country_en": "Faroe Islands",
-      "country_uk": "Faroe Islands",
+      "country_uk": "Фарерські Острови",
       "continent": "Europe",
       "dominant_religion": "Християнство",
       "dominant_percentage": 71.7,
@@ -5942,11 +6158,12 @@
           "percentage": 2.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Фарерські Острови"
     },
     "IOT": {
       "country_en": "British Indian Ocean Territory",
-      "country_uk": "British Indian Ocean Territory",
+      "country_uk": "Британська Територія в Індійському Океані",
       "continent": "Asia",
       "dominant_religion": "Іслам",
       "dominant_percentage": 27.3,
@@ -5980,11 +6197,12 @@
           "percentage": 3.2
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Британська Територія в Індійському Океані"
     },
     "SGP": {
       "country_en": "Singapore",
-      "country_uk": "Singapore",
+      "country_uk": "Сінгапур",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 23.5,
@@ -6018,11 +6236,12 @@
           "percentage": 3.1
         }
       ],
-      "population": 5640000
+      "population": 5640000,
+      "name_uk": "Сінгапур"
     },
     "NFK": {
       "country_en": "Norfolk Island",
-      "country_uk": "Norfolk Island",
+      "country_uk": "Острів Норфолк",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 61.2,
@@ -6040,11 +6259,12 @@
           "percentage": 13.9
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Острів Норфолк"
     },
     "COK": {
       "country_en": "Cook Islands",
-      "country_uk": "Cook Islands",
+      "country_uk": "Острови Кука",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 60.9,
@@ -6062,11 +6282,12 @@
           "percentage": 14.1
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Острови Кука"
     },
     "TON": {
       "country_en": "Tonga",
-      "country_uk": "Tonga",
+      "country_uk": "Тонга",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 57.9,
@@ -6084,11 +6305,12 @@
           "percentage": 16.6
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Тонга"
     },
     "WLF": {
       "country_en": "Wallis and Futuna",
-      "country_uk": "Wallis and Futuna",
+      "country_uk": "Волліс і Футуна",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 61.2,
@@ -6106,11 +6328,12 @@
           "percentage": 14.7
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Волліс і Футуна"
     },
     "WSM": {
       "country_en": "Samoa",
-      "country_uk": "Samoa",
+      "country_uk": "Самоа",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 61,
@@ -6128,11 +6351,12 @@
           "percentage": 14
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Самоа"
     },
     "SLB": {
       "country_en": "Solomon Islands",
-      "country_uk": "Solomon Islands",
+      "country_uk": "Соломонові Острови",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 60,
@@ -6150,11 +6374,12 @@
           "percentage": 14.7
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Соломонові Острови"
     },
     "TUV": {
       "country_en": "Tuvalu",
-      "country_uk": "Tuvalu",
+      "country_uk": "Тувалу",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 59.5,
@@ -6172,11 +6397,12 @@
           "percentage": 15.8
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Тувалу"
     },
     "MDV": {
       "country_en": "Maldives",
-      "country_uk": "Maldives",
+      "country_uk": "Мальдіви",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 26.5,
@@ -6210,11 +6436,12 @@
           "percentage": 2.8
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Мальдіви"
     },
     "NRU": {
       "country_en": "Nauru",
-      "country_uk": "Nauru",
+      "country_uk": "Науру",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 58.5,
@@ -6232,11 +6459,12 @@
           "percentage": 15.7
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Науру"
     },
     "FSM": {
       "country_en": "Federated States of Micronesia",
-      "country_uk": "Federated States of Micronesia",
+      "country_uk": "Мікронезія",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 59.5,
@@ -6254,11 +6482,12 @@
           "percentage": 15
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Мікронезія"
     },
     "SGS": {
       "country_en": "South Georgia and the Islands",
-      "country_uk": "South Georgia and the Islands",
+      "country_uk": "Південна Джорджія",
       "continent": "South America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 85.2,
@@ -6276,11 +6505,12 @@
           "percentage": 4.8
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Південна Джорджія"
     },
     "FLK": {
       "country_en": "Falkland Islands",
-      "country_uk": "Falkland Islands",
+      "country_uk": "Фолклендські Острови",
       "continent": "South America",
       "dominant_religion": "Християнство",
       "dominant_percentage": 85.7,
@@ -6298,11 +6528,12 @@
           "percentage": 4.5
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Фолклендські Острови"
     },
     "VUT": {
       "country_en": "Vanuatu",
-      "country_uk": "Vanuatu",
+      "country_uk": "Вануату",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 61.4,
@@ -6320,11 +6551,12 @@
           "percentage": 13.8
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Вануату"
     },
     "NIU": {
       "country_en": "Niue",
-      "country_uk": "Niue",
+      "country_uk": "Ніуе",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 60.3,
@@ -6342,11 +6574,12 @@
           "percentage": 15.2
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Ніуе"
     },
     "ASM": {
       "country_en": "American Samoa",
-      "country_uk": "American Samoa",
+      "country_uk": "Американське Самоа",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 62.3,
@@ -6364,11 +6597,12 @@
           "percentage": 13.5
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Американське Самоа"
     },
     "PLW": {
       "country_en": "Palau",
-      "country_uk": "Palau",
+      "country_uk": "Палау",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 60.1,
@@ -6386,11 +6620,12 @@
           "percentage": 15.4
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Палау"
     },
     "GUM": {
       "country_en": "Guam",
-      "country_uk": "Guam",
+      "country_uk": "Гуам",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 57.6,
@@ -6408,11 +6643,12 @@
           "percentage": 16.4
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Гуам"
     },
     "MNP": {
       "country_en": "Northern Mariana Islands",
-      "country_uk": "Northern Mariana Islands",
+      "country_uk": "Північні Маріанські Острови",
       "continent": "Oceania",
       "dominant_religion": "Християнство",
       "dominant_percentage": 61.4,
@@ -6430,11 +6666,12 @@
           "percentage": 14.5
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Північні Маріанські Острови"
     },
     "BHR": {
       "country_en": "Bahrain",
-      "country_uk": "Bahrain",
+      "country_uk": "Бахрейн",
       "continent": "Asia",
       "dominant_religion": "Індуїзм",
       "dominant_percentage": 24.4,
@@ -6468,11 +6705,12 @@
           "percentage": 2.8
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Бахрейн"
     },
     "MAC": {
       "country_en": "Macao S.A.R",
-      "country_uk": "Macao S.A.R",
+      "country_uk": "Макао",
       "continent": "Asia",
       "dominant_religion": "Іслам",
       "dominant_percentage": 27.3,
@@ -6506,7 +6744,8 @@
           "percentage": 3.2
         }
       ],
-      "population": 1000000
+      "population": 1000000,
+      "name_uk": "Макао"
     }
   },
   "continents": {
