@@ -23,16 +23,16 @@ All installers and standalone binaries are pre-compiled, verified, and available
 
 | Platform | Architecture | Distribution Package | Size | Direct Link |
 | :--- | :--- | :--- | :---: | :---: |
-| 🍏 **macOS** | **Universal 2 (M1–M4 + Intel)** | Disk Image (`.dmg`) | **30 MB** | [Download .dmg](https://github.com/grizlizora/TerraMetrics-3D/raw/main/releases/v2.0/TerraMetrics.3D_2.0.0_universal.dmg) |
-| 🍏 **macOS** | **Apple Silicon (M1/M2/M3/M4)** | Standalone Image (`.dmg`) | **17 MB** | [Download .dmg](https://github.com/grizlizora/TerraMetrics-3D/raw/main/releases/v2.0/TerraMetrics-3D-v2.0-macOS.dmg) |
-| 🍏 **macOS** | **Portable App Archive** | Compressed App (`.tar.gz`) | **28 MB** | [Download .tar.gz](https://github.com/grizlizora/TerraMetrics-3D/raw/main/releases/v2.0/TerraMetrics.3D_universal.app.tar.gz) |
-| 🪟 **Windows** | **x64 (Intel / AMD)** | NSIS Setup (`.exe`) | **13 MB** | [Download Setup.exe](https://github.com/grizlizora/TerraMetrics-3D/raw/main/releases/v2.0/TerraMetrics.3D_2.0.0_x64-setup.exe) |
-| 🪟 **Windows** | **ARM64 (Snapdragon X Elite)** | NSIS Setup (`.exe`) | **12 MB** | [Download Setup.exe](https://github.com/grizlizora/TerraMetrics-3D/raw/main/releases/v2.0/TerraMetrics.3D_2.0.0_arm64-setup.exe) |
-| 🐧 **Linux** | **x86_64 (Any Distro)** | Portable (`.AppImage`) | **88 MB** | [Download .AppImage](https://github.com/grizlizora/TerraMetrics-3D/raw/main/releases/v2.0/TerraMetrics.3D_2.0.0_amd64.AppImage) |
-| 🐧 **Linux** | **x86_64 (Ubuntu / Debian)** | Package (`.deb`) | **14 MB** | [Download .deb](https://github.com/grizlizora/TerraMetrics-3D/raw/main/releases/v2.0/TerraMetrics.3D_2.0.0_amd64.deb) |
-| 🐧 **Linux** | **ARM64 (Raspberry Pi 5 / ARM)** | Portable (`.AppImage`) | **84 MB** | [Download .AppImage](https://github.com/grizlizora/TerraMetrics-3D/raw/main/releases/v2.0/TerraMetrics.3D_2.0.0_aarch64.AppImage) |
-| 🐧 **Linux** | **ARM64 (Ubuntu / Debian ARM)** | Package (`.deb`) | **14 MB** | [Download .deb](https://github.com/grizlizora/TerraMetrics-3D/raw/main/releases/v2.0/TerraMetrics.3D_2.0.0_arm64.deb) |
-| 📱 **Android** | **All Devices (ARM64/v7a/x86)** | Application Package (`.apk`) | **18 MB** | [Download .apk](https://github.com/grizlizora/TerraMetrics-3D/raw/main/releases/v2.0/TerraMetrics-3D-v2.0.apk) |
+| 🍏 **macOS** | **Universal 2 (M1–M4 + Intel)** | Disk Image (`.dmg`) | **24 MB** | [Download .dmg](https://github.com/grizlizora/TerraMetrics-3D/raw/main/releases/v2.0/TerraMetrics.3D_2.0.0_universal.dmg) |
+| 🍏 **macOS** | **Apple Silicon (M1/M2/M3/M4)** | Standalone Image (`.dmg`) | **24 MB** | [Download .dmg](https://github.com/grizlizora/TerraMetrics-3D/raw/main/releases/v2.0/TerraMetrics-3D-v2.0-macOS.dmg) |
+| 🍏 **macOS** | **Portable App Archive** | Compressed App (`.tar.gz`) | **22 MB** | [Download .tar.gz](https://github.com/grizlizora/TerraMetrics-3D/raw/main/releases/v2.0/TerraMetrics.3D_universal.app.tar.gz) |
+| 🪟 **Windows** | **x64 (Intel / AMD)** | NSIS Setup (`.exe`) | **9.3 MB** | [Download Setup.exe](https://github.com/grizlizora/TerraMetrics-3D/raw/main/releases/v2.0/TerraMetrics.3D_2.0.0_x64-setup.exe) |
+| 🪟 **Windows** | **ARM64 (Snapdragon X Elite)** | NSIS Setup (`.exe`) | **9.2 MB** | [Download Setup.exe](https://github.com/grizlizora/TerraMetrics-3D/raw/main/releases/v2.0/TerraMetrics.3D_2.0.0_arm64-setup.exe) |
+| 🐧 **Linux** | **x86_64 (Any Distro)** | Portable (`.AppImage`) | **85 MB** | [Download .AppImage](https://github.com/grizlizora/TerraMetrics-3D/raw/main/releases/v2.0/TerraMetrics.3D_2.0.0_amd64.AppImage) |
+| 🐧 **Linux** | **x86_64 (Ubuntu / Debian)** | Package (`.deb`) | **11 MB** | [Download .deb](https://github.com/grizlizora/TerraMetrics-3D/raw/main/releases/v2.0/TerraMetrics.3D_2.0.0_amd64.deb) |
+| 🐧 **Linux** | **ARM64 (Raspberry Pi 5 / ARM)** | Portable (`.AppImage`) | **81 MB** | [Download .AppImage](https://github.com/grizlizora/TerraMetrics-3D/raw/main/releases/v2.0/TerraMetrics.3D_2.0.0_aarch64.AppImage) |
+| 🐧 **Linux** | **ARM64 (Ubuntu / Debian ARM)** | Package (`.deb`) | **10 MB** | [Download .deb](https://github.com/grizlizora/TerraMetrics-3D/raw/main/releases/v2.0/TerraMetrics.3D_2.0.0_arm64.deb) |
+| 📱 **Android** | **All Devices (ARM64/v7a/x86)** | Application Package (`.apk`) | **15 MB** | [Download .apk](https://github.com/grizlizora/TerraMetrics-3D/raw/main/releases/v2.0/TerraMetrics-3D-v2.0.apk) |
 
 ---
 
@@ -183,6 +183,15 @@ The entire celestial animation loop operates under a strict Zero-Garbage-Collect
 - **L2 (IndexedDB):** `TerraStorageDB` delivers cold-start boots in `<15 ms`.
 - **L3 (Bundled Fallback & Service Worker):** PWA Service Worker (`public/sw.js`) precaches app shell, static assets, vector data, and offline tile fallbacks.
 - **Deterministic Solar Climate Engine:** Offline mathematical climate model (Tetens vapor pressure, air mass solar attenuation, GHI/DNI calculations) without network calls.
+
+### 5. High-Speed Web Worker Zero-Copy Data Pipeline
+- Direct transfer of GeoJSON spatial data via `ArrayBuffer` and `Uint8Array` in `DataLoader.ts` (`worker.postMessage(payload, [buffer])`).
+- Parsing is offloaded to a dedicated Web Worker (`src/data/processWorker.ts`) via native streaming `TextDecoder`, ensuring **0 ms main-thread freezing** and eliminating GC pressure during app startup.
+
+### 6. Security Hardening & Enterprise Data Export
+- **Security Hardened Runtime:** Strict Content Security Policy (CSP) with `'unsafe-inline'` purged, scoped Android FileProvider paths (`exports/`), and restricted native macOS entitlements.
+- **Enterprise Data Export:** Instant CSV export protected against CSV Formula Injection (CWE-1236 / RFC 4180) and JSON export.
+- **High-Res Snapshot Engine:** Direct WebGL & MapLibre canvas buffer capture via dedicated Camera trigger in TopBar.
 
 ---
 
