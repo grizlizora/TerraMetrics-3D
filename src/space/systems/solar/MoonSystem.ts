@@ -31,7 +31,6 @@ export class MoonSystem {
 
     this.moonMesh = new THREE.Mesh(moonGeom, this.moonMat);
     this.moonMesh.renderOrder = -10;
-    this.moonMesh.frustumCulled = false;
     this.moonMesh.castShadow = true;
     this.moonMesh.receiveShadow = true;
     parentGroup.add(this.moonMesh);

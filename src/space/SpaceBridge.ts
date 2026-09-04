@@ -108,7 +108,7 @@ export class SpaceBridge implements CustomLayerInterface {
       const viewW = this.cachedViewW || 960;
       const viewH = this.cachedViewH || 540;
 
-      const isMoving = this.map.isMoving();
+      isMoving = this.map.isMoving();
 
       // 1. Camera Sync Dirty-Checking (including active trackpad inertia)
       const cameraChanged =
@@ -192,9 +192,12 @@ export class SpaceBridge implements CustomLayerInterface {
     }
 
     // 5. Demand Rendering: MapLibre automatically renders every frame while moving.
-    // We ONLY request additional frames when stationary AND an animation is active (e.g. 120ms hover tween or timeScale != 1).
+    // We ONLY request additional frames when stationary AND an animation is active.
+    if (typeof document !== 'undefined' && document.hidden) {
+      return;
+    }
     if (!isMoving && this.spaceEngine.isActive && this.spaceEngine.mode !== 'none') {
-      if (this.spaceEngine.hasActiveAnimations || Math.abs(this.spaceEngine.timeScale - 1.0) > 0.001) {
+      if (this.spaceEngine.hasActiveAnimations) {
         this.map.triggerRepaint();
       }
     }

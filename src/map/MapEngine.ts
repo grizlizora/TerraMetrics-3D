@@ -126,8 +126,12 @@ export class MapEngine {
     this.projectionManager.setProjection(effectiveProjection);
 
     return new Promise((resolve) => {
+      const isMobile =
+        typeof window !== 'undefined' &&
+        (window.innerWidth < 768 || ('ontouchstart' in window && navigator.maxTouchPoints > 0));
+      const maxDpr = isMobile ? 1.5 : 2.0;
       const dpr =
-        typeof window !== 'undefined' ? Math.min(window.devicePixelRatio || 1, 2.0) : 1;
+        typeof window !== 'undefined' ? Math.min(window.devicePixelRatio || 1, maxDpr) : 1;
 
       const initialStyle = MapInitialStyleFactory.create(
         effectiveProjection,
@@ -365,6 +369,7 @@ export class MapEngine {
     this.hoveredCountryId = null;
     this.layers.pendingGeoJson = null;
     this.layers.pendingLabelsGeoJson = null;
+    this.layers.reset();
 
     if (this.map) {
       try {

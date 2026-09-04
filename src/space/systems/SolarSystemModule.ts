@@ -100,6 +100,9 @@ export class SolarSystemModule {
     this.moonSystem.update(this._moonPosScratch, astroTime, ephemeris);
 
     if (mode === 'advanced' || mode === 'deep') {
+      const gstHours = Astronomy.SiderealTime(astroTime);
+      const stRad = (gstHours / 24) * Math.PI * 2;
+
       this.planetarySystem.update(astroTime, simDays, camera, ephemeris, this._sunPosScratch);
       this.moonsSystem.update(
         simDays,
@@ -107,7 +110,7 @@ export class SolarSystemModule {
         this.planetarySystem.saturnBody,
         this.planetarySystem.plutoBody
       );
-      this.asteroidBelt.update(simDays, this._sunPosScratch);
+      this.asteroidBelt.update(simDays, this._sunPosScratch, stRad);
     }
   }
 

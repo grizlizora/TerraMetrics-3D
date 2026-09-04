@@ -26,7 +26,7 @@
       }
     ],
     "security": {
-      "csp": "default-src 'self'; script-src 'self' 'unsafe-inline' blob:; worker-src 'self' blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://demotiles.maplibre.org https://*.maplibre.org data:; img-src 'self' data: blob: https://server.arcgisonline.com https://*.arcgisonline.com https://demotiles.maplibre.org https://*.maplibre.org; connect-src 'self' https://server.arcgisonline.com https://*.arcgisonline.com https://demotiles.maplibre.org https://*.maplibre.org https://api.open-meteo.com https://api.worldbank.org https://studies.cs.helsinki.fi https://drive.google.com https://*.googleusercontent.com ws: wss: http://localhost:* ws://localhost:* http://127.0.0.1:* ws://127.0.0.1:* blob: data:; media-src 'self' blob:; object-src 'none';"
+      "csp": "default-src 'self'; script-src 'self' blob:; worker-src 'self' blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://demotiles.maplibre.org https://*.maplibre.org data:; img-src 'self' data: blob: https://server.arcgisonline.com https://*.arcgisonline.com https://demotiles.maplibre.org https://*.maplibre.org; connect-src 'self' https://server.arcgisonline.com https://*.arcgisonline.com https://demotiles.maplibre.org https://*.maplibre.org https://api.open-meteo.com https://api.worldbank.org https://studies.cs.helsinki.fi https://drive.google.com https://*.googleusercontent.com http://localhost:* ws://localhost:* http://127.0.0.1:* ws://127.0.0.1:* blob: data:; media-src 'self' blob:; object-src 'none';"
     }
   },
   "bundle": {

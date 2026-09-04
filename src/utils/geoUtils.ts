@@ -132,8 +132,8 @@ export function calculatePolygonCentroid(coordinates: GeoJsonCoordinates | unkno
   
   // If polygon wraps around anti-meridian
   if (maxLng - minLng > 180) {
-    let altMinLng = 180;
-    let altMaxLng = -180;
+    let altMinLng = Infinity;
+    let altMaxLng = -Infinity;
     const scanNormalized = (c: unknown) => {
       if (Array.isArray(c)) {
         if (typeof c[0] === 'number') {
@@ -192,7 +192,11 @@ export function calculateGeodesicRingAreaKm2(ring: number[][]): number {
     const p2 = ring[(i + 1) % len];
     const p0 = ring[(i - 1 + len) % len];
 
-    const dLon = (p2[0] - p0[0]) * toRad;
+    let dLon = (p2[0] - p0[0]) * toRad;
+    // Normalize dLon to [-PI, PI] to handle antimeridian crossing
+    while (dLon > Math.PI) dLon -= 2 * Math.PI;
+    while (dLon < -Math.PI) dLon += 2 * Math.PI;
+
     const latRad = p1[1] * toRad;
     total += dLon * Math.sin(latRad);
   }

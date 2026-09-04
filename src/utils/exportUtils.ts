@@ -53,10 +53,19 @@ export function exportToCSV(
   // UTF-8 BOM for perfect Excel/Numbers compatibility
   let csv = '\uFEFF"Category","Metric","Value"\n';
 
+  const sanitizeCell = (val: string | number) => {
+    let str = String(val ?? '');
+    // CWE-1236: Prevent CSV formula injection in spreadsheet software
+    if (/^[=+\-@\t\r]/.test(str)) {
+      str = `'${str}`;
+    }
+    return `"${str.replace(/"/g, '""')}"`;
+  };
+
   rows.forEach((r) => {
-    const cat = `"${String(r.category).replace(/"/g, '""')}"`;
-    const met = `"${String(r.metric).replace(/"/g, '""')}"`;
-    const val = `"${String(r.value).replace(/"/g, '""')}"`;
+    const cat = sanitizeCell(r.category);
+    const met = sanitizeCell(r.metric);
+    const val = sanitizeCell(r.value);
     csv += `${cat},${met},${val}\n`;
   });
 
@@ -65,15 +74,39 @@ export function exportToCSV(
 
 /**
  * Captures the Map WebGL canvas and triggers a PNG download.
+ * Accepts either MapLibre map instance (for synchronous render capture) or HTMLCanvasElement.
  */
-export function exportMapToPNG(mapCanvas: HTMLCanvasElement | null, name: string) {
-  if (!mapCanvas) return;
+export function exportMapToPNG(mapOrCanvas?: any, name: string = 'World') {
+  const target =
+    mapOrCanvas ||
+    (typeof window !== 'undefined' && (window as any).__TERRA_MAP_ENGINE__?.map) ||
+    (typeof document !== 'undefined' ? document.querySelector('#map-container canvas') : null);
+
+  if (!target) return;
   const sanitizedName = name.replace(/[^a-zA-Z0-9_-]/g, '_');
   const timestamp = new Date().toISOString().split('T')[0];
   const filename = `TerraMetrics_Map_${sanitizedName}_${timestamp}.png`;
 
+  // If map instance is provided, use map.once('render') to capture before buffer swap
+  if (typeof target.once === 'function' && typeof target.getCanvas === 'function') {
+    target.once('render', () => {
+      try {
+        const canvas: HTMLCanvasElement = target.getCanvas();
+        canvas.toBlob((blob) => {
+          if (blob) downloadBlob(blob, filename, 'image/png');
+        }, 'image/png');
+      } catch (err) {
+        console.warn('[exportUtils] Map render capture error:', err);
+      }
+    });
+    target.triggerRepaint();
+    return;
+  }
+
+  // If raw canvas is provided
   try {
-    mapCanvas.toBlob((blob) => {
+    const canvas = mapOrCanvas as HTMLCanvasElement;
+    canvas.toBlob((blob) => {
       if (blob) {
         downloadBlob(blob, filename, 'image/png');
       }
@@ -82,3 +115,4 @@ export function exportMapToPNG(mapCanvas: HTMLCanvasElement | null, name: string
     console.warn('[exportUtils] Map canvas export error:', err);
   }
 }
+

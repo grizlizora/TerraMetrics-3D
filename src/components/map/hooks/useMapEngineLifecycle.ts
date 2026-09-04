@@ -67,6 +67,9 @@ export function useMapEngineLifecycle({
           return;
         }
         engineRef.current = mapEngine;
+        if (typeof window !== 'undefined') {
+          (window as any).__TERRA_MAP_ENGINE__ = mapEngine;
+        }
         setEngine(mapEngine);
         onEngineReadyRef.current?.();
       })
@@ -76,6 +79,9 @@ export function useMapEngineLifecycle({
 
     return () => {
       isCancelled = true;
+      if (typeof window !== 'undefined' && (window as any).__TERRA_MAP_ENGINE__ === engineRef.current) {
+        (window as any).__TERRA_MAP_ENGINE__ = null;
+      }
       if (engineRef.current) {
         engineRef.current.destroy();
         engineRef.current = null;

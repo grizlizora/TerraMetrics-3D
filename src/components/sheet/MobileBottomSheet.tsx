@@ -26,6 +26,7 @@ export const MobileBottomSheet: React.FC = React.memo(() => {
     subMode,
     handleManualSync,
     handleCopySummary,
+    handleExportCSV,
     resetSelection,
     resetToWorld,
   } = useEntityDetails();
@@ -93,6 +94,7 @@ export const MobileBottomSheet: React.FC = React.memo(() => {
               onResetWorld={resetToWorld}
               onCopySummary={handleCopySummary}
               onManualSync={handleManualSync}
+              onExportCSV={handleExportCSV}
             />
             <CategorySubmodeBar variant="mobile" />
           </div>

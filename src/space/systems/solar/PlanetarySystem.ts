@@ -51,7 +51,6 @@ export class PlanetarySystem {
       mesh.rotation.order = 'ZYX';
       mesh.rotation.z = (def.tilt * Math.PI) / 180;
       mesh.renderOrder = -10;
-      mesh.frustumCulled = false;
       parentGroup.add(mesh);
 
       if (def.atmosphere) {
@@ -160,8 +159,12 @@ export class PlanetarySystem {
           const mesh = child as THREE.Mesh;
           mesh.geometry?.dispose();
           if (Array.isArray(mesh.material)) {
-            mesh.material.forEach((m) => m.dispose());
+            mesh.material.forEach((m) => {
+              (m as any).map?.dispose();
+              m.dispose();
+            });
           } else if (mesh.material) {
+            ((mesh.material as any).map as THREE.Texture | undefined)?.dispose();
             mesh.material.dispose();
           }
         }

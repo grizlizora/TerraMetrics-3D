@@ -26,7 +26,7 @@ export const AtmosphereShader = {
   `,
   fragmentShader: /* glsl */ `
     #ifdef GL_ES
-    precision mediump float;
+    precision highp float;
     #endif
     uniform vec3 color;
     uniform float glowIntensity;
@@ -78,7 +78,7 @@ export const SunSurfaceShader = {
   `,
   fragmentShader: /* glsl */ `
     #ifdef GL_ES
-    precision mediump float;
+    precision highp float;
     #endif
     uniform sampler2D map;
     uniform float time;
@@ -135,7 +135,7 @@ export const SunGlowShader = {
   `,
   fragmentShader: /* glsl */ `
     #ifdef GL_ES
-    precision mediump float;
+    precision highp float;
     #endif
     uniform vec3 color;
     uniform float intensity;
@@ -178,7 +178,7 @@ export const SunOuterGlowShader = {
   `,
   fragmentShader: /* glsl */ `
     #ifdef GL_ES
-    precision mediump float;
+    precision highp float;
     #endif
     uniform vec3 color;
     varying vec2 vUv;
@@ -225,7 +225,7 @@ export const StarfieldShader = {
   `,
   fragmentShader: /* glsl */ `
     #ifdef GL_ES
-    precision mediump float;
+    precision highp float;
     #endif
     varying vec3 vColor;
     varying float vAlpha;
@@ -271,7 +271,7 @@ export const ProceduralNebulaShader = {
   `,
   fragmentShader: /* glsl */ `
     #ifdef GL_ES
-    precision mediump float;
+    precision highp float;
     #endif
     uniform float time;
     uniform vec3 coreColor;
@@ -304,10 +304,10 @@ export const ProceduralNebulaShader = {
 
     float fbm(vec2 p) {
       float v = 0.0;
-      float a = 0.5;
+      float a = 0.55;
       vec2 shift = vec2(100.0);
       mat2 rot = mat2(cos(0.5), sin(0.5), -sin(0.5), cos(0.5));
-      for (int i = 0; i < 4; ++i) {
+      for (int i = 0; i < 3; ++i) {
         v += a * noise2d(p);
         p = rot * p * 2.0 + shift;
         a *= 0.5;
@@ -319,10 +319,7 @@ export const ProceduralNebulaShader = {
       vec2 uv = (vUv - 0.5) * 2.0;
       float dist = length(uv);
 
-      if (dist > 1.0) {
-        discard;
-      }
-
+      // Smooth radial edge falloff without costly TBDR discard
       float radialFalloff = smoothstep(1.0, 0.0, dist);
       radialFalloff = pow(radialFalloff, 1.6);
 

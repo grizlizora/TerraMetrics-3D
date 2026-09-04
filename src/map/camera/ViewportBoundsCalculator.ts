@@ -69,14 +69,12 @@ export class ViewportBoundsCalculator {
     bounds: [number, number, number, number]
   ): [number, number, number, number] {
     const [minLng, minLat, maxLng, maxLat] = bounds;
-    if (maxLng - minLng > 180) {
+    if (minLng > maxLng || maxLng - minLng > 180) {
       const altMinLng = minLng < 0 ? minLng + 360 : minLng;
       const altMaxLng = maxLng < 0 ? maxLng + 360 : maxLng;
       const normalizedMin = Math.min(altMinLng, altMaxLng);
       const normalizedMax = Math.max(altMinLng, altMaxLng);
-      if (normalizedMax - normalizedMin < maxLng - minLng) {
-        return [normalizedMin, minLat, normalizedMax, maxLat];
-      }
+      return [normalizedMin, minLat, normalizedMax, maxLat];
     }
     return bounds;
   }

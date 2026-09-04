@@ -44,22 +44,17 @@ export async function runStorageCryptoChaos(): Promise<boolean> {
 
     // 2. DataValidator Fuzzing & Boundaries
     const invalidGeoJson1 = { type: 'FeatureCollection', features: [] }; // < 150 features
-    const valResult1 = DataValidator.validateBundle(
-      invalidGeoJson1 as any,
-      { UKR: {} } as any,
-      { UKR: {} } as any,
-      { UKR: {} } as any
-    );
-    assert(!valResult1.isValid, `DataValidator: успішно відхилив бандл із 0 країнами`);
+    const valResult1 = DataValidator.validateBundle({
+      geoJson: invalidGeoJson1 as any,
+      religions: { UKR: {} } as any,
+      indexes: { UKR: {} } as any,
+      demographics: { UKR: {} } as any,
+    });
+    assert(!valResult1.valid, `DataValidator: успішно відхилив бандл із 0 країнами`);
 
     const invalidGeoJson2 = null;
-    const valResult2 = DataValidator.validateBundle(
-      invalidGeoJson2 as any,
-      {} as any,
-      {} as any,
-      {} as any
-    );
-    assert(!valResult2.isValid, `DataValidator: безпечно обробив null без падіння процесу (No-Throw Invariant)`);
+    const valResult2 = DataValidator.validateBundle(invalidGeoJson2 as any);
+    assert(!valResult2.valid, `DataValidator: безпечно обробив null без падіння процесу (No-Throw Invariant)`);
 
     // 3. ApiSyncManager In-Flight Deduplication
     const apiManager = ApiSyncManager.getInstance();

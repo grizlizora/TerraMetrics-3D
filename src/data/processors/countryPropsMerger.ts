@@ -203,6 +203,8 @@ export class CountryPropsMerger {
       bbox: bboxData.bbox,
       primaryBbox: bboxData.primaryBbox,
       center: bboxData.center,
+      centerLat: Math.abs(bboxData.center[1]),
+      centerLng: bboxData.center[0],
     };
   }
 

@@ -68,14 +68,32 @@ export async function runVisualRegressionSnapshotsSimulation(): Promise<boolean>
       `Topography: Температура спадає згідно з адіабатичним градієнтом (${seaLevel.estimatedTemperatureC}°C ➔ ${midAlt.estimatedTemperatureC}°C ➔ ${highAlt.estimatedTemperatureC}°C)`
     );
 
-    // 4. WCAG Color Contrast Ratio for Glassmorphism Text & Badges
-    const textLuminance = 0.95; // Bright white in dark mode
-    const bgLuminance = 0.04;   // Dark glass slate background
-    const contrastRatio = (textLuminance + 0.05) / (bgLuminance + 0.05);
+    // 4. WCAG Color Contrast Ratio for Glassmorphism Text & Badges using actual palette tokens
+    const getLuminance = (hex: string): number => {
+      const cleanHex = hex.replace('#', '');
+      const r = parseInt(cleanHex.substring(0, 2), 16) / 255;
+      const g = parseInt(cleanHex.substring(2, 4), 16) / 255;
+      const b = parseInt(cleanHex.substring(4, 6), 16) / 255;
+      const toLinear = (c: number) => (c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4));
+      return 0.2126 * toLinear(r) + 0.7152 * toLinear(g) + 0.0722 * toLinear(b);
+    };
+
+    const getContrastRatio = (hex1: string, hex2: string): number => {
+      const l1 = getLuminance(hex1);
+      const l2 = getLuminance(hex2);
+      const lighter = Math.max(l1, l2);
+      const darker = Math.min(l1, l2);
+      return (lighter + 0.05) / (darker + 0.05);
+    };
+
+    // Test dark mode: Pure/Bright text against dark canvas background (#060a12)
+    const darkModeRatio = getContrastRatio('#ffffff', '#060a12');
+    // Test light mode: Dark text (#0f172a) against light canvas background (#f0f4f8)
+    const lightModeRatio = getContrastRatio('#0f172a', '#f0f4f8');
 
     assert(
-      contrastRatio >= 4.5,
-      `WCAG 2.1 AA Contrast: Контрастність тексту ${contrastRatio.toFixed(2)}:1 перевищує мінімум 4.5:1`
+      darkModeRatio >= 4.5 && lightModeRatio >= 4.5,
+      `WCAG 2.1 AA Contrast: Контрастність теми (Dark: ${darkModeRatio.toFixed(2)}:1, Light: ${lightModeRatio.toFixed(2)}:1) перевищує мінімум 4.5:1`
     );
 
   } catch (err: any) {

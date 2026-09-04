@@ -39,12 +39,24 @@ export function useDevice(): DeviceInfo {
         const height = window.innerHeight;
         const isDesktop = width >= DESKTOP_BREAKPOINT;
 
-        setDeviceInfo({
-          isDesktop,
-          isMobile: !isDesktop,
-          isNative,
-          width,
-          height,
+        setDeviceInfo((prev) => {
+          if (
+            prev.isDesktop === isDesktop &&
+            prev.isMobile === !isDesktop &&
+            prev.isNative === isNative &&
+            Math.abs(prev.width - width) < 40 &&
+            Math.abs(prev.height - height) < 40
+          ) {
+            return prev;
+          }
+
+          return {
+            isDesktop,
+            isMobile: !isDesktop,
+            isNative,
+            width,
+            height,
+          };
         });
       });
     };
@@ -57,4 +69,24 @@ export function useDevice(): DeviceInfo {
   }, []);
 
   return deviceInfo;
+}
+
+/**
+ * Ultra-performant breakpoint hook based on matchMedia.
+ * Triggers zero re-renders during window resize unless crossing the 768px desktop threshold.
+ */
+export function useIsDesktop(): boolean {
+  const [isDesktop, setIsDesktop] = useState(() =>
+    typeof window !== 'undefined' ? window.innerWidth >= DESKTOP_BREAKPOINT : true
+  );
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const mql = window.matchMedia(`(min-width: ${DESKTOP_BREAKPOINT}px)`);
+    const handler = (e: MediaQueryListEvent) => setIsDesktop(e.matches);
+    mql.addEventListener('change', handler);
+    return () => mql.removeEventListener('change', handler);
+  }, []);
+
+  return isDesktop;
 }

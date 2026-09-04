@@ -179,7 +179,15 @@ export class DataLoader {
             }
           };
 
-          worker.postMessage(payload);
+          const transferList: Transferable[] = [];
+          if (payload.rawGeoJson instanceof ArrayBuffer) {
+            transferList.push(payload.rawGeoJson);
+          }
+          if (transferList.length > 0) {
+            worker.postMessage(payload, transferList);
+          } else {
+            worker.postMessage(payload);
+          }
           return;
         } catch {
           // Fallback if worker construction is not supported in this runtime

@@ -12,7 +12,7 @@ pub fn run() {
     {
         std::env::set_var(
             "WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS",
-            "--use-angle=d3d11 --enable-gpu-rasterization --enable-zero-copy --ignore-gpu-blocklist --disable-features=TouchpadAndWheelScrollLatching --overscroll-history-navigation=0"
+            "--use-angle=d3d11 --enable-gpu-rasterization --enable-zero-copy --disable-features=TouchpadAndWheelScrollLatching --overscroll-history-navigation=0"
         );
     }
 

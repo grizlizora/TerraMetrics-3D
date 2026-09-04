@@ -27,20 +27,27 @@ export function useNativeLifecycle() {
 
   // Background audio suppression and power saving on app pause
   useEffect(() => {
-    let handle: any = null;
+    let isMounted = true;
+    let handle: { remove: () => void | Promise<void> } | null = null;
     const setupAppLifecycle = async () => {
       try {
-        handle = await App.addListener('appStateChange', ({ isActive }) => {
+        const listener = await App.addListener('appStateChange', ({ isActive }) => {
           if (!isActive) {
             audioManager.stopFlySound();
           }
         });
+        if (!isMounted) {
+          listener.remove();
+        } else {
+          handle = listener;
+        }
       } catch {
         // Web fallback
       }
     };
     setupAppLifecycle();
     return () => {
+      isMounted = false;
       handle?.remove?.();
     };
   }, []);

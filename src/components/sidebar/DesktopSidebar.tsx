@@ -1,5 +1,5 @@
 import React from 'react';
-import { Globe, ChevronLeft, ChevronRight, RefreshCw, X, Copy, Check } from 'lucide-react';
+import { Globe, ChevronLeft, ChevronRight, RefreshCw, X, Copy, Check, Download } from 'lucide-react';
 import { useAppStore } from '../../store/useAppStore';
 import { useTranslation } from '../../store/useI18nStore';
 import { LiquidGlassPanel } from '../common/LiquidGlassPanel';
@@ -25,6 +25,7 @@ export const DesktopSidebar: React.FC = React.memo(() => {
     subMode,
     handleManualSync,
     handleCopySummary,
+    handleExportCSV,
     resetSelection,
     resetToWorld,
   } = useEntityDetails();
@@ -85,6 +86,14 @@ export const DesktopSidebar: React.FC = React.memo(() => {
                   title={copied ? t('copied') || 'Copied' : t('copy_stats') || 'Copy stats'}
                 >
                   {copied ? <Check className="w-4 h-4 text-emerald-500" /> : <Copy className="w-4 h-4" />}
+                </button>
+
+                <button
+                  onClick={handleExportCSV}
+                  className="w-8 h-8 rounded-xl flex items-center justify-center text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/10 transition-all cursor-pointer active:scale-95"
+                  title="Export CSV"
+                >
+                  <Download className="w-4 h-4" />
                 </button>
 
                 {selectedCountryIso && (

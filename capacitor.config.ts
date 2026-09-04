@@ -10,14 +10,7 @@ const config: CapacitorConfig = {
     androidScheme: 'https',
     iosScheme: 'terrametrics',
     cleartext: false,
-    allowNavigation: [
-      'server.arcgisonline.com',
-      'api.open-meteo.com',
-      'api.worldbank.org',
-      'studies.cs.helsinki.fi',
-      'drive.google.com',
-      '*.googleusercontent.com'
-    ]
+    allowNavigation: []
   },
   android: {
     allowMixedContent: false,

@@ -91,7 +91,6 @@ export class DeepSpaceModule {
 
         const lines = new THREE.LineSegments(lineGeom, lineMat);
         lines.renderOrder = -50;
-        lines.frustumCulled = false;
         this.group.add(lines);
 
         // Constellation Vertex Star Nodes (Illuminated circular points on every vertex)
@@ -111,7 +110,6 @@ export class DeepSpaceModule {
         });
         const nodePoints = new THREE.Points(nodeGeom, nodeMat);
         nodePoints.renderOrder = -49;
-        nodePoints.frustumCulled = false;
         this.group.add(nodePoints);
       }
     });
@@ -218,17 +216,17 @@ export class DeepSpaceModule {
     this.nebulaMaterials = [];
 
     this.group.traverse((child) => {
-      const mesh = child as any;
-      if (mesh.geometry) mesh.geometry.dispose();
-      if (mesh.material && !(mesh instanceof THREE.Sprite)) {
-        if (Array.isArray(mesh.material)) {
-          mesh.material.forEach((m: any) => {
+      const obj = child as any;
+      if (obj.geometry) obj.geometry.dispose();
+      if (obj.material) {
+        if (Array.isArray(obj.material)) {
+          obj.material.forEach((m: any) => {
             if (m.map) m.map.dispose();
             m.dispose();
           });
         } else {
-          if (mesh.material.map) mesh.material.map.dispose();
-          mesh.material.dispose();
+          if (obj.material.map) obj.material.map.dispose();
+          obj.material.dispose();
         }
       }
     });

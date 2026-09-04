@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, Globe, Sun, Moon, Map } from 'lucide-react';
+import { Search, Globe, Sun, Moon, Map, Camera } from 'lucide-react';
 import { useAppStore } from '../../store/useAppStore';
 import { useI18nStore } from '../../store/useI18nStore';
 import { audioManager } from '../../audio/AudioManager';
@@ -8,6 +8,7 @@ import { LiquidGlassPanel } from '../common/LiquidGlassPanel';
 import { DesktopSpaceSwitcher } from './DesktopSpaceSwitcher';
 import { networkMonitor } from '../../data/api/NetworkMonitor';
 import { isInteractiveElement } from '../../utils/domUtils';
+import { exportMapToPNG } from '../../utils/exportUtils';
 
 export const DesktopTopBar: React.FC = React.memo(() => {
   const projection = useAppStore((s) => s.projection);
@@ -87,6 +88,12 @@ export const DesktopTopBar: React.FC = React.memo(() => {
     audioManager.playLanguageChange();
     TerraHaptics.lightImpact();
     setLang(lang === 'uk' ? 'en' : 'uk');
+  };
+
+  const handleExportMap = () => {
+    audioManager.playClick();
+    TerraHaptics.mediumImpact();
+    exportMapToPNG(null, selectedCountryIso || 'World');
   };
 
   const handleLogoClick = () => {
@@ -211,6 +218,17 @@ export const DesktopTopBar: React.FC = React.memo(() => {
             title={t('tooltip_lang_switch')}
           >
             {lang === 'uk' ? 'UK' : 'EN'}
+          </button>
+
+          {/* Export Map to PNG */}
+          <button
+            type="button"
+            onClick={handleExportMap}
+            aria-label={lang === 'uk' ? 'Експорт карти (PNG)' : 'Export map (PNG)'}
+            className="p-1 sm:p-1.5 rounded-xl text-zinc-700 dark:text-zinc-300 hover:bg-black/5 dark:hover:bg-white/10 focus-visible:ring-2 focus-visible:ring-blue-500 outline-none transition-all active:scale-95 cursor-pointer no-drag"
+            title={lang === 'uk' ? 'Експорт карти (PNG)' : 'Export map (PNG)'}
+          >
+            <Camera className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
           </button>
 
           <div className="w-[1px] h-3.5 sm:h-4 bg-black/10 dark:bg-white/10 mx-0.5" />

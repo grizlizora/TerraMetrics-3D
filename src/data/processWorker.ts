@@ -3,8 +3,29 @@ import { ContinentStatsAggregator } from './processors/continentStatsAggregator.
 import { SearchIndexBuilder } from './processors/searchIndexBuilder.ts';
 
 export function processGeoData({ rawGeoJson, demographicsMap, indexMap, religionData }: any) {
+  let parsedGeoJson = rawGeoJson;
+  if (rawGeoJson instanceof ArrayBuffer) {
+    const decoder = new TextDecoder('utf-8');
+    parsedGeoJson = JSON.parse(decoder.decode(rawGeoJson));
+  } else if (rawGeoJson instanceof Uint8Array) {
+    const decoder = new TextDecoder('utf-8');
+    parsedGeoJson = JSON.parse(decoder.decode(rawGeoJson));
+  } else if (typeof rawGeoJson === 'string') {
+    parsedGeoJson = JSON.parse(rawGeoJson);
+  }
+
+  // Clean unrecognised ISO codes
+  if (parsedGeoJson && Array.isArray(parsedGeoJson.features)) {
+    parsedGeoJson.features = parsedGeoJson.features.filter(
+      (f: any) =>
+        f.properties &&
+        f.properties['ISO3166-1-Alpha-3'] &&
+        f.properties['ISO3166-1-Alpha-3'] !== '-99'
+    );
+  }
+
   const { validFeatures, labelsFeatures, countryPropsMap } = CountryPropsMerger.processAll(
-    rawGeoJson,
+    parsedGeoJson,
     demographicsMap,
     indexMap,
     religionData

@@ -50,6 +50,7 @@ self.addEventListener('fetch', (event: FetchEvent) => {
   if (request.method !== 'GET') return;
 
   const url = new URL(request.url);
+  if (url.protocol !== 'http:' && url.protocol !== 'https:') return;
 
   // Strategy 1: Data and Map Tiles - Cache-First with Background Revalidation
   if (url.pathname.includes('/data/') || url.pathname.includes('/tiles/')) {
@@ -59,7 +60,8 @@ self.addEventListener('fetch', (event: FetchEvent) => {
           fetch(request)
             .then((networkResponse) => {
               if (networkResponse && networkResponse.status === 200) {
-                caches.open(CACHE_NAME).then((cache) => cache.put(request, networkResponse));
+                const clone = networkResponse.clone();
+                caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
               }
             })
             .catch(() => {});
@@ -77,7 +79,11 @@ self.addEventListener('fetch', (event: FetchEvent) => {
     return;
   }
 
-  // Strategy 2: App Shell & Scripts - Stale-While-Revalidate with Safe Fallback
+  // Strategy 2: App Shell & Scripts - Stale-While-Revalidate with Safe Fallback (Same-Origin Only)
+  if (url.origin !== self.location.origin) {
+    return;
+  }
+
   event.respondWith(
     caches.match(request).then((cachedResponse): Promise<Response> | Response => {
       const fetchPromise = fetch(request)

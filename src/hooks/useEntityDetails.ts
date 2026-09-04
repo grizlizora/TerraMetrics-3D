@@ -1,4 +1,4 @@
-import { useState, useTransition, useMemo } from 'react';
+import { useState, useTransition, useMemo, useCallback } from 'react';
 import { useAppStore } from '../store/useAppStore';
 import { useI18nStore } from '../store/useI18nStore';
 import { dataLoader } from '../data/DataLoader';
@@ -6,6 +6,7 @@ import { dataSyncManager } from '../data/sync/DataSyncManager';
 import { audioManager } from '../audio/AudioManager';
 import { TerraHaptics } from '../native/TerraHaptics';
 import { formatCountrySummary } from '../utils/shareUtils';
+import { exportToCSV, exportToJSON } from '../utils/exportUtils';
 import type { ContinentName, ISO3Code } from '../types';
 
 export function useEntityDetails() {
@@ -103,6 +104,37 @@ export function useEntityDetails() {
     }
   };
 
+  const handleExportCSV = useCallback(() => {
+    const rows: Array<{ category: string; metric: string; value: string | number }> = [];
+    if (isCountry && countryProps) {
+      rows.push({ category: 'General', metric: 'Country', value: title });
+      rows.push({ category: 'General', metric: 'Continent', value: countryProps.continent });
+      rows.push({ category: 'Demographics', metric: 'Population', value: countryProps.population || 0 });
+      rows.push({ category: 'Demographics', metric: 'Area (sq km)', value: countryProps.area || 0 });
+      rows.push({ category: 'Economy', metric: 'GDP Per Capita ($)', value: countryProps.gdp_per_capita || 0 });
+      rows.push({ category: 'Economy', metric: 'Top Income Tax %', value: countryProps.income_tax_top_pct || 0 });
+      rows.push({ category: 'Society', metric: 'Dominant Religion', value: countryProps.dom_religion || 'N/A' });
+      rows.push({ category: 'Governance', metric: 'Democracy Index', value: countryProps.democracy_index || 0 });
+      rows.push({ category: 'Governance', metric: 'Safety Index', value: countryProps.safety_index || 0 });
+    } else if (continentStats) {
+      rows.push({ category: 'General', metric: 'Region', value: title });
+      rows.push({ category: 'Demographics', metric: 'Total Population', value: continentStats.total_population || 0 });
+      rows.push({ category: 'Demographics', metric: 'Total Area (sq km)', value: continentStats.total_area_sq_km || 0 });
+      rows.push({ category: 'Demographics', metric: 'Countries Count', value: continentStats.countryCount || 0 });
+    }
+    if (rows.length > 0) {
+      exportToCSV(rows, title);
+      TerraHaptics.success();
+      audioManager.playClick();
+    }
+  }, [countryProps, continentStats, isCountry, title]);
+
+  const handleExportJSON = useCallback(() => {
+    exportToJSON(countryProps || continentStats, isCountry, title);
+    TerraHaptics.success();
+    audioManager.playClick();
+  }, [countryProps, continentStats, isCountry, title]);
+
   return {
     selectedCountryIso: selectedCountryIso as ISO3Code | null,
     selectedContinent,
@@ -117,6 +149,8 @@ export function useEntityDetails() {
     subMode,
     handleManualSync,
     handleCopySummary,
+    handleExportCSV,
+    handleExportJSON,
     resetSelection: () => {
       audioManager.playClosePanel();
       TerraHaptics.lightImpact();

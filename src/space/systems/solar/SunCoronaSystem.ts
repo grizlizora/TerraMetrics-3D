@@ -47,7 +47,6 @@ export class SunCoronaSystem {
 
     this.sunMesh = new THREE.Mesh(sunGeom, this.sunMat);
     this.sunMesh.renderOrder = -10;
-    this.sunMesh.frustumCulled = false;
     parentGroup.add(this.sunMesh);
 
     const planeGeom = new THREE.PlaneGeometry(1, 1);
@@ -68,7 +67,6 @@ export class SunCoronaSystem {
     this.sunGlow = new THREE.Mesh(planeGeom, glowMat);
     this.sunGlow.scale.set(SUN_RADIUS * 4.0, SUN_RADIUS * 4.0, 1);
     this.sunGlow.renderOrder = -20;
-    this.sunGlow.frustumCulled = false;
     parentGroup.add(this.sunGlow);
 
     // 4. Outer Corona Soft Halo Billboard (independent plane geometry to prevent double dispose)
@@ -87,7 +85,6 @@ export class SunCoronaSystem {
     this.outerGlow = new THREE.Mesh(outerPlaneGeom, outerGlowMat);
     this.outerGlow.scale.set(SUN_RADIUS * 12.0, SUN_RADIUS * 12.0, 1);
     this.outerGlow.renderOrder = -30;
-    this.outerGlow.frustumCulled = false;
     parentGroup.add(this.outerGlow);
 
     registerMarker(this.sunMesh, 'Sun', '#ffaa00', 1.0, 'basic');

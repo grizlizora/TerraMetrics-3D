@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { AU } from '../../core/SpaceConstants.ts';
+import { CoordinateTransforms } from '../../core/CoordinateTransforms.ts';
 
 interface AsteroidData {
   semiMajorAxis: number;
@@ -17,6 +18,11 @@ export class AsteroidBeltSystem {
   public instancedMesh: THREE.InstancedMesh | null = null;
   private asteroidsData: AsteroidData[] = [];
   private count = 350;
+
+  private static readonly SIN_EPS = 0.397777156;
+  private static readonly COS_EPS = 0.917482062;
+  private _eclScratch = { x: 0, y: 0, z: 0 };
+  private _offsetScratch = new THREE.Vector3();
 
   // Zero-GC preallocated transform scratchpad
   private _matrixScratch = new THREE.Matrix4();
@@ -54,7 +60,7 @@ export class AsteroidBeltSystem {
     });
 
     this.instancedMesh = new THREE.InstancedMesh(baseGeom, asteroidMat, this.count);
-    this.instancedMesh.frustumCulled = false;
+    this.instancedMesh.geometry.boundingSphere = new THREE.Sphere(new THREE.Vector3(0, 0, 0), 4.0 * AU);
     this.instancedMesh.renderOrder = -8;
 
     // 2. Distribute asteroids along Main Belt (2.1 AU to 3.3 AU)
@@ -98,7 +104,7 @@ export class AsteroidBeltSystem {
     parentGroup.add(this.group);
   }
 
-  public update(simDays: number, sunPos: THREE.Vector3) {
+  public update(simDays: number, sunPos: THREE.Vector3, stRad = 0) {
     if (!this.instancedMesh || !this.group.visible) return;
 
     for (let i = 0; i < this.count; i++) {
@@ -110,7 +116,7 @@ export class AsteroidBeltSystem {
       const r = data.semiMajorAxis * (1 - data.eccentricity * Math.cos(meanAnomaly));
       const trueAnomaly = meanAnomaly + 2 * data.eccentricity * Math.sin(meanAnomaly);
 
-      // Orbital position relative to Sun
+      // Orbital position relative to Sun in ecliptic plane
       const orbX = r * Math.cos(trueAnomaly);
       const orbY = r * Math.sin(trueAnomaly);
 
@@ -120,11 +126,23 @@ export class AsteroidBeltSystem {
       const cosInc = Math.cos(data.inclination);
       const sinInc = Math.sin(data.inclination);
 
-      const x = orbX * cosNode - orbY * sinNode * cosInc;
-      const y = orbX * sinNode + orbY * cosNode * cosInc;
-      const z = orbY * sinInc;
+      const xEcl = orbX * cosNode - orbY * sinNode * cosInc;
+      const yEcl = orbX * sinNode + orbY * cosNode * cosInc;
+      const zEcl = orbY * sinInc;
 
-      this._posScratch.set(sunPos.x + x, sunPos.y + y, sunPos.z + z);
+      // Convert heliocentric ecliptic to J2000 equatorial
+      this._eclScratch.x = xEcl;
+      this._eclScratch.y = yEcl * AsteroidBeltSystem.COS_EPS - zEcl * AsteroidBeltSystem.SIN_EPS;
+      this._eclScratch.z = yEcl * AsteroidBeltSystem.SIN_EPS + zEcl * AsteroidBeltSystem.COS_EPS;
+
+      // Transform J2000 Equatorial into MapLibre coordinates (inertially stable)
+      CoordinateTransforms.j2000EquatorialToMapLibre(this._eclScratch, stRad, this._offsetScratch);
+
+      this._posScratch.set(
+        sunPos.x + this._offsetScratch.x,
+        sunPos.y + this._offsetScratch.y,
+        sunPos.z + this._offsetScratch.z
+      );
 
       // Rotation around asteroid's own axis
       this._rotScratch.set(

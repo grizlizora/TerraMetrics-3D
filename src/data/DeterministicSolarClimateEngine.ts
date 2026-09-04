@@ -22,6 +22,8 @@ export interface SolarClimateReport {
   effectiveLapseRateCm?: number;
 }
 
+import * as Astronomy from 'astronomy-engine';
+
 export class DeterministicSolarClimateEngine {
   private static readonly SOLAR_CONSTANT = 1361.0;
   private static readonly LAPSE_RATE = 0.0065;
@@ -41,42 +43,29 @@ export class DeterministicSolarClimateEngine {
     const time = date.getTime();
     const dayOfYear = this.getDayOfYear(date);
 
-    const gamma = (2 * Math.PI / 365) * (dayOfYear - 1 + (date.getUTCHours() - 12) / 24);
+    // High-precision VSOP87 planetary theory solar position from astronomy-engine
+    const observer = new Astronomy.Observer(lat, lng, altitudeMeters);
+    const eq = Astronomy.Equator(Astronomy.Body.Sun, date, observer, false, true);
+    const hor = Astronomy.Horizon(date, observer, eq.ra, eq.dec, 'normal');
 
-    const eqtime =
-      229.18 *
-      (0.000075 +
-        0.001868 * Math.cos(gamma) -
-        0.032077 * Math.sin(gamma) -
-        0.014615 * Math.cos(2 * gamma) -
-        0.040849 * Math.sin(2 * gamma));
-
-    const decl =
-      0.006918 -
-      0.399912 * Math.cos(gamma) +
-      0.070257 * Math.sin(gamma) -
-      0.006758 * Math.cos(2 * gamma) +
-      0.000907 * Math.sin(2 * gamma) -
-      0.002697 * Math.cos(3 * gamma) +
-      0.00148 * Math.sin(3 * gamma);
-
-    const timeOffset = eqtime + 4 * lng;
-    const utcMinutes = date.getUTCHours() * 60 + date.getUTCMinutes() + date.getUTCSeconds() / 60;
-    const trueSolarTimeMin = (utcMinutes + timeOffset + 1440) % 1440;
-    const hourAngleRad = ((trueSolarTimeMin / 4) - 180) * (Math.PI / 180);
-
-    const latRad = lat * (Math.PI / 180);
-    const cosZenith =
-      Math.sin(latRad) * Math.sin(decl) +
-      Math.cos(latRad) * Math.cos(decl) * Math.cos(hourAngleRad);
-
-    const zenithRad = Math.acos(Math.max(-1, Math.min(1, cosZenith)));
-    const zenithDeg = zenithRad * (180 / Math.PI);
-    const elevationDeg = 90 - zenithDeg;
+    const elevationDeg = hor.altitude;
+    const zenithDeg = Math.max(0, 90 - elevationDeg);
+    const zenithRad = (zenithDeg * Math.PI) / 180;
     const isDaylight = elevationDeg > 0;
+    const declDeg = eq.dec;
 
-    const earthSunDistanceCorrection = 1 + 0.033 * Math.cos((2 * Math.PI * dayOfYear) / 365);
-    const i0 = this.SOLAR_CONSTANT * earthSunDistanceCorrection;
+    // Hour angle & true solar time derived from astronomical ephemeris
+    const ha = Astronomy.HourAngle(Astronomy.Body.Sun, date, observer);
+    const trueSolarTimeMin = (((ha + 12) % 24 + 24) % 24) * 60;
+    const utcMinutes = date.getUTCHours() * 60 + date.getUTCMinutes() + date.getUTCSeconds() / 60;
+    const meanSolarTimeMin = (utcMinutes + 4 * lng + 1440) % 1440;
+    let eqtime = trueSolarTimeMin - meanSolarTimeMin;
+    if (eqtime > 720) eqtime -= 1440;
+    if (eqtime < -720) eqtime += 1440;
+
+    // True physical inverse-square solar irradiance based on exact Earth-Sun distance in AU
+    const rSunAU = eq.dist;
+    const i0 = this.SOLAR_CONSTANT / (rSunAU * rSunAU);
 
     let ghi = 0;
     let dni = 0;
@@ -149,7 +138,7 @@ export class DeterministicSolarClimateEngine {
       altitudeMeters,
       solarZenithAngleDeg: parseFloat(zenithDeg.toFixed(2)),
       solarElevationAngleDeg: parseFloat(elevationDeg.toFixed(2)),
-      solarDeclinationDeg: parseFloat((decl * (180 / Math.PI)).toFixed(2)),
+      solarDeclinationDeg: parseFloat(declDeg.toFixed(2)),
       equationOfTimeMin: parseFloat(eqtime.toFixed(2)),
       isDaylight,
       ghiWm2: Math.round(ghi),

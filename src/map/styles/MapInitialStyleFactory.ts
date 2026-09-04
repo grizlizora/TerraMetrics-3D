@@ -23,6 +23,7 @@ export class MapInitialStyleFactory {
             'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
           ],
           tileSize: 256,
+          maxzoom: 12,
           bounds: [-180, -85.051129, 180, 85.051129],
         },
         'world-graticule-source': {

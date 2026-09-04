@@ -8,14 +8,31 @@ export class MapSpaceController {
   public spaceBridge: SpaceBridge | null = null;
   public currentSpaceMode: SpaceMode = 'none';
   private currentLabelsVisible: boolean = true;
+  private idleHandle: number | null = null;
+  private timeoutHandle: ReturnType<typeof setTimeout> | null = null;
 
   public isSupported(): boolean {
     return true;
   }
 
+  public cancelPendingWarmup(): void {
+    if (this.idleHandle !== null && typeof window !== 'undefined' && 'cancelIdleCallback' in window) {
+      (window as any).cancelIdleCallback(this.idleHandle);
+      this.idleHandle = null;
+    }
+    if (this.timeoutHandle !== null) {
+      clearTimeout(this.timeoutHandle);
+      this.timeoutHandle = null;
+    }
+  }
+
   public warmUpIdle(map: MapLibreMap | null, currentLang: AppLanguage) {
     if (!map || this.spaceEngine) return;
+    this.cancelPendingWarmup();
+
     const runWarmup = () => {
+      this.idleHandle = null;
+      this.timeoutHandle = null;
       if (this.spaceEngine || !map) return;
       try {
         this.spaceEngine = new SpaceEngine(currentLang);
@@ -35,9 +52,9 @@ export class MapSpaceController {
     };
 
     if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
-      (window as any).requestIdleCallback(runWarmup, { timeout: 2000 });
+      this.idleHandle = (window as any).requestIdleCallback(runWarmup, { timeout: 2000 });
     } else {
-      setTimeout(runWarmup, 800);
+      this.timeoutHandle = setTimeout(runWarmup, 800);
     }
   }
 
@@ -105,6 +122,7 @@ export class MapSpaceController {
   }
 
   public destroy(map: MapLibreMap | null) {
+    this.cancelPendingWarmup();
     if (this.spaceBridge) {
       if (map && map.getLayer(this.spaceBridge.id)) {
         try {

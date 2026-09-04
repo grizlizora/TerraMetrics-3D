@@ -11,6 +11,7 @@ export class MapCameraAnimator {
   public static isFlying = false;
   private static activeFlightId = 0;
   private static flyTimer: any = null;
+  private static activeOnEnd: (() => void) | null = null;
 
   public static calculateMercatorMinZoom(map: MapLibreMap | null): number {
     return ViewportBoundsCalculator.calculateMercatorMinZoom(map);
@@ -124,27 +125,17 @@ export class MapCameraAnimator {
 
   private static executeFlight(
     map: MapLibreMap,
-    flight: {
-      center: [number, number];
-      zoom: number;
-      pitch: number;
-      bearing: number;
-      padding: PaddingOptions;
-      duration: number;
-      curve: number;
-    },
+    flight: any,
     audioManager?: AudioManager | null
   ) {
-    const flightId = ++this.activeFlightId;
+    if (!map) return;
+
+    this.cancelActiveFlight(map, audioManager);
+    this.activeFlightId++;
+    const flightId = this.activeFlightId;
     this.isFlying = true;
 
-    if (this.flyTimer) {
-      clearTimeout(this.flyTimer);
-      this.flyTimer = null;
-    }
-
     if (audioManager) {
-      audioManager.stopFlySound();
       audioManager.startFlySound();
     }
 
@@ -160,9 +151,13 @@ export class MapCameraAnimator {
             Math.cos((flight.center[1] * Math.PI) / 180) *
             Math.sin(dLon / 2) *
             Math.sin(dLon / 2);
-        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        const clampedA = Math.min(1.0, Math.max(0.0, a));
+        const c = 2 * Math.atan2(Math.sqrt(clampedA), Math.sqrt(1 - clampedA));
         const distKm = 6371 * c;
         flightDuration = Math.min(2100, Math.max(950, Math.round(900 + (distKm / 15000) * 1000)));
+        if (Number.isNaN(flightDuration)) {
+          flightDuration = flight.duration;
+        }
       }
     } catch {
       flightDuration = flight.duration;
@@ -192,12 +187,14 @@ export class MapCameraAnimator {
         this.flyTimer = null;
       }
       map.off('moveend', onEnd);
+      this.activeOnEnd = null;
       if (this.activeFlightId === flightId) {
         this.isFlying = false;
         if (audioManager) audioManager.stopFlySound();
       }
     };
 
+    this.activeOnEnd = onEnd;
     map.once('moveend', onEnd);
     this.flyTimer = setTimeout(onEnd, flightDuration + 150);
   }
@@ -206,6 +203,12 @@ export class MapCameraAnimator {
     if (this.flyTimer) {
       clearTimeout(this.flyTimer);
       this.flyTimer = null;
+    }
+    if (this.activeOnEnd && map) {
+      try {
+        map.off('moveend', this.activeOnEnd);
+      } catch {}
+      this.activeOnEnd = null;
     }
     this.activeFlightId++;
     this.isFlying = false;

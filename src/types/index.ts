@@ -120,6 +120,8 @@ export interface CountryProperties {
   colIndex?: number;
   climate_zones?: string[];
   center?: [number, number];
+  centerLat?: number;
+  centerLng?: number;
   bbox?: [number, number, number, number];
   primaryBbox?: [number, number, number, number];
   iso?: ISO3Code;

@@ -1,22 +1,31 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { GlobeCanvas } from '../components/map/GlobeCanvas';
 import { MobileTopBar } from '../components/topbar/MobileTopBar';
 import { DesktopTopBar } from '../components/topbar/DesktopTopBar';
-import { DesktopSidebar } from '../components/sidebar/DesktopSidebar';
-import { MobileBottomSheet } from '../components/sheet/MobileBottomSheet';
-import { SearchModal } from '../components/topbar/SearchModal';
-import { ClimateModal } from '../components/modals/ClimateModal';
 import { MapLegend } from '../components/map/MapLegend';
 import { AppPreloader } from '../components/common/AppPreloader';
-import { useDevice } from '../hooks/useDevice';
+import { useIsDesktop } from '../hooks/useDevice';
 import { useGlobalKeyboardShortcuts } from '../hooks/useGlobalKeyboardShortcuts';
 import { useAppThemeSync } from '../hooks/useAppThemeSync';
 import { useNativeLifecycle } from '../hooks/useNativeLifecycle';
 import { useAppBootstrap } from '../hooks/useAppBootstrap';
 import '../api/ExternalAPI';
 
+const DesktopSidebar = lazy(() =>
+  import('../components/sidebar/DesktopSidebar').then((m) => ({ default: m.DesktopSidebar }))
+);
+const MobileBottomSheet = lazy(() =>
+  import('../components/sheet/MobileBottomSheet').then((m) => ({ default: m.MobileBottomSheet }))
+);
+const SearchModal = lazy(() =>
+  import('../components/topbar/SearchModal').then((m) => ({ default: m.SearchModal }))
+);
+const ClimateModal = lazy(() =>
+  import('../components/modals/ClimateModal').then((m) => ({ default: m.ClimateModal }))
+);
+
 export const App: React.FC = () => {
-  const { isDesktop } = useDevice();
+  const isDesktop = useIsDesktop();
 
   useAppThemeSync();
   useNativeLifecycle();
@@ -44,7 +53,7 @@ export const App: React.FC = () => {
 
       {/* Main Interactive UI: Desktop vs Mobile Responsive Suite */}
       {!isPreloaderVisible && (
-        <>
+        <Suspense fallback={null}>
           {isDesktop ? (
             <>
               <DesktopTopBar />
@@ -61,7 +70,7 @@ export const App: React.FC = () => {
           <SearchModal />
           <ClimateModal />
           <MapLegend />
-        </>
+        </Suspense>
       )}
 
       {/* Multi-Stage Preloader */}
