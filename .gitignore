@@ -23,6 +23,5 @@ node_modules/.cache/
 *.tsbuildinfo
 TerraMetrics-3D 2/
 promo_director/
-releases/
-*.zip
-*.dmg
+releases/TerraMetrics-3D-Android-Debug-APK/
+releases/*.zip
